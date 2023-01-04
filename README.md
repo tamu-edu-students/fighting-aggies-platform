@@ -80,7 +80,7 @@ Install ffmpeg on heroku
 ```bash
 heroku buildpacks:add --index 1 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
 bundle install
-yarn install
+yarn
 git add .
 git commit -m "ffmpeg buildpack on heroku"
 git push heroku main
