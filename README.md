@@ -78,6 +78,8 @@ rake test
 ### Heroku Deployment Instructions
 Install ffmpeg on heroku
 ```bash
+heroku run rake db:migrate
+heroku run rake db:seed
 heroku buildpacks:add --index 1 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
 bundle install
 yarn
