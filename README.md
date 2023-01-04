@@ -67,11 +67,20 @@ git clone https://github.com/jessefphipps/fighting-aggies-platform.git
 cd fighting-aggies-platform
 bundle install
 yarn install
-/bin/dev
+bin/dev
 ```
 ### Testing Instructions
 Run the server in your local machine and use a new terminal to run the tests using the commands given below,
 ```bash
 cucumber
 rake test
+```
+### Heroku Deployment Instructions
+Install ffmpeg on heroku
+```heroku buildpacks:add --index 1 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
+bundle install
+yarn install
+git add .
+git commit -m "ffmpeg buildpack on heroku"
+git push heroku main
 ```
