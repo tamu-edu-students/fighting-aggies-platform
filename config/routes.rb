@@ -24,7 +24,7 @@ Rails.application.routes.draw do
   get 'admin', to: 'admin#dashboard'
   namespace :api do
     namespace :v2 do
-      get 'users/index'
+      get 'users/index', to: 'admin#dashboard'
       post 'users/create'
       get 'users/show'
       delete 'users/destroy'
