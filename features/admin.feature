@@ -6,10 +6,11 @@ Feature: admin
     Then they should be taken to the add user page
 
   Scenario: admin adds user
-    Given the user is logged in as an admin 
+    Given "Eli Tracy" is logged in as an "admin"
     Given the user is on the add user page
     When they fill in "Name" with "John Doe"
-    And they fill in "Role" with a "Coach"
+    And they fill in "Role" with "Coach"
     And they fill in "Email" with "johndoe@example.com"
-    And press "Add User"
+    And press "Create User"
     Then "John Doe" should be a "Coach" should have the email "johndoe@example.com"
+    And I should see "User was successfully created."
