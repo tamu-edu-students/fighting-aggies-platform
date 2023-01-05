@@ -1,7 +1,7 @@
-
+Feature: admin
    Scenario: admin navigates to add user
-    Given the user is logged in as an "admin"
-    Given the user is on the "admin" dashboard 
+    Given "Eli Tracy" is logged in as an "admin"
+    Given user is on the "admin" dashboard 
     When they click the add user button
     Then they should be taken to the add user page
 
