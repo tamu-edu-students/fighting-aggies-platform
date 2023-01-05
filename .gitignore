@@ -37,5 +37,5 @@
 /db/*.sqlite3-journal
 /db/*.sqlite3-[0-9]*
 
-/coverage
+/coverage/
 /node_modules
