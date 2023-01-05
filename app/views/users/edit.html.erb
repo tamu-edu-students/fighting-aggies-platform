@@ -1,3 +1,4 @@
+
 <h1>Editing user</h1>
 
 <%= render "form", user: @user %>
@@ -5,5 +6,8 @@
 <br>
 
 <div>
-  <%= link_to "Back", admin_path %>
+  <%= button_to "Delete User", @user, method: :delete, class: "delete-user"%>
+  <button id="log-out">
+    <%= link_to "Back", admin_path %>
+  </button>
 </div>
