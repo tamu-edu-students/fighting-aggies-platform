@@ -15,11 +15,12 @@ Given('user is on the {string} dashboard') do |role|
 end
 
 When('they click the add user button') do
-  pending # Write code here that turns the phrase above into concrete actions
+  find('#add_user').click
+  sleep(3)
 end
 
 Then('they should be taken to the add user page') do
-  pending # Write code here that turns the phrase above into concrete actions
+  expect(page).to have_current_path('/users/new')
 end
 
 Given('the user is logged in as an admin') do

@@ -5,7 +5,7 @@ Feature: admin
     When they click the add user button
     Then they should be taken to the add user page
 
-  Scenario: admin adds users email
+  Scenario: admin adds user
     Given the user is logged in as an admin 
     Given the user is on the add user page
     When they fill in "Name" with "John Doe"

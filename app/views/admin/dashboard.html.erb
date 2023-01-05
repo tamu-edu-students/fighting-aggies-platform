@@ -1,9 +1,7 @@
 <div>
     <h3>
         Admin Dashboard 
-        <button id="add-user">
-          <%= link_to "Add User", new_user_path() %>
-        </button>
+        <%= link_to "Add User", new_user_path(), id: :add_user%>
         <button id="log-out">Log Out</button>
     </h3>
 </div>
