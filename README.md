@@ -1,6 +1,6 @@
 # Fightin Aggies Platform
 
-Developing a analytical panel to generate insights that help facilitate the post-game analysis done by the coaches and players of Fightin Texas Aggies Football team.
+Developing an analytical panel to generate insights that help facilitate the post-game analysis done by the coaches and players of Fightin Texas Aggies Football team.
 
 ### Deployment - [Heroku](https://fightin-aggies.herokuapp.com/)
 

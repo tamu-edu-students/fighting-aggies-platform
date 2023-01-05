@@ -18,7 +18,8 @@ Rails.application.routes.draw do
       delete 'analyses/destroy'
     end
   end
-
+  # root "admin#dashboard"
+  resource :users
   get 'dashboard', to: 'pages#home'
+  get 'admin', to: 'admin#dashboard'
 end
-
