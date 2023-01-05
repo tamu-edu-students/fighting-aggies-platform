@@ -19,6 +19,7 @@ Rails.application.routes.draw do
     end
   end
   
+  # root "admin#dashboard"
   get 'dashboard', to: 'pages#home'
-  get 'admin', to: 'admin#index'
+  get 'admin', to: 'admin#dashboard'
 end
