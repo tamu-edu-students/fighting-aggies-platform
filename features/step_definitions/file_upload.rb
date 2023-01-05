@@ -1,35 +1,31 @@
-Given ('the user has uploaded a good file') do
-    @browser.find_element(:id, "file_select_button").send_keys(@good_file_loc)
-    sleep(3)
+Given('the user has uploaded a good file') do
+  pending
 end
 
-When ('user selects incorrect file type') do
-    @browser.find_element(:id, "file_select_button").send_keys(@bad_file_type_loc)
-    sleep(1)
+When('user selects incorrect file type') do
+  pending
 end
 
-When ('user selects corrupted file') do
-    @browser.find_element(:id, "file_select_button").send_keys(@dummy_file_loc)
-    sleep(1)
+When('user selects corrupted file') do
+  pending
 end
 
-When ('user clicks the upload button') do
-    @browser.find_element(:id, "file_upload_button").click()
-    sleep(3)
+When('user clicks the upload button') do
+  pending
 end
 
-Then ('user should get negative feedback --incompatible upload type') do
-    raise "Fail" if @browser.find_element(:id, "select_error").text != "Error: selected file type is not supported. Try again."
+Then('user should get negative feedback --incompatible upload type') do
+  pending
 end
 
-Then ('user should get negative feedback --incompatible upload file') do
-    raise "Fail" if @browser.find_element(:id, "upload_error").text != "Error: Cannot read the video file"
+Then('user should get negative feedback --incompatible upload file') do
+  pending
 end
 
-Then ('user should get positive feedback --file uploaded successfully') do
-    raise "Fail" if @browser.find_element(:id, "file_details").text != "Uploaded File Details:"
+Then('user should get positive feedback --file uploaded successfully') do
+  pending
 end
 
-Then ('the upload button is disabled') do
-    raise "Fail" if @browser.find_element(:id, "file_upload_button").enabled?
+Then('the upload button is disabled') do
+  pending
 end

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, withRouter, Redirect} from 'react-router-dom';
+import { Link, withRouter, Redirect } from 'react-router-dom';
 
 import { withFirebase } from './Firebase';
 
@@ -52,14 +52,14 @@ class LogInFormBase extends Component {
 
   render() {
     const { email, password, error } = this.state;
-    
+
     const isInvalid = password === '' || email === '';
-    
+
     const user = sessionStorage.getItem('user');
 
     if (user != null) return <Redirect to='/dashboard' />;
     return (
-      <div id='loginPageBody' style={{backgroundImage: `url('https://cdn.eis.tamu.edu/public/images/newbackground7.jpg')` }}>
+      <div id='loginPageBody' style={{ backgroundImage: `url('https://cdn.eis.tamu.edu/public/images/newbackground7.jpg')` }}>
         <div className='row'>
           <div className='col-12 col-md-6 offset-md-3' id='loginPanel'>
             <div className='row' id='platformName'>
@@ -68,9 +68,9 @@ class LogInFormBase extends Component {
               </div>
               <h2><i><strong>Fightin Aggies Analytics Platform</strong></i></h2>
             </div>
-            
+
             <div id='loginForm'>
-              <h3 style={{margin: '1px'}}>Login</h3>
+              <h3 style={{ margin: '1px' }}>Login</h3>
               <hr />
               <form onSubmit={this.onSubmit}>
                 <div className='mb-3'>
@@ -86,7 +86,7 @@ class LogInFormBase extends Component {
                       id='username'
                     />
                   </span>
-                
+
                   <span>
                     <span className='form-label'>Password</span>
                     <input
@@ -99,11 +99,11 @@ class LogInFormBase extends Component {
                       id='password'
                     />
                   </span>
-                  
+
                   <button disabled={isInvalid} type="submit" className='btn btn-primary' id='login-button'>
                     Continue
                   </button>
-  
+
                   {error && <div className='form-text' id='error-message'>{error.message}</div>}
                 </div>
               </form>
