@@ -1,8 +1,10 @@
 <div>
     <h3>
         Admin Dashboard 
-        <button >Add User</button> 
-        <button>Log Out</button>
+        <button id="add-user">
+          <%= link_to "Add User", new_user_path() %>
+        </button>
+        <button id="log-out">Log Out</button>
     </h3>
 </div>
 
@@ -22,7 +24,7 @@
         <td><%= user.name %></td>
         <td><%= user.role %></td>
         <td><%= user.email %></td>
-        <td><%= link_to "Edit", edit_book_path(book) %></td>
+        <td><%= link_to "Edit", edit_user_path(user) %></td>
       </tr>
     <% end %>
   </tbody>

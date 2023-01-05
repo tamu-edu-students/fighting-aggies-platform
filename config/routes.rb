@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   root 'login#loginPage'
   namespace :api do
     namespace :v1 do
@@ -18,8 +19,15 @@ Rails.application.routes.draw do
       delete 'analyses/destroy'
     end
   end
-  # root "admin#dashboard"
   resource :users
   get 'dashboard', to: 'pages#home'
   get 'admin', to: 'admin#dashboard'
+  namespace :api do
+    namespace :v2 do
+      get 'users/index'
+      post 'users/create'
+      get 'users/show'
+      delete 'users/destroy'
+    end
+  end
 end
