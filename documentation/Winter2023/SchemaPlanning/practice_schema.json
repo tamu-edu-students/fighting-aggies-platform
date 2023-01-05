@@ -1,0 +1,22 @@
+{
+  "date": "04-26-2022",
+  "time-start": "1:30:42",
+  "time-end": "3:30:20",
+  "practice-iteration": "A",
+  "play_success_average": ".75",
+  "plays": [
+    {
+      "name": "zebra-72",
+      "timestamp-start": "1:30:42",
+      "timestamp-end": "1:31:20",
+      "success": "10/11",
+      "players": [
+        {
+          "name": "E Tracy",
+          "position": "WR",
+          "success": 1
+        }
+      ]
+    }
+  ]
+}
