@@ -1,6 +1,6 @@
 # Fightin Aggies Platform
 
-Developing a analytical panel to generate insights that help facilitate the post-game analysis done by the coaches and players of Fightin Texas Aggies Football team.
+Developing an analytical panel to generate insights that help facilitate the post-game analysis done by the coaches and players of Fightin Texas Aggies Football team.
 
 ### Deployment - [Heroku](https://fightin-aggies.herokuapp.com/)
 
@@ -67,11 +67,26 @@ git clone https://github.com/jessefphipps/fighting-aggies-platform.git
 cd fighting-aggies-platform
 bundle install
 yarn install
-/bin/dev
+bin/dev
 ```
 ### Testing Instructions
 Run the server in your local machine and use a new terminal to run the tests using the commands given below,
 ```bash
 cucumber
 rake test
+```
+### Heroku Deployment Instructions
+Migrate and seed the database
+```bash
+heroku run rake db:migrate
+heroku run rake db:seed
+```
+Install ffmpeg on heroku
+```bash
+heroku buildpacks:add --index 1 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
+bundle install
+yarn
+git add .
+git commit -m "ffmpeg buildpack on heroku"
+git push heroku main
 ```
