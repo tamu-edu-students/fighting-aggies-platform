@@ -1,5 +1,5 @@
 Feature: admin
-   Scenario: admin navigates to add user
+  Scenario: admin navigates to add user
     Given "Eli Tracy" is logged in as an "admin"
     Given user is on the "admin" dashboard 
     When they click the add user button

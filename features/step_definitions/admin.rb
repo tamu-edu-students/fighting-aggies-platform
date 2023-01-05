@@ -16,7 +16,7 @@ end
 
 When('they click the add user button') do
   find('#add_user').click
-  sleep(2)
+  sleep(1)
 end
 
 Then('they should be taken to the add user page') do
