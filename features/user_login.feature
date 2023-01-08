@@ -1,32 +1,43 @@
 Feature: user login
-  
-  # test bad path first because logout is not done
-  Scenario: user login bad path 1
-    Given the user is on the login page
-    Given the user provides invalid password
-    When they click the login button
-    Then they should get a negative feedback --wrong password
-  
-  Scenario: user login bad path 2
-    Given the user is on the login page
-    Given the user provides invalid email
-    When they click the login button
-    Then they should get a negative feedback --user not found
-  
-  Scenario: user login bad path 3
-    Given the user is on the login page
-    Given the user provides bad email
-    When they click the login button
-    Then they should get a negative feedback --bad email
-  
-  @user_login_correct
-  Scenario: user login correct path
-    Given the user is on the login page
-    Given the user provides correct email and password
-    When they click the login button
-    Then they should be redirected to dashboard and see their username and a logout button
-    
-  Scenario: user logout
-    Given the user is logged in and on dashboard
-    When they click the logout button
-    Then they should be logged out and redirected to login page
+
+Scenario: User wants to login with Google
+  Given I am on the Login page
+	When I click on login with Google
+	Then I should be on the Google login page
+
+Scenario: Successful login of a valid user
+	Given I am on the Google login page
+	When I fill in email with faaplicationuser@gmail.com
+	And I click Next
+	And I fill in password with password2023
+	And I click Login
+	Then I should be on the analytics dashboard.
+
+Scenario: Successful login of a valid user
+	Given I am on the Google login page
+	When I fill in email with faaplicationuser@gmail.com
+	And I click Next
+	And I fill in password with password2023
+	And I click Login
+	Then I should be on the analytics dashboard.
+
+Scenario: Successful login as a non role
+	Given I am on the Google login page
+	When I fill in email with notfaaplicationuser@gmail.com 
+	And I click Next
+	And I fill in password with password2023
+	And I click Login
+	Then I should be on the home page.
+
+Scenario: Successful login as an admin
+	Given I am on the Google login page
+	When I fill in email with faaplicationmanager@gmail.com
+	And I click Next
+	And I fill in password with password2023
+	And I click Login
+	Then I should be on the admin page.
+
+Scenario: User chooses not to be logged in
+	Given I am on the Google login page
+	When I click back
+	Then I should be on the home page.
