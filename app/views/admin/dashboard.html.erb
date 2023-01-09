@@ -1,0 +1,29 @@
+<div>
+    <h3>
+        Admin Dashboard 
+        <%= link_to "Add User", new_user_path(), id: :add_user%>
+        <button id="log-out">Log Out</button>
+    </h3>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Role</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.role %></td>
+        <td><%= user.email %></td>
+        <td><%= link_to "Edit", edit_user_path(user) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

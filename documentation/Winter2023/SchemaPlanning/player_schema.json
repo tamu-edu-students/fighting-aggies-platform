@@ -1,0 +1,39 @@
+{
+  "_id": 0,
+  "name": "E Tracy",
+  "player_type": "offense",
+  "plays": [
+    {
+      "name": "zebra-72",
+      "practice": {
+        "date": "04-26-2022",
+        "time-start": "1:30:42",
+        "time-end": "3:30:20",
+        "practice-iteration": "A"
+      },
+      "timestamp-start": "1:30:42",
+      "timestamp-end": "1:31:20",
+      "route": "slant",
+      "position": "WR",
+      "success": 1
+    }
+  ],
+  "overall_average": ".62",
+  "play_averages":[
+    {
+      "name": "zebra-72",
+      "average": ".86"
+    }
+  ],
+  "route_averages":[
+    {
+      "name": "slant", 
+      "average": ".68"
+    },
+    {
+      "name": "post", 
+      "average": ".72"
+    }
+
+  ]
+}
