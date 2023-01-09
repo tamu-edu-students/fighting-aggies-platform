@@ -239,8 +239,6 @@ const user = sessionStorage.getItem('user');
 const history = useHistory();
 
 // console.log('UploadedFile: ', uploadedFile)
-
-if (user == null) return <Redirect to='/' />
 return (
     <div style={{height: "100vh", padding:4, overflow: "hidden"}}>
       <Box sx={{height: "100%"}}>

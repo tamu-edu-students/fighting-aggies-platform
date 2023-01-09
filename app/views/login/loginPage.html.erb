@@ -1,3 +1,2 @@
-<%= content_tag(:div, "", id:"app", data: {
-    controller: "react"
-})%>
+<%= button_to "Log In with Google", '/auth/google_oauth2', method: :post, data: { turbo: false }%>
+<%= link_to "Go to dashboard", '/dashboard' %>

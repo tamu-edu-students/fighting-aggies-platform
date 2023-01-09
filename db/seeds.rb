@@ -11,6 +11,8 @@
 
 initial_users = [
     {:name => 'Tuong Tran', :role => 'admin', :email => 't2tran@tamu.edu'},
+    {:name => 'Test User', :role => 'coach', :email => 'faaplicationuser@gmail.com'},
+    {:name => 'Test Admin', :role => 'admin', :email => 'faaplicationmanager@gmail.com'},
     {:name => 'Andrew Imwalle', :role => 'admin', :email => 'andrew.imwalle@tamu.edu'},
     {:name => 'Nick McDonough', :role => 'admin', :email => 'nimcd@tamu.edu'},
     {:name => 'Eli Tracy', :role => 'admin', :email => 'elitracy@tamu.edu'}

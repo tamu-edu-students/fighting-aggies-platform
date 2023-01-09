@@ -1,50 +1,20 @@
-Given('the user is on the login page') do
-  visit @login_url
+Given("I am logged in as an administrator") do
+  User.create({:name => 'Test Admin', :role => 'admin', :email => 'faaplicationmanager@gmail.com'}) 
+  visit login_path(email: "faaplicationmanager@gmail.com".gsub(".","%1F"))
 end
-
-Given('the user provides correct email and password') do
-  pending
+Given("I am logged in as a coach") do
+  User.create({:name => 'Test User', :role => 'coach', :email => 'faaplicationuser@gmail.com'}) 
+  visit login_path(email: "faaplicationuser@gmail.com".gsub(".","%1F"))
 end
-
-Given('the user provides invalid password') do
-  pending
+Given("I am logged in as a non-user") do
+  visit login_path(email: "notfaaplicationuser@gmail.com".gsub(".","%1F"))
 end
-
-Given('the user provides invalid email') do
+Then("I should be on the home screen") do
+  expect(page).to have_current_path(root_path)
 end
-
-Given('the user provides bad email') do
-  pending
+Then("I should be on the analytics dashboard") do
+  expect(page).to have_current_path(dashboard_path)
 end
-
-Given('the user is logged in and on dashboard') do
-  pending
-end
-
-When('they click the login button') do
-  pending
-end
-
-When('they click the logout button') do
-  pending
-end
-
-Then('they should be redirected to dashboard and see their username and a logout button') do
-  pending
-end
-
-Then('they should get a negative feedback --wrong password') do
-  pending
-end
-
-Then('they should get a negative feedback --user not found') do
-  pending
-end
-
-Then('they should get a negative feedback --bad email') do
-  pending
-end
-
-Then('they should be logged out and redirected to login page') do
-  pending
+Then("I should be on the admin dashboard") do
+  expect(page).to have_current_path(admin_path)
 end
