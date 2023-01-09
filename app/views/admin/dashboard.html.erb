@@ -2,7 +2,8 @@
     <h3>
         Admin Dashboard 
         <%= link_to "Add User", new_user_path(), id: :add_user%>
-        <button id="log-out">Log Out</button>
+        <%# <button id="log-out">Log Out</button> %>
+        <% button_to "Log out", auth.sign_out_path, method: :delete %>
     </h3>
 </div>
 

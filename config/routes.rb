@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  passwordless_for :users, at: '/', as: :auth
   resources :users
   root 'login#loginPage'
   namespace :api do
