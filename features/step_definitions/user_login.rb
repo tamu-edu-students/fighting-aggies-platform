@@ -1,11 +1,11 @@
 Given("I am logged in as an administrator") do
-  visit login_path(email: "faaplicationmanager@gmail.com")
+  visit login_path(email: "faaplicationmanager@gmail.com".gsub(".","%1F"))
 end
 Given("I am logged in as a coach") do
-  visit login_path(email: "faaplicationuser@gmail.com")
+  visit login_path(email: "faaplicationuser@gmail.com".gsub(".","%1F"))
 end
 Given("I am logged in as a non-user") do
-  visit login_path(email: "notfaaplicationuser@gmail.com")
+  visit login_path(email: "notfaaplicationuser@gmail.com".gsub(".","%1F"))
 end
 Then("I should be on the home screen") do
   expect(page).to have_current_path(root_path)
