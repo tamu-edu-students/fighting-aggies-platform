@@ -7,7 +7,5 @@
 
 <div>
   <%= button_to "Delete User", @user, method: :delete, class: "delete-user"%>
-  <button id="log-out">
-    <%= link_to "Back", admin_path %>
-  </button>
+  <%= link_to "Cancel", admin_path, id: "Cancel"%>
 </div>
