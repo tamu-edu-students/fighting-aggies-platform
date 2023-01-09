@@ -17,8 +17,8 @@
   </div>
 
   <div>
-    <%= form.label :role %>
-    <%= form.select :role, options_for_select(['admin', 'coach']), prompt: "Select a role" %>
+    <%= form.label :role, style: "display: block" %>
+    <%= form.select :role, ['Admin', 'Coach'], selected: @user.role%>
   </div>
   <div>
     <%= form.label :email, style: "display: block" %>

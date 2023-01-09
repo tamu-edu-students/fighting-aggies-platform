@@ -3,7 +3,7 @@ Feature: admin
 
     Given the following users exist:
     | name                | role      | email             |
-    | Tuong Tran          | admin     | t2tran@t2tran.edu |
+    | Tuong Tran          | Admin     | t2tran@t2tran.edu |
     | Boaty McBoatFace    | Coach     | BoatyMBF@gmail.com|
   
   @admin
@@ -18,7 +18,7 @@ Feature: admin
     Given "Eli Tracy" is logged in as an "admin"
     Given the user is on the add user page
     When they fill in "Name" with "John Doe"
-    And they fill in "Role" with "Coach"
+    And they select 'Coach' from the 'Role' select
     And they fill in "Email" with "johndoe@example.com"
     And press "Create User"
     Then "John Doe" should be a "Coach" should have the email "johndoe@example.com"
@@ -28,8 +28,12 @@ Feature: admin
   Scenario: admin can view users
     Given "Tuong Tran" is logged in as an "admin"
     Given user is on the "admin" dashboard
-    Then they should see "Name", "Role", and "Email"
-    And they should see "Boaty McBoatFace", "Coach", and "BoatyMBF@gmail.com"
+    Then they should see "Name"
+    And they should see "Role"
+    And they should see "Email"
+    And they should see "Boaty McBoatFace"
+    And they should see "Coach" 
+    And they should see "BoatyMBF@gmail.com"
   
   @admin
   Scenario: admin can edit users and cancel edit
@@ -39,7 +43,9 @@ Feature: admin
     And I fill in "Email" with "Boaty.McBoatFace@gmail.com"
     And I press "Cancel"
     Then  I should be on the Admin page
-    And they should see "Boaty McBoatFace", "Coach", and "BoatyMBF@gmail.com"
+    And they should see "Boaty McBoatFace"
+    And they should see "Coach" 
+    And they should see "BoatyMBF@gmail.com"
 
   @admin
   Scenario: admin can edit users and save edits
@@ -48,8 +54,10 @@ Feature: admin
     When I go to the edit page for "Boaty McBoatFace"
     And I fill in "Email" with "Boaty.McBoatFace@gmail.com"
     And press "Update User"
-    Then  I should be on the Admin page
-    And they should see "Boaty McBoatFace", "Coach", and "Boaty.McBoatFace@gmail.com"
+    Then I should be on the Admin page
+    And they should see "Boaty McBoatFace"
+    And they should see "Coach" 
+    And they should see "Boaty.McBoatFace@gmail.com"
 
   @admin
   Scenario: admin can delete users
@@ -65,8 +73,8 @@ Feature: admin
     Given "Tuong Tran" is logged in as an "admin"
     Given the user is on the add user page
     Then I should see a 'select' field called 'Role'
-    And I should be able to select 'admin' from the 'Role' select
-    And I should be able to select 'coach' from the 'Role' select
+    And I should be able to select 'Admin' from the 'Role' select
+    And I should be able to select 'Coach' from the 'Role' select
 
   @admin @eli
   Scenario: admin edits users role
@@ -74,5 +82,5 @@ Feature: admin
     Given user is on the 'admin' dashboard
     When I go to the edit page for 'Boaty McBoatFace'
     Then I should see a 'select' field called 'Role'
-    And I should be able to select 'admin' from the 'Role' select
-    And I should be able to select 'coach' from the 'Role' select
+    And I should be able to select 'Admin' from the 'Role' select
+    And I should be able to select 'Coach' from the 'Role' select

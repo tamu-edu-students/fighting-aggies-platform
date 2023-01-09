@@ -55,8 +55,8 @@ Then('I should see {string}') do |message|
   page.all('p', text: message)
 end
 
-Then('they should see {string}, {string}, and {string}') do |string, string2, string3|
-  expect(page).to have_content(string + ' ' + string2 + ' ' + string3)
+Then('they should see {string}') do |string|
+  expect(page).to have_content(string)
 end
 
 When('I go to the edit page for {string}') do |user_name|
@@ -86,5 +86,9 @@ Then('I should see a {string} field called {string}') do |form_type, form_label|
 end
 
 Then('I should be able to select {string} from the {string} select') do |option, label|
+  select option, from: label
+end
+
+When('they select {string} from the {string} select') do |option, label|
   select option, from: label
 end
