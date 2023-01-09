@@ -1,4 +1,4 @@
-Given /the following users exist/ do |users_table|
+Given(/the following users exist/) do |users_table|
   Users.destroy_all
   users_table.hashes.each do |user|
     Users.create user
@@ -45,7 +45,7 @@ When('press {string}') do |button|
   click_on button
 end
 
-Then('{string} should be a {string} should have the email {string}') do |name, role, email|
+Then('{string} should be a {string} should have the email {string}') do |_name, role, _email|
   page.all('#name', text: role)
   page.all('#role', text: role)
   page.all('#email', text: role)
@@ -56,7 +56,7 @@ Then('I should see {string}') do |message|
 end
 
 Then('they should see {string}, {string}, and {string}') do |string, string2, string3|
-  expect(page).to have_content(string + " " + string2 + " " + string3)
+  expect(page).to have_content(string + ' ' + string2 + ' ' + string3)
 end
 
 When('I go to the edit page for {string}') do |user_name|
@@ -69,7 +69,7 @@ When('I fill in {string} with {string}') do |field, input|
 end
 
 When('I press {string}') do |string|
-  find('#'+ string).click
+  find('#' + string).click
   sleep(2)
 end
 
@@ -79,4 +79,12 @@ end
 
 Then('I should not see {string}') do |string|
   expect(page).not_to have_content(string)
+end
+
+Then('I should see a {string} field called {string}') do |form_type, form_label|
+  expect(page).to have_field(form_label, type: form_type)
+end
+
+Then('I should be able to select {string} from the {string} select') do |option, label|
+  select option, from: label
 end

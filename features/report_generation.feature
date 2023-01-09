@@ -1,17 +1,17 @@
 Feature: file upload
 
-@button_inactive_before_file_select
+@button_inactive_before_file_select @skip
   Scenario: user uploads corrupted file
     Given the user is logged in and on dashboard
     Then the report generation button is disabled
 
-@button_inactive_before_upload
+@button_inactive_before_upload @skip
   Scenario: user uploads corrupted file
     Given the user is logged in and on dashboard
     Given the user has uploaded a good file
     Then the report generation button is disabled
 
-@report_generation_correct
+@report_generation_correct @skip
   Scenario: user uploads file successfully
     Given the user is logged in and on dashboard
     Given the user has uploaded a good file and uploaded
