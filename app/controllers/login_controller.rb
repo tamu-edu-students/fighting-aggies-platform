@@ -7,9 +7,9 @@ class LoginController < ApplicationController
     end
 
     def login
-      email=params[:email].gsub("%1F",".")
-      if Users.exists?(email: email)
-        user=Users.find_by_email email
+      email=params[:email].gsub("%1F",".")      
+      if User.exists?(email: email)
+        user=User.find_by_email email
         if user.role == "admin"
           redirect_to admin_path
         else
