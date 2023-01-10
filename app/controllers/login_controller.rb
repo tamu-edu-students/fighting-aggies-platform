@@ -6,6 +6,13 @@ class LoginController < ApplicationController
       redirect_to login_path email
     end
 
+    def authorize
+      email = current_user.email
+      session[:authenticated] = true
+      email=email.gsub(".","%1F")
+      redirect_to login_path email
+    end
+
     def login
       email=params[:email].gsub("%1F",".")      
       if User.exists?(email: email)
