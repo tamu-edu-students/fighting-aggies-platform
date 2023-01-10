@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  passwordless_for :users, at: '/', as: :auth
   resources :users
   root 'login#loginPage'
   namespace :api do
@@ -20,6 +21,7 @@ Rails.application.routes.draw do
     end
   end
   resource :users
+  get '/authorize' => 'login#authorize'
   get 'dashboard', to: 'pages#home'
   get 'admin', to: 'admin#dashboard'
   get '/auth/:provider/callback'=> 'login#omniauth'
