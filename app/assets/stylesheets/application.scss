@@ -13,6 +13,9 @@
  *= require_tree .
  *= require_self
  */
+ 
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
 #loginPageBody{
     position: absolute;
     height: 100%;
