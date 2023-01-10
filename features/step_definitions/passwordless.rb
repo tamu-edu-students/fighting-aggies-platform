@@ -18,7 +18,7 @@ Given('I am on the sign_in page') do
     visit '/sign_in'
 end
 
-And('I press {string}') do |button|
+And('I press button {string}') do |button|
     click_button(button)
 end
 
