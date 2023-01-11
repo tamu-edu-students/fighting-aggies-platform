@@ -1,16 +1,18 @@
+require 'selenium-webdriver'
+
 Given(/the following users exist/) do |users_table|
-  Users.destroy_all
+  User.destroy_all
   users_table.hashes.each do |user|
-    Users.create user
+    User.create user
   end
 end
 
-Given("user {string} exists") do |user|
-  User.create({:name => user, :role => 'Coach', :email => 'BoatyMBF@gmail.com'})
+Given('user {string} exists') do |user|
+  User.create({ name: user, role: 'Coach', email: 'BoatyMBF@gmail.com' })
 end
 
 Given('{string} is logged in as an {string}') do |users_name, role|
-  user_id = Users.find_by(name: users_name)
+  user_id = User.find_by(name: users_name)
   visit(users_path(user_id))
   page.all('#role', text: role)
   visit(admin_path)
@@ -46,7 +48,7 @@ When('they fill in {string} with {string}') do |field, value|
 end
 
 When('press {string}') do |button|
-  click_on button
+  click_button button
 end
 
 Then('{string} should be a {string} should have the email {string}') do |_name, role, _email|
@@ -64,8 +66,8 @@ Then('they should see {string}') do |string|
 end
 
 When('I go to the edit page for {string}') do |user_name|
-  user = Users.find_by name: user_name
-  visit "/users/#{user.id}/edit"
+  user = User.find_by name: user_name
+  visit edit_user_path(user)
 end
 
 When('I fill in {string} with {string}') do |field, input|
@@ -73,8 +75,7 @@ When('I fill in {string} with {string}') do |field, input|
 end
 
 When('I press {string}') do |string|
-  find('#' + string).click
-  sleep(2)
+  find("\##{string}").click
 end
 
 Then('I should be on the Admin page') do
@@ -95,4 +96,16 @@ end
 
 When('they select {string} from the {string} select') do |option, label|
   select option, from: label
+end
+
+Then('I should be on the user {string} page for {string}') do |page_name, user_name|
+  user = User.find_by(name: user_name)
+  expect(page).to have_current_path(users_edit_path(user.id))
+  expect(page).to have_current_path("/users/#{user.id}/#{page_name}")
+end
+
+Given('I am on the user {string} page for {string}') do |page_name, user_name|
+  user = User.find_by(name: user_name)
+  visit "/users/#{user.id}/#{page_name}"
+  expect(page).to have_current_path("/users/#{user.id}/#{page_name}")
 end
