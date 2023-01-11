@@ -31,12 +31,12 @@ Given("the database has been reset") do
   User.destroy_all()
 end
 Given("I am logged in as an administrator") do
-  User.create({:name => 'Test Admin', :role => 'admin', :email => 'user@gmail.com'})
+  User.create({:name => 'Test Admin', :role => 'Admin', :email => 'user@gmail.com'})
   visit root_path
   click_button "Log In with Google"
 end
 Given("I am logged in as a coach") do
-  User.create({:name => 'Test Admin', :role => 'coach', :email => 'user@gmail.com'})
+  User.create({:name => 'Test Admin', :role => 'Coach', :email => 'user@gmail.com'})
   visit root_path
   click_button "Log In with Google"
 end
