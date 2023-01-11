@@ -22,10 +22,6 @@ Then('user should get negative feedback --incompatible upload file') do
   pending
 end
 
-Then('user should get positive feedback --file uploaded successfully') do
-  pending
-end
-
 Then('the upload button is disabled') do
   pending
 end
