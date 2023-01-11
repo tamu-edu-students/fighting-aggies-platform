@@ -9,9 +9,6 @@ gem 'rails', '~> 7.0.4'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
-# Use postgresql as the database for Active Record
-gem 'pg', '~> 1.1'
-
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
 
@@ -70,10 +67,8 @@ group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
 
   # Use sqlite3 as the database for Active Record
-  gem 'rspec-rails', '~> 6.0.0'
   gem 'sqlite3', '~> 1.4'
 
-  gem 'cucumber-rails', require: false
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
 end
@@ -95,4 +90,11 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver', '~> 3.142.7'
   gem 'webdrivers'
+  gem 'cucumber-rails'
+  gem 'rspec-rails', '~> 6.0.0'
+end
+
+group :production do
+  # Use postgresql as the database for Active Record
+  gem 'pg', '~> 1.1'
 end
