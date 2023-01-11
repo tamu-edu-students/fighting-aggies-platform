@@ -62,9 +62,3 @@ end
 Then("I should be on the admin dashboard") do
   expect(page).to have_current_path(admin_path)
 end
-
-Then("I should be logged out") do
-  expect(session["authenticated"]).to eq(false)
-  expect(session["coach"]).to eq(false)
-  expect(session["admin"]).to eq(false)
-end
