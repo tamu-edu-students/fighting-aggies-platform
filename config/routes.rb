@@ -19,13 +19,13 @@ Rails.application.routes.draw do
       delete 'analyses/destroy'
     end
   end
-  resource :users
   get 'dashboard', to: 'pages#home'
   get 'admin', to: 'admin#dashboard'
-  get '/auth/:provider/callback'=> 'login#omniauth'
-  get 'login/:email'=> 'login#login', :as=>"login"
+  get '/auth/:provider/callback' => 'login#omniauth'
+  get 'login/:email' => 'login#login', :as => 'login'
   get 'users/index'
   post 'users/create', to: 'users#new'
   get 'users/show', to: 'users#show'
+  get 'users/:id/edit' => 'users#edit', :as => 'users_edit'
   delete 'users/destroy'
 end

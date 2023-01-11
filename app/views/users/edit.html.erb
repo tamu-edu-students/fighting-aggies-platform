@@ -4,8 +4,32 @@
 <%= render "form", user: @user %>
 
 <br>
-
 <div>
-  <%= button_to "Delete User", @user, method: :delete, class: "delete-user"%>
+
+  <div> 
+
+    <button id="toggle-button" type="button">Delete User</button>
+
+    <div id="confirm-cancel-buttons" style="display: none;">
+      <%= form_for @user, method: :delete do |f| %>
+        <%= f.submit 'Confirm Delete', id: 'confirm-button' %>
+        <button id="cancel-button" type="button">Cancel</button>
+      <% end %>
+    </div>
+
+
+  </div>
   <%= link_to "Cancel", admin_path, id: "Cancel"%>
 </div>
+<script>
+  var toggleButton = document.getElementById("toggle-button");
+  var confirmCancelButtons = document.getElementById("confirm-cancel-buttons");
+
+  toggleButton.addEventListener("click", function() {
+    if (confirmCancelButtons.style.display === "none") {
+      confirmCancelButtons.style.display = "block";
+    } else {
+      confirmCancelButtons.style.display = "none";
+    }
+  });
+</script>

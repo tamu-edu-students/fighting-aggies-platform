@@ -69,6 +69,10 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'rspec-rails', '~> 6.0.0'
   gem 'sqlite3', '~> 1.4'
+
+  gem 'cucumber-rails', require: false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
 end
 
 group :development do
