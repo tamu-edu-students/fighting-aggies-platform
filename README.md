@@ -90,3 +90,14 @@ git add .
 git commit -m "ffmpeg buildpack on heroku"
 git push heroku main
 ```
+### One Time Link Email
+Email: fighting.aggies.analytics@gmail.com
+App Password: tsaqzyyqbplvzcaa 
+This is not the password for the email.
+
+If having issues, to create new email:
+Enable 2-step verification. Must be turned on to avoid getting the emails blocked by Google.
+
+To create an app password, go to your Google account settings and navigate to the "Security" tab. Under "Signing in to Google", click on the "App passwords" menu item (this will only be available if you have 2-step verification turned on). Next, select Other (Custom name) under the "Select app" dropdown and enter the name of your app or something else useful. Click "Generate" and your new app password will appear on the screen. Make sure you copy it before closing the window, or you won't be able to see the password again.
+
+When using application in development mode, the one time link is in the terminal. When using the application in production mode, the one time email will be sent.
