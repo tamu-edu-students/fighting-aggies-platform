@@ -1,12 +1,12 @@
 class LoginController < ApplicationController
     def omniauth
       request_params=request.env['omniauth.auth']
-      email=request_params.extra.id_info.email.to_s
+      email=request_params["extra"]["id_info"]["email"].to_s
       if User.exists?(email: email)
         session[:authenticated]=true
       end
       email=email.gsub(".","%1F")
-      redirect_to login_path email
+      redirect_to(login_path(email), allow_other_host: true)
     end
 
     def authorize
