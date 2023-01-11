@@ -67,20 +67,5 @@ Latest commit cdf39ff on Oct 24, 2022
 /db/*.sqlite3-journal
 /db/*.sqlite3-[0-9]*
 
-/coverage/
+/coverage
 /node_modules
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-fighting-aggies-platform/.gitignore at tuong · AndrewImwalle/fighting-aggies-platform

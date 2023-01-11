@@ -18,9 +18,8 @@
 
   <div>
     <%= form.label :role, style: "display: block" %>
-    <%= form.text_field :role %>
+    <%= form.select :role, ['Admin', 'Coach'], selected: @user.role%>
   </div>
-
   <div>
     <%= form.label :email, style: "display: block" %>
     <%= form.text_field :email %>

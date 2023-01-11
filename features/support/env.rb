@@ -1,6 +1,7 @@
 require 'simplecov'
 require 'cucumber/rails'
 require 'fileutils'
+require 'capybara/rails'
 
 SimpleCov.start 'rails'
 
@@ -12,6 +13,16 @@ Before do |_scenario|
   @dummy_file_loc = dummy_video_path
   @good_file_loc = File.join(current_dir, 'storage', 'supplementary_video.mp4')
   FileUtils.touch(dummy_video_path)
+  Capybara.default_host = 'http://localhost:3000' #This is very important!
+
+  OmniAuth.config.test_mode = true
+  OmniAuth.config.add_mock(:default, {
+  :info => {
+          :email => 'faaplicationuser@gmail.com',
+          :name => 'test user',
+          :password => 'password2023'
+       }
+})
 end
 
 After do |_scenario|
