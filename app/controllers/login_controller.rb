@@ -20,7 +20,7 @@ class LoginController < ApplicationController
       email=params[:email].gsub("%1F",".")      
       if User.exists?(email: email) && !session[:authenticated].blank? && session[:authenticated]
         user=User.find_by_email email
-        if user.role == "admin"
+        if user.role == "Admin"
           session[:admin]=true
           redirect_to admin_path
         else
