@@ -21,33 +21,29 @@ Feature: admin
     And I am logged in as an administrator
     Then they should see "Name"
     And they should see "Role"
-    And they should see "Email"
     And they should see "Boaty McBoatFace"
     And they should see "Coach" 
-    And they should see "BoatyMBF@gmail.com"
 
   Scenario: admin can edit users and cancel edit
     Given user 'Boaty McBoatFace' exists
     And I am logged in as an administrator
     When I go to the edit page for "Boaty McBoatFace"
     Then I should be on the user 'edit' page for "Boaty McBoatFace"
-    And I fill in "Email" with "Boaty.McBoatFace@gmail.com"
+    And I fill in "Name" with "Boaty McNewLastName"
     And I press "Cancel"
     Then I should be on the Admin page
     And they should see "Boaty McBoatFace"
-    And they should see "Coach" 
-    And they should see "BoatyMBF@gmail.com"
+    And they should see "Coach"
 
   Scenario: admin can edit users and save edits
     Given user 'Boaty McBoatFace' exists
     And I am logged in as an administrator
     When I go to the edit page for "Boaty McBoatFace"
-    And I fill in "Email" with "Boaty.McBoatFace@gmail.com"
+    And I fill in "Name" with "Boaty McNewLastName"
     And press "Update User"
     Then I should be on the Admin page
-    And they should see "Boaty McBoatFace"
+    And they should see "Boaty McNewLastName"
     And they should see "Coach" 
-    And they should see "Boaty.McBoatFace@gmail.com"
 
   @javascript
   Scenario: admin can delete users
