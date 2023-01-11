@@ -24,8 +24,9 @@ Rails.application.routes.draw do
   get '/authorize' => 'login#authorize'
   get 'dashboard', to: 'pages#home'
   get 'admin', to: 'admin#dashboard'
-  get '/auth/:provider/callback'=> 'login#omniauth'
+  get '/auth/:provider/callback'=> 'login#omniauth', :as=> "omniauth"
   get 'login/:email'=> 'login#login', :as=>"login"
+  get 'logout'=> 'login#logout', :as=>"logout"
   get 'users/index'
   post 'users/create', to: 'users#new'
   get 'users/show', to: 'users#show'
