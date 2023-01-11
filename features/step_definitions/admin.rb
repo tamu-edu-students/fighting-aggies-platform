@@ -5,6 +5,10 @@ Given(/the following users exist/) do |users_table|
   end
 end
 
+Given("user {string} exists") do |user|
+  User.create({:name => user, :role => 'Coach', :email => 'BoatyMBF@gmail.com'})
+end
+
 Given('{string} is logged in as an {string}') do |users_name, role|
   user_id = Users.find_by(name: users_name)
   visit(users_path(user_id))
@@ -61,7 +65,7 @@ end
 
 When('I go to the edit page for {string}') do |user_name|
   user = Users.find_by name: user_name
-  visit edit_user_path(user)
+  visit "/users/#{user.id}/edit"
 end
 
 When('I fill in {string} with {string}') do |field, input|
