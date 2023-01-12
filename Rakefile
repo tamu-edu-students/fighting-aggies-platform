@@ -7,6 +7,7 @@ require_relative 'config/application'
 
 Rails.application.load_tasks
 
+<<<<<<< HEAD
 task :model_init do
   sh 'rake db:migrate'
   sh 'rake db:seed'
