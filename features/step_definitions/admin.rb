@@ -48,6 +48,7 @@ When('they fill in {string} with {string}') do |field, value|
 end
 
 When('press {string}') do |button|
+  sleep(2)
   click_button button
 end
 
