@@ -34,3 +34,21 @@ Scenario: Log out successfully
 	Then I should be on the home screen
 	When I visit the analytics page
 	Then I should be on the home screen
+
+Scenario: Logged in as Coach navigate to home
+	Given the database has been reset
+	Given I am logged in as a coach
+	Then I should be on the analytics dashboard
+	When I visit the home page
+	Then I should be on the analytics dashboard
+	When I visit the admin page
+	Then I should be on the analytics dashboard
+
+Scenario: Logged in as admin navigate to home
+	Given the database has been reset
+	Given I am logged in as an administrator
+	Then I should be on the admin dashboard
+	When I visit the home page
+	Then I should be on the admin dashboard
+	When I visit the analytics page
+	Then I should be on the admin dashboard

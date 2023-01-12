@@ -21,6 +21,8 @@ Rails.application.routes.draw do
     end
   end
   resource :users
+  get '/admin_authenticate', to: 'application#admin_authenticate'
+  get '/coach_authenticate', to: 'application#coach_authenticate'
   get '/authorize' => 'login#authorize'
   get 'dashboard', to: 'pages#home'
   get 'admin', to: 'admin#dashboard'

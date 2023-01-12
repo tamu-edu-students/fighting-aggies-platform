@@ -1,7 +1,39 @@
 require 'rails_helper'
 
 RSpec.describe ApplicationController, type: :controller do
-    describe 'logout' do
+  describe '#admin_authenticate' do
+    context 'when the user is not an administrator' do
+      before { session[:admin] = nil }
+
+      it 'redirects to the root path' do
+        get :admin_authenticate
+        expect(response).to redirect_to(root_path)
+      end
+
+      it 'sets a flash notice' do
+        get :admin_authenticate
+        expect(flash[:notice]).to eq 'Please login as an administrator.'
+      end
+    end
+  end
+
+  describe '#coach_authenticate' do
+    context 'when the user is not a coach' do
+      before { session[:coach] = nil }
+
+      it 'redirects to the root path' do
+        get :coach_authenticate
+        expect(response).to redirect_to(root_path)
+      end
+
+      it 'sets a flash notice' do
+        get :coach_authenticate
+        expect(flash[:notice]).to eq 'Please login as a coach.'
+      end
+    end
+  end
+    
+  describe 'logout' do
     before do
       session[:authenticated] = true
       session[:coach] = true
