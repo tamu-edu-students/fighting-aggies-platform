@@ -4,8 +4,8 @@ sudo apt install git curl autoconf bison build-essential libssl-dev libyaml-dev 
 
 # installs rbevn
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' &gt;&gt; ~/.bashrc
-echo 'eval "$(rbenv init -)"' &gt;&gt; ~/.bashrc
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 source ~/.bashrc
 
 # install chromedriver for cucumber testing
