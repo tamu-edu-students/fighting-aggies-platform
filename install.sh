@@ -1,3 +1,5 @@
+#!/bin/bash -i
+
 # install ruby dependencies
 sudo apt update
 sudo apt install git curl autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev ffmpeg cucumber libpq-dev pkg-config npm
@@ -14,7 +16,7 @@ sudo unzip chromedriver_linux64.zip
 sudo mv chromedriver /usr/bin/chromedriver
 
 # install google chrome for cucumber testing
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+wget 'https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb'
 sudo apt install ./google-chrome-stable_current_amd64.deb
 
 # install ruby
@@ -33,22 +35,18 @@ bundle update
 bundle install
 
 # add npm 
-sudo npm install —-global n
+sudo npm install --global n
 sudo n latest
 
 # add yarn
-sudo npm install —-global yarn
+sudo npm install --global yarn
 yarn upgrade
 yarn install
 
-# clean up
-rm chromedriver_linux64.zip 
-rm google-chrome-stable_current_amd64.deb
-
 # migrate models and see dbs
-Rake db:migrate
-Rake db:seed
+rake db:migrate
+rake db:seed
 
 # testing 
-Rake cucumber
-Rspec
+rake cucumber
+rspec
