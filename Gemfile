@@ -92,7 +92,7 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver', '~> 3.142.7'
   gem 'webdrivers'
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', require: false
   gem 'rspec-rails', '~> 6.0.0'
 end
 
