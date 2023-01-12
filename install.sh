@@ -43,6 +43,9 @@ sudo npm install --global yarn
 yarn upgrade
 yarn install
 
+# get newly installed commands
+source ~/.bashrc
+
 # migrate models and see dbs
 rake db:migrate
 rake db:seed
