@@ -5,18 +5,19 @@ Developing an analytical panel to generate insights that help facilitate the pos
 ### Deployment - [Heroku](https://fightin-aggies.herokuapp.com/)
 
 ### Installation and Running Instructions
+Clone repo
 ```bash
 git clone https://github.com/jessefphipps/fighting-aggies-platform.git
-```
-```bash
 cd fighting-aggies-platform
 ```
+
+Install dependencies (takes a while)
 ```bash
 ./install.sh
-```
-```bash
 ~/.bashrc
 ```
+
+Run server
 ```bash
 bin/dev
 ```
@@ -33,8 +34,14 @@ The server's broadcast IP (-b) and port (-p) can be set in *Procfile.dev*.
 ### Testing Instructions
 Run the server in your local machine and use a new terminal to run the tests using the commands given below,
 ```bash
-cucumber -q
-rspec
+# to run cucumber and rspec unit tests
+rake run_tests
+
+#to run just cucumber
+rake cucumber
+
+# to run just rspec
+rake spec
 ```
 ### Heroku Deployment Instructions
 Migrate and seed the database

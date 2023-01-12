@@ -7,7 +7,6 @@ require_relative 'config/application'
 
 Rails.application.load_tasks
 
-<<<<<<< HEAD
 task :model_init do
   sh 'rake db:migrate'
   sh 'rake db:seed'
@@ -20,4 +19,8 @@ end
 
 task :cucumber, [:param] do |_t, args|
   sh "cucumber #{args[:param]}"
+end
+
+task :spec do
+  sh 'rspec'
 end
