@@ -1,6 +1,6 @@
-# Fightin Aggies Platform
+# Fightin' Aggie Platform
 
-Developing an analytical panel to generate insights that help facilitate the post-game analysis done by the coaches and players of Fightin Texas Aggies Football team.
+Developing an analytical panel to generate insights that help facilitate the post-game analysis done by the coaches and players of Fightin' Texas Aggie Football team.
 
 ### Deployment - [Heroku](https://fightin-aggies.herokuapp.com/)
 
@@ -22,24 +22,28 @@ Run server
 bin/dev
 ```
 
-If you are developing on a server on a remote machine (e.g., AWS/EC2) use *http://0.0.0.0:8080* as your host url
-and on your local machine use the EC2 instance's public IPv4 address in place of *0.0.0.0*.
+If you are developing on a server on a remote machine (e.g., AWS/EC2) use **http://0.0.0.0:8080** as your host url
+and on your local machine use the EC2 instance's public IPv4 address in place of **0.0.0.0**.
 
-If you are using vscode's remote editing feature use *localhost* as the broadcast IP and vscode will portforward 
-the instance's public IP and allow you to access the machine using your localhost (you can acccess the remote 
+If you are using vscode's remote editing feature use *localhost* as the broadcast IP and vscode will port-forward 
+the instance's public IP and allow you to access the machine using your localhost (you can access the remote 
 server's webpages and APIs by going to http://localhost:8080 on your local machine).
 
-The server's broadcast IP (-b) and port (-p) can be set in *Procfile.dev*.
+The server's broadcast IP (-b) and port (-p) can be set in **Procfile.dev**.
 
 ### Testing Instructions
 Run the server in your local machine and use a new terminal to run the tests using the commands given below,
 ```bash
 # to run cucumber and rspec unit tests
 rake run_tests
+```
 
+```bash
 #to run just cucumber
 rake cucumber
+```
 
+```bash
 # to run just rspec
 rake spec
 ```
