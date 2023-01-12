@@ -2,7 +2,7 @@
 
 Developing an analytical panel to generate insights that help facilitate the post-game analysis done by the coaches and players of Fightin' Texas Aggie Football team.
 
-### Deployment - [Heroku](https://fightin-aggies.herokuapp.com/)
+### Deployment - [Heroku](https://fighting-aggies-platform.herokuapp.com/)
 
 ### Installation and Running Instructions
 Clone repo
