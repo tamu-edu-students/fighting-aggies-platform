@@ -1,0 +1,68 @@
+<div>
+<%= link_to "See Players", players_index_path,  id: "players"  %>
+<table>
+<h1> <%= @player.name %> </h1>
+<canvas id="success-rate-over-time"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+<script>
+var practices=[]
+var successRates=[]
+<% @practice_data.each do |practice_id, success_rate| %>
+  practices.push(<%=practice_id%>)
+  successRates.push(<%=success_rate%>)
+<%end%>
+var ctx = document.getElementById("success-rate-over-time");
+var chart = new Chart(ctx, {
+  type: "line",
+  data: {
+    labels: practices,
+    datasets: [
+      {
+        label: "Success Rate",
+        fill: false,
+        data: successRates,
+        borderColor: "rgba(75, 192, 192, 1)",
+        borderWidth: 1,
+      },
+    ],
+  },
+  options: {
+    scales: {
+      yAxes: [{
+        scaleLabel: {
+          display: true,
+          labelString: "Success Rate"
+        }
+      }]
+    }
+    },
+
+  },
+);
+
+</script>
+
+  <thead>
+    <tr>
+      <th>Route Name</th>
+      <th>Play Name</th>
+      <th>Start</th>
+      <th>End</th>
+      <th>Success</th>
+      <th>Practice ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @route_instances.each do |route_instance| %>
+      <tr>
+        <td><%= route_instance.route_name %></td>
+        <td><%= route_instance.play_name %></td>
+        <td><%= route_instance.timestamp_start %></td>
+        <td><%= route_instance.timestamp_end %></td>
+        <td><%= route_instance.success %></td>
+        <td><%= route_instance.practice_id %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
