@@ -27,5 +27,5 @@ initial_users = [
 ]
 
 initial_users.each do |user|
-    Users.create!(user)
+    User.create!(user)
   end
