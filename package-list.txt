@@ -1,4489 +1,4481 @@
-libexpat1
-run-one.md5sums	
-libjbig0
-grub-gfxpayload-lists.prerm	
-grub-gfxpayload-lists.postinst	
-grub-gfxpayload-lists.md5sums	
-ruby-multi-test.md5sums	
-libalgorithm-merge-perl.md5sums	
-libxdamage1
-ruby-net-telnet.md5sums	
-libftdi1-2
-ruby-gherkin.md5sums	
-libnet-smtp-ssl-perl.md5sums	
-libxml-xpathengine-perl.md5sums	
-libsort-naturally-perl.md5sums	
-hicolor-icon-theme.triggers	
-hicolor-icon-theme.prerm	
-hicolor-icon-theme.postinst	
-hicolor-icon-theme.md5sums	
-libhttp-negotiate-perl.md5sums	
-libwww-robotrules-perl.md5sums	
-libshine3
-libshine3
-libshine3
-libshine3
-libgpm2
-ruby-cucumber-wire.md5sums	
-libvidstab1.1
-libvidstab1.1
-libvidstab1.1
-libhtml-tree-perl.md5sums	
-libpng16-16
-libio-stringy-perl.md5sums	
-xsel.md5sums	
-liblwp-mediatypes-perl.md5sums	
-powermgmt-base.md5sums	
-libmailtools-perl.md5sums	
-libtext-wrapi18n-perl.md5sums	
-libhtml-tagset-perl.md5sums	
-libhttp-date-perl.md5sums	
-libtermkey1
-libtermkey1
-libtermkey1
-libtermkey1
-libmodule-find-perl.md5sums	
-node-log-driver.md5sums	
-ruby-multi-json.md5sums	
-node-unique-filename.md5sums	
-python3-jsonschema.prerm	
-python3-jsonschema.postrm	
-python3-jsonschema.postinst	
-python3-jsonschema.md5sums	
-python3-json-pointer.prerm	
-python3-json-pointer.postrm	
-python3-json-pointer.postinst	
-python3-json-pointer.md5sums	
-liberror-perl.md5sums	
-cpio.prerm	
-cpio.postinst	
-ruby-builder.md5sums	
-libxvidcore4
-libxvidcore4
-libxvidcore4
-libxvidcore4
-byobu.templates	
-byobu.prerm	
-byobu.postrm	
-byobu.postinst	
-byobu.md5sums	
-byobu.config	
-byobu.conffiles	
-libhtml-form-perl.md5sums	
-fonts-liberation.md5sums	
-node-json-buffer.md5sums	
-libbs2b0
-libbs2b0
-libbs2b0
-libipc-system-simple-perl.md5sums	
-python3-service-identity.prerm	
-python3-service-identity.postinst	
-python3-service-identity.md5sums	
-python3-constantly.prerm	
-python3-constantly.postinst	
-python3-constantly.md5sums	
-libunibilium4
-libunibilium4
-libunibilium4
-libunibilium4
-python3-pyasn1-modules.prerm	
-python3-pyasn1-modules.postinst	
-python3-pyasn1-modules.md5sums	
-libgme0
-libgme0
-libgme0
-libgme0
-python3-pyparsing.prerm	
-python3-pyparsing.postinst	
-python3-pyparsing.md5sums	
-node-console-control-strings.md5sums	
-fontconfig.triggers	
-libfile-desktopentry-perl.md5sums	
-lua-luv
-lua-luv
-lua-luv
-python3-zipp.prerm	
-python3-zipp.postinst	
-python3-zipp.md5sums	
-ucf.templates	
-ucf.preinst	
-ucf.postrm	
-ucf.postinst	
-ucf.md5sums	
-ucf.conffiles	
-ruby-diff-lcs.md5sums	
-i965-va-driver
-python3-pyasn1.prerm	
-python3-pyasn1.postinst	
-python3-pyasn1.md5sums	
-libjack-jackd2-0
-libmsgpackc2
-libmsgpackc2
-libmsgpackc2
-libmsgpackc2
-libxml-twig-perl.md5sums	
-python3-automat.prerm	
-python3-automat.postinst	
-python3-automat.md5sums	
-overlayroot.postrm	
-overlayroot.postinst	
-overlayroot.md5sums	
-overlayroot.conffiles	
-cloud-initramfs-dyn-netconf.postrm	
-cloud-initramfs-dyn-netconf.postinst	
-cloud-initramfs-dyn-netconf.md5sums	
-cloud-initramfs-copymods.postrm	
-cloud-initramfs-copymods.postinst	
-cloud-initramfs-copymods.md5sums	
-ruby-cucumber-core.md5sums	
-python3-certifi.prerm	
-python3-certifi.postinst	
-python3-certifi.md5sums	
-microcode-initrd.triggers	
-cucumber.md5sums	
-libfont-afm-perl.md5sums	
-libvterm0
-libvterm0
-libvterm0
-libvterm0
-libpgm-5.3-0
-libpgm-5.3-0
-libpgm-5.3-0
-libpgm-5.3-0
-apport-symptoms.md5sums	
-secureboot-db.prerm	
-secureboot-db.postrm	
-secureboot-db.postinst	
-secureboot-db.md5sums	
-python3-colorama.prerm	
-python3-colorama.postinst	
-python3-colorama.md5sums	
-node-graceful-fs.md5sums	
-node-rimraf.md5sums	
-node-tough-cookie.md5sums	
-libfile-listing-perl.md5sums	
-libalgorithm-diff-perl.md5sums	
-libencode-locale-perl.md5sums	
-libhtml-format-perl.md5sums	
-libauthen-sasl-perl.md5sums	
-javascript-common.prerm	
-javascript-common.preinst	
-javascript-common.postrm	
-javascript-common.postinst	
-javascript-common.md5sums	
-javascript-common.conffiles	
-libtie-ixhash-perl.md5sums	
-libx11-protocol-perl.md5sums	
-fonts-lato.md5sums	
-liblwp-protocol-https-perl.md5sums	
-node-time-stamp.md5sums	
-xclip.md5sums	
-python3-chardet.prerm	
-python3-chardet.postinst	
-python3-chardet.md5sums	
-python3-requests.prerm	
-python3-requests.postinst	
-python3-requests.md5sums	
-libhttp-parser2.9
-libhttp-parser2.9
-libhttp-parser2.9
-libhttp-parser2.9
-libhttp-cookies-perl.md5sums	
-adduser.templates	
-adduser.postrm	
-adduser.postinst	
-adduser.md5sums	
-adduser.config	
-adduser.conffiles	
--info.triggers	
-libsratom-0-0
-libsratom-0-0
-libsratom-0-0
-libsratom-0-0
-rubygems-integration.md5sums	
-liblilv-0-0
-liblilv-0-0
-liblilv-0-0
-liblilv-0-0
-friendly-recovery.prerm	
-friendly-recovery.preinst	
-friendly-recovery.postrm	
-friendly-recovery.postinst	
-friendly-recovery.md5sums	
-ruby-build.md5sums	
-libjs-highlight.js.md5sums	
-libsord-0-0
-libsord-0-0
-libsord-0-0
-libsord-0-0
-pollinate.prerm	
-pollinate.preinst	
-pollinate.postrm	
-pollinate.postinst	
-pollinate.md5sums	
-pollinate.conffiles	
-python3-secretstorage.prerm	
-python3-secretstorage.postinst	
-python3-secretstorage.md5sums	
-ssh-import-id.prerm	
-ssh-import-id.postinst	
-ssh-import-id.md5sums	
-ssh-import-id.conffiles	
-libio-html-perl.md5sums	
-libnorm1
-libnorm1
-libnorm1
-libnorm1
-libtimedate-perl.md5sums	
-fonts-dejavu-core.md5sums	
-fonts-dejavu-core.conffiles	
-libluajit-5.1-common.md5sums	
-libluajit-5.1-2
-libluajit-5.1-2
-libluajit-5.1-2
-libluajit-5.1-2
-ubuntu-keyring.postinst	
-ubuntu-keyring.md5sums	
-netbase.postrm	
-netbase.postinst	
-netbase.md5sums	
-netbase.conffiles	
-node-ssri.md5sums	
-libserd-0-0
-libserd-0-0
-libserd-0-0
-libserd-0-0
-python3-babel.prerm	
-python3-babel.postinst	
-python3-babel.md5sums	
-python-babel-localedata.md5sums	
-libudfread0
-libudfread0
-libudfread0
-libudfread0
-manpages.md5sums	
-manpages-dev.md5sums	
-linux-base.templates	
-linux-base.postrm	
-linux-base.postinst	
-linux-base.md5sums	
-linux-base.conffiles	
-python3-urllib3.prerm	
-python3-urllib3.postinst	
-python3-urllib3.md5sums	
-dbus.triggers	
-update-notifier-common.triggers	
-libedit2
-efibootmgr.md5sums	
-gcc.prerm	
-gcc.postinst	
-gcc.md5sums	
-g++.prerm	
-g++.postinst	
-g++.md5sums	
-cpp.prerm	
-cpp.postinst	
-cpp.md5sums	
-cloud-guest-utils.md5sums	
-python3-pexpect.prerm	
-python3-pexpect.postinst	
-python3-pexpect.md5sums	
-libdc1394-25
-libdc1394-25
-libdc1394-25
-libdc1394-25
-shim-signed.triggers	
-shim-signed.templates	
-shim-signed.postrm	
-shim-signed.postinst	
-shim-signed.md5sums	
-libblockdev2
-libblockdev2
-libblockdev2
-libblockdev2
-libblockdev2
-libblockdev-utils2
-libblockdev-utils2
-libblockdev-utils2
-libblockdev-utils2
-libblockdev-swap2
-libblockdev-swap2
-libblockdev-swap2
-libblockdev-swap2
-libblockdev-part2
-libblockdev-part2
-libblockdev-part2
-libblockdev-part2
-libblockdev-part-err2
-libblockdev-part-err2
-libblockdev-part-err2
-libblockdev-part-err2
-libblockdev-loop2
-libblockdev-loop2
-libblockdev-loop2
-libblockdev-loop2
-libblockdev-fs2
-libblockdev-fs2
-libblockdev-fs2
-libblockdev-fs2
-libblockdev-crypto2
-libblockdev-crypto2
-libblockdev-crypto2
-libblockdev-crypto2
-node-abab.md5sums	
-libkmod2
-libkmod2
-libkmod2
-libkmod2
-kmod.triggers	
-kmod.postrm	
-kmod.postinst	
-kmod.md5sums	
-kmod.conffiles	
-xkb-data.md5sums	
-node-aproba.md5sums	
-node-archy.md5sums	
-node-argparse.md5sums	
-python3-importlib-metadata.prerm	
-python3-importlib-metadata.postinst	
-python3-importlib-metadata.md5sums	
-cpio.md5sums	
-libacl1
-libacl1
-libacl1
-libacl1
-sensible-utils.md5sums	
-node-universalify.md5sums	
-pciutils.preinst	
-pciutils.postrm	
-pciutils.postinst	
-pciutils.md5sums	
-libpci3
-libpci3
-libpci3
-libpci3
-node-clone.md5sums	
-node-resolve.md5sums	
-node-punycode.md5sums	
-usb-modeswitch-data.md5sums	
-libzimg2
-libzimg2
-libzimg2
-libzimg2
-libmodule-scandeps-perl.md5sums	
-libdav1d5
-libdav1d5
-libdav1d5
-libdav1d5
-libfile-basedir-perl.md5sums	
-node-semver.md5sums	
-node-lcov-parse.md5sums	
-node-cssom.md5sums	
-alsa-topology-conf.md5sums	
-node-colors.md5sums	
-libass9
-libass9
-libass9
-libass9
-python3-wadllib.prerm	
-python3-wadllib.postinst	
-python3-wadllib.md5sums	
-python3-lazr.restfulclient.prerm	
-python3-lazr.restfulclient.postinst	
-python3-lazr.restfulclient.md5sums	
-ufw.triggers	
-node-ansi-regex.md5sums	
-libx265-199
-libx265-199
-libx265-199
-libx265-199
-node-function-bind.md5sums	
-node-core-util-is.md5sums	
-node-arrify.md5sums	
-node-is-plain-obj.md5sums	
-node-is-buffer.md5sums	
-node-kind-of.md5sums	
-node-inherits.md5sums	
-libjs-inherits.md5sums	
-libdata-dump-perl.md5sums	
-node-normalize-package-data.md5sums	
-node-read-package-json.md5sums	
-node-minimist.md5sums	
-node-safe-buffer.md5sums	
-node-isarray.md5sums	
-python3-jsonpatch.prerm	
-python3-jsonpatch.postrm	
-python3-jsonpatch.postinst	
-python3-jsonpatch.md5sums	
-node-string-decoder.md5sums	
-node-util-deprecate.md5sums	
-node-esprima.prerm	
-node-esprima.preinst	
-node-esprima.postrm	
-node-esprima.postinst	
-node-esprima.md5sums	
-ocl-icd-libopencl1
-ocl-icd-libopencl1
-ocl-icd-libopencl1
-ocl-icd-libopencl1
-python3-configobj.prerm	
-python3-configobj.postinst	
-python3-configobj.md5sums	
-node-source-map.prerm	
-node-source-map.preinst	
-node-source-map.postrm	
-node-source-map.postinst	
-node-source-map.md5sums	
-libjs-source-map.md5sums	
-node-typedarray-to-buffer.md5sums	
-libjs-typedarray-to-buffer.md5sums	
-amd64-microcode.postrm	
-amd64-microcode.postinst	
-amd64-microcode.md5sums	
-amd64-microcode.conffiles	
-libcairo2
-libcairo2
-libcairo2
-libcairo2
-libcairo-gobject2
-libcairo-gobject2
-libcairo-gobject2
-libcairo-gobject2
-libefivar1
-libefivar1
-libefivar1
-libefiboot1
-libefiboot1
-libefiboot1
-iucode-tool.md5sums	
-libsmbios-c2.triggers	
-libsmbios-c2.shlibs	
-libsmbios-c2.md5sums	
-microcode-initrd.postrm	
-microcode-initrd.postinst	
-microcode-initrd.md5sums	
-node-balanced-match.md5sums	
-node-run-queue.md5sums	
-exa.md5sums	
-node-write-file-atomic.md5sums	
-node-readable-stream.md5sums	
-node-color-convert.md5sums	
-python3-openssl.prerm	
-python3-openssl.postinst	
-python3-openssl.md5sums	
-ca-certificates.triggers	
-libdatrie1
-libdatrie1
-libdatrie1
-libdatrie1
-adwaita-icon-theme.prerm	
-adwaita-icon-theme.postrm	
-adwaita-icon-theme.postinst	
-adwaita-icon-theme.md5sums	
-node-object-assign.md5sums	
-node-strip-ansi.md5sums	
-libicu70
-python3-blinker.prerm	
-python3-blinker.postinst	
-python3-blinker.md5sums	
-usrmerge.preinst	
-usrmerge.postinst	
-usrmerge.md5sums	
-liburi-perl.md5sums	
-librubberband2
-librubberband2
-librubberband2
-python3-magic.prerm	
-python3-magic.postinst	
-python3-magic.md5sums	
-node-cacache.md5sums	
-node-chalk.md5sums	
-node-debug.md5sums	
-node-mime-types.md5sums	
-node-move-concurrently.md5sums	
-node-text-table.md5sums	
-node-tmatch.md5sums	
-libicu70
-libicu70
-libicu-dev
-icu-devtools.md5sums	
-node-once.md5sums	
-node-clean-yaml-object.md5sums	
-python3-hyperlink.prerm	
-python3-hyperlink.postinst	
-python3-hyperlink.md5sums	
-python3-more-itertools.prerm	
-python3-more-itertools.postinst	
-python3-more-itertools.md5sums	
-node-ms.md5sums	
-sbsigntool.md5sums	
-node-fs.realpath.md5sums	
-node-is-typedarray.md5sums	
-libjs-is-typedarray.md5sums	
-node-which.md5sums	
-node-spdx-exceptions.md5sums	
-node-mkdirp.md5sums	
-node-indent-string.md5sums	
-node-hosted-git-info.md5sums	
-node-npm-package-arg.md5sums	
-node-depd.md5sums	
-node-wrappy.md5sums	
-node-p-cancelable.md5sums	
-node-chownr.md5sums	
-node-supports-color.md5sums	
-node-whatwg-fetch.md5sums	
-bash-completion.preinst	
-bash-completion.postrm	
-bash-completion.postinst	
-bash-completion.md5sums	
-bash-completion.conffiles	
-node-pump.md5sums	
-busybox-static.triggers	
-node-p-map.md5sums	
-libmysofa1
-libmysofa1
-libmysofa1
-libmysofa1
-node-sprintf-js.prerm	
-node-sprintf-js.preinst	
-node-sprintf-js.postrm	
-node-sprintf-js.postinst	
-node-sprintf-js.md5sums	
-libjs-sprintf-js.md5sums	
-node-decompress-response.md5sums	
-node-set-blocking.md5sums	
-node-cssstyle.md5sums	
-node-lowercase-keys.md5sums	
-node-path-is-absolute.md5sums	
-node-got.md5sums	
-node-spdx-expression-parse.md5sums	
-node-opener.md5sums	
-node-isexe.md5sums	
-node-mimic-response.md5sums	
-node-has-unicode.md5sums	
-node-tap-mocha-reporter.md5sums	
-node-ansi-styles.md5sums	
-node-asynckit.md5sums	
-node-npm-bundled.md5sums	
-node-copy-concurrently.md5sums	
-node-end-of-stream.md5sums	
-node-wcwidth.js.md5sums	
-node-ini.md5sums	
-node-delayed-stream.md5sums	
-libphobos2-ldc-shared98
-libphobos2-ldc-shared98
-libphobos2-ldc-shared98
-keyboard-configuration.templates	
-keyboard-configuration.preinst	
-keyboard-configuration.postrm	
-keyboard-configuration.postinst	
-keyboard-configuration.md5sums	
-keyboard-configuration.config	
-console-setup.templates	
-console-setup.postrm	
-console-setup.postinst	
-console-setup.md5sums	
-console-setup.config	
-console-setup-linux.prerm	
-console-setup-linux.postrm	
-console-setup-linux.postinst	
-console-setup-linux.md5sums	
-console-setup-linux.conffiles	
-node-source-map-support.md5sums	
-node-yallist.md5sums	
-node-lru-cache.md5sums	
-pastebinit.md5sums	
-node-stack-utils.md5sums	
-node-tap.md5sums	
-mokutil.md5sums	
-perl-openssl-defaults
-node-coveralls.md5sums	
-node-tap-parser.md5sums	
-node-get-stream.md5sums	
-node-fancy-log.md5sums	
-node-negotiator.md5sums	
-node-jsonparse.md5sums	
-node-fs-write-stream-atomic.md5sums	
-node-imurmurhash.md5sums	
-node-slash.md5sums	
-node-has-flag.md5sums	
-node-promise-retry.md5sums	
-node-defaults.md5sums	
-python3-httplib2.prerm	
-python3-httplib2.postinst	
-python3-httplib2.md5sums	
-node-retry.md5sums	
-libtry-tiny-perl.md5sums	
-libbz2-1.0
-libcodec2-1.0
-libcodec2-1.0
-libcodec2-1.0
-ruby-webrick.md5sums	
-node-osenv.md5sums	
-node-iconv-lite.md5sums	
-node-json-parse-better-errors.md5sums	
-debianutils.triggers	
-debianutils.prerm	
-debianutils.postrm	
-debianutils.postinst	
-node-spdx-correct.md5sums	
-node-events.md5sums	
-libjs-events.md5sums	
-ruby.preinst	
-ruby.md5sums	
-node-psl.md5sums	
-libjs-psl.md5sums	
-python3-ptyprocess.prerm	
-python3-ptyprocess.postinst	
-python3-ptyprocess.md5sums	
-ruby-oj
-node-columnify.md5sums	
-publicsuffix.md5sums	
-python3-commandnotfound.prerm	
-python3-commandnotfound.postinst	
-python3-commandnotfound.md5sums	
-command-not-found.md5sums	
-command-not-found.conffiles	
-node-delegates.md5sums	
-node-quick-lru.md5sums	
-node-escape-string-regexp.md5sums	
-node-mute-stream.md5sums	
-node-inflight.md5sums	
-node-color-name.md5sums	
-node-lodash-packages.md5sums	
-node-spdx-license-ids.md5sums	
-node-ip.md5sums	
-tilix.prerm	
-tilix.postinst	
-tilix.md5sums	
-tilix-common.md5sums	
-node-read.md5sums	
-node-gyp.md5sums	
-sysvinit-utils.md5sums	
-libvted-3-0
-libvted-3-0
-libvted-3-0
-libgtkd-3-0
-libgtkd-3-0
-libgtkd-3-0
-node-signal-exit.md5sums	
-libzmq5
-libzmq5
-libzmq5
-libzmq5
-python3-jeepney.prerm	
-python3-jeepney.postinst	
-python3-jeepney.md5sums	
-libcrypt1
-libcrypt1
-libcrypt1
-libcrypt1
-libcrypt-dev
-python3-lazr.uri.prerm	
-python3-lazr.uri.postinst	
-python3-lazr.uri.md5sums	
-python3-attr.prerm	
-python3-attr.postinst	
-python3-attr.md5sums	
-node-agent-base.md5sums	
-node-https-proxy-agent.md5sums	
-node-combined-stream.md5sums	
-node-asap.md5sums	
-python3-hamcrest.prerm	
-python3-hamcrest.postinst	
-python3-hamcrest.md5sums	
-rsyslog.triggers	
-node-stealthy-require.md5sums	
-node-promzard.md5sums	
-node-promise-inflight.md5sums	
-node-builtins.md5sums	
-node-validate-npm-package-license.md5sums	
-node-form-data.md5sums	
-node-jsdom.md5sums	
-node-encoding.md5sums	
-libzvbi0
-libzvbi0
-libzvbi0
-libzvbi0
-libzvbi-common.md5sums	
-node-nopt.md5sums	
-node-brace-expansion.md5sums	
-node-wide-align.md5sums	
-node-ip-regex.md5sums	
-node-mime.prerm	
-node-mime.preinst	
-node-mime.postrm	
-node-mime.postinst	
-node-mime.md5sums	
-python3-keyring.prerm	
-python3-keyring.postinst	
-python3-keyring.md5sums	
-python3-click.prerm	
-python3-click.postinst	
-python3-click.md5sums	
-node-foreground-child.md5sums	
-iso-codes.md5sums	
-libpipeline1
-libpipeline1
-libpipeline1
-libpipeline1
-libglx0
-libglx0
-libglx0
-libglx0
-libglvnd0
-libglvnd0
-libglvnd0
-libglvnd0
-libgl1
-libgl1
-libgl1
-libgl1
-liburcu8
-liburcu8
-liburcu8
-liburcu8
-libhttp-message-perl.md5sums	
-rake.md5sums	
-bash.prerm	
-bash.postrm	
-bash.postinst	
-bash.md5sums	
-bash.conffiles	
-readline-common.postrm	
-readline-common.postinst	
-readline-common.md5sums	
-libreadline8
-libreadline8
-libreadline8
-libreadline8
-libreadline-dev
-node-cli-table.md5sums	
-node-validate-npm-package-name.md5sums	
-libunistring2
-libunistring2
-libunistring2
-libunistring2
-libfile-mimeinfo-perl.md5sums	
-mtr-tiny.postinst	
-mtr-tiny.md5sums	
-liblapack3
-liblapack3
-liblapack3
-liblapack3
-liblapack3
-liblapack3
-libblas3
-libblas3
-libblas3
-libblas3
-libblas3
-libblas3
-libpciaccess0
-libpciaccess0
-libpciaccess0
-libpciaccess0
-libio-socket-ssl-perl.md5sums	
-libcap-ng0
-libcap-ng0
-libcap-ng0
-libcap-ng0
-libvolume-key1.triggers	
-libvolume-key1.symbols	
-libvolume-key1.shlibs	
-libvolume-key1.md5sums	
-node-ansistyles.md5sums	
-shared-mime-info.triggers	
-shared-mime-info.postrm	
-shared-mime-info.postinst	
-shared-mime-info.md5sums	
-libxxhash0
-libxxhash0
-libxxhash0
-libxxhash0
-libjcat1
-libjcat1
-libjcat1
-libjcat1
-unattended-upgrades.templates	
-unattended-upgrades.preinst	
-unattended-upgrades.postrm	
-unattended-upgrades.postinst	
-unattended-upgrades.md5sums	
-unattended-upgrades.config	
-unattended-upgrades.conffiles	
-node-growl.md5sums	
-node-iferr.md5sums	
-libuv1
-libuv1
-libuv1
-libuv1
-libuv1-dev
-libopenjp2-7
-libopenjp2-7
-libopenjp2-7
-libopenjp2-7
-libffi8
-libffi8
-libffi8
-libffi8
-libgmp10
-libgmp10
-libgmp10
-ncurses-term.md5sums	
-ncurses-bin.md5sums	
-ncurses-base.md5sums	
-ncurses-base.conffiles	
-libtinfo6
-libtinfo6
-libtinfo6
-libtinfo6
-libncursesw6
-libncursesw6
-libncursesw6
-libncursesw6
-libncurses6
-libncurses6
-libncurses6
-libncurses6
-libncurses-dev
-node-process-nextick-args.md5sums	
-python3-setuptools.prerm	
-python3-setuptools.postinst	
-python3-setuptools.md5sums	
-python3-pkg-resources.prerm	
-python3-pkg-resources.postinst	
-python3-pkg-resources.md5sums	
-libgpg-error0
-libgpg-error0
-libgpg-error0
-libgpg-error0
-ethtool.md5sums	
-ethtool.conffiles	
-open-iscsi.triggers	
-open-iscsi.templates	
-open-iscsi.prerm	
-open-iscsi.preinst	
-open-iscsi.postrm	
-open-iscsi.postinst	
-open-iscsi.md5sums	
-open-iscsi.conffiles	
-libopeniscsiusr.triggers	
-libopeniscsiusr.shlibs	
-libopeniscsiusr.md5sums	
-libasound2
-libasound2
-libasound2
-libasound2
-libasound2-data.md5sums	
-libcbor0.8
-libcbor0.8
-libcbor0.8
-libcbor0.8
-libfido2-1
-libfido2-1
-libfido2-1
-libfido2-1
-python3-launchpadlib.prerm	
-python3-launchpadlib.postinst	
-python3-launchpadlib.md5sums	
-librsvg2-common
-librsvg2-common
-librsvg2-2
-librsvg2-2
-librsvg2-2
-librsvg2-2
-pci.ids.md5sums	
-libnet-http-perl.md5sums	
-libjack-jackd2-0
-libjack-jackd2-0
-mawk.prerm	
-mawk.postinst	
-mawk.md5sums	
-wget.md5sums	
-wget.conffiles	
-libbsd0
-libbsd0
-libbsd0
-libbsd0
-acpid.prerm	
-acpid.preinst	
-acpid.postrm	
-acpid.postinst	
-acpid.md5sums	
-acpid.conffiles	
-tpm-udev.postinst	
-tpm-udev.md5sums	
-libllvm11
-libllvm11
-libllvm11
-node-js-yaml.md5sums	
-pocketsphinx-en-us.md5sums	
-libpocketsphinx3
-libpocketsphinx3
-libpocketsphinx3
-ruby-rubygems.md5sums	
-libwww-perl.md5sums	
-node-minipass.md5sums	
-libatk-bridge2.0-0
-libatk-bridge2.0-0
-libatk-bridge2.0-0
-libatk-bridge2.0-0
-libflite1
-libflite1
-libflite1
-libflite1
-libtree-sitter0
-libtree-sitter0
-libtree-sitter0
-libtree-sitter0
-libklibc
-klibc-utils.triggers	
-klibc-utils.postinst	
-klibc-utils.md5sums	
-libgsm1
-libgsm1
-libgsm1
-libgsm1
-libgd3
-libgd3
-libgd3
-libgd3
-libopenmpt0
-libopenmpt0
-libopenmpt0
-libopenmpt0
-screen.prerm	
-screen.postrm	
-screen.postinst	
-screen.md5sums	
-screen.conffiles	
-libxfixes3
-libxfixes3
-libxfixes3
-libxfixes3
-libxinerama1
-libxinerama1
-libxinerama1
-libdconf1
-libdconf1
-libdconf1
-libdconf1
-dconf-service.md5sums	
-dconf-gsettings-backend
-librabbitmq4
-librabbitmq4
-librabbitmq4
-librabbitmq4
-libdebconfclient0
-libdebconfclient0
-libdebconfclient0
-libdebconfclient0
-busybox-static.md5sums	
-busybox-initramfs.md5sums	
-iputils-tracepath.preinst	
-iputils-tracepath.md5sums	
-iputils-ping.postinst	
-iputils-ping.md5sums	
-libgdbm6
-libgdbm6
-libgdbm6
-libgdbm6
-libgdbm-compat4
-libgdbm-compat4
-libgdbm-compat4
-libgdbm-compat4
-libalgorithm-diff-xs-perl.md5sums	
-libhtml-parser-perl
-liblocale-gettext-perl.md5sums	
-libnet-dbus-perl.md5sums	
-libproc-processtable-perl
-libtext-charwidth-perl.md5sums	
-libtext-iconv-perl.md5sums	
-libxml-parser-perl
-libclone-perl.md5sums	
-libfile-fcntllock-perl.md5sums	
-libintl-xs-perl.md5sums	
-libintl-perl.md5sums	
-libterm-readkey-perl.md5sums	
--info.postinst	
--info.md5sums	
-info.prerm	
-info.postinst	
-info.md5sums	
-node-fetch.md5sums	
-bolt.prerm	
-bolt.preinst	
-bolt.postrm	
-bolt.postinst	
-bolt.md5sums	
-node-diff.md5sums	
-libnl-genl-3-200
-libnl-genl-3-200
-libnl-genl-3-200
-libnl-genl-3-200
-libnl-3-200
-libnl-3-200
-libnl-3-200
-libnl-3-200
-libnl-3-200
-coreutils.postrm	
-coreutils.postinst	
-coreutils.md5sums	
-node-webidl-conversions.md5sums	
-chrony.prerm	
-chrony.preinst	
-chrony.postrm	
-chrony.postinst	
-chrony.md5sums	
-chrony.conffiles	
-initramfs-tools.triggers	
-nodejs.prerm	
-nodejs.postinst	
-nodejs.md5sums	
-nodejs-doc.md5sums	
-libnode72
-libnode72
-libnode72
-libnode-dev.md5sums	
-xfsprogs.triggers	
-xfsprogs.shlibs	
-xfsprogs.postinst	
-xfsprogs.md5sums	
-python3-debian.prerm	
-python3-debian.postinst	
-python3-debian.md5sums	
-libxt6
-libxt6
-libxt6
-libxt6
-python3-incremental.prerm	
-python3-incremental.postinst	
-python3-incremental.md5sums	
-python3-jinja2.prerm	
-python3-jinja2.postinst	
-python3-jinja2.md5sums	
-libxkbcommon0
-libxkbcommon0
-libxkbcommon0
-libxkbcommon0
-node-are-we-there-yet.md5sums	
-node-npmlog.md5sums	
-libargon2-1
-libargon2-1
-libargon2-1
-libargon2-1
-ed.prerm	
-ed.postinst	
-ed.md5sums	
-node-minimatch.md5sums	
-node-string-width.md5sums	
-node-abbrev.md5sums	
-libgusb2
-libgusb2
-libgusb2
-libgusb2
-libxmuu1
-libxmuu1
-libxmuu1
-libxmu6
-libxmu6
-libxmu6
-make.md5sums	
-libnetfilter-conntrack3
-libnetfilter-conntrack3
-libnetfilter-conntrack3
-libnetfilter-conntrack3
-init.md5sums	
-init-system-helpers.md5sums	
-strace.md5sums	
-python3-idna.prerm	
-python3-idna.postinst	
-python3-idna.md5sums	
-libqmi-proxy.md5sums	
-libqmi-glib5
-libqmi-glib5
-libqmi-glib5
-libqmi-glib5
-modemmanager.prerm	
-modemmanager.preinst	
-modemmanager.postrm	
-modemmanager.postinst	
-modemmanager.md5sums	
-modemmanager.conffiles	
-libmm-glib0
-libmm-glib0
-libmm-glib0
-libmm-glib0
-finalrd.prerm	
-finalrd.postrm	
-finalrd.postinst	
-finalrd.md5sums	
-libgpm2
-libgpm2
-libgpm2
-lvm2.triggers	
-lvm2.prerm	
-lvm2.preinst	
-lvm2.postrm	
-lvm2.postinst	
-lvm2.md5sums	
-lvm2.conffiles	
-liblvm2cmd2.03
-liblvm2cmd2.03
-liblvm2cmd2.03
-libdevmapper1.02.1
-libdevmapper1.02.1
-libdevmapper1.02.1
-libdevmapper1.02.1
-libdevmapper-event1.02.1
-libdevmapper-event1.02.1
-libdevmapper-event1.02.1
-libdevmapper-event1.02.1
-dmsetup.triggers	
-dmsetup.postinst	
-dmsetup.md5sums	
-dmeventd.triggers	
-dmeventd.shlibs	
-dmeventd.prerm	
-dmeventd.postrm	
-dmeventd.postinst	
-dmeventd.md5sums	
-ufw.templates	
-ufw.prerm	
-ufw.preinst	
-ufw.postrm	
-ufw.postinst	
-ufw.md5sums	
-ufw.config	
-ufw.conffiles	
-libchromaprint1
-libchromaprint1
-libchromaprint1
-libchromaprint1
-node-glob.md5sums	
-python3-twisted.triggers	
-npm.prerm	
-npm.preinst	
-npm.postrm	
-npm.postinst	
-npm.md5sums	
-fonts-ubuntu-console.md5sums	
-libgit2-1.1
-libgit2-1.1
-libgit2-1.1
-libgit2-1.1
-node-err-code.md5sums	
-nano.prerm	
-nano.postinst	
-nano.md5sums	
-nano.conffiles	
-python3-distro.prerm	
-python3-distro.postinst	
-python3-distro.md5sums	
-node-ws.md5sums	
-python3-debconf.prerm	
-python3-debconf.postinst	
-python3-debconf.md5sums	
-debconf.templates	
-debconf.postinst	
-debconf.md5sums	
-debconf.config	
-debconf.conffiles	
-debconf-i18n.md5sums	
-libaom3
-libaom3
-libaom3
-libaom3
-libuuid1
-libsmartcols1
-libmount1
-libfdisk1
-libblkid1
-uuid-runtime.prerm	
-uuid-runtime.postrm	
-uuid-runtime.postinst	
-uuid-runtime.md5sums	
-uuid-runtime.conffiles	
-util-linux.prerm	
-util-linux.preinst	
-util-linux.postrm	
-util-linux.postinst	
-util-linux.md5sums	
-util-linux.conffiles	
-mount.md5sums	
-libuuid1
-libuuid1
-libuuid1
-libsmartcols1
-libsmartcols1
-libsmartcols1
-libmount1
-libmount1
-libmount1
-libfdisk1
-libfdisk1
-libfdisk1
-libblkid1
-libblkid1
-libblkid1
-fdisk.md5sums	
-eject.md5sums	
-bsdutils.md5sums	
-bsdextrautils.prerm	
-bsdextrautils.postinst	
-bsdextrautils.md5sums	
-libjs-jquery.prerm	
-libjs-jquery.preinst	
-libjs-jquery.postrm	
-libjs-jquery.postinst	
-libjs-jquery.md5sums	
-libjpeg-turbo8
-libjpeg-turbo8
-libjpeg-turbo8
-libjpeg-turbo8
-libkrb5support0
-libkrb5support0
-libkrb5support0
-libkrb5support0
-libkrb5-3
-libkrb5-3
-libkrb5-3
-libkrb5-3
-libk5crypto3
-libk5crypto3
-libk5crypto3
-libk5crypto3
-libgssapi-krb5-2
-libgssapi-krb5-2
-libgssapi-krb5-2
-libgssapi-krb5-2
-libgssapi-krb5-2
-libgssapi-krb5-2
-libcolord2
-libcolord2
-libcolord2
-libcolord2
-gyp.prerm	
-gyp.postinst	
-gyp.md5sums	
-libsasl2-modules
-libsasl2-modules
-libsasl2-modules
-libsasl2-modules-db
-libsasl2-2
-libsasl2-2
-libsasl2-2
-va-driver-all
-libva2
-libva2
-libva2
-libva2
-libva-x11-2
-libva-x11-2
-libva-x11-2
-libva-x11-2
-libva-drm2
-libva-drm2
-libva-drm2
-libva-drm2
-netcat-openbsd.prerm	
-netcat-openbsd.postinst	
-netcat-openbsd.md5sums	
-libspeex1
-libspeex1
-libspeex1
-plymouth-theme-ubuntu-text.triggers	
-node-slice-ansi.md5sums	
-node-tar.md5sums	
-node-gauge.md5sums	
-node-commander.md5sums	
-libappstream4
-libappstream4
-libappstream4
-libappstream4
-mdadm.templates	
-mdadm.prerm	
-mdadm.preinst	
-mdadm.postrm	
-mdadm.postinst	
-mdadm.md5sums	
-mdadm.config	
-mdadm.conffiles	
-btrfs-progs.triggers	
-btrfs-progs.md5sums	
-procps.prerm	
-procps.preinst	
-procps.postrm	
-procps.postinst	
-procps.md5sums	
-procps.conffiles	
-libprocps8
-libprocps8
-libprocps8
-openssh-sftp-server.md5sums	
-openssh-server.templates	
-openssh-server.prerm	
-openssh-server.preinst	
-openssh-server.postrm	
-openssh-server.postinst	
-openssh-server.md5sums	
-openssh-server.config	
-openssh-server.conffiles	
-openssh-client.prerm	
-openssh-client.preinst	
-openssh-client.postrm	
-openssh-client.postinst	
-openssh-client.md5sums	
-openssh-client.conffiles	
-polkitd.postrm	
-polkitd.postinst	
-polkitd.md5sums	
-polkitd.conffiles	
-policykit-1.prerm	
-policykit-1.preinst	
-policykit-1.postrm	
-policykit-1.postinst	
-policykit-1.md5sums	
-pkexec.postinst	
-pkexec.md5sums	
-libpolkit-gobject-1-0
-libpolkit-gobject-1-0
-libpolkit-gobject-1-0
-libpolkit-gobject-1-0
-libpolkit-agent-1-0
-libpolkit-agent-1-0
-libpolkit-agent-1-0
-libpolkit-agent-1-0
-libkeyutils1
-libkeyutils1
-libkeyutils1
-libkeyutils1
-libssh2-1
-libssh2-1
-libssh2-1
-libssh2-1
-lxd-agent-loader.prerm	
-lxd-agent-loader.postrm	
-lxd-agent-loader.postinst	
-lxd-agent-loader.md5sums	
-libaacs0
-libaacs0
-libaacs0
-libxaw7
-libxaw7
-libxaw7
-libfakeroot
-libfakeroot
-libfakeroot
-libfakeroot
-fakeroot.prerm	
-fakeroot.postinst	
-fakeroot.md5sums	
-libx264-163
-libx264-163
-libx264-163
-libbdplus0
-libbdplus0
-libbdplus0
-libbdplus0
-libbluray2
-libbluray2
-libbluray2
-libbluray2
-libdeflate0
-libdeflate0
-libdeflate0
-libdeflate0
-libsndio7.0
-libsndio7.0
-libsndio7.0
-libsndio7.0
-libopenal1
-libopenal1
-libopenal1
-libopenal1
-libopenal-data.md5sums	
-libopenal-data.conffiles	
-libsrt1.4-gnutls
-libsrt1.4-gnutls
-libsrt1.4-gnutls
-libwebpmux3
-libwebpmux3
-libwebpmux3
-libwebp7
-libwebp7
-libwebp7
-packagekit.preinst	
-packagekit.postrm	
-packagekit.postinst	
-packagekit.md5sums	
-packagekit.conffiles	
-packagekit-tools.md5sums	
-libpackagekit-glib2-18
-libpackagekit-glib2-18
-libpackagekit-glib2-18
-libpackagekit-glib2-18
-gir1.2-packagekitglib-1.0.md5sums	
-libvulkan1
-libvulkan1
-libvulkan1
-libvulkan1
-libgl1-amber-dri
-libdrm2
-libdrm2
-libdrm2
-libdrm2
-libdrm-radeon1
-libdrm-radeon1
-libdrm-radeon1
-libdrm-radeon1
-libdrm-nouveau2
-libdrm-nouveau2
-libdrm-nouveau2
-libdrm-nouveau2
-libdrm-intel1
-libdrm-intel1
-libdrm-intel1
-libdrm-intel1
-libdrm-common.md5sums	
-libdrm-amdgpu1
-libdrm-amdgpu1
-libdrm-amdgpu1
-libdrm-amdgpu1
-python3-msgpack.prerm	
-python3-msgpack.postinst	
-python3-msgpack.md5sums	
-libsemanage2
-libsemanage2
-libsemanage2
-libsemanage2
-libsemanage-common.md5sums	
-libsemanage-common.conffiles	
-session-migration.postrm	
-session-migration.postinst	
-session-migration.md5sums	
-libaudit1
-libaudit1
-libaudit1
-libaudit1
-libaudit-common.md5sums	
-libaudit-common.conffiles	
-python3-dbus.prerm	
-python3-dbus.postinst	
-python3-dbus.md5sums	
-python3-zope.interface.prerm	
-python3-zope.interface.postinst	
-python3-zope.interface.md5sums	
-man-db.triggers	
-man-db.templates	
-man-db.prerm	
-man-db.postrm	
-man-db.postinst	
-man-db.md5sums	
-man-db.config	
-man-db.conffiles	
-libftdi1-2
-libftdi1-2
-libftdi1-2
-libseccomp2
-libseccomp2
-libseccomp2
-libseccomp2
-libselinux1
-libselinux1
-libselinux1
-libselinux1
-python3-markupsafe.prerm	
-python3-markupsafe.postinst	
-python3-markupsafe.md5sums	
-whiptail.preinst	
-whiptail.md5sums	
-python3-newt
-python3-newt
-python3-newt
-libnewt0.52
-libnewt0.52
-libnewt0.52
-libnewt0.52
-libnewt0.52
-libnewt0.52
-python3-pyrsistent
-python3-pyrsistent
-python3-pyrsistent
-python3-greenlet.prerm	
-python3-greenlet.preinst	
-python3-greenlet.postrm	
-python3-greenlet.postinst	
-python3-greenlet.md5sums	
-python3-systemd.prerm	
-python3-systemd.postinst	
-python3-systemd.md5sums	
-libsphinxbase3
-libsphinxbase3
-libsphinxbase3
-libsphinxbase3
-plymouth.triggers	
-plymouth.preinst	
-plymouth.postrm	
-plymouth.postinst	
-plymouth.md5sums	
-plymouth.conffiles	
-plymouth-theme-ubuntu-text.prerm	
-plymouth-theme-ubuntu-text.postrm	
-plymouth-theme-ubuntu-text.postinst	
-plymouth-theme-ubuntu-text.md5sums	
-libplymouth5
-libplymouth5
-libplymouth5
-libplymouth5
-libgirepository-1.0-1
-libgirepository-1.0-1
-libgirepository-1.0-1
-libgirepository-1.0-1
-gir1.2-glib-2.0
-thin-provisioning-tools.triggers	
-thin-provisioning-tools.md5sums	
-humanity-icon-theme.postrm	
-humanity-icon-theme.postinst	
-humanity-icon-theme.md5sums	
-ubuntu-mono.postrm	
-ubuntu-mono.postinst	
-ubuntu-mono.md5sums	
-media-types.md5sums	
-media-types.conffiles	
-libtss2-tcti-swtpm0
-libtss2-tcti-swtpm0
-libtss2-tcti-swtpm0
-libtss2-tcti-swtpm0
-libtss2-tcti-mssim0
-libtss2-tcti-mssim0
-libtss2-tcti-mssim0
-libtss2-tcti-mssim0
-libtss2-tcti-device0
-libtss2-tcti-device0
-libtss2-tcti-device0
-libtss2-tcti-device0
-libtss2-tcti-cmd0
-libtss2-tcti-cmd0
-libtss2-tcti-cmd0
-libtss2-tcti-cmd0
-libtss2-sys1
-libtss2-sys1
-libtss2-sys1
-libtss2-sys1
-libtss2-mu0
-libtss2-mu0
-libtss2-mu0
-libtss2-mu0
-libtss2-esys-3.0.2-0
-libtss2-esys-3.0.2-0
-libtss2-esys-3.0.2-0
-libtss2-esys-3.0.2-0
-libnet-ssleay-perl
-gsettings-desktop-schemas.md5sums	
-libatk1.0-data.md5sums	
-libatk1.0-0
-libatk1.0-0
-libatk1.0-0
-libatk1.0-0
-libattr1
-libattr1
-libattr1
-libattr1
-libattr1
-libavahi-common3
-libavahi-common3
-libavahi-common3
-libavahi-common3
-libavahi-common-data
-libavahi-client3
-libavahi-client3
-libavahi-client3
-libavahi-client3
-base-passwd.templates	
-base-passwd.preinst	
-base-passwd.postrm	
-base-passwd.postinst	
-base-passwd.md5sums	
-bc.postrm	
-bc.postinst	
-bc.md5sums	
-bcache-tools.triggers	
-bcache-tools.md5sums	
-libisc-export1105
-libisc-export1105
-libisc-export1105
-libdns-export1110.triggers	
-libdns-export1110.shlibs	
-libdns-export1110.md5sums	
-libbrotli1
-libbrotli1
-libbrotli1
-libbrotli1
-build-essential.md5sums	
-libbz2-1.0
-libbz2-1.0
-bzip2.md5sums	
-libc-ares2
-libc-ares2
-libc-ares2
-libc-ares2
-gh.md5sums	
-cron.prerm	
-cron.postrm	
-cron.postinst	
-cron.md5sums	
-cron.conffiles	
-dash.templates	
-dash.prerm	
-dash.postrm	
-dash.postinst	
-dash.md5sums	
-dash.config	
-libdb5.3
-libdb5.3
-libdb5.3
-debianutils.md5sums	
-diffutils.md5sums	
-python3-distro-info.prerm	
-python3-distro-info.postinst	
-python3-distro-info.md5sums	
-distro-info.md5sums	
-dosfstools.md5sums	
-libelf1
-libelf1
-libelf1
-libelf1
-libdw1
-libdw1
-libdw1
-libdw1
-findutils.md5sums	
-libflashrom1
-libflashrom1
-libflashrom1
-libfontconfig1
-libfontconfig1
-libfontconfig1
-libfontconfig1
-fontconfig.postrm	
-fontconfig.postinst	
-fontconfig.md5sums	
-fontconfig-config.postrm	
-fontconfig-config.postinst	
-fontconfig-config.md5sums	
-fontconfig-config.conffiles	
-libfuse3-3
-libfuse3-3
-libfuse3-3
-libfuse3-3
-fuse3.triggers	
-fuse3.postrm	
-fuse3.postinst	
-fuse3.md5sums	
-fuse3.conffiles	
-gawk.prerm	
-gawk.postinst	
-gawk.md5sums	
-gawk.conffiles	
-libgcab-1.0-0
-libgcab-1.0-0
-libgcab-1.0-0
-libgcab-1.0-0
-gdisk.md5sums	
-libgraphite2-3
-libgraphite2-3
-libgraphite2-3
-grep.md5sums	
-groff-base.md5sums	
-groff-base.conffiles	
-hdparm.prerm	
-hdparm.preinst	
-hdparm.postrm	
-hdparm.postinst	
-hdparm.md5sums	
-hdparm.conffiles	
-hostname.md5sums	
-htop.md5sums	
-libpam0g
-libpam0g
-libpam0g
-libpam0g
-libpam0g
-libpam0g
-libpam0g
-libpam-runtime.templates	
-libpam-runtime.prerm	
-libpam-runtime.postrm	
-libpam-runtime.postinst	
-libpam-runtime.md5sums	
-libpam-runtime.conffiles	
-libpam-modules
-libpam-modules
-libpam-modules
-libpam-modules
-libpam-modules
-libpam-modules
-libpam-modules-bin.md5sums	
-iproute2.templates	
-iproute2.postrm	
-iproute2.postinst	
-iproute2.md5sums	
-iproute2.config	
-iproute2.conffiles	
-libxtables12
-libxtables12
-libxtables12
-libxtables12
-libip6tc2
-libip6tc2
-libip6tc2
-libip6tc2
-libip4tc2
-libip4tc2
-libip4tc2
-libip4tc2
-iptables.prerm	
-iptables.postinst	
-iptables.md5sums	
-irqbalance.prerm	
-irqbalance.preinst	
-irqbalance.postrm	
-irqbalance.postinst	
-irqbalance.md5sums	
-irqbalance.conffiles	
-libisl23
-libisl23
-libisl23
-libisl23
-libjansson4
-libjansson4
-libjansson4
-libjansson4
-libjson-glib-1.0-common.md5sums	
-libjson-glib-1.0-0
-libjson-glib-1.0-0
-libjson-glib-1.0-0
-libjson-glib-1.0-0
-kbd.postrm	
-kbd.postinst	
-kbd.md5sums	
-libavc1394-0
-libavc1394-0
-libavc1394-0
-libavc1394-0
-libatasmart4
-libatasmart4
-libatasmart4
-libatasmart4
-libasyncns0
-libasyncns0
-libasyncns0
-libasyncns0
-libaio1
-libaio1
-libaio1
-libaio1
-less.prerm	
-less.preinst	
-less.postinst	
-less.md5sums	
-libmp3lame0
-libmp3lame0
-libmp3lame0
-libmp3lame0
-liblcms2-2
-liblcms2-2
-liblcms2-2
-liblcms2-2
-libassuan0
-libassuan0
-libassuan0
-libassuan0
-libcaca0
-libcaca0
-libcaca0
-libpam-cap
-libpam-cap
-libpam-cap
-libpam-cap
-libdecor-0-plugin-1-cairo
-libdecor-0-0
-libdecor-0-0
-libdecor-0-0
-libdecor-0-0
-libcdio-paranoia2
-libcdio-paranoia2
-libcdio-paranoia2
-libcdio-paranoia2
-libcdio-cdda2
-libcdio-cdda2
-libcdio-cdda2
-libcdio-cdda2
-libcap2
-libcap2
-libcap2
-libcap2
-libcap2-bin.md5sums	
-libcdio19
-libcdio19
-libcdio19
-libcdio19
-libeatmydata1
-libeatmydata1
-libeatmydata1
-libeatmydata1
-eatmydata.md5sums	
-libedit2
-libedit2
-libedit2
-libestr0
-libestr0
-libestr0
-libestr0
-libevent-core-2.1-7
-libevent-core-2.1-7
-libevent-core-2.1-7
-libevent-core-2.1-7
-libfastjson4
-libfastjson4
-libfastjson4
-libfastjson4
-libfontenc1
-libfontenc1
-libfontenc1
-libgcrypt20
-libgcrypt20
-libgcrypt20
-libgcrypt20
-libgudev-1.0-0
-libgudev-1.0-0
-libgudev-1.0-0
-libgudev-1.0-0
-libice6
-libice6
-libice6
-libidn2-0
-libidn2-0
-libidn2-0
-libidn2-0
-libiec61883-0
-libiec61883-0
-libiec61883-0
-libiec61883-0
-libinih1
-libinih1
-libinih1
-libinih1
-libmbim-proxy.md5sums	
-libmbim-glib4
-libmbim-glib4
-libmbim-glib4
-libmbim-glib4
-libmaxminddb0
-libmaxminddb0
-libmaxminddb0
-libmaxminddb0
-libmd0
-libmd0
-libmd0
-libmd0
-libmnl0
-libmnl0
-libmnl0
-libmnl0
-libmspack0
-libmspack0
-libmspack0
-libmspack0
-libnfnetlink0
-libnfnetlink0
-libnfnetlink0
-libnftnl11
-libnftnl11
-libnftnl11
-libnftnl11
-libnsl2
-libnsl2
-libnsl2
-libnsl2
-libnsl-dev
-libogg0
-libogg0
-libogg0
-libogg0
-libpcap0.8
-libpcap0.8
-libpcap0.8
-libpcap0.8
-libpng16-16
-libpng16-16
-libpsl5
-libpsl5
-libpsl5
-libpsl5
-libraw1394-11
-libraw1394-11
-libraw1394-11
-libsndfile1
-libsndfile1
-libsndfile1
-libsndfile1
-libtasn1-6
-libtasn1-6
-libtasn1-6
-libtasn1-6
-libsodium23
-libsodium23
-libsodium23
-libsodium23
-libsepol2
-libsepol2
-libsepol2
-libsepol2
-libsamplerate0
-libsamplerate0
-libsamplerate0
-libsamplerate0
-libutempter0
-libutempter0
-libutempter0
-libutempter0
-libunwind8
-libunwind8
-libunwind8
-libtheora0
-libtheora0
-libtheora0
-libtheora0
-libssh-gcrypt-4
-libssh-gcrypt-4
-libssh-gcrypt-4
-libssh-gcrypt-4
-libssh-4
-libssh-4
-libssh-4
-libssh-4
-libthai0
-libthai0
-libthai0
-libthai0
-libthai-data.md5sums	
-libvorbisfile3
-libvorbisfile3
-libvorbisfile3
-libvorbisfile3
-libvorbisenc2
-libvorbisenc2
-libvorbisenc2
-libvorbisenc2
-libvorbis0a
-libvorbis0a
-libvorbis0a
-libvorbis0a
-libxcomposite1
-libxcomposite1
-libxcomposite1
-libxcursor1
-libxcursor1
-libxcursor1
-libxdmcp6
-libxdmcp6
-libxdmcp6
-libxi6
-libxi6
-libxi6
-libxi6
-libxkbfile1
-libxkbfile1
-libxkbfile1
-libxmlb2
-libxmlb2
-libxmlb2
-libxmlb2
-libxrender1
-libxrender1
-libxrender1
-libxrandr2
-libxrandr2
-libxrandr2
-libxrandr2
-libxss1
-libxss1
-libxss1
-libxss1
-libxv1
-libxv1
-libxv1
-libyaml-dev
-libyaml-0-2
-libyaml-0-2
-libyaml-0-2
-libyaml-0-2
-libxxf86dga1
-libxxf86dga1
-libxxf86dga1
-zstd.md5sums	
-libzstd1
-libzstd1
-libzstd1
-libatm1
-libatm1
-libatm1
-libatm1
-lsb-release.postrm	
-lsb-release.postinst	
-lsb-release.md5sums	
-lsb-base.prerm	
-lsb-base.preinst	
-lsb-base.postrm	
-lsb-base.postinst	
-lsb-base.md5sums	
-lsof.md5sums	
-liblzo2-2
-liblzo2-2
-liblzo2-2
-liblzo2-2
-libmpdec3
-libmpdec3
-libmpdec3
-libmpdec3
-libmpg123-0
-libmpg123-0
-libmpg123-0
-libmpg123-0
-vdpau-driver-all
-libvdpau1
-libvdpau1
-libvdpau1
-libvdpau1
-libvdpau1
-libsoxr0
-libsoxr0
-libsoxr0
-libsoxr0
-libsm6
-libsm6
-libsm6
-libu2f-udev.md5sums	
-python3-netifaces
-telnet.prerm	
-telnet.postrm	
-telnet.postinst	
-telnet.md5sums	
-libnettle8
-libnettle8
-libnettle8
-libnettle8
-libhogweed6
-libhogweed6
-libhogweed6
-libhogweed6
-libnghttp2-14
-libnghttp2-14
-libnghttp2-14
-libnghttp2-14
-libnpth0
-libnpth0
-libnpth0
-libnpth0
-libvpx7
-libvpx7
-libvpx7
-libvpx7
-libnuma1
-libnuma1
-libnuma1
-libnuma1
-libnspr4
-libnspr4
-libnspr4
-libxcb1
-libxcb1
-libxcb1
-libxcb1
-libxcb-xfixes0
-libxcb-xfixes0
-libxcb-xfixes0
-libxcb-xfixes0
-libxcb-sync1
-libxcb-sync1
-libxcb-sync1
-libxcb-sync1
-libxcb-shm0
-libxcb-shm0
-libxcb-shm0
-libxcb-shm0
-libxcb-shape0
-libxcb-shape0
-libxcb-shape0
-libxcb-shape0
-libxcb-render0
-libxcb-render0
-libxcb-render0
-libxcb-render0
-libxcb-randr0
-libxcb-randr0
-libxcb-randr0
-libxcb-randr0
-libxcb-present0
-libxcb-present0
-libxcb-present0
-libxcb-present0
-libxcb-glx0
-libxcb-glx0
-libxcb-glx0
-libxcb-glx0
-libxcb-dri3-0
-libxcb-dri3-0
-libxcb-dri3-0
-libxcb-dri3-0
-libxcb-dri2-0
-libxcb-dri2-0
-libxcb-dri2-0
-libxcb-dri2-0
-libxdamage1
-libxdamage1
-libxext6
-libxext6
-libxext6
-libxext6
-libisns0
-libisns0
-libisns0
-libxpm4
-libxpm4
-libxpm4
-libxshmfence1
-libxshmfence1
-libxshmfence1
-libxshmfence1
-libp11-kit0
-libp11-kit0
-libp11-kit0
-libp11-kit0
-libxtst6
-libxtst6
-libxtst6
-patch.md5sums	
-parted.md5sums	
-libparted2
-libparted2
-libparted2
-libparted2
-libparted-fs-resize0
-libparted-fs-resize0
-libparted-fs-resize0
-libparted-fs-resize0
-libxxf86vm1
-libxxf86vm1
-libxxf86vm1
-libsigsegv2
-libsigsegv2
-libsigsegv2
-libsigsegv2
-pkg-config.prerm	
-pkg-config.postinst	
-pkg-config.md5sums	
-pkg-config.conffiles	
-liblmdb0
-liblmdb0
-liblmdb0
-liblmdb0
-lshw.md5sums	
-liblz4-1
-liblz4-1
-liblz4-1
-liblz4-1
-libmpc3
-libmpc3
-libmpc3
-libmpc3
-libxau6
-libxau6
-libxau6
-libmpfr6
-libmpfr6
-libmpfr6
-libmpfr6
-os-prober.md5sums	
-libopus0
-libopus0
-libopus0
-libopus0
-libpopt0
-libpopt0
-libpopt0
-libpopt0
-psmisc.postrm	
-psmisc.postinst	
-psmisc.md5sums	
-pinentry-curses.prerm	
-pinentry-curses.postinst	
-pinentry-curses.md5sums	
-libmagic1
-libmagic1
-libmagic1
-libmagic1
-libmagic1
-libmagic-mgc.md5sums	
-file.md5sums	
-libigdgmm12
-libigdgmm12
-libigdgmm12
-libsnappy1v5
-libsnappy1v5
-libsnappy1v5
-sed.md5sums	
-python3-bcrypt.prerm	
-python3-bcrypt.postinst	
-python3-bcrypt.md5sums	
-libslang2
-libslang2
-libslang2
-libslang2
-libstemmer0d
-libstemmer0d
-libstemmer0d
-libstemmer0d
-tar.prerm	
-tar.postinst	
-tar.md5sums	
-tcl.preinst	
-tcl.md5sums	
-tcpdump.prerm	
-tcpdump.preinst	
-tcpdump.postrm	
-tcpdump.postinst	
-tcpdump.md5sums	
-tcpdump.conffiles	
-libwrap0
-libwrap0
-libwrap0
-libwrap0
-libwrap0
-libwrap0
-time.md5sums	
-libtwolame0
-libtwolame0
-libtwolame0
-libtwolame0
-usb-modeswitch.prerm	
-usb-modeswitch.preinst	
-usb-modeswitch.postrm	
-usb-modeswitch.postinst	
-usb-modeswitch.md5sums	
-usb-modeswitch.conffiles	
-usbutils.md5sums	
-x11-utils.postrm	
-x11-utils.postinst	
-x11-utils.md5sums	
-x11-utils.conffiles	
-xauth.md5sums	
-x11-xserver-utils.postrm	
-x11-xserver-utils.postinst	
-x11-xserver-utils.md5sums	
-x11-xserver-utils.conffiles	
-xdg-user-dirs.prerm	
-xdg-user-dirs.preinst	
-xdg-user-dirs.postrm	
-xdg-user-dirs.postinst	
-xdg-user-dirs.md5sums	
-xdg-user-dirs.conffiles	
-zerofree.md5sums	
-zip.md5sums	
-rpcsvc-proto.md5sums	
-python3-cffi-backend
-sg3-utils.md5sums	
-sg3-utils-udev.triggers	
-sg3-utils-udev.postrm	
-sg3-utils-udev.postinst	
-sg3-utils-udev.md5sums	
-libsgutils2-2
-libsgutils2-2
-libsgutils2-2
-libsgutils2-2
-librtmp1
-librtmp1
-librtmp1
-librtmp1
-squashfs-tools.md5sums	
-x11-common.prerm	
-x11-common.postrm	
-x11-common.postinst	
-x11-common.md5sums	
-x11-common.conffiles	
-tcl8.6.prerm	
-tcl8.6.postrm	
-tcl8.6.postinst	
-tcl8.6.md5sums	
-libtcl8.6
-libtcl8.6
-libtcl8.6
-libuchardet0
-libuchardet0
-libuchardet0
-libuchardet0
-libxmlsec1
-libxmlsec1
-libxmlsec1
-libxmlsec1-openssl
-libxmlsec1-openssl
-libxmlsec1-openssl
-tnftp.prerm	
-tnftp.postinst	
-tnftp.md5sums	
-ftp.preinst	
-ftp.md5sums	
-gettext-base.md5sums	
-libatspi2.0-0
-libatspi2.0-0
-libatspi2.0-0
-at-spi2-core.md5sums	
-at-spi2-core.conffiles	
-python3-cryptography.prerm	
-python3-cryptography.postinst	
-python3-cryptography.md5sums	
-libvte-2.91-common.md5sums	
-libvte-2.91-common.conffiles	
-libvte-2.91-0
-libvte-2.91-0
-libvte-2.91-0
-libvte-2.91-0
-libmbedx509-1
-libmbedx509-1
-libmbedx509-1
-libmbedx509-1
-libmbedtls14
-libmbedtls14
-libmbedtls14
-libmbedtls14
-libmbedcrypto7
-libmbedcrypto7
-libmbedcrypto7
-libmbedcrypto7
-update-notifier-common.prerm	
-update-notifier-common.preinst	
-update-notifier-common.postrm	
-update-notifier-common.postinst	
-update-notifier-common.md5sums	
-update-notifier-common.conffiles	
-landscape-common.templates	
-landscape-common.prerm	
-landscape-common.postrm	
-landscape-common.postinst	
-landscape-common.md5sums	
-landscape-common.config	
-libgpgme11
-libgpgme11
-libgpgme11
-libgpgme11
-libsensors5
-libsensors5
-libsensors5
-libsensors5
-libsensors5
-libsensors-config.md5sums	
-libsensors-config.conffiles	
-libxft2
-libxft2
-libxft2
-libpangoft2-1.0-0
-libpangoft2-1.0-0
-libpangoft2-1.0-0
-libpangoft2-1.0-0
-libpangocairo-1.0-0
-libpangocairo-1.0-0
-libpangocairo-1.0-0
-libpangocairo-1.0-0
-libpango-1.0-0
-libpango-1.0-0
-libpango-1.0-0
-libpango-1.0-0
-libepoxy0
-libepoxy0
-libepoxy0
-libepoxy0
-usb.ids.md5sums	
-python3-serial.prerm	
-python3-serial.postinst	
-python3-serial.md5sums	
-libx11-xcb1
-libx11-xcb1
-libx11-xcb1
-libx11-data.md5sums	
-libx11-6
-libx11-6
-libx11-6
-libx11-6
-libmfx1
-libmfx1
-libmfx1
-libmfx1
-lto-disabled-list.md5sums	
-libarchive13
-libarchive13
-libarchive13
-libarchive13
-udisks2.prerm	
-udisks2.postrm	
-udisks2.postinst	
-udisks2.md5sums	
-udisks2.conffiles	
-libudisks2-0
-libudisks2-0
-libudisks2-0
-libudisks2-0
-xz-utils.prerm	
-xz-utils.postinst	
-xz-utils.md5sums	
-liblzma5
-liblzma5
-liblzma5
-liblzma5
-libjpeg8
-update-manager-core.md5sums	
-python3-update-manager.prerm	
-python3-update-manager.postinst	
-python3-update-manager.md5sums	
-fwupd-signed.md5sums	
-ec2-hibinit-agent.prerm	
-ec2-hibinit-agent.postrm	
-ec2-hibinit-agent.postinst	
-ec2-hibinit-agent.md5sums	
-ec2-hibinit-agent.conffiles	
-python3-six.prerm	
-python3-six.postinst	
-python3-six.md5sums	
-python3-yaml.prerm	
-python3-yaml.postinst	
-python3-yaml.md5sums	
-ubuntu-standard.md5sums	
-ubuntu-server.md5sums	
-ubuntu-minimal.md5sums	
-grub2-common.md5sums	
-grub2-common.conffiles	
-grub-pc.templates	
-grub-pc.prerm	
-grub-pc.preinst	
-grub-pc.postrm	
-grub-pc.postinst	
-grub-pc.md5sums	
-grub-pc.config	
-grub-pc-bin.md5sums	
-grub-common.templates	
-grub-common.prerm	
-grub-common.preinst	
-grub-common.postrm	
-grub-common.postinst	
-grub-common.md5sums	
-grub-common.conffiles	
-libfribidi0
-libfribidi0
-libfribidi0
-libfribidi0
-libnotify4
-libnotify4
-libnotify4
-libnotify4
-libnotify-bin.md5sums	
-libtsan0
-libtsan0
-libtsan0
-libtsan0
-libstdc++-11-dev
-libgcc-11-dev
-libasan6
-libasan6
-libasan6
-libasan6
-gcc-11.md5sums	
-gcc-11-base
-g++-11.md5sums	
-cpp-11.md5sums	
-rsyslog.prerm	
-rsyslog.preinst	
-rsyslog.postrm	
-rsyslog.postinst	
-rsyslog.md5sums	
-rsyslog.conffiles	
-networkd-dispatcher.prerm	
-networkd-dispatcher.postrm	
-networkd-dispatcher.postinst	
-networkd-dispatcher.md5sums	
-networkd-dispatcher.conffiles	
-libgtk-3-common.md5sums	
-libgtk-3-common.conffiles	
-libgtk-3-bin.md5sums	
-libgtk-3-0
-libgtk-3-0
-libgtk-3-0
-libgtk-3-0
-libgtk-3-0
-libgtk-3-0
-libgtk-3-0
-gtk-update-icon-cache.md5sums	
-ec2-instance-connect.prerm	
-ec2-instance-connect.preinst	
-ec2-instance-connect.postrm	
-ec2-instance-connect.postinst	
-ec2-instance-connect.md5sums	
-libjson-c5
-libjson-c5
-libjson-c5
-libjson-c5
-libubsan1
-libubsan1
-libubsan1
-libubsan1
-libstdc++6
-libstdc++6
-libstdc++6
-libstdc++6
-libstdc++6
-libquadmath0
-libquadmath0
-libquadmath0
-libquadmath0
-liblsan0
-liblsan0
-liblsan0
-liblsan0
-libitm1
-libitm1
-libitm1
-libitm1
-libgomp1
-libgomp1
-libgomp1
-libgomp1
-libgfortran5
-libgfortran5
-libgfortran5
-libgfortran5
-libgcc-s1
-libgcc-s1
-libgcc-s1
-libgcc-s1
-libcc1-0
-libcc1-0
-libcc1-0
-libcc1-0
-libatomic1
-libatomic1
-libatomic1
-libatomic1
-gcc-12-base
-libusb-1.0-0
-libusb-1.0-0
-libusb-1.0-0
-libusb-1.0-0
-needrestart.preinst	
-needrestart.postrm	
-needrestart.postinst	
-needrestart.md5sums	
-needrestart.conffiles	
-libpcre3
-libpcre3
-libpcre3
-libpcre3
-libswscale5
-libswscale5
-libswscale5
-libswscale5
-libswresample3
-libswresample3
-libswresample3
-libswresample3
-libpostproc55
-libpostproc55
-libpostproc55
-libpostproc55
-libavutil56
-libavutil56
-libavutil56
-libavutil56
-libavformat58
-libavformat58
-libavformat58
-libavformat58
-libavfilter7
-libavfilter7
-libavfilter7
-libavfilter7
-libavdevice58
-libavdevice58
-libavdevice58
-libavdevice58
-libavcodec58
-libavcodec58
-libavcodec58
-libavcodec58
-ffmpeg.md5sums	
-libdpkg-perl.md5sums	
-dpkg.prerm	
-dpkg.postrm	
-dpkg.postinst	
-dpkg.md5sums	
-dpkg.conffiles	
-dpkg-dev.md5sums	
-dpkg-dev.conffiles	
-logrotate.prerm	
-logrotate.postrm	
-logrotate.postinst	
-logrotate.md5sums	
-logrotate.conffiles	
-libcups2
-libcups2
-libcups2
-libcups2
-libsdl2-2.0-0
-libsdl2-2.0-0
-libsdl2-2.0-0
-libsdl2-2.0-0
-libllvm13
-libllvm13
-libllvm13
-logsave.md5sums	
-libss2
-libss2
-libss2
-libss2
-libext2fs2
-libext2fs2
-libext2fs2
-libext2fs2
-libcom-err2
-libcom-err2
-libcom-err2
-libcom-err2
-e2fsprogs.prerm	
-e2fsprogs.preinst	
-e2fsprogs.postrm	
-e2fsprogs.postinst	
-e2fsprogs.md5sums	
-e2fsprogs.conffiles	
-grub-efi-amd64-bin.prerm	
-grub-efi-amd64-bin.preinst	
-grub-efi-amd64-bin.postrm	
-grub-efi-amd64-bin.postinst	
-grub-efi-amd64-bin.md5sums	
-ruby-xmlrpc.md5sums	
-intel-media-va-driver
-libapparmor1
-libapparmor1
-libapparmor1
-libapparmor1
-apparmor.templates	
-apparmor.prerm	
-apparmor.preinst	
-apparmor.postrm	
-apparmor.postinst	
-apparmor.md5sums	
-apparmor.config	
-apparmor.conffiles	
-python3-gi.prerm	
-python3-gi.postinst	
-python3-gi.md5sums	
-libgstreamer1.0-0
-libgstreamer1.0-0
-libgstreamer1.0-0
-libgstreamer1.0-0
-libgstreamer1.0-0
-gpgv.md5sums	
-gpgsm.md5sums	
-gpgconf.md5sums	
-gpg.md5sums	
-gpg-wks-server.md5sums	
-gpg-wks-client.md5sums	
-gpg-agent.postrm	
-gpg-agent.postinst	
-gpg-agent.md5sums	
-gpg-agent.conffiles	
-gnupg.md5sums	
-gnupg-utils.md5sums	
-gnupg-l10n.md5sums	
-dirmngr.prerm	
-dirmngr.preinst	
-dirmngr.postrm	
-dirmngr.postinst	
-dirmngr.md5sums	
-mesa-vulkan-drivers
-mesa-vulkan-drivers
-mesa-vdpau-drivers
-mesa-vdpau-drivers
-mesa-vdpau-drivers
-mesa-va-drivers
-libglx-mesa0
-libglx-mesa0
-libglx-mesa0
-libglx-mesa0
-libglapi-mesa
-libglapi-mesa
-libglapi-mesa
-libgl1-mesa-dri
-libgl1-mesa-dri
-libgl1-mesa-dri
-libgl1-mesa-dri
-libgl1-mesa-dri
-libgbm1
-libgbm1
-libgbm1
-libgbm1
-libnss3
-libnss3
-libnss3
-locales.templates	
-locales.prerm	
-locales.postrm	
-locales.postinst	
-locales.md5sums	
-locales.config	
-locales.conffiles	
-libc6
-libc6
-libc6
-libc6
-libc6
-libc6
-libc6
-libc6
-libc6
-libc6-dev
-libc-devtools.md5sums	
-libc-dev-bin.md5sums	
-libc-bin.triggers	
-libc-bin.postinst	
-libc-bin.md5sums	
-libc-bin.conffiles	
-grub-efi-amd64-signed.postinst	
-grub-efi-amd64-signed.md5sums	
-libhttp-daemon-perl.md5sums	
-libharfbuzz0b
-libharfbuzz0b
-libharfbuzz0b
-libharfbuzz0b
-libfreetype6
-libfreetype6
-libfreetype6
-libfreetype6
-python3-apt.prerm	
-python3-apt.postinst	
-python3-apt.md5sums	
-python-apt-common.md5sums	
-libtirpc3
-libtirpc3
-libtirpc3
-libtirpc3
-libtirpc-dev
-libtirpc-common.md5sums	
-libtirpc-common.conffiles	
-software-properties-common.prerm	
-software-properties-common.postinst	
-software-properties-common.md5sums	
-software-properties-common.conffiles	
-python3-software-properties.prerm	
-python3-software-properties.postinst	
-python3-software-properties.md5sums	
-motd-news-config.postinst	
-motd-news-config.md5sums	
-motd-news-config.conffiles	
-base-files.prerm	
-base-files.preinst	
-base-files.postrm	
-base-files.postinst	
-base-files.md5sums	
-base-files.conffiles	
-libgnutls30
-libgnutls30
-libgnutls30
-libgnutls30
-sudo.triggers	
-sudo.shlibs	
-sudo.prerm	
-sudo.preinst	
-sudo.postrm	
-sudo.postinst	
-sudo.md5sums	
-sudo.conffiles	
-libcryptsetup12
-libcryptsetup12
-libcryptsetup12
-libcryptsetup12
-cryptsetup.templates	
-cryptsetup.prerm	
-cryptsetup.preinst	
-cryptsetup.postrm	
-cryptsetup.postinst	
-cryptsetup.md5sums	
-cryptsetup.conffiles	
-cryptsetup-initramfs.triggers	
-cryptsetup-initramfs.templates	
-cryptsetup-initramfs.prerm	
-cryptsetup-initramfs.postrm	
-cryptsetup-initramfs.postinst	
-cryptsetup-initramfs.md5sums	
-cryptsetup-initramfs.conffiles	
-cryptsetup-bin.postinst	
-cryptsetup-bin.md5sums	
-libldap-common.md5sums	
-libldap-common.conffiles	
-libldap-2.5-0
-libldap-2.5-0
-libldap-2.5-0
-libldap-2.5-0
-libpq5
-libpq5
-libpq5
-libpq5
-libpq-dev.md5sums	
-nftables.postrm	
-nftables.postinst	
-nftables.md5sums	
-nftables.conffiles	
-libnftables1
-libnftables1
-libnftables1
-libnftables1
-python3-lib2to3.prerm	
-python3-lib2to3.postinst	
-python3-lib2to3.md5sums	
-python3-gdbm
-python3-distutils.prerm	
-python3-distutils.postinst	
-python3-distutils.md5sums	
-intel-microcode.postrm	
-intel-microcode.postinst	
-intel-microcode.md5sums	
-intel-microcode.conffiles	
-python3-twisted.prerm	
-python3-twisted.postrm	
-python3-twisted.postinst	
-python3-twisted.md5sums	
-open-vm-tools.triggers	
-open-vm-tools.shlibs	
-open-vm-tools.prerm	
-open-vm-tools.preinst	
-open-vm-tools.postrm	
-open-vm-tools.postinst	
-open-vm-tools.md5sums	
-open-vm-tools.conffiles	
-python3-jwt.prerm	
-python3-jwt.postinst	
-python3-jwt.md5sums	
-sosreport.prerm	
-sosreport.postinst	
-sosreport.md5sums	
-sosreport.conffiles	
-bat.md5sums	
-fd-find.md5sums	
-ripgrep.md5sums	
-python3.prerm	
-python3.preinst	
-python3.postrm	
-python3.postinst	
-python3.md5sums	
-python3-minimal.prerm	
-python3-minimal.postinst	
-python3-minimal.md5sums	
-libpython3-stdlib
-libxslt1.1
-libxslt1.1
-libxslt1.1
-libxslt1.1
-libxslt1-dev
-xdg-utils.prerm	
-xdg-utils.postinst	
-xdg-utils.md5sums	
-dmidecode.md5sums	
-systemd-hwe-hwdb.postrm	
-systemd-hwe-hwdb.postinst	
-systemd-hwe-hwdb.md5sums	
-systemd.triggers	
-gzip.md5sums	
-libpulse0
-libpulse0
-libpulse0
-libpulse0
-libpulse0
-libpulse0
-libpulse0
-libpulse0
-libpulse0
-udev.triggers	
-udev.prerm	
-udev.postrm	
-udev.postinst	
-udev.md5sums	
-udev.conffiles	
-systemd.prerm	
-systemd.preinst	
-systemd.postrm	
-systemd.postinst	
-systemd.md5sums	
-systemd.conffiles	
-systemd-timesyncd.postrm	
-systemd-sysv.postinst	
-systemd-sysv.md5sums	
-libudev1
-libudev1
-libudev1
-libudev1
-libsystemd0
-libsystemd0
-libsystemd0
-libsystemd0
-libpam-systemd
-libpam-systemd
-libpam-systemd
-libnss-systemd
-libnss-systemd
-libnss-systemd
-libnss-systemd
-libnss-systemd
-xxd.md5sums	
-vim.prerm	
-vim.preinst	
-vim.postrm	
-vim.postinst	
-vim.md5sums	
-vim-tiny.prerm	
-vim-tiny.preinst	
-vim-tiny.postrm	
-vim-tiny.postinst	
-vim-tiny.md5sums	
-vim-tiny.conffiles	
-vim-runtime.preinst	
-vim-runtime.postrm	
-vim-runtime.postinst	
-vim-runtime.md5sums	
-vim-common.prerm	
-vim-common.preinst	
-vim-common.postrm	
-vim-common.postinst	
-vim-common.md5sums	
-vim-common.conffiles	
-libwayland-server0
-libwayland-server0
-libwayland-server0
-libwayland-server0
-libwayland-egl1
-libwayland-egl1
-libwayland-egl1
-libwayland-egl1
-libwayland-cursor0
-libwayland-cursor0
-libwayland-cursor0
-libwayland-cursor0
-libwayland-client0
-libwayland-client0
-libwayland-client0
-libwayland-client0
-python3-oauthlib.prerm	
-python3-oauthlib.postinst	
-python3-oauthlib.md5sums	
-libfwupdplugin5
-libfwupdplugin5
-libfwupdplugin5
-libfwupdplugin5
-libfwupd2
-libfwupd2
-libfwupd2
-libfwupd2
-fwupd.prerm	
-fwupd.preinst	
-fwupd.postrm	
-fwupd.postinst	
-fwupd.md5sums	
-fwupd.conffiles	
-libpcre2-8-0
-libpcre2-8-0
-libpcre2-8-0
-libpcre2-8-0
-libpcre2-32-0
-libpcre2-32-0
-libpcre2-32-0
-libpcre2-32-0
-bind9-libs
-bind9-libs
-bind9-libs
-bind9-host.md5sums	
-bind9-dnsutils.md5sums	
-libapt-pkg6.0
-libapt-pkg6.0
-libapt-pkg6.0
-libapt-pkg6.0
-apt.triggers	
-apt.shlibs	
-apt.prerm	
-apt.preinst	
-apt.postrm	
-apt.postinst	
-apt.md5sums	
-apt.conffiles	
-apt-utils.md5sums	
-apt-transport-https.md5sums	
-isc-dhcp-common.md5sums	
-isc-dhcp-client.postrm	
-isc-dhcp-client.postinst	
-isc-dhcp-client.md5sums	
-isc-dhcp-client.conffiles	
-perl.prerm	
-perl.preinst	
-perl.postrm	
-perl.postinst	
-perl.md5sums	
-perl.conffiles	
-perl-modules-5.34.md5sums	
-perl-base.prerm	
-perl-base.preinst	
-perl-base.postrm	
-perl-base.postinst	
-perl-base.md5sums	
-libperl5.34
-libperl5.34
-libperl5.34
-libperl5.34
-unzip.postrm	
-unzip.postinst	
-unzip.md5sums	
-google-chrome-stable.postinst	
-google-chrome-stable.prerm	
-google-chrome-stable.postrm	
-alsa-ucm-conf.md5sums	
-netplan.io.md5sums	
-libnetplan0
-libnetplan0
-libnetplan0
-libnetplan0
-rsync.prerm	
-rsync.postrm	
-rsync.postinst	
-rsync.md5sums	
-rsync.conffiles	
-libglib2.0-data.md5sums	
-libglib2.0-bin.md5sums	
-libglib2.0-0
-libglib2.0-0
-libglib2.0-0
-libglib2.0-0
-libglib2.0-0
-libglib2.0-0
-git.prerm	
-git.preinst	
-git.postrm	
-git.postinst	
-git.md5sums	
-git.conffiles	
-git-man.md5sums	
-ubuntu-release-upgrader-core.preinst	
-ubuntu-release-upgrader-core.postinst	
-ubuntu-release-upgrader-core.md5sums	
-ubuntu-release-upgrader-core.conffiles	
-python3-distupgrade.prerm	
-python3-distupgrade.postinst	
-python3-distupgrade.md5sums	
-zlib1g
-zlib1g
-zlib1g
-zlib1g
-zlib1g-dev
-libgdk-pixbuf2.0-common.md5sums	
-libgdk-pixbuf2.0-bin.md5sums	
-libgdk-pixbuf-2.0-0
-libgdk-pixbuf-2.0-0
-libgdk-pixbuf-2.0-0
-libgdk-pixbuf-2.0-0
-libgdk-pixbuf-2.0-0
-libgdk-pixbuf-2.0-0
-libdbus-1-3
-libdbus-1-3
-libdbus-1-3
-libdbus-1-3
-dbus.prerm	
-dbus.preinst	
-dbus.postrm	
-dbus.postinst	
-dbus.md5sums	
-dbus.conffiles	
-dbus-user-session.md5sums	
-dbus-user-session.conffiles	
-openssl.postinst	
-openssl.md5sums	
-openssl.conffiles	
-libssl3
-libssl3
-libssl3
-libssl3
-libssl3
-libssl3
-libssl3
-libssl-dev
-initramfs-tools.prerm	
-initramfs-tools.preinst	
-initramfs-tools.postrm	
-initramfs-tools.postinst	
-initramfs-tools.md5sums	
-initramfs-tools.conffiles	
-initramfs-tools-core.postrm	
-initramfs-tools-core.postinst	
-initramfs-tools-core.md5sums	
-initramfs-tools-core.conffiles	
-initramfs-tools-bin.md5sums	
-multipath-tools.triggers	
-multipath-tools.shlibs	
-multipath-tools.prerm	
-multipath-tools.postrm	
-multipath-tools.postinst	
-multipath-tools.md5sums	
-multipath-tools.conffiles	
-kpartx.md5sums	
-distro-info-data.md5sums	
-ntfs-3g.triggers	
-ntfs-3g.postrm	
-ntfs-3g.postinst	
-ntfs-3g.md5sums	
-libntfs-3g89.triggers	
-libntfs-3g89.shlibs	
-libntfs-3g89.md5sums	
-libctf0
-libctf0
-libctf0
-libctf-nobfd0
-libctf-nobfd0
-libctf-nobfd0
-libbinutils
-libbinutils
-libbinutils
-binutils.md5sums	
-binutils-x86-64-linux-gnu.md5sums	
-binutils-common
-sqlite3.md5sums	
-libsqlite3-dev
-libsqlite3-0
-libsqlite3-0
-libsqlite3-0
-libsqlite3-0
-libpixman-1-0
-libpixman-1-0
-libpixman-1-0
-libpixman-1-0
-ruby3.0.md5sums	
-libruby3.0
-libruby3.0
-libruby3.0
-libruby3.0
-python3.10.prerm	
-python3.10.postinst	
-python3.10.md5sums	
-python3.10-minimal.prerm	
-python3.10-minimal.preinst	
-python3.10-minimal.postrm	
-python3.10-minimal.postinst	
-python3.10-minimal.md5sums	
-libpython3.10
-libpython3.10
-libpython3.10
-libpython3.10
-libpython3.10-stdlib
-libpython3.10-stdlib
-libpython3.10-minimal
-libpython3.10-minimal
-libpython3.10-minimal
-libpython3.10-minimal
-libpython3.10-minimal
-python3-tz.prerm	
-python3-tz.postinst	
-python3-tz.md5sums	
-libflac8
-libflac8
-libflac8
-libflac8
-libexpat1
-libexpat1
-libexpat1
-ubuntu-advantage-tools.templates	
-ubuntu-advantage-tools.prerm	
-ubuntu-advantage-tools.preinst	
-ubuntu-advantage-tools.postrm	
-ubuntu-advantage-tools.postinst	
-ubuntu-advantage-tools.md5sums	
-ubuntu-advantage-tools.config	
-ubuntu-advantage-tools.conffiles	
-libjbig0
-libjbig0
-libjbig0
-tmux.preinst	
-tmux.postrm	
-tmux.postinst	
-tmux.md5sums	
-linux-modules-5.15.0-1026-aws.postrm	
-linux-modules-5.15.0-1026-aws.postinst	
-linux-modules-5.15.0-1026-aws.md5sums	
-linux-headers-5.15.0-1026-aws.postinst	
-linux-headers-5.15.0-1026-aws.md5sums	
-linux-aws-headers-5.15.0-1026.md5sums	
-linux-image-5.15.0-1026-aws.triggers	
-linux-image-5.15.0-1026-aws.prerm	
-linux-image-5.15.0-1026-aws.preinst	
-linux-image-5.15.0-1026-aws.postrm	
-linux-image-5.15.0-1026-aws.postinst	
-linux-image-5.15.0-1026-aws.md5sums	
-python3-problem-report.prerm	
-python3-problem-report.postinst	
-python3-problem-report.md5sums	
-python3-apport.prerm	
-python3-apport.postinst	
-python3-apport.md5sums	
-apport.prerm	
-apport.preinst	
-apport.postrm	
-apport.postinst	
-apport.md5sums	
-apport.conffiles	
-passwd.prerm	
-passwd.preinst	
-passwd.postrm	
-passwd.postinst	
-passwd.md5sums	
-passwd.conffiles	
-login.prerm	
-login.preinst	
-login.postrm	
-login.postinst	
-login.md5sums	
-login.conffiles	
-linux-libc-dev
-snapd.prerm	
-snapd.preinst	
-snapd.postrm	
-snapd.postinst	
-snapd.md5sums	
-snapd.conffiles	
-cloud-init.templates	
-cloud-init.prerm	
-cloud-init.preinst	
-cloud-init.postrm	
-cloud-init.postinst	
-cloud-init.md5sums	
-cloud-init.config	
-cloud-init.conffiles	
-libxml2
-libxml2
-libxml2
-libxml2
-libxml2-dev
-linux-modules-5.15.0-1027-aws.postrm	
-linux-modules-5.15.0-1027-aws.postinst	
-linux-modules-5.15.0-1027-aws.md5sums	
-linux-headers-5.15.0-1027-aws.postinst	
-linux-headers-5.15.0-1027-aws.md5sums	
-linux-aws-headers-5.15.0-1027.md5sums	
-linux-image-aws.md5sums	
-linux-headers-aws.md5sums	
-linux-aws.md5sums	
-linux-image-5.15.0-1027-aws.triggers	
-linux-image-5.15.0-1027-aws.prerm	
-linux-image-5.15.0-1027-aws.preinst	
-linux-image-5.15.0-1027-aws.postrm	
-linux-image-5.15.0-1027-aws.postinst	
-linux-image-5.15.0-1027-aws.md5sums	
-libtiff5
-libtiff5
-libtiff5
-libtiff5
-libbpf0
-libbpf0
-libbpf0
-libbpf0
-format	
-base-passwd.list	
-bash.list	
-bsdutils.list	
-coreutils.list	
-dash.list	
-debconf.list	
-debianutils.list	
-diffutils.list	
-findutils.list	
-grep.list	
-hostname.list	
-init-system-helpers.list	
-libacl1
-libattr1
-libaudit-common.list	
-libaudit1
-libblkid1
-libbz2-1.0
-libcap-ng0
-libcap2
-libcrypt1
-libdb5.3
-libdebconfclient0
-libgcrypt20
-libgmp10
-libgpg-error0
-libgssapi-krb5-2
-libk5crypto3
-libkeyutils1
-libkrb5-3
-libkrb5support0
-liblz4-1
-liblzma5
-libmount1
-libncurses6
-libncursesw6
-libnsl2
-libpam-modules
-libpam-modules-bin.list	
-libpam-runtime.list	
-libpam0g
-libprocps8
-libselinux1
-libsemanage-common.list	
-libsemanage2
-libsepol2
-libsmartcols1
-libtinfo6
-libuuid1
-libzstd1
-lsb-base.list	
-mawk.list	
-mount.list	
-ncurses-base.list	
-ncurses-bin.list	
-procps.list	
-sed.list	
-sensible-utils.list	
-sysvinit-utils.list	
-tar.list	
-usrmerge.list	
-util-linux.list	
-adduser.list	
-libargon2-1
-libdevmapper1.02.1
-libffi8
-libhogweed6
-libidn2-0
-libip4tc2
-libkmod2
-libnettle8
-libp11-kit0
-libseccomp2
-libtasn1-6
-libunistring2
-console-setup.list	
-console-setup-linux.list	
-cron.list	
-debconf-i18n.list	
-distro-info.list	
-dmsetup.list	
-eject.list	
-gir1.2-glib-2.0
-init.list	
-iproute2.list	
-iputils-ping.list	
-iso-codes.list	
-kbd.list	
-keyboard-configuration.list	
-kmod.list	
-less.list	
-libatm1
-libbsd0
-libcap2-bin.list	
-libdns-export1110.list	
-libelf1
-libestr0
-libfastjson4
-libgirepository-1.0-1
-libicu70
-libisc-export1105
-liblocale-gettext-perl.list	
-libmd0
-libmnl0
-libmpdec3
-libnewt0.52
-libpam-cap
-libpopt0
-libreadline8
-libslang2
-libtext-charwidth-perl.list	
-libtext-iconv-perl.list	
-libtext-wrapi18n-perl.list	
-libxtables12
-libxxhash0
-libyaml-0-2
-lsb-release.list	
-media-types.list	
-netbase.list	
-netcat-openbsd.list	
-python3-dbus.list	
-python3-netifaces
-python3-pkg-resources.list	
-python3-yaml.list	
-readline-common.list	
-shared-mime-info.list	
-ubuntu-keyring.list	
-ubuntu-minimal.list	
-ucf.list	
-whiptail.list	
-xdg-user-dirs.list	
-xkb-data.list	
-gcc-12-base
-libgcc-s1
-libstdc++6
-libc6
-base-files.list	
-systemd-sysv.list	
-libnss-systemd
-dbus.list	
-libdbus-1-3
-libapparmor1
-libexpat1
-libpam-systemd
-libjson-c5
-libssl3
-libcryptsetup12
-libgnutls30
-systemd.list	
-libsystemd0
-zlib1g
-libapt-pkg6.0
-dpkg.list	
-gzip.list	
-login.list	
-perl-base.list	
-libc-bin.list	
-apt.list	
-apt-utils.list	
-gpgv.list	
-logsave.list	
-libext2fs2
-e2fsprogs.list	
-libsqlite3-0
-libtirpc-common.list	
-libtirpc3
-python3-minimal.list	
-python3.list	
-libpython3-stdlib
-libcom-err2
-libpcre2-8-0
-libpcre3
-passwd.list	
-libss2
-distro-info-data.list	
-isc-dhcp-client.list	
-isc-dhcp-common.list	
-libfribidi0
-libglib2.0-0
-libglib2.0-data.list	
-netplan.io.list	
-libnetplan0
-locales.list	
-logrotate.list	
-python3-gi.list	
-networkd-dispatcher.list	
-openssl.list	
-python-apt-common.list	
-python3-apt.list	
-rsyslog.list	
-sudo.list	
-ubuntu-advantage-tools.list	
-xxd.list	
-vim-tiny.list	
-vim-common.list	
-udev.list	
-libudev1
-systemd-hwe-hwdb.list	
--info.list	
-libnuma1
-irqbalance.list	
-libfuse3-3
-fuse3.list	
-libntfs-3g89.list	
-ntfs-3g.list	
-rsync.list	
-uuid-runtime.list	
-libmpfr6
-libsigsegv2
-gawk.list	
-libaio1
-libdevmapper-event1.02.1
-libedit2
-liblvm2cmd2.03
-dmeventd.list	
-lvm2.list	
-libisns0
-libopeniscsiusr.list	
-open-iscsi.list	
-libcbor0.8
-libfido2-1
-openssh-client.list	
-openssh-sftp-server.list	
-libwrap0
-openssh-server.list	
-perl-modules-5.34.list	
-libgdbm6
-libgdbm-compat4
-libperl5.34
-perl.list	
-python3-chardet.list	
-zstd.list	
-python3-debian.list	
-python3-debconf.list	
-python3-distro-info.list	
-patch.list	
-python3-update-manager.list	
-update-manager-core.list	
-update-notifier-common.list	
-libdrm-common.list	
-libdrm2
-libmspack0
-libxslt1.1
-libxmlsec1
-libxmlsec1-openssl
-pci.ids.list	
-libpci3
-pciutils.list	
-open-vm-tools.list	
-apparmor.list	
-bash-completion.list	
-liblmdb0
-libmaxminddb0
-libnghttp2-14
-libuv1
-bind9-libs
-bind9-host.list	
-bind9-dnsutils.list	
-bsdextrautils.list	
-busybox-static.list	
-python3-gdbm
-python3-commandnotfound.list	
-command-not-found.list	
-cpio.list	
-dmidecode.list	
-dosfstools.list	
-ed.list	
-libmagic-mgc.list	
-libmagic1
-file.list	
-friendly-recovery.list	
-tnftp.list	
-ftp.list	
-gettext-base.list	
-libuchardet0
-groff-base.list	
-hdparm.list	
-info.list	
-libip6tc2
-libnfnetlink0
-libnetfilter-conntrack3
-libnftnl11
-iptables.list	
-iputils-tracepath.list	
-libjansson4
-libnftables1
-libparted2
-libpcap0.8
-libpipeline1
-libpng16-16
-libplymouth5
-libpsl5
-libusb-1.0-0
-libxau6
-libxdmcp6
-libxcb1
-libx11-data.list	
-libx11-6
-libxext6
-libxmuu1
-lshw.list	
-lsof.list	
-man-db.list	
-manpages.list	
-mtr-tiny.list	
-nano.list	
-nftables.list	
-parted.list	
-plymouth.list	
-plymouth-theme-ubuntu-text.list	
-powermgmt-base.list	
-psmisc.list	
-publicsuffix.list	
-libunwind8
-strace.list	
-tcpdump.list	
-telnet.list	
-time.list	
-usbutils.list	
-wget.list	
-xz-utils.list	
-ubuntu-standard.list	
-ufw.list	
-usb.ids.list	
-xauth.list	
-python3-pyparsing.list	
-python3-httplib2.list	
-python3-more-itertools.list	
-python3-zipp.list	
-python3-importlib-metadata.list	
-python3-jeepney.list	
-python3-cffi-backend
-python3-cryptography.list	
-python3-secretstorage.list	
-python3-keyring.list	
-python3-lazr.uri.list	
-python3-wadllib.list	
-python3-distro.list	
-python3-blinker.list	
-python3-jwt.list	
-python3-oauthlib.list	
-python3-six.list	
-python3-lazr.restfulclient.list	
-python3-launchpadlib.list	
-apport-symptoms.list	
-bc.list	
-bcache-tools.list	
-libpolkit-gobject-1-0
-bolt.list	
-liblzo2-2
-btrfs-progs.list	
-busybox-initramfs.list	
-python3-newt
-libevent-core-2.1-7
-libutempter0
-byobu.list	
-libssh-4
-cryptsetup-bin.list	
-cryptsetup.list	
-libklibc
-klibc-utils.list	
-linux-base.list	
-cryptsetup-initramfs.list	
-libbrotli1
-libsasl2-modules-db
-libsasl2-2
-libldap-2.5-0
-librtmp1
-dbus-user-session.list	
-libassuan0
-gpgconf.list	
-libnpth0
-dirmngr.list	
-libeatmydata1
-eatmydata.list	
-ethtool.list	
-libfdisk1
-fdisk.list	
-finalrd.list	
-fonts-ubuntu-console.list	
-gnupg-l10n.list	
-gnupg-utils.list	
-gpg.list	
-pinentry-curses.list	
-gpg-agent.list	
-gpg-wks-client.list	
-gpg-wks-server.list	
-gpgsm.list	
-gnupg.list	
-libgpgme11
-libjson-glib-1.0-common.list	
-libjson-glib-1.0-0
-libjcat1
-libfwupd2
-libarchive13
-libgcab-1.0-0
-libgudev-1.0-0
-libgusb2
-libxmlb2
-libfwupdplugin5
-libefivar1
-libefiboot1
-libmbim-glib4
-libmbim-proxy.list	
-libmm-glib0
-libqmi-glib5
-libqmi-proxy.list	
-libsmbios-c2.list	
-tpm-udev.list	
-libtss2-mu0
-libtss2-tcti-cmd0
-libtss2-tcti-device0
-libtss2-tcti-mssim0
-libtss2-tcti-swtpm0
-libtss2-sys1
-libtss2-esys-3.0.2-0
-fwupd.list	
-fwupd-signed.list	
-libpackagekit-glib2-18
-gir1.2-packagekitglib-1.0.list	
-liberror-perl.list	
-git-man.list	
-git.list	
-libfreetype6
-grub-common.list	
-grub2-common.list	
-grub-pc-bin.list	
-grub-pc.list	
-grub-gfxpayload-lists.list	
-libnl-3-200
-libnl-genl-3-200
-htop.list	
-python3-bcrypt.list	
-python3-hamcrest.list	
-python3-idna.list	
-python3-openssl.list	
-python3-attr.list	
-python3-pyasn1.list	
-python3-pyasn1-modules.list	
-python3-service-identity.list	
-python3-automat.list	
-python3-constantly.list	
-python3-hyperlink.list	
-python3-incremental.list	
-python3-zope.interface.list	
-python3-twisted.list	
-python3-configobj.list	
-landscape-common.list	
-libstemmer0d
-libappstream4
-libatasmart4
-libblockdev-utils2
-libnspr4
-libnss3
-libvolume-key1.list	
-libblockdev-crypto2
-libblockdev-part-err2
-libparted-fs-resize0
-libblockdev-fs2
-libblockdev-loop2
-gdisk.list	
-libblockdev-part2
-libblockdev-swap2
-libblockdev2
-libdw1
-libftdi1-2
-libflashrom1
-libglib2.0-bin.list	
-libgpm2
-libgstreamer1.0-0
-libinih1
-libintl-perl.list	
-libintl-xs-perl.list	
-libldap-common.list	
-libmodule-find-perl.list	
-libmodule-scandeps-perl.list	
-libpolkit-agent-1-0
-libproc-processtable-perl
-libsasl2-modules
-libsgutils2-2
-libsodium23
-libsort-naturally-perl.list	
-libtcl8.6
-libterm-readkey-perl.list	
-libudisks2-0
-liburcu8
-lxd-agent-loader.list	
-mdadm.list	
-polkitd.list	
-pkexec.list	
-policykit-1.list	
-modemmanager.list	
-motd-news-config.list	
-ncurses-term.list	
-needrestart.list	
-os-prober.list	
-packagekit.list	
-packagekit-tools.list	
-pastebinit.list	
-pollinate.list	
-python-babel-localedata.list	
-python3-babel.list	
-python3-certifi.list	
-python3-colorama.list	
-python3-click.list	
-python3-lib2to3.list	
-python3-distutils.list	
-python3-markupsafe.list	
-python3-jinja2.list	
-python3-json-pointer.list	
-python3-jsonpatch.list	
-python3-setuptools.list	
-python3-pyrsistent
-python3-jsonschema.list	
-python3-ptyprocess.list	
-python3-pexpect.list	
-python3-urllib3.list	
-python3-requests.list	
-python3-serial.list	
-python3-software-properties.list	
-python3-systemd.list	
-run-one.list	
-sbsigntool.list	
-screen.list	
-secureboot-db.list	
-sg3-utils.list	
-sg3-utils-udev.list	
-squashfs-tools.list	
-snapd.list	
-software-properties-common.list	
-python3-magic.list	
-sosreport.list	
-tcl8.6.list	
-tcl.list	
-thin-provisioning-tools.list	
-cloud-guest-utils.list	
-cloud-initramfs-copymods.list	
-cloud-initramfs-dyn-netconf.list	
-kpartx.list	
-multipath-tools.list	
-overlayroot.list	
-vim-runtime.list	
-vim.list	
-xfsprogs.list	
-ubuntu-server.list	
-udisks2.list	
-unattended-upgrades.list	
-ssh-import-id.list	
-usb-modeswitch-data.list	
-usb-modeswitch.list	
-zerofree.list	
-efibootmgr.list	
-grub-efi-amd64-bin.list	
-grub-efi-amd64-signed.list	
-mokutil.list	
-shim-signed.list	
-iucode-tool.list	
-linux-modules-5.15.0-1026-aws.list	
-linux-image-5.15.0-1026-aws.list	
-intel-microcode.list	
-amd64-microcode.list	
-microcode-initrd.list	
-linux-aws-headers-5.15.0-1026.list	
-linux-headers-5.15.0-1026-aws.list	
-ec2-instance-connect.list	
-acpid.list	
-ec2-hibinit-agent.list	
-systemd-timesyncd.list	
-chrony.list	
-tzdata.templates	
-tzdata.postrm	
-tzdata.postinst	
-tzdata.md5sums	
-tzdata.config	
-ca-certificates.templates	
-ca-certificates.postrm	
-ca-certificates.postinst	
-ca-certificates.md5sums	
-ca-certificates.config	
-fonts-lato.list	
-libxml2
-libc-dev-bin.list	
-libcrypt-dev
-rpcsvc-proto.list	
-libtirpc-dev
-libnsl-dev
-libc6-dev
-gcc-11-base
-libisl23
-libmpc3
-cpp-11.list	
-cpp.list	
-libcc1-0
-libgomp1
-libitm1
-libatomic1
-libasan6
-liblsan0
-libtsan0
-libubsan1
-libquadmath0
-libgcc-11-dev
-gcc-11.list	
-gcc.list	
-libstdc++-11-dev
-g++-11.list	
-g++.list	
-make.list	
-libdpkg-perl.list	
-bzip2.list	
-lto-disabled-list.list	
-dpkg-dev.list	
-build-essential.list	
-libfakeroot
-fakeroot.list	
-fonts-dejavu-core.list	
-fontconfig-config.list	
-icu-devtools.list	
-javascript-common.list	
-libalgorithm-diff-perl.list	
-libalgorithm-diff-xs-perl.list	
-libalgorithm-merge-perl.list	
-libfontconfig1
-libjpeg-turbo8
-libjpeg8
-libdeflate0
-libjbig0
-libwebp7
-libtiff5
-libxpm4
-libgd3
-libc-devtools.list	
-libfile-fcntllock-perl.list	
-libicu-dev
-libjs-jquery.list	
-libncurses-dev
-libreadline-dev
-rubygems-integration.list	
-ruby-net-telnet.list	
-ruby-webrick.list	
-ruby-xmlrpc.list	
-libsqlite3-dev
-libssl-dev
-libxml2-dev
-libxslt1-dev
-manpages-dev.list	
-zlib1g-dev
-ruby-build.list	
-unzip.list	
-zip.list	
-libyaml-dev
-libctf0
-binutils-x86-64-linux-gnu.list	
-binutils-common
-binutils.list	
-libbinutils
-libctf-nobfd0
-libpython3.10
-python3.10.list	
-libpython3.10-stdlib
-python3.10-minimal.list	
-libpython3.10-minimal
-ca-certificates.list	
-tzdata.list	
-libbpf0
-ubuntu-release-upgrader-core.list	
-python3-distupgrade.list	
-python3-problem-report.list	
-python3-apport.list	
-apport.list	
-initramfs-tools.list	
-initramfs-tools-core.list	
-initramfs-tools-bin.list	
-python3-tz.list	
-tmux.list	
-cloud-init.list	
-alsa-topology-conf.list	
-libasound2-data.list	
-libasound2
-alsa-ucm-conf.list	
-libaom3
-libva2
-libmfx1
-libva-drm2
-libxfixes3
-libva-x11-2
-libvdpau1
-ocl-icd-libopencl1
-libavutil56
-libpixman-1-0
-libxcb-render0
-libxcb-shm0
-libxrender1
-libcairo2
-libcodec2-1.0
-libdav1d5
-libgsm1
-libmp3lame0
-libopenjp2-7
-libopus0
-libcairo-gobject2
-libgdk-pixbuf2.0-common.list	
-libgdk-pixbuf-2.0-0
-fontconfig.list	
-libgraphite2-3
-libharfbuzz0b
-libthai-data.list	
-libdatrie1
-libthai0
-libpango-1.0-0
-libpangoft2-1.0-0
-libpangocairo-1.0-0
-librsvg2-2
-libshine3
-libsnappy1v5
-libspeex1
-libsoxr0
-libswresample3
-libogg0
-libtheora0
-libtwolame0
-libvorbis0a
-libvorbisenc2
-libvpx7
-libwebpmux3
-libx264-163
-libx265-199
-libxvidcore4
-libzvbi-common.list	
-libzvbi0
-libavcodec58
-libraw1394-11
-libavc1394-0
-libass9
-libudfread0
-libbluray2
-libchromaprint1
-libgme0
-libmpg123-0
-libvorbisfile3
-libopenmpt0
-librabbitmq4
-libsrt1.4-gnutls
-libssh-gcrypt-4
-libnorm1
-libpgm-5.3-0
-libzmq5
-libavformat58
-libbs2b0
-libflite1
-libserd-0-0
-libsord-0-0
-libsratom-0-0
-liblilv-0-0
-libmysofa1
-libblas3
-libgfortran5
-liblapack3
-libasyncns0
-libflac8
-libsndfile1
-libx11-xcb1
-libpulse0
-libsphinxbase3
-libpocketsphinx3
-libpostproc55
-libsamplerate0
-librubberband2
-libswscale5
-libvidstab1.1
-libzimg2
-libavfilter7
-libcaca0
-libcdio19
-libcdio-cdda2
-libcdio-paranoia2
-libdc1394-25
-libglvnd0
-libglapi-mesa
-libxcb-dri2-0
-libxcb-dri3-0
-libxcb-glx0
-libxcb-present0
-libxcb-sync1
-libxcb-xfixes0
-libxshmfence1
-libxxf86vm1
-libdrm-amdgpu1
-libdrm-nouveau2
-libdrm-radeon1
-libllvm13
-libsensors-config.list	
-libsensors5
-libvulkan1
-libgl1-mesa-dri
-libglx-mesa0
-libglx0
-libgl1
-libiec61883-0
-libjack-jackd2-0
-libopenal-data.list	
-libsndio7.0
-libopenal1
-libwayland-client0
-libdecor-0-0
-libwayland-server0
-libgbm1
-libwayland-cursor0
-libwayland-egl1
-libxcursor1
-libxi6
-libxinerama1
-libxkbcommon0
-libxrandr2
-x11-common.list	
-libxss1
-libsdl2-2.0-0
-libxcb-shape0
-libxv1
-libavdevice58
-ffmpeg.list	
-libigdgmm12
-intel-media-va-driver
-libaacs0
-libbdplus0
-libdecor-0-plugin-1-cairo
-libpciaccess0
-libdrm-intel1
-libgdk-pixbuf2.0-bin.list	
-libgl1-amber-dri
-librsvg2-common
-libxcb-randr0
-mesa-va-drivers
-mesa-vdpau-drivers
-mesa-vulkan-drivers
-i965-va-driver
-va-driver-all
-vdpau-driver-all
-pocketsphinx-en-us.list	
-rake.list	
-libruby3.0
-ruby3.0.list	
-ruby-rubygems.list	
-ruby.list	
-ruby-builder.list	
-ruby-gherkin.list	
-ruby-cucumber-core.list	
-ruby-cucumber-wire.list	
-ruby-diff-lcs.list	
-ruby-multi-json.list	
-ruby-multi-test.list	
-cucumber.list	
-ruby-oj
-fonts-liberation.list	
-libatk1.0-data.list	
-libatk1.0-0
-libatspi2.0-0
-libatk-bridge2.0-0
-libavahi-common-data
-libavahi-common3
-libavahi-client3
-libcups2
-hicolor-icon-theme.list	
-gtk-update-icon-cache.list	
-humanity-icon-theme.list	
-ubuntu-mono.list	
-adwaita-icon-theme.list	
-liblcms2-2
-libcolord2
-libepoxy0
-libxcomposite1
-libxdamage1
-libdconf1
-dconf-service.list	
-dconf-gsettings-backend
-libgtk-3-common.list	
-libgtk-3-0
-xdg-utils.list	
-libxtst6
-session-migration.list	
-gsettings-desktop-schemas.list	
-at-spi2-core.list	
-libclone-perl.list	
-libdata-dump-perl.list	
-libencode-locale-perl.list	
-libipc-system-simple-perl.list	
-libfile-basedir-perl.list	
-liburi-perl.list	
-libfile-desktopentry-perl.list	
-libtimedate-perl.list	
-libhttp-date-perl.list	
-libfile-listing-perl.list	
-libfile-mimeinfo-perl.list	
-libfont-afm-perl.list	
-libfontenc1
-libgtk-3-bin.list	
-libllvm11
-libphobos2-ldc-shared98
-libgtkd-3-0
-libhtml-tagset-perl.list	
-libhtml-parser-perl
-libio-html-perl.list	
-liblwp-mediatypes-perl.list	
-libhttp-message-perl.list	
-libhtml-form-perl.list	
-libhtml-tree-perl.list	
-libhtml-format-perl.list	
-libhttp-cookies-perl.list	
-libhttp-daemon-perl.list	
-libhttp-negotiate-perl.list	
-libice6
-perl-openssl-defaults
-libnet-ssleay-perl
-libio-socket-ssl-perl.list	
-libio-stringy-perl.list	
-libnet-http-perl.list	
-libtry-tiny-perl.list	
-libwww-robotrules-perl.list	
-libwww-perl.list	
-liblwp-protocol-https-perl.list	
-libnet-smtp-ssl-perl.list	
-libmailtools-perl.list	
-libxml-parser-perl
-libxml-twig-perl.list	
-libnet-dbus-perl.list	
-libsm6
-libtie-ixhash-perl.list	
-libu2f-udev.list	
-libvte-2.91-common.list	
-libvte-2.91-0
-libvted-3-0
-libx11-protocol-perl.list	
-libxt6
-libxmu6
-libxaw7
-libxft2
-libxkbfile1
-libxml-xpathengine-perl.list	
-libxxf86dga1
-tilix-common.list	
-tilix.list	
-x11-utils.list	
-x11-xserver-utils.list	
-libauthen-sasl-perl.list	
-libpq5
-libpq-dev.list	
-pkg-config.list	
-gyp.list	
-libjs-events.list	
-libjs-highlight.js.list	
-libjs-is-typedarray.list	
-libjs-psl.list	
-libjs-sprintf-js.list	
-libjs-typedarray-to-buffer.list	
-libuv1-dev
-libc-ares2
-libnode72
-libnode-dev.list	
-libnotify4
-libnotify-bin.list	
-nodejs.list	
-node-abab.list	
-node-ms.list	
-node-debug.list	
-node-yallist.list	
-node-lru-cache.list	
-node-semver.list	
-node-agent-base.list	
-node-ansi-regex.list	
-node-ansistyles.list	
-node-aproba.list	
-node-delegates.list	
-libjs-inherits.list	
-node-inherits.list	
-node-core-util-is.list	
-node-safe-buffer.list	
-node-string-decoder.list	
-node-process-nextick-args.list	
-node-util-deprecate.list	
-node-isarray.list	
-node-readable-stream.list	
-node-are-we-there-yet.list	
-node-arrify.list	
-node-asap.list	
-node-asynckit.list	
-node-builtins.list	
-node-chownr.list	
-node-fs.realpath.list	
-node-wrappy.list	
-node-once.list	
-node-inflight.list	
-node-balanced-match.list	
-node-brace-expansion.list	
-node-minimatch.list	
-node-path-is-absolute.list	
-node-glob.list	
-node-graceful-fs.list	
-node-mkdirp.list	
-node-iferr.list	
-node-imurmurhash.list	
-node-fs-write-stream-atomic.list	
-node-rimraf.list	
-node-run-queue.list	
-node-copy-concurrently.list	
-node-move-concurrently.list	
-node-escape-string-regexp.list	
-node-indent-string.list	
-node-p-map.list	
-node-promise-inflight.list	
-node-ssri.list	
-node-unique-filename.list	
-node-cacache.list	
-node-clean-yaml-object.list	
-node-clone.list	
-node-color-name.list	
-node-color-convert.list	
-node-colors.list	
-node-strip-ansi.list	
-node-defaults.list	
-node-wcwidth.js.list	
-node-columnify.list	
-node-console-control-strings.list	
-node-growl.list	
-node-sprintf-js.list	
-node-argparse.list	
-node-esprima.list	
-node-js-yaml.list	
-node-lcov-parse.list	
-node-log-driver.list	
-node-is-plain-obj.list	
-node-is-buffer.list	
-node-kind-of.list	
-node-minimist.list	
-node-cssom.list	
-node-cssstyle.list	
-node-delayed-stream.list	
-node-combined-stream.list	
-node-mime.list	
-node-mime-types.list	
-node-form-data.list	
-node-events.list	
-node-https-proxy-agent.list	
-node-iconv-lite.list	
-node-lodash-packages.list	
-node-stealthy-require.list	
-node-punycode.list	
-node-psl.list	
-node-universalify.list	
-node-tough-cookie.list	
-node-webidl-conversions.list	
-node-commander.list	
-node-mute-stream.list	
-node-read.list	
-node-ws.list	
-node-jsdom.list	
-node-fetch.list	
-node-coveralls.list	
-node-mimic-response.list	
-node-decompress-response.list	
-node-diff.list	
-node-err-code.list	
-node-time-stamp.list	
-node-fancy-log.list	
-node-signal-exit.list	
-node-foreground-child.list	
-node-function-bind.list	
-node-has-unicode.list	
-node-ansi-styles.list	
-node-slice-ansi.list	
-node-string-width.list	
-node-wide-align.list	
-node-gauge.list	
-node-end-of-stream.list	
-node-pump.list	
-node-get-stream.list	
-node-lowercase-keys.list	
-node-json-buffer.list	
-node-p-cancelable.list	
-node-quick-lru.list	
-node-got.list	
-node-has-flag.list	
-node-hosted-git-info.list	
-node-ip.list	
-node-ip-regex.list	
-node-is-typedarray.list	
-node-isexe.list	
-node-json-parse-better-errors.list	
-node-encoding.list	
-node-jsonparse.list	
-node-minipass.list	
-node-npm-bundled.list	
-node-osenv.list	
-node-validate-npm-package-name.list	
-node-npm-package-arg.list	
-node-object-assign.list	
-node-opener.list	
-node-retry.list	
-node-promise-retry.list	
-node-promzard.list	
-node-set-blocking.list	
-node-slash.list	
-libjs-source-map.list	
-node-source-map.list	
-node-source-map-support.list	
-node-spdx-license-ids.list	
-node-spdx-exceptions.list	
-node-spdx-expression-parse.list	
-node-spdx-correct.list	
-node-stack-utils.list	
-node-supports-color.list	
-node-tap-parser.list	
-node-tap-mocha-reporter.list	
-node-text-table.list	
-node-tmatch.list	
-node-typedarray-to-buffer.list	
-node-validate-npm-package-license.list	
-node-whatwg-fetch.list	
-node-write-file-atomic.list	
-nodejs-doc.list	
-node-abbrev.list	
-node-archy.list	
-node-chalk.list	
-node-cli-table.list	
-node-depd.list	
-node-nopt.list	
-node-npmlog.list	
-node-tar.list	
-node-which.list	
-node-gyp.list	
-node-ini.list	
-node-negotiator.list	
-node-resolve.list	
-node-normalize-package-data.list	
-node-read-package-json.list	
-node-tap.list	
-npm.list	
-apt-transport-https.list	
-heroku.list	
-heroku.md5sums	
-libluajit-5.1-common.list	
-libluajit-5.1-2
-libtree-sitter0
-libunibilium4
-lua-luv
-python3-msgpack.list	
-python3-greenlet.list	
-xclip.list	
-libmsgpackc2
-libtermkey1
-libvterm0
-libpcre2-32-0
-xsel.list	
-fd-find.list	
-ripgrep.list	
-libksba8
-libksba8
-libksba8
-libksba8
-google-chrome-stable.list	
-google-chrome-stable.md5sums	
-gh.list	
-libcurl4
-libcurl4
-libcurl4
-libcurl4
-libcurl3-gnutls
-libcurl3-gnutls
-libcurl3-gnutls
-libcurl3-gnutls
-curl.md5sums	
-sqlite3.list	
-curl.list	
-libcurl4
-libcurl3-gnutls
-libksba8
-linux-libc-dev
-linux-modules-5.15.0-1027-aws.list	
-linux-image-5.15.0-1027-aws.list	
-linux-aws.list	
-linux-image-aws.list	
-linux-aws-headers-5.15.0-1027.list	
-linux-headers-5.15.0-1027-aws.list	
-linux-headers-aws.list	
-libhttp-parser2.9
-libmbedcrypto7
-libmbedx509-1
-libmbedtls14
-libssh2-1
-libgit2-1.1
+libexpat1 install
+run-one.md5sums	 install
+libjbig0 install
+grub-gfxpayload-lists.prerm	 install
+grub-gfxpayload-lists.postinst	 install
+grub-gfxpayload-lists.md5sums	 install
+ruby-multi-test.md5sums	 install
+libalgorithm-merge-perl.md5sums	 install
+libxdamage1 install
+ruby-net-telnet.md5sums	 install
+libftdi1-2 install
+ruby-gherkin.md5sums	 install
+libnet-smtp-ssl-perl.md5sums	 install
+libxml-xpathengine-perl.md5sums	 install
+libsort-naturally-perl.md5sums	 install
+hicolor-icon-theme.triggers	 install
+hicolor-icon-theme.prerm	 install
+hicolor-icon-theme.postinst	 install
+hicolor-icon-theme.md5sums	 install
+libhttp-negotiate-perl.md5sums	 install
+libwww-robotrules-perl.md5sums	 install
+libshine3 install
+libshine3 install
+libshine3 install
+libshine3 install
+libgpm2 install
+ruby-cucumber-wire.md5sums	 install
+libvidstab1.1 install
+libvidstab1.1 install
+libvidstab1.1 install
+libhtml-tree-perl.md5sums	 install
+libpng16-16 install
+libio-stringy-perl.md5sums	 install
+xsel.md5sums	 install
+liblwp-mediatypes-perl.md5sums	 install
+powermgmt-base.md5sums	 install
+libmailtools-perl.md5sums	 install
+libtext-wrapi18n-perl.md5sums	 install
+libhtml-tagset-perl.md5sums	 install
+libhttp-date-perl.md5sums	 install
+libtermkey1 install
+libtermkey1 install
+libtermkey1 install
+libtermkey1 install
+libmodule-find-perl.md5sums	 install
+node-log-driver.md5sums	 install
+ruby-multi-json.md5sums	 install
+node-unique-filename.md5sums	 install
+python3-jsonschema.prerm	 install
+python3-jsonschema.postrm	 install
+python3-jsonschema.postinst	 install
+python3-jsonschema.md5sums	 install
+python3-json-pointer.prerm	 install
+python3-json-pointer.postrm	 install
+python3-json-pointer.postinst	 install
+python3-json-pointer.md5sums	 install
+liberror-perl.md5sums	 install
+cpio.prerm	 install
+cpio.postinst	 install
+ruby-builder.md5sums	 install
+libxvidcore4 install
+libxvidcore4 install
+libxvidcore4 install
+libxvidcore4 install
+byobu.templates	 install
+byobu.prerm	 install
+byobu.postrm	 install
+byobu.postinst	 install
+byobu.md5sums	 install
+byobu.config	 install
+byobu.conffiles	 install
+libhtml-form-perl.md5sums	 install
+fonts-liberation.md5sums	 install
+node-json-buffer.md5sums	 install
+libbs2b0 install
+libbs2b0 install
+libbs2b0 install
+libipc-system-simple-perl.md5sums	 install
+python3-service-identity.prerm	 install
+python3-service-identity.postinst	 install
+python3-service-identity.md5sums	 install
+python3-constantly.prerm	 install
+python3-constantly.postinst	 install
+python3-constantly.md5sums	 install
+libunibilium4 install
+libunibilium4 install
+libunibilium4 install
+libunibilium4 install
+python3-pyasn1-modules.prerm	 install
+python3-pyasn1-modules.postinst	 install
+python3-pyasn1-modules.md5sums	 install
+libgme0 install
+libgme0 install
+libgme0 install
+libgme0 install
+python3-pyparsing.prerm	 install
+python3-pyparsing.postinst	 install
+python3-pyparsing.md5sums	 install
+node-console-control-strings.md5sums	 install
+fontconfig.triggers	 install
+libfile-desktopentry-perl.md5sums	 install
+lua-luv install
+lua-luv install
+lua-luv install
+python3-zipp.prerm	 install
+python3-zipp.postinst	 install
+python3-zipp.md5sums	 install
+ucf.templates	 install
+ucf.preinst	 install
+ucf.postrm	 install
+ucf.postinst	 install
+ucf.md5sums	 install
+ucf.conffiles	 install
+ruby-diff-lcs.md5sums	 install
+i965-va-driver install
+python3-pyasn1.prerm	 install
+python3-pyasn1.postinst	 install
+python3-pyasn1.md5sums	 install
+libjack-jackd2-0 install
+libmsgpackc2 install
+libmsgpackc2 install
+libmsgpackc2 install
+libmsgpackc2 install
+libxml-twig-perl.md5sums	 install
+python3-automat.prerm	 install
+python3-automat.postinst	 install
+python3-automat.md5sums	 install
+overlayroot.postrm	 install
+overlayroot.postinst	 install
+overlayroot.md5sums	 install
+overlayroot.conffiles	 install
+cloud-initramfs-dyn-netconf.postrm	 install
+cloud-initramfs-dyn-netconf.postinst	 install
+cloud-initramfs-dyn-netconf.md5sums	 install
+cloud-initramfs-copymods.postrm	 install
+cloud-initramfs-copymods.postinst	 install
+cloud-initramfs-copymods.md5sums	 install
+ruby-cucumber-core.md5sums	 install
+python3-certifi.prerm	 install
+python3-certifi.postinst	 install
+python3-certifi.md5sums	 install
+microcode-initrd.triggers	 install
+cucumber.md5sums	 install
+libfont-afm-perl.md5sums	 install
+libvterm0 install
+libvterm0 install
+libvterm0 install
+libvterm0 install
+libpgm-5.3-0 install
+libpgm-5.3-0 install
+libpgm-5.3-0 install
+libpgm-5.3-0 install
+apport-symptoms.md5sums	 install
+secureboot-db.prerm	 install
+secureboot-db.postrm	 install
+secureboot-db.postinst	 install
+secureboot-db.md5sums	 install
+python3-colorama.prerm	 install
+python3-colorama.postinst	 install
+python3-colorama.md5sums	 install
+node-graceful-fs.md5sums	 install
+node-rimraf.md5sums	 install
+node-tough-cookie.md5sums	 install
+libfile-listing-perl.md5sums	 install
+libalgorithm-diff-perl.md5sums	 install
+libencode-locale-perl.md5sums	 install
+libhtml-format-perl.md5sums	 install
+libauthen-sasl-perl.md5sums	 install
+javascript-common.prerm	 install
+javascript-common.preinst	 install
+javascript-common.postrm	 install
+javascript-common.postinst	 install
+javascript-common.md5sums	 install
+javascript-common.conffiles	 install
+libtie-ixhash-perl.md5sums	 install
+libx11-protocol-perl.md5sums	 install
+fonts-lato.md5sums	 install
+liblwp-protocol-https-perl.md5sums	 install
+node-time-stamp.md5sums	 install
+xclip.md5sums	 install
+python3-chardet.prerm	 install
+python3-chardet.postinst	 install
+python3-chardet.md5sums	 install
+python3-requests.prerm	 install
+python3-requests.postinst	 install
+python3-requests.md5sums	 install
+libhttp-parser2.9 install
+libhttp-parser2.9 install
+libhttp-parser2.9 install
+libhttp-parser2.9 install
+libhttp-cookies-perl.md5sums	 install
+adduser.templates	 install
+adduser.postrm	 install
+adduser.postinst	 install
+adduser.md5sums	 install
+adduser.config	 install
+adduser.conffiles	 install
+libsratom-0-0 install
+libsratom-0-0 install
+libsratom-0-0 install
+libsratom-0-0 install
+rubygems-integration.md5sums	 install
+liblilv-0-0 install
+liblilv-0-0 install
+liblilv-0-0 install
+liblilv-0-0 install
+friendly-recovery.prerm	 install
+friendly-recovery.preinst	 install
+friendly-recovery.postrm	 install
+friendly-recovery.postinst	 install
+friendly-recovery.md5sums	 install
+ruby-build.md5sums	 install
+libjs-highlight.js.md5sums	 install
+libsord-0-0 install
+libsord-0-0 install
+libsord-0-0 install
+libsord-0-0 install
+pollinate.prerm	 install
+pollinate.preinst	 install
+pollinate.postrm	 install
+pollinate.postinst	 install
+pollinate.md5sums	 install
+pollinate.conffiles	 install
+python3-secretstorage.prerm	 install
+python3-secretstorage.postinst	 install
+python3-secretstorage.md5sums	 install
+ssh-import-id.prerm	 install
+ssh-import-id.postinst	 install
+ssh-import-id.md5sums	 install
+ssh-import-id.conffiles	 install
+libio-html-perl.md5sums	 install
+libnorm1 install
+libnorm1 install
+libnorm1 install
+libnorm1 install
+libtimedate-perl.md5sums	 install
+fonts-dejavu-core.md5sums	 install
+fonts-dejavu-core.conffiles	 install
+libluajit-5.1-common.md5sums	 install
+libluajit-5.1-2 install
+libluajit-5.1-2 install
+libluajit-5.1-2 install
+libluajit-5.1-2 install
+ubuntu-keyring.postinst	 install
+ubuntu-keyring.md5sums	 install
+netbase.postrm	 install
+netbase.postinst	 install
+netbase.md5sums	 install
+netbase.conffiles	 install
+node-ssri.md5sums	 install
+libserd-0-0 install
+libserd-0-0 install
+libserd-0-0 install
+libserd-0-0 install
+python3-babel.prerm	 install
+python3-babel.postinst	 install
+python3-babel.md5sums	 install
+python-babel-localedata.md5sums	 install
+libudfread0 install
+libudfread0 install
+libudfread0 install
+libudfread0 install
+manpages.md5sums	 install
+manpages-dev.md5sums	 install
+linux-base.templates	 install
+linux-base.postrm	 install
+linux-base.postinst	 install
+linux-base.md5sums	 install
+linux-base.conffiles	 install
+python3-urllib3.prerm	 install
+python3-urllib3.postinst	 install
+python3-urllib3.md5sums	 install
+dbus.triggers	 install
+update-notifier-common.triggers	 install
+libedit2 install
+efibootmgr.md5sums	 install
+gcc.prerm	 install
+gcc.postinst	 install
+gcc.md5sums	 install
+g++.prerm	 install
+g++.postinst	 install
+g++.md5sums	 install
+cpp.prerm	 install
+cpp.postinst	 install
+cpp.md5sums	 install
+cloud-guest-utils.md5sums	 install
+python3-pexpect.prerm	 install
+python3-pexpect.postinst	 install
+python3-pexpect.md5sums	 install
+libdc1394-25 install
+libdc1394-25 install
+libdc1394-25 install
+libdc1394-25 install
+shim-signed.triggers	 install
+shim-signed.templates	 install
+shim-signed.postrm	 install
+shim-signed.postinst	 install
+shim-signed.md5sums	 install
+libblockdev2 install
+libblockdev2 install
+libblockdev2 install
+libblockdev2 install
+libblockdev2 install
+libblockdev-utils2 install
+libblockdev-utils2 install
+libblockdev-utils2 install
+libblockdev-utils2 install
+libblockdev-swap2 install
+libblockdev-swap2 install
+libblockdev-swap2 install
+libblockdev-swap2 install
+libblockdev-part2 install
+libblockdev-part2 install
+libblockdev-part2 install
+libblockdev-part2 install
+libblockdev-part-err2 install
+libblockdev-part-err2 install
+libblockdev-part-err2 install
+libblockdev-part-err2 install
+libblockdev-loop2 install
+libblockdev-loop2 install
+libblockdev-loop2 install
+libblockdev-loop2 install
+libblockdev-fs2 install
+libblockdev-fs2 install
+libblockdev-fs2 install
+libblockdev-fs2 install
+libblockdev-crypto2 install
+libblockdev-crypto2 install
+libblockdev-crypto2 install
+libblockdev-crypto2 install
+node-abab.md5sums	 install
+libkmod2 install
+libkmod2 install
+libkmod2 install
+libkmod2 install
+kmod.triggers	 install
+kmod.postrm	 install
+kmod.postinst	 install
+kmod.md5sums	 install
+kmod.conffiles	 install
+xkb-data.md5sums	 install
+node-aproba.md5sums	 install
+node-archy.md5sums	 install
+node-argparse.md5sums	 install
+python3-importlib-metadata.prerm	 install
+python3-importlib-metadata.postinst	 install
+python3-importlib-metadata.md5sums	 install
+cpio.md5sums	 install
+libacl1 install
+libacl1 install
+libacl1 install
+libacl1 install
+sensible-utils.md5sums	 install
+node-universalify.md5sums	 install
+pciutils.preinst	 install
+pciutils.postrm	 install
+pciutils.postinst	 install
+pciutils.md5sums	 install
+libpci3 install
+libpci3 install
+libpci3 install
+libpci3 install
+node-clone.md5sums	 install
+node-resolve.md5sums	 install
+node-punycode.md5sums	 install
+usb-modeswitch-data.md5sums	 install
+libzimg2 install
+libzimg2 install
+libzimg2 install
+libzimg2 install
+libmodule-scandeps-perl.md5sums	 install
+libdav1d5 install
+libdav1d5 install
+libdav1d5 install
+libdav1d5 install
+libfile-basedir-perl.md5sums	 install
+node-semver.md5sums	 install
+node-lcov-parse.md5sums	 install
+node-cssom.md5sums	 install
+alsa-topology-conf.md5sums	 install
+node-colors.md5sums	 install
+libass9 install
+libass9 install
+libass9 install
+libass9 install
+python3-wadllib.prerm	 install
+python3-wadllib.postinst	 install
+python3-wadllib.md5sums	 install
+python3-lazr.restfulclient.prerm	 install
+python3-lazr.restfulclient.postinst	 install
+python3-lazr.restfulclient.md5sums	 install
+ufw.triggers	 install
+node-ansi-regex.md5sums	 install
+libx265-199 install
+libx265-199 install
+libx265-199 install
+libx265-199 install
+node-function-bind.md5sums	 install
+node-core-util-is.md5sums	 install
+node-arrify.md5sums	 install
+node-is-plain-obj.md5sums	 install
+node-is-buffer.md5sums	 install
+node-kind-of.md5sums	 install
+node-inherits.md5sums	 install
+libjs-inherits.md5sums	 install
+libdata-dump-perl.md5sums	 install
+node-normalize-package-data.md5sums	 install
+node-read-package-json.md5sums	 install
+node-minimist.md5sums	 install
+node-safe-buffer.md5sums	 install
+node-isarray.md5sums	 install
+python3-jsonpatch.prerm	 install
+python3-jsonpatch.postrm	 install
+python3-jsonpatch.postinst	 install
+python3-jsonpatch.md5sums	 install
+node-string-decoder.md5sums	 install
+node-util-deprecate.md5sums	 install
+node-esprima.prerm	 install
+node-esprima.preinst	 install
+node-esprima.postrm	 install
+node-esprima.postinst	 install
+node-esprima.md5sums	 install
+ocl-icd-libopencl1 install
+ocl-icd-libopencl1 install
+ocl-icd-libopencl1 install
+ocl-icd-libopencl1 install
+python3-configobj.prerm	 install
+python3-configobj.postinst	 install
+python3-configobj.md5sums	 install
+node-source-map.prerm	 install
+node-source-map.preinst	 install
+node-source-map.postrm	 install
+node-source-map.postinst	 install
+node-source-map.md5sums	 install
+libjs-source-map.md5sums	 install
+node-typedarray-to-buffer.md5sums	 install
+libjs-typedarray-to-buffer.md5sums	 install
+amd64-microcode.postrm	 install
+amd64-microcode.postinst	 install
+amd64-microcode.md5sums	 install
+amd64-microcode.conffiles	 install
+libcairo2 install
+libcairo2 install
+libcairo2 install
+libcairo2 install
+libcairo-gobject2 install
+libcairo-gobject2 install
+libcairo-gobject2 install
+libcairo-gobject2 install
+libefivar1 install
+libefivar1 install
+libefivar1 install
+libefiboot1 install
+libefiboot1 install
+libefiboot1 install
+iucode-tool.md5sums	 install
+libsmbios-c2.triggers	 install
+libsmbios-c2.shlibs	 install
+libsmbios-c2.md5sums	 install
+microcode-initrd.postrm	 install
+microcode-initrd.postinst	 install
+microcode-initrd.md5sums	 install
+node-balanced-match.md5sums	 install
+node-run-queue.md5sums	 install
+exa.md5sums	 install
+node-write-file-atomic.md5sums	 install
+node-readable-stream.md5sums	 install
+node-color-convert.md5sums	 install
+python3-openssl.prerm	 install
+python3-openssl.postinst	 install
+python3-openssl.md5sums	 install
+ca-certificates.triggers	 install
+libdatrie1 install
+libdatrie1 install
+libdatrie1 install
+libdatrie1 install
+adwaita-icon-theme.prerm	 install
+adwaita-icon-theme.postrm	 install
+adwaita-icon-theme.postinst	 install
+adwaita-icon-theme.md5sums	 install
+node-object-assign.md5sums	 install
+node-strip-ansi.md5sums	 install
+libicu70 install
+python3-blinker.prerm	 install
+python3-blinker.postinst	 install
+python3-blinker.md5sums	 install
+usrmerge.preinst	 install
+usrmerge.postinst	 install
+usrmerge.md5sums	 install
+liburi-perl.md5sums	 install
+librubberband2 install
+librubberband2 install
+librubberband2 install
+python3-magic.prerm	 install
+python3-magic.postinst	 install
+python3-magic.md5sums	 install
+node-cacache.md5sums	 install
+node-chalk.md5sums	 install
+node-debug.md5sums	 install
+node-mime-types.md5sums	 install
+node-move-concurrently.md5sums	 install
+node-text-table.md5sums	 install
+node-tmatch.md5sums	 install
+libicu70 install
+libicu70 install
+libicu-dev install
+icu-devtools.md5sums	 install
+node-once.md5sums	 install
+node-clean-yaml-object.md5sums	 install
+python3-hyperlink.prerm	 install
+python3-hyperlink.postinst	 install
+python3-hyperlink.md5sums	 install
+python3-more-itertools.prerm	 install
+python3-more-itertools.postinst	 install
+python3-more-itertools.md5sums	 install
+node-ms.md5sums	 install
+sbsigntool.md5sums	 install
+node-fs.realpath.md5sums	 install
+node-is-typedarray.md5sums	 install
+libjs-is-typedarray.md5sums	 install
+node-which.md5sums	 install
+node-spdx-exceptions.md5sums	 install
+node-mkdirp.md5sums	 install
+node-indent-string.md5sums	 install
+node-hosted-git-info.md5sums	 install
+node-npm-package-arg.md5sums	 install
+node-depd.md5sums	 install
+node-wrappy.md5sums	 install
+node-p-cancelable.md5sums	 install
+node-chownr.md5sums	 install
+node-supports-color.md5sums	 install
+node-whatwg-fetch.md5sums	 install
+bash-completion.preinst	 install
+bash-completion.postrm	 install
+bash-completion.postinst	 install
+bash-completion.md5sums	 install
+bash-completion.conffiles	 install
+node-pump.md5sums	 install
+busybox-static.triggers	 install
+node-p-map.md5sums	 install
+libmysofa1 install
+libmysofa1 install
+libmysofa1 install
+libmysofa1 install
+node-sprintf-js.prerm	 install
+node-sprintf-js.preinst	 install
+node-sprintf-js.postrm	 install
+node-sprintf-js.postinst	 install
+node-sprintf-js.md5sums	 install
+libjs-sprintf-js.md5sums	 install
+node-decompress-response.md5sums	 install
+node-set-blocking.md5sums	 install
+node-cssstyle.md5sums	 install
+node-lowercase-keys.md5sums	 install
+node-path-is-absolute.md5sums	 install
+node-got.md5sums	 install
+node-spdx-expression-parse.md5sums	 install
+node-opener.md5sums	 install
+node-isexe.md5sums	 install
+node-mimic-response.md5sums	 install
+node-has-unicode.md5sums	 install
+node-tap-mocha-reporter.md5sums	 install
+node-ansi-styles.md5sums	 install
+node-asynckit.md5sums	 install
+node-npm-bundled.md5sums	 install
+node-copy-concurrently.md5sums	 install
+node-end-of-stream.md5sums	 install
+node-wcwidth.js.md5sums	 install
+node-ini.md5sums	 install
+node-delayed-stream.md5sums	 install
+libphobos2-ldc-shared98 install
+libphobos2-ldc-shared98 install
+libphobos2-ldc-shared98 install
+keyboard-configuration.templates	 install
+keyboard-configuration.preinst	 install
+keyboard-configuration.postrm	 install
+keyboard-configuration.postinst	 install
+keyboard-configuration.md5sums	 install
+keyboard-configuration.config	 install
+console-setup.templates	 install
+console-setup.postrm	 install
+console-setup.postinst	 install
+console-setup.md5sums	 install
+console-setup.config	 install
+console-setup-linux.prerm	 install
+console-setup-linux.postrm	 install
+console-setup-linux.postinst	 install
+console-setup-linux.md5sums	 install
+console-setup-linux.conffiles	 install
+node-source-map-support.md5sums	 install
+node-yallist.md5sums	 install
+node-lru-cache.md5sums	 install
+pastebinit.md5sums	 install
+node-stack-utils.md5sums	 install
+node-tap.md5sums	 install
+mokutil.md5sums	 install
+perl-openssl-defaults install
+node-coveralls.md5sums	 install
+node-tap-parser.md5sums	 install
+node-get-stream.md5sums	 install
+node-fancy-log.md5sums	 install
+node-negotiator.md5sums	 install
+node-jsonparse.md5sums	 install
+node-fs-write-stream-atomic.md5sums	 install
+node-imurmurhash.md5sums	 install
+node-slash.md5sums	 install
+node-has-flag.md5sums	 install
+node-promise-retry.md5sums	 install
+node-defaults.md5sums	 install
+python3-httplib2.prerm	 install
+python3-httplib2.postinst	 install
+python3-httplib2.md5sums	 install
+node-retry.md5sums	 install
+libtry-tiny-perl.md5sums	 install
+libbz2-1.0 install
+libcodec2-1.0 install
+libcodec2-1.0 install
+libcodec2-1.0 install
+ruby-webrick.md5sums	 install
+node-osenv.md5sums	 install
+node-iconv-lite.md5sums	 install
+node-json-parse-better-errors.md5sums	 install
+debianutils.triggers	 install
+debianutils.prerm	 install
+debianutils.postrm	 install
+debianutils.postinst	 install
+node-spdx-correct.md5sums	 install
+node-events.md5sums	 install
+libjs-events.md5sums	 install
+ruby.preinst	 install
+ruby.md5sums	 install
+node-psl.md5sums	 install
+libjs-psl.md5sums	 install
+python3-ptyprocess.prerm	 install
+python3-ptyprocess.postinst	 install
+python3-ptyprocess.md5sums	 install
+ruby-oj install
+node-columnify.md5sums	 install
+publicsuffix.md5sums	 install
+python3-commandnotfound.prerm	 install
+python3-commandnotfound.postinst	 install
+python3-commandnotfound.md5sums	 install
+command-not-found.md5sums	 install
+command-not-found.conffiles	 install
+node-delegates.md5sums	 install
+node-quick-lru.md5sums	 install
+node-escape-string-regexp.md5sums	 install
+node-mute-stream.md5sums	 install
+node-inflight.md5sums	 install
+node-color-name.md5sums	 install
+node-lodash-packages.md5sums	 install
+node-spdx-license-ids.md5sums	 install
+node-ip.md5sums	 install
+tilix.prerm	 install
+tilix.postinst	 install
+tilix.md5sums	 install
+tilix-common.md5sums	 install
+node-read.md5sums	 install
+node-gyp.md5sums	 install
+sysvinit-utils.md5sums	 install
+libvted-3-0 install
+libvted-3-0 install
+libvted-3-0 install
+libgtkd-3-0 install
+libgtkd-3-0 install
+libgtkd-3-0 install
+node-signal-exit.md5sums	 install
+libzmq5 install
+libzmq5 install
+libzmq5 install
+libzmq5 install
+python3-jeepney.prerm	 install
+python3-jeepney.postinst	 install
+python3-jeepney.md5sums	 install
+libcrypt1 install
+libcrypt1 install
+libcrypt1 install
+libcrypt1 install
+libcrypt-dev install
+python3-lazr.uri.prerm	 install
+python3-lazr.uri.postinst	 install
+python3-lazr.uri.md5sums	 install
+python3-attr.prerm	 install
+python3-attr.postinst	 install
+python3-attr.md5sums	 install
+node-agent-base.md5sums	 install
+node-https-proxy-agent.md5sums	 install
+node-combined-stream.md5sums	 install
+node-asap.md5sums	 install
+python3-hamcrest.prerm	 install
+python3-hamcrest.postinst	 install
+python3-hamcrest.md5sums	 install
+rsyslog.triggers	 install
+node-stealthy-require.md5sums	 install
+node-promzard.md5sums	 install
+node-promise-inflight.md5sums	 install
+node-builtins.md5sums	 install
+node-validate-npm-package-license.md5sums	 install
+node-form-data.md5sums	 install
+node-jsdom.md5sums	 install
+node-encoding.md5sums	 install
+libzvbi0 install
+libzvbi0 install
+libzvbi0 install
+libzvbi0 install
+libzvbi-common.md5sums	 install
+node-nopt.md5sums	 install
+node-brace-expansion.md5sums	 install
+node-wide-align.md5sums	 install
+node-ip-regex.md5sums	 install
+node-mime.prerm	 install
+node-mime.preinst	 install
+node-mime.postrm	 install
+node-mime.postinst	 install
+node-mime.md5sums	 install
+python3-keyring.prerm	 install
+python3-keyring.postinst	 install
+python3-keyring.md5sums	 install
+python3-click.prerm	 install
+python3-click.postinst	 install
+python3-click.md5sums	 install
+node-foreground-child.md5sums	 install
+iso-codes.md5sums	 install
+libpipeline1 install
+libpipeline1 install
+libpipeline1 install
+libpipeline1 install
+libglx0 install
+libglx0 install
+libglx0 install
+libglx0 install
+libglvnd0 install
+libglvnd0 install
+libglvnd0 install
+libglvnd0 install
+libgl1 install
+libgl1 install
+libgl1 install
+libgl1 install
+liburcu8 install
+liburcu8 install
+liburcu8 install
+liburcu8 install
+libhttp-message-perl.md5sums	 install
+rake.md5sums	 install
+bash.prerm	 install
+bash.postrm	 install
+bash.postinst	 install
+bash.md5sums	 install
+bash.conffiles	 install
+readline-common.postrm	 install
+readline-common.postinst	 install
+readline-common.md5sums	 install
+libreadline8 install
+libreadline8 install
+libreadline8 install
+libreadline8 install
+libreadline-dev install
+node-cli-table.md5sums	 install
+node-validate-npm-package-name.md5sums	 install
+libunistring2 install
+libunistring2 install
+libunistring2 install
+libunistring2 install
+libfile-mimeinfo-perl.md5sums	 install
+mtr-tiny.postinst	 install
+mtr-tiny.md5sums	 install
+liblapack3 install
+liblapack3 install
+liblapack3 install
+liblapack3 install
+liblapack3 install
+liblapack3 install
+libblas3 install
+libblas3 install
+libblas3 install
+libblas3 install
+libblas3 install
+libblas3 install
+libpciaccess0 install
+libpciaccess0 install
+libpciaccess0 install
+libpciaccess0 install
+libio-socket-ssl-perl.md5sums	 install
+libcap-ng0 install
+libcap-ng0 install
+libcap-ng0 install
+libcap-ng0 install
+libvolume-key1.triggers	 install
+libvolume-key1.symbols	 install
+libvolume-key1.shlibs	 install
+libvolume-key1.md5sums	 install
+node-ansistyles.md5sums	 install
+shared-mime-info.triggers	 install
+shared-mime-info.postrm	 install
+shared-mime-info.postinst	 install
+shared-mime-info.md5sums	 install
+libxxhash0 install
+libxxhash0 install
+libxxhash0 install
+libxxhash0 install
+libjcat1 install
+libjcat1 install
+libjcat1 install
+libjcat1 install
+unattended-upgrades.templates	 install
+unattended-upgrades.preinst	 install
+unattended-upgrades.postrm	 install
+unattended-upgrades.postinst	 install
+unattended-upgrades.md5sums	 install
+unattended-upgrades.config	 install
+unattended-upgrades.conffiles	 install
+node-growl.md5sums	 install
+node-iferr.md5sums	 install
+libuv1 install
+libuv1 install
+libuv1 install
+libuv1 install
+libuv1-dev install
+libopenjp2-7 install
+libopenjp2-7 install
+libopenjp2-7 install
+libopenjp2-7 install
+libffi8 install
+libffi8 install
+libffi8 install
+libffi8 install
+libgmp10 install
+libgmp10 install
+libgmp10 install
+ncurses-term.md5sums	 install
+ncurses-bin.md5sums	 install
+ncurses-base.md5sums	 install
+ncurses-base.conffiles	 install
+libtinfo6 install
+libtinfo6 install
+libtinfo6 install
+libtinfo6 install
+libncursesw6 install
+libncursesw6 install
+libncursesw6 install
+libncursesw6 install
+libncurses6 install
+libncurses6 install
+libncurses6 install
+libncurses6 install
+libncurses-dev install
+node-process-nextick-args.md5sums	 install
+python3-setuptools.prerm	 install
+python3-setuptools.postinst	 install
+python3-setuptools.md5sums	 install
+python3-pkg-resources.prerm	 install
+python3-pkg-resources.postinst	 install
+python3-pkg-resources.md5sums	 install
+libgpg-error0 install
+libgpg-error0 install
+libgpg-error0 install
+libgpg-error0 install
+ethtool.md5sums	 install
+ethtool.conffiles	 install
+open-iscsi.triggers	 install
+open-iscsi.templates	 install
+open-iscsi.prerm	 install
+open-iscsi.preinst	 install
+open-iscsi.postrm	 install
+open-iscsi.postinst	 install
+open-iscsi.md5sums	 install
+open-iscsi.conffiles	 install
+libopeniscsiusr.triggers	 install
+libopeniscsiusr.shlibs	 install
+libopeniscsiusr.md5sums	 install
+libasound2 install
+libasound2 install
+libasound2 install
+libasound2 install
+libasound2-data.md5sums	 install
+libcbor0.8 install
+libcbor0.8 install
+libcbor0.8 install
+libcbor0.8 install
+libfido2-1 install
+libfido2-1 install
+libfido2-1 install
+libfido2-1 install
+python3-launchpadlib.prerm	 install
+python3-launchpadlib.postinst	 install
+python3-launchpadlib.md5sums	 install
+librsvg2-common install
+librsvg2-common install
+librsvg2-2 install
+librsvg2-2 install
+librsvg2-2 install
+librsvg2-2 install
+pci.ids.md5sums	 install
+libnet-http-perl.md5sums	 install
+libjack-jackd2-0 install
+libjack-jackd2-0 install
+mawk.prerm	 install
+mawk.postinst	 install
+mawk.md5sums	 install
+wget.md5sums	 install
+wget.conffiles	 install
+libbsd0 install
+libbsd0 install
+libbsd0 install
+libbsd0 install
+acpid.prerm	 install
+acpid.preinst	 install
+acpid.postrm	 install
+acpid.postinst	 install
+acpid.md5sums	 install
+acpid.conffiles	 install
+tpm-udev.postinst	 install
+tpm-udev.md5sums	 install
+libllvm11 install
+libllvm11 install
+libllvm11 install
+node-js-yaml.md5sums	 install
+pocketsphinx-en-us.md5sums	 install
+libpocketsphinx3 install
+libpocketsphinx3 install
+libpocketsphinx3 install
+ruby-rubygems.md5sums	 install
+libwww-perl.md5sums	 install
+node-minipass.md5sums	 install
+libatk-bridge2.0-0 install
+libatk-bridge2.0-0 install
+libatk-bridge2.0-0 install
+libatk-bridge2.0-0 install
+libflite1 install
+libflite1 install
+libflite1 install
+libflite1 install
+libtree-sitter0 install
+libtree-sitter0 install
+libtree-sitter0 install
+libtree-sitter0 install
+libklibc install
+klibc-utils.triggers	 install
+klibc-utils.postinst	 install
+klibc-utils.md5sums	 install
+libgsm1 install
+libgsm1 install
+libgsm1 install
+libgsm1 install
+libgd3 install
+libgd3 install
+libgd3 install
+libgd3 install
+libopenmpt0 install
+libopenmpt0 install
+libopenmpt0 install
+libopenmpt0 install
+screen.prerm	 install
+screen.postrm	 install
+screen.postinst	 install
+screen.md5sums	 install
+screen.conffiles	 install
+libxfixes3 install
+libxfixes3 install
+libxfixes3 install
+libxfixes3 install
+libxinerama1 install
+libxinerama1 install
+libxinerama1 install
+libdconf1 install
+libdconf1 install
+libdconf1 install
+libdconf1 install
+dconf-service.md5sums	 install
+dconf-gsettings-backend install
+librabbitmq4 install
+librabbitmq4 install
+librabbitmq4 install
+librabbitmq4 install
+libdebconfclient0 install
+libdebconfclient0 install
+libdebconfclient0 install
+libdebconfclient0 install
+busybox-static.md5sums	 install
+busybox-initramfs.md5sums	 install
+iputils-tracepath.preinst	 install
+iputils-tracepath.md5sums	 install
+iputils-ping.postinst	 install
+iputils-ping.md5sums	 install
+libgdbm6 install
+libgdbm6 install
+libgdbm6 install
+libgdbm6 install
+libgdbm-compat4 install
+libgdbm-compat4 install
+libgdbm-compat4 install
+libgdbm-compat4 install
+libalgorithm-diff-xs-perl.md5sums	 install
+libhtml-parser-perl install
+liblocale-gettext-perl.md5sums	 install
+libnet-dbus-perl.md5sums	 install
+libproc-processtable-perl install
+libtext-charwidth-perl.md5sums	 install
+libtext-iconv-perl.md5sums	 install
+libxml-parser-perl install
+libclone-perl.md5sums	 install
+libfile-fcntllock-perl.md5sums	 install
+libintl-xs-perl.md5sums	 install
+libintl-perl.md5sums	 install
+libterm-readkey-perl.md5sums	 install
+node-fetch.md5sums	 install
+bolt.prerm	 install
+bolt.preinst	 install
+bolt.postrm	 install
+bolt.postinst	 install
+bolt.md5sums	 install
+node-diff.md5sums	 install
+libnl-genl-3-200 install
+libnl-genl-3-200 install
+libnl-genl-3-200 install
+libnl-genl-3-200 install
+libnl-3-200 install
+libnl-3-200 install
+libnl-3-200 install
+libnl-3-200 install
+libnl-3-200 install
+coreutils.postrm	 install
+coreutils.postinst	 install
+coreutils.md5sums	 install
+node-webidl-conversions.md5sums	 install
+chrony.prerm	 install
+chrony.preinst	 install
+chrony.postrm	 install
+chrony.postinst	 install
+chrony.md5sums	 install
+chrony.conffiles	 install
+initramfs-tools.triggers	 install
+nodejs.prerm	 install
+nodejs.postinst	 install
+nodejs.md5sums	 install
+nodejs-doc.md5sums	 install
+libnode72 install
+libnode72 install
+libnode72 install
+libnode-dev.md5sums	 install
+xfsprogs.triggers	 install
+xfsprogs.shlibs	 install
+xfsprogs.postinst	 install
+xfsprogs.md5sums	 install
+python3-debian.prerm	 install
+python3-debian.postinst	 install
+python3-debian.md5sums	 install
+libxt6 install
+libxt6 install
+libxt6 install
+libxt6 install
+python3-incremental.prerm	 install
+python3-incremental.postinst	 install
+python3-incremental.md5sums	 install
+python3-jinja2.prerm	 install
+python3-jinja2.postinst	 install
+python3-jinja2.md5sums	 install
+libxkbcommon0 install
+libxkbcommon0 install
+libxkbcommon0 install
+libxkbcommon0 install
+node-are-we-there-yet.md5sums	 install
+node-npmlog.md5sums	 install
+libargon2-1 install
+libargon2-1 install
+libargon2-1 install
+libargon2-1 install
+ed.prerm	 install
+ed.postinst	 install
+ed.md5sums	 install
+node-minimatch.md5sums	 install
+node-string-width.md5sums	 install
+node-abbrev.md5sums	 install
+libgusb2 install
+libgusb2 install
+libgusb2 install
+libgusb2 install
+libxmuu1 install
+libxmuu1 install
+libxmuu1 install
+libxmu6 install
+libxmu6 install
+libxmu6 install
+make.md5sums	 install
+libnetfilter-conntrack3 install
+libnetfilter-conntrack3 install
+libnetfilter-conntrack3 install
+libnetfilter-conntrack3 install
+init.md5sums	 install
+init-system-helpers.md5sums	 install
+strace.md5sums	 install
+python3-idna.prerm	 install
+python3-idna.postinst	 install
+python3-idna.md5sums	 install
+libqmi-proxy.md5sums	 install
+libqmi-glib5 install
+libqmi-glib5 install
+libqmi-glib5 install
+libqmi-glib5 install
+modemmanager.prerm	 install
+modemmanager.preinst	 install
+modemmanager.postrm	 install
+modemmanager.postinst	 install
+modemmanager.md5sums	 install
+modemmanager.conffiles	 install
+libmm-glib0 install
+libmm-glib0 install
+libmm-glib0 install
+libmm-glib0 install
+finalrd.prerm	 install
+finalrd.postrm	 install
+finalrd.postinst	 install
+finalrd.md5sums	 install
+libgpm2 install
+libgpm2 install
+libgpm2 install
+lvm2.triggers	 install
+lvm2.prerm	 install
+lvm2.preinst	 install
+lvm2.postrm	 install
+lvm2.postinst	 install
+lvm2.md5sums	 install
+lvm2.conffiles	 install
+liblvm2cmd2.03 install
+liblvm2cmd2.03 install
+liblvm2cmd2.03 install
+libdevmapper1.02.1 install
+libdevmapper1.02.1 install
+libdevmapper1.02.1 install
+libdevmapper1.02.1 install
+libdevmapper-event1.02.1 install
+libdevmapper-event1.02.1 install
+libdevmapper-event1.02.1 install
+libdevmapper-event1.02.1 install
+dmsetup.triggers	 install
+dmsetup.postinst	 install
+dmsetup.md5sums	 install
+dmeventd.triggers	 install
+dmeventd.shlibs	 install
+dmeventd.prerm	 install
+dmeventd.postrm	 install
+dmeventd.postinst	 install
+dmeventd.md5sums	 install
+ufw.templates	 install
+ufw.prerm	 install
+ufw.preinst	 install
+ufw.postrm	 install
+ufw.postinst	 install
+ufw.md5sums	 install
+ufw.config	 install
+ufw.conffiles	 install
+libchromaprint1 install
+libchromaprint1 install
+libchromaprint1 install
+libchromaprint1 install
+node-glob.md5sums	 install
+python3-twisted.triggers	 install
+npm.prerm	 install
+npm.preinst	 install
+npm.postrm	 install
+npm.postinst	 install
+npm.md5sums	 install
+fonts-ubuntu-console.md5sums	 install
+libgit2-1.1 install
+libgit2-1.1 install
+libgit2-1.1 install
+libgit2-1.1 install
+node-err-code.md5sums	 install
+nano.prerm	 install
+nano.postinst	 install
+nano.md5sums	 install
+nano.conffiles	 install
+python3-distro.prerm	 install
+python3-distro.postinst	 install
+python3-distro.md5sums	 install
+node-ws.md5sums	 install
+python3-debconf.prerm	 install
+python3-debconf.postinst	 install
+python3-debconf.md5sums	 install
+debconf.templates	 install
+debconf.postinst	 install
+debconf.md5sums	 install
+debconf.config	 install
+debconf.conffiles	 install
+debconf-i18n.md5sums	 install
+libaom3 install
+libaom3 install
+libaom3 install
+libaom3 install
+libuuid1 install
+libsmartcols1 install
+libmount1 install
+libfdisk1 install
+libblkid1 install
+uuid-runtime.prerm	 install
+uuid-runtime.postrm	 install
+uuid-runtime.postinst	 install
+uuid-runtime.md5sums	 install
+uuid-runtime.conffiles	 install
+util-linux.prerm	 install
+util-linux.preinst	 install
+util-linux.postrm	 install
+util-linux.postinst	 install
+util-linux.md5sums	 install
+util-linux.conffiles	 install
+mount.md5sums	 install
+libuuid1 install
+libuuid1 install
+libuuid1 install
+libsmartcols1 install
+libsmartcols1 install
+libsmartcols1 install
+libmount1 install
+libmount1 install
+libmount1 install
+libfdisk1 install
+libfdisk1 install
+libfdisk1 install
+libblkid1 install
+libblkid1 install
+libblkid1 install
+fdisk.md5sums	 install
+eject.md5sums	 install
+bsdutils.md5sums	 install
+bsdextrautils.prerm	 install
+bsdextrautils.postinst	 install
+bsdextrautils.md5sums	 install
+libjs-jquery.prerm	 install
+libjs-jquery.preinst	 install
+libjs-jquery.postrm	 install
+libjs-jquery.postinst	 install
+libjs-jquery.md5sums	 install
+libjpeg-turbo8 install
+libjpeg-turbo8 install
+libjpeg-turbo8 install
+libjpeg-turbo8 install
+libkrb5support0 install
+libkrb5support0 install
+libkrb5support0 install
+libkrb5support0 install
+libkrb5-3 install
+libkrb5-3 install
+libkrb5-3 install
+libkrb5-3 install
+libk5crypto3 install
+libk5crypto3 install
+libk5crypto3 install
+libk5crypto3 install
+libgssapi-krb5-2 install
+libgssapi-krb5-2 install
+libgssapi-krb5-2 install
+libgssapi-krb5-2 install
+libgssapi-krb5-2 install
+libgssapi-krb5-2 install
+libcolord2 install
+libcolord2 install
+libcolord2 install
+libcolord2 install
+gyp.prerm	 install
+gyp.postinst	 install
+gyp.md5sums	 install
+libsasl2-modules install
+libsasl2-modules install
+libsasl2-modules install
+libsasl2-modules-db install
+libsasl2-2 install
+libsasl2-2 install
+libsasl2-2 install
+va-driver-all install
+libva2 install
+libva2 install
+libva2 install
+libva2 install
+libva-x11-2 install
+libva-x11-2 install
+libva-x11-2 install
+libva-x11-2 install
+libva-drm2 install
+libva-drm2 install
+libva-drm2 install
+libva-drm2 install
+netcat-openbsd.prerm	 install
+netcat-openbsd.postinst	 install
+netcat-openbsd.md5sums	 install
+libspeex1 install
+libspeex1 install
+libspeex1 install
+plymouth-theme-ubuntu-text.triggers	 install
+node-slice-ansi.md5sums	 install
+node-tar.md5sums	 install
+node-gauge.md5sums	 install
+node-commander.md5sums	 install
+libappstream4 install
+libappstream4 install
+libappstream4 install
+libappstream4 install
+mdadm.templates	 install
+mdadm.prerm	 install
+mdadm.preinst	 install
+mdadm.postrm	 install
+mdadm.postinst	 install
+mdadm.md5sums	 install
+mdadm.config	 install
+mdadm.conffiles	 install
+btrfs-progs.triggers	 install
+btrfs-progs.md5sums	 install
+procps.prerm	 install
+procps.preinst	 install
+procps.postrm	 install
+procps.postinst	 install
+procps.md5sums	 install
+procps.conffiles	 install
+libprocps8 install
+libprocps8 install
+libprocps8 install
+openssh-sftp-server.md5sums	 install
+openssh-server.templates	 install
+openssh-server.prerm	 install
+openssh-server.preinst	 install
+openssh-server.postrm	 install
+openssh-server.postinst	 install
+openssh-server.md5sums	 install
+openssh-server.config	 install
+openssh-server.conffiles	 install
+openssh-client.prerm	 install
+openssh-client.preinst	 install
+openssh-client.postrm	 install
+openssh-client.postinst	 install
+openssh-client.md5sums	 install
+openssh-client.conffiles	 install
+polkitd.postrm	 install
+polkitd.postinst	 install
+polkitd.md5sums	 install
+polkitd.conffiles	 install
+policykit-1.prerm	 install
+policykit-1.preinst	 install
+policykit-1.postrm	 install
+policykit-1.postinst	 install
+policykit-1.md5sums	 install
+pkexec.postinst	 install
+pkexec.md5sums	 install
+libpolkit-gobject-1-0 install
+libpolkit-gobject-1-0 install
+libpolkit-gobject-1-0 install
+libpolkit-gobject-1-0 install
+libpolkit-agent-1-0 install
+libpolkit-agent-1-0 install
+libpolkit-agent-1-0 install
+libpolkit-agent-1-0 install
+libkeyutils1 install
+libkeyutils1 install
+libkeyutils1 install
+libkeyutils1 install
+libssh2-1 install
+libssh2-1 install
+libssh2-1 install
+libssh2-1 install
+lxd-agent-loader.prerm	 install
+lxd-agent-loader.postrm	 install
+lxd-agent-loader.postinst	 install
+lxd-agent-loader.md5sums	 install
+libaacs0 install
+libaacs0 install
+libaacs0 install
+libxaw7 install
+libxaw7 install
+libxaw7 install
+libfakeroot install
+libfakeroot install
+libfakeroot install
+libfakeroot install
+fakeroot.prerm	 install
+fakeroot.postinst	 install
+fakeroot.md5sums	 install
+libx264-163 install
+libx264-163 install
+libx264-163 install
+libbdplus0 install
+libbdplus0 install
+libbdplus0 install
+libbdplus0 install
+libbluray2 install
+libbluray2 install
+libbluray2 install
+libbluray2 install
+libdeflate0 install
+libdeflate0 install
+libdeflate0 install
+libdeflate0 install
+libsndio7.0 install
+libsndio7.0 install
+libsndio7.0 install
+libsndio7.0 install
+libopenal1 install
+libopenal1 install
+libopenal1 install
+libopenal1 install
+libopenal-data.md5sums	 install
+libopenal-data.conffiles	 install
+libsrt1.4-gnutls install
+libsrt1.4-gnutls install
+libsrt1.4-gnutls install
+libwebpmux3 install
+libwebpmux3 install
+libwebpmux3 install
+libwebp7 install
+libwebp7 install
+libwebp7 install
+packagekit.preinst	 install
+packagekit.postrm	 install
+packagekit.postinst	 install
+packagekit.md5sums	 install
+packagekit.conffiles	 install
+packagekit-tools.md5sums	 install
+libpackagekit-glib2-18 install
+libpackagekit-glib2-18 install
+libpackagekit-glib2-18 install
+libpackagekit-glib2-18 install
+gir1.2-packagekitglib-1.0.md5sums	 install
+libvulkan1 install
+libvulkan1 install
+libvulkan1 install
+libvulkan1 install
+libgl1-amber-dri install
+libdrm2 install
+libdrm2 install
+libdrm2 install
+libdrm2 install
+libdrm-radeon1 install
+libdrm-radeon1 install
+libdrm-radeon1 install
+libdrm-radeon1 install
+libdrm-nouveau2 install
+libdrm-nouveau2 install
+libdrm-nouveau2 install
+libdrm-nouveau2 install
+libdrm-intel1 install
+libdrm-intel1 install
+libdrm-intel1 install
+libdrm-intel1 install
+libdrm-common.md5sums	 install
+libdrm-amdgpu1 install
+libdrm-amdgpu1 install
+libdrm-amdgpu1 install
+libdrm-amdgpu1 install
+python3-msgpack.prerm	 install
+python3-msgpack.postinst	 install
+python3-msgpack.md5sums	 install
+libsemanage2 install
+libsemanage2 install
+libsemanage2 install
+libsemanage2 install
+libsemanage-common.md5sums	 install
+libsemanage-common.conffiles	 install
+session-migration.postrm	 install
+session-migration.postinst	 install
+session-migration.md5sums	 install
+libaudit1 install
+libaudit1 install
+libaudit1 install
+libaudit1 install
+libaudit-common.md5sums	 install
+libaudit-common.conffiles	 install
+python3-dbus.prerm	 install
+python3-dbus.postinst	 install
+python3-dbus.md5sums	 install
+python3-zope.interface.prerm	 install
+python3-zope.interface.postinst	 install
+python3-zope.interface.md5sums	 install
+man-db.triggers	 install
+man-db.templates	 install
+man-db.prerm	 install
+man-db.postrm	 install
+man-db.postinst	 install
+man-db.md5sums	 install
+man-db.config	 install
+man-db.conffiles	 install
+libftdi1-2 install
+libftdi1-2 install
+libftdi1-2 install
+libseccomp2 install
+libseccomp2 install
+libseccomp2 install
+libseccomp2 install
+libselinux1 install
+libselinux1 install
+libselinux1 install
+libselinux1 install
+python3-markupsafe.prerm	 install
+python3-markupsafe.postinst	 install
+python3-markupsafe.md5sums	 install
+whiptail.preinst	 install
+whiptail.md5sums	 install
+python3-newt install
+python3-newt install
+python3-newt install
+libnewt0.52 install
+libnewt0.52 install
+libnewt0.52 install
+libnewt0.52 install
+libnewt0.52 install
+libnewt0.52 install
+python3-pyrsistent install
+python3-pyrsistent install
+python3-pyrsistent install
+python3-greenlet.prerm	 install
+python3-greenlet.preinst	 install
+python3-greenlet.postrm	 install
+python3-greenlet.postinst	 install
+python3-greenlet.md5sums	 install
+python3-systemd.prerm	 install
+python3-systemd.postinst	 install
+python3-systemd.md5sums	 install
+libsphinxbase3 install
+libsphinxbase3 install
+libsphinxbase3 install
+libsphinxbase3 install
+plymouth.triggers	 install
+plymouth.preinst	 install
+plymouth.postrm	 install
+plymouth.postinst	 install
+plymouth.md5sums	 install
+plymouth.conffiles	 install
+plymouth-theme-ubuntu-text.prerm	 install
+plymouth-theme-ubuntu-text.postrm	 install
+plymouth-theme-ubuntu-text.postinst	 install
+plymouth-theme-ubuntu-text.md5sums	 install
+libplymouth5 install
+libplymouth5 install
+libplymouth5 install
+libplymouth5 install
+libgirepository-1.0-1 install
+libgirepository-1.0-1 install
+libgirepository-1.0-1 install
+libgirepository-1.0-1 install
+gir1.2-glib-2.0 install
+thin-provisioning-tools.triggers	 install
+thin-provisioning-tools.md5sums	 install
+humanity-icon-theme.postrm	 install
+humanity-icon-theme.postinst	 install
+humanity-icon-theme.md5sums	 install
+ubuntu-mono.postrm	 install
+ubuntu-mono.postinst	 install
+ubuntu-mono.md5sums	 install
+media-types.md5sums	 install
+media-types.conffiles	 install
+libtss2-tcti-swtpm0 install
+libtss2-tcti-swtpm0 install
+libtss2-tcti-swtpm0 install
+libtss2-tcti-swtpm0 install
+libtss2-tcti-mssim0 install
+libtss2-tcti-mssim0 install
+libtss2-tcti-mssim0 install
+libtss2-tcti-mssim0 install
+libtss2-tcti-device0 install
+libtss2-tcti-device0 install
+libtss2-tcti-device0 install
+libtss2-tcti-device0 install
+libtss2-tcti-cmd0 install
+libtss2-tcti-cmd0 install
+libtss2-tcti-cmd0 install
+libtss2-tcti-cmd0 install
+libtss2-sys1 install
+libtss2-sys1 install
+libtss2-sys1 install
+libtss2-sys1 install
+libtss2-mu0 install
+libtss2-mu0 install
+libtss2-mu0 install
+libtss2-mu0 install
+libtss2-esys-3.0.2-0 install
+libtss2-esys-3.0.2-0 install
+libtss2-esys-3.0.2-0 install
+libtss2-esys-3.0.2-0 install
+libnet-ssleay-perl install
+gsettings-desktop-schemas.md5sums	 install
+libatk1.0-data.md5sums	 install
+libatk1.0-0 install
+libatk1.0-0 install
+libatk1.0-0 install
+libatk1.0-0 install
+libattr1 install
+libattr1 install
+libattr1 install
+libattr1 install
+libattr1 install
+libavahi-common3 install
+libavahi-common3 install
+libavahi-common3 install
+libavahi-common3 install
+libavahi-common-data install
+libavahi-client3 install
+libavahi-client3 install
+libavahi-client3 install
+libavahi-client3 install
+base-passwd.templates	 install
+base-passwd.preinst	 install
+base-passwd.postrm	 install
+base-passwd.postinst	 install
+base-passwd.md5sums	 install
+bc.postrm	 install
+bc.postinst	 install
+bc.md5sums	 install
+bcache-tools.triggers	 install
+bcache-tools.md5sums	 install
+libisc-export1105 install
+libisc-export1105 install
+libisc-export1105 install
+libdns-export1110.triggers	 install
+libdns-export1110.shlibs	 install
+libdns-export1110.md5sums	 install
+libbrotli1 install
+libbrotli1 install
+libbrotli1 install
+libbrotli1 install
+build-essential.md5sums	 install
+libbz2-1.0 install
+libbz2-1.0 install
+bzip2.md5sums	 install
+libc-ares2 install
+libc-ares2 install
+libc-ares2 install
+libc-ares2 install
+gh.md5sums	 install
+cron.prerm	 install
+cron.postrm	 install
+cron.postinst	 install
+cron.md5sums	 install
+cron.conffiles	 install
+dash.templates	 install
+dash.prerm	 install
+dash.postrm	 install
+dash.postinst	 install
+dash.md5sums	 install
+dash.config	 install
+libdb5.3 install
+libdb5.3 install
+libdb5.3 install
+debianutils.md5sums	 install
+diffutils.md5sums	 install
+python3-distro-info.prerm	 install
+python3-distro-info.postinst	 install
+python3-distro-info.md5sums	 install
+distro-info.md5sums	 install
+dosfstools.md5sums	 install
+libelf1 install
+libelf1 install
+libelf1 install
+libelf1 install
+libdw1 install
+libdw1 install
+libdw1 install
+libdw1 install
+findutils.md5sums	 install
+libflashrom1 install
+libflashrom1 install
+libflashrom1 install
+libfontconfig1 install
+libfontconfig1 install
+libfontconfig1 install
+libfontconfig1 install
+fontconfig.postrm	 install
+fontconfig.postinst	 install
+fontconfig.md5sums	 install
+fontconfig-config.postrm	 install
+fontconfig-config.postinst	 install
+fontconfig-config.md5sums	 install
+fontconfig-config.conffiles	 install
+libfuse3-3 install
+libfuse3-3 install
+libfuse3-3 install
+libfuse3-3 install
+fuse3.triggers	 install
+fuse3.postrm	 install
+fuse3.postinst	 install
+fuse3.md5sums	 install
+fuse3.conffiles	 install
+gawk.prerm	 install
+gawk.postinst	 install
+gawk.md5sums	 install
+gawk.conffiles	 install
+libgcab-1.0-0 install
+libgcab-1.0-0 install
+libgcab-1.0-0 install
+libgcab-1.0-0 install
+gdisk.md5sums	 install
+libgraphite2-3 install
+libgraphite2-3 install
+libgraphite2-3 install
+grep.md5sums	 install
+groff-base.md5sums	 install
+groff-base.conffiles	 install
+hdparm.prerm	 install
+hdparm.preinst	 install
+hdparm.postrm	 install
+hdparm.postinst	 install
+hdparm.md5sums	 install
+hdparm.conffiles	 install
+hostname.md5sums	 install
+htop.md5sums	 install
+libpam0g install
+libpam0g install
+libpam0g install
+libpam0g install
+libpam0g install
+libpam0g install
+libpam0g install
+libpam-runtime.templates	 install
+libpam-runtime.prerm	 install
+libpam-runtime.postrm	 install
+libpam-runtime.postinst	 install
+libpam-runtime.md5sums	 install
+libpam-runtime.conffiles	 install
+libpam-modules install
+libpam-modules install
+libpam-modules install
+libpam-modules install
+libpam-modules install
+libpam-modules install
+libpam-modules-bin.md5sums	 install
+iproute2.templates	 install
+iproute2.postrm	 install
+iproute2.postinst	 install
+iproute2.md5sums	 install
+iproute2.config	 install
+iproute2.conffiles	 install
+libxtables12 install
+libxtables12 install
+libxtables12 install
+libxtables12 install
+libip6tc2 install
+libip6tc2 install
+libip6tc2 install
+libip6tc2 install
+libip4tc2 install
+libip4tc2 install
+libip4tc2 install
+libip4tc2 install
+iptables.prerm	 install
+iptables.postinst	 install
+iptables.md5sums	 install
+irqbalance.prerm	 install
+irqbalance.preinst	 install
+irqbalance.postrm	 install
+irqbalance.postinst	 install
+irqbalance.md5sums	 install
+irqbalance.conffiles	 install
+libisl23 install
+libisl23 install
+libisl23 install
+libisl23 install
+libjansson4 install
+libjansson4 install
+libjansson4 install
+libjansson4 install
+libjson-glib-1.0-common.md5sums	 install
+libjson-glib-1.0-0 install
+libjson-glib-1.0-0 install
+libjson-glib-1.0-0 install
+libjson-glib-1.0-0 install
+kbd.postrm	 install
+kbd.postinst	 install
+kbd.md5sums	 install
+libavc1394-0 install
+libavc1394-0 install
+libavc1394-0 install
+libavc1394-0 install
+libatasmart4 install
+libatasmart4 install
+libatasmart4 install
+libatasmart4 install
+libasyncns0 install
+libasyncns0 install
+libasyncns0 install
+libasyncns0 install
+libaio1 install
+libaio1 install
+libaio1 install
+libaio1 install
+less.prerm	 install
+less.preinst	 install
+less.postinst	 install
+less.md5sums	 install
+libmp3lame0 install
+libmp3lame0 install
+libmp3lame0 install
+libmp3lame0 install
+liblcms2-2 install
+liblcms2-2 install
+liblcms2-2 install
+liblcms2-2 install
+libassuan0 install
+libassuan0 install
+libassuan0 install
+libassuan0 install
+libcaca0 install
+libcaca0 install
+libcaca0 install
+libpam-cap install
+libpam-cap install
+libpam-cap install
+libpam-cap install
+libdecor-0-plugin-1-cairo install
+libdecor-0-0 install
+libdecor-0-0 install
+libdecor-0-0 install
+libdecor-0-0 install
+libcdio-paranoia2 install
+libcdio-paranoia2 install
+libcdio-paranoia2 install
+libcdio-paranoia2 install
+libcdio-cdda2 install
+libcdio-cdda2 install
+libcdio-cdda2 install
+libcdio-cdda2 install
+libcap2 install
+libcap2 install
+libcap2 install
+libcap2 install
+libcap2-bin.md5sums	 install
+libcdio19 install
+libcdio19 install
+libcdio19 install
+libcdio19 install
+libeatmydata1 install
+libeatmydata1 install
+libeatmydata1 install
+libeatmydata1 install
+eatmydata.md5sums	 install
+libedit2 install
+libedit2 install
+libedit2 install
+libestr0 install
+libestr0 install
+libestr0 install
+libestr0 install
+libevent-core-2.1-7 install
+libevent-core-2.1-7 install
+libevent-core-2.1-7 install
+libevent-core-2.1-7 install
+libfastjson4 install
+libfastjson4 install
+libfastjson4 install
+libfastjson4 install
+libfontenc1 install
+libfontenc1 install
+libfontenc1 install
+libgcrypt20 install
+libgcrypt20 install
+libgcrypt20 install
+libgcrypt20 install
+libgudev-1.0-0 install
+libgudev-1.0-0 install
+libgudev-1.0-0 install
+libgudev-1.0-0 install
+libice6 install
+libice6 install
+libice6 install
+libidn2-0 install
+libidn2-0 install
+libidn2-0 install
+libidn2-0 install
+libiec61883-0 install
+libiec61883-0 install
+libiec61883-0 install
+libiec61883-0 install
+libinih1 install
+libinih1 install
+libinih1 install
+libinih1 install
+libmbim-proxy.md5sums	 install
+libmbim-glib4 install
+libmbim-glib4 install
+libmbim-glib4 install
+libmbim-glib4 install
+libmaxminddb0 install
+libmaxminddb0 install
+libmaxminddb0 install
+libmaxminddb0 install
+libmd0 install
+libmd0 install
+libmd0 install
+libmd0 install
+libmnl0 install
+libmnl0 install
+libmnl0 install
+libmnl0 install
+libmspack0 install
+libmspack0 install
+libmspack0 install
+libmspack0 install
+libnfnetlink0 install
+libnfnetlink0 install
+libnfnetlink0 install
+libnftnl11 install
+libnftnl11 install
+libnftnl11 install
+libnftnl11 install
+libnsl2 install
+libnsl2 install
+libnsl2 install
+libnsl2 install
+libnsl-dev install
+libogg0 install
+libogg0 install
+libogg0 install
+libogg0 install
+libpcap0.8 install
+libpcap0.8 install
+libpcap0.8 install
+libpcap0.8 install
+libpng16-16 install
+libpng16-16 install
+libpsl5 install
+libpsl5 install
+libpsl5 install
+libpsl5 install
+libraw1394-11 install
+libraw1394-11 install
+libraw1394-11 install
+libsndfile1 install
+libsndfile1 install
+libsndfile1 install
+libsndfile1 install
+libtasn1-6 install
+libtasn1-6 install
+libtasn1-6 install
+libtasn1-6 install
+libsodium23 install
+libsodium23 install
+libsodium23 install
+libsodium23 install
+libsepol2 install
+libsepol2 install
+libsepol2 install
+libsepol2 install
+libsamplerate0 install
+libsamplerate0 install
+libsamplerate0 install
+libsamplerate0 install
+libutempter0 install
+libutempter0 install
+libutempter0 install
+libutempter0 install
+libunwind8 install
+libunwind8 install
+libunwind8 install
+libtheora0 install
+libtheora0 install
+libtheora0 install
+libtheora0 install
+libssh-gcrypt-4 install
+libssh-gcrypt-4 install
+libssh-gcrypt-4 install
+libssh-gcrypt-4 install
+libssh-4 install
+libssh-4 install
+libssh-4 install
+libssh-4 install
+libthai0 install
+libthai0 install
+libthai0 install
+libthai0 install
+libthai-data.md5sums	 install
+libvorbisfile3 install
+libvorbisfile3 install
+libvorbisfile3 install
+libvorbisfile3 install
+libvorbisenc2 install
+libvorbisenc2 install
+libvorbisenc2 install
+libvorbisenc2 install
+libvorbis0a install
+libvorbis0a install
+libvorbis0a install
+libvorbis0a install
+libxcomposite1 install
+libxcomposite1 install
+libxcomposite1 install
+libxcursor1 install
+libxcursor1 install
+libxcursor1 install
+libxdmcp6 install
+libxdmcp6 install
+libxdmcp6 install
+libxi6 install
+libxi6 install
+libxi6 install
+libxi6 install
+libxkbfile1 install
+libxkbfile1 install
+libxkbfile1 install
+libxmlb2 install
+libxmlb2 install
+libxmlb2 install
+libxmlb2 install
+libxrender1 install
+libxrender1 install
+libxrender1 install
+libxrandr2 install
+libxrandr2 install
+libxrandr2 install
+libxrandr2 install
+libxss1 install
+libxss1 install
+libxss1 install
+libxss1 install
+libxv1 install
+libxv1 install
+libxv1 install
+libyaml-dev install
+libyaml-0-2 install
+libyaml-0-2 install
+libyaml-0-2 install
+libyaml-0-2 install
+libxxf86dga1 install
+libxxf86dga1 install
+libxxf86dga1 install
+zstd.md5sums	 install
+libzstd1 install
+libzstd1 install
+libzstd1 install
+libatm1 install
+libatm1 install
+libatm1 install
+libatm1 install
+lsb-release.postrm	 install
+lsb-release.postinst	 install
+lsb-release.md5sums	 install
+lsb-base.prerm	 install
+lsb-base.preinst	 install
+lsb-base.postrm	 install
+lsb-base.postinst	 install
+lsb-base.md5sums	 install
+lsof.md5sums	 install
+liblzo2-2 install
+liblzo2-2 install
+liblzo2-2 install
+liblzo2-2 install
+libmpdec3 install
+libmpdec3 install
+libmpdec3 install
+libmpdec3 install
+libmpg123-0 install
+libmpg123-0 install
+libmpg123-0 install
+libmpg123-0 install
+vdpau-driver-all install
+libvdpau1 install
+libvdpau1 install
+libvdpau1 install
+libvdpau1 install
+libvdpau1 install
+libsoxr0 install
+libsoxr0 install
+libsoxr0 install
+libsoxr0 install
+libsm6 install
+libsm6 install
+libsm6 install
+libu2f-udev.md5sums	 install
+python3-netifaces install
+telnet.prerm	 install
+telnet.postrm	 install
+telnet.postinst	 install
+telnet.md5sums	 install
+libnettle8 install
+libnettle8 install
+libnettle8 install
+libnettle8 install
+libhogweed6 install
+libhogweed6 install
+libhogweed6 install
+libhogweed6 install
+libnghttp2-14 install
+libnghttp2-14 install
+libnghttp2-14 install
+libnghttp2-14 install
+libnpth0 install
+libnpth0 install
+libnpth0 install
+libnpth0 install
+libvpx7 install
+libvpx7 install
+libvpx7 install
+libvpx7 install
+libnuma1 install
+libnuma1 install
+libnuma1 install
+libnuma1 install
+libnspr4 install
+libnspr4 install
+libnspr4 install
+libxcb1 install
+libxcb1 install
+libxcb1 install
+libxcb1 install
+libxcb-xfixes0 install
+libxcb-xfixes0 install
+libxcb-xfixes0 install
+libxcb-xfixes0 install
+libxcb-sync1 install
+libxcb-sync1 install
+libxcb-sync1 install
+libxcb-sync1 install
+libxcb-shm0 install
+libxcb-shm0 install
+libxcb-shm0 install
+libxcb-shm0 install
+libxcb-shape0 install
+libxcb-shape0 install
+libxcb-shape0 install
+libxcb-shape0 install
+libxcb-render0 install
+libxcb-render0 install
+libxcb-render0 install
+libxcb-render0 install
+libxcb-randr0 install
+libxcb-randr0 install
+libxcb-randr0 install
+libxcb-randr0 install
+libxcb-present0 install
+libxcb-present0 install
+libxcb-present0 install
+libxcb-present0 install
+libxcb-glx0 install
+libxcb-glx0 install
+libxcb-glx0 install
+libxcb-glx0 install
+libxcb-dri3-0 install
+libxcb-dri3-0 install
+libxcb-dri3-0 install
+libxcb-dri3-0 install
+libxcb-dri2-0 install
+libxcb-dri2-0 install
+libxcb-dri2-0 install
+libxcb-dri2-0 install
+libxdamage1 install
+libxdamage1 install
+libxext6 install
+libxext6 install
+libxext6 install
+libxext6 install
+libisns0 install
+libisns0 install
+libisns0 install
+libxpm4 install
+libxpm4 install
+libxpm4 install
+libxshmfence1 install
+libxshmfence1 install
+libxshmfence1 install
+libxshmfence1 install
+libp11-kit0 install
+libp11-kit0 install
+libp11-kit0 install
+libp11-kit0 install
+libxtst6 install
+libxtst6 install
+libxtst6 install
+patch.md5sums	 install
+parted.md5sums	 install
+libparted2 install
+libparted2 install
+libparted2 install
+libparted2 install
+libparted-fs-resize0 install
+libparted-fs-resize0 install
+libparted-fs-resize0 install
+libparted-fs-resize0 install
+libxxf86vm1 install
+libxxf86vm1 install
+libxxf86vm1 install
+libsigsegv2 install
+libsigsegv2 install
+libsigsegv2 install
+libsigsegv2 install
+pkg-config.prerm	 install
+pkg-config.postinst	 install
+pkg-config.md5sums	 install
+pkg-config.conffiles	 install
+liblmdb0 install
+liblmdb0 install
+liblmdb0 install
+liblmdb0 install
+lshw.md5sums	 install
+liblz4-1 install
+liblz4-1 install
+liblz4-1 install
+liblz4-1 install
+libmpc3 install
+libmpc3 install
+libmpc3 install
+libmpc3 install
+libxau6 install
+libxau6 install
+libxau6 install
+libmpfr6 install
+libmpfr6 install
+libmpfr6 install
+libmpfr6 install
+os-prober.md5sums	 install
+libopus0 install
+libopus0 install
+libopus0 install
+libopus0 install
+libpopt0 install
+libpopt0 install
+libpopt0 install
+libpopt0 install
+psmisc.postrm	 install
+psmisc.postinst	 install
+psmisc.md5sums	 install
+pinentry-curses.prerm	 install
+pinentry-curses.postinst	 install
+pinentry-curses.md5sums	 install
+libmagic1 install
+libmagic1 install
+libmagic1 install
+libmagic1 install
+libmagic1 install
+libmagic-mgc.md5sums	 install
+file.md5sums	 install
+libigdgmm12 install
+libigdgmm12 install
+libigdgmm12 install
+libsnappy1v5 install
+libsnappy1v5 install
+libsnappy1v5 install
+sed.md5sums	 install
+python3-bcrypt.prerm	 install
+python3-bcrypt.postinst	 install
+python3-bcrypt.md5sums	 install
+libslang2 install
+libslang2 install
+libslang2 install
+libslang2 install
+libstemmer0d install
+libstemmer0d install
+libstemmer0d install
+libstemmer0d install
+tar.prerm	 install
+tar.postinst	 install
+tar.md5sums	 install
+tcl.preinst	 install
+tcl.md5sums	 install
+tcpdump.prerm	 install
+tcpdump.preinst	 install
+tcpdump.postrm	 install
+tcpdump.postinst	 install
+tcpdump.md5sums	 install
+tcpdump.conffiles	 install
+libwrap0 install
+libwrap0 install
+libwrap0 install
+libwrap0 install
+libwrap0 install
+libwrap0 install
+time.md5sums	 install
+libtwolame0 install
+libtwolame0 install
+libtwolame0 install
+libtwolame0 install
+usb-modeswitch.prerm	 install
+usb-modeswitch.preinst	 install
+usb-modeswitch.postrm	 install
+usb-modeswitch.postinst	 install
+usb-modeswitch.md5sums	 install
+usb-modeswitch.conffiles	 install
+usbutils.md5sums	 install
+x11-utils.postrm	 install
+x11-utils.postinst	 install
+x11-utils.md5sums	 install
+x11-utils.conffiles	 install
+xauth.md5sums	 install
+x11-xserver-utils.postrm	 install
+x11-xserver-utils.postinst	 install
+x11-xserver-utils.md5sums	 install
+x11-xserver-utils.conffiles	 install
+xdg-user-dirs.prerm	 install
+xdg-user-dirs.preinst	 install
+xdg-user-dirs.postrm	 install
+xdg-user-dirs.postinst	 install
+xdg-user-dirs.md5sums	 install
+xdg-user-dirs.conffiles	 install
+zerofree.md5sums	 install
+zip.md5sums	 install
+rpcsvc-proto.md5sums	 install
+python3-cffi-backend install
+sg3-utils.md5sums	 install
+sg3-utils-udev.triggers	 install
+sg3-utils-udev.postrm	 install
+sg3-utils-udev.postinst	 install
+sg3-utils-udev.md5sums	 install
+libsgutils2-2 install
+libsgutils2-2 install
+libsgutils2-2 install
+libsgutils2-2 install
+librtmp1 install
+librtmp1 install
+librtmp1 install
+librtmp1 install
+squashfs-tools.md5sums	 install
+x11-common.prerm	 install
+x11-common.postrm	 install
+x11-common.postinst	 install
+x11-common.md5sums	 install
+x11-common.conffiles	 install
+tcl8.6.prerm	 install
+tcl8.6.postrm	 install
+tcl8.6.postinst	 install
+tcl8.6.md5sums	 install
+libtcl8.6 install
+libtcl8.6 install
+libtcl8.6 install
+libuchardet0 install
+libuchardet0 install
+libuchardet0 install
+libuchardet0 install
+libxmlsec1 install
+libxmlsec1 install
+libxmlsec1 install
+libxmlsec1-openssl install
+libxmlsec1-openssl install
+libxmlsec1-openssl install
+tnftp.prerm	 install
+tnftp.postinst	 install
+tnftp.md5sums	 install
+ftp.preinst	 install
+ftp.md5sums	 install
+gettext-base.md5sums	 install
+libatspi2.0-0 install
+libatspi2.0-0 install
+libatspi2.0-0 install
+at-spi2-core.md5sums	 install
+at-spi2-core.conffiles	 install
+python3-cryptography.prerm	 install
+python3-cryptography.postinst	 install
+python3-cryptography.md5sums	 install
+libvte-2.91-common.md5sums	 install
+libvte-2.91-common.conffiles	 install
+libvte-2.91-0 install
+libvte-2.91-0 install
+libvte-2.91-0 install
+libvte-2.91-0 install
+libmbedx509-1 install
+libmbedx509-1 install
+libmbedx509-1 install
+libmbedx509-1 install
+libmbedtls14 install
+libmbedtls14 install
+libmbedtls14 install
+libmbedtls14 install
+libmbedcrypto7 install
+libmbedcrypto7 install
+libmbedcrypto7 install
+libmbedcrypto7 install
+update-notifier-common.prerm	 install
+update-notifier-common.preinst	 install
+update-notifier-common.postrm	 install
+update-notifier-common.postinst	 install
+update-notifier-common.md5sums	 install
+update-notifier-common.conffiles	 install
+landscape-common.templates	 install
+landscape-common.prerm	 install
+landscape-common.postrm	 install
+landscape-common.postinst	 install
+landscape-common.md5sums	 install
+landscape-common.config	 install
+libgpgme11 install
+libgpgme11 install
+libgpgme11 install
+libgpgme11 install
+libsensors5 install
+libsensors5 install
+libsensors5 install
+libsensors5 install
+libsensors5 install
+libsensors-config.md5sums	 install
+libsensors-config.conffiles	 install
+libxft2 install
+libxft2 install
+libxft2 install
+libpangoft2-1.0-0 install
+libpangoft2-1.0-0 install
+libpangoft2-1.0-0 install
+libpangoft2-1.0-0 install
+libpangocairo-1.0-0 install
+libpangocairo-1.0-0 install
+libpangocairo-1.0-0 install
+libpangocairo-1.0-0 install
+libpango-1.0-0 install
+libpango-1.0-0 install
+libpango-1.0-0 install
+libpango-1.0-0 install
+libepoxy0 install
+libepoxy0 install
+libepoxy0 install
+libepoxy0 install
+usb.ids.md5sums	 install
+python3-serial.prerm	 install
+python3-serial.postinst	 install
+python3-serial.md5sums	 install
+libx11-xcb1 install
+libx11-xcb1 install
+libx11-xcb1 install
+libx11-data.md5sums	 install
+libx11-6 install
+libx11-6 install
+libx11-6 install
+libx11-6 install
+libmfx1 install
+libmfx1 install
+libmfx1 install
+libmfx1 install
+lto-disabled-list.md5sums	 install
+libarchive13 install
+libarchive13 install
+libarchive13 install
+libarchive13 install
+udisks2.prerm	 install
+udisks2.postrm	 install
+udisks2.postinst	 install
+udisks2.md5sums	 install
+udisks2.conffiles	 install
+libudisks2-0 install
+libudisks2-0 install
+libudisks2-0 install
+libudisks2-0 install
+xz-utils.prerm	 install
+xz-utils.postinst	 install
+xz-utils.md5sums	 install
+liblzma5 install
+liblzma5 install
+liblzma5 install
+liblzma5 install
+libjpeg8 install
+update-manager-core.md5sums	 install
+python3-update-manager.prerm	 install
+python3-update-manager.postinst	 install
+python3-update-manager.md5sums	 install
+fwupd-signed.md5sums	 install
+ec2-hibinit-agent.prerm	 install
+ec2-hibinit-agent.postrm	 install
+ec2-hibinit-agent.postinst	 install
+ec2-hibinit-agent.md5sums	 install
+ec2-hibinit-agent.conffiles	 install
+python3-six.prerm	 install
+python3-six.postinst	 install
+python3-six.md5sums	 install
+python3-yaml.prerm	 install
+python3-yaml.postinst	 install
+python3-yaml.md5sums	 install
+ubuntu-standard.md5sums	 install
+ubuntu-server.md5sums	 install
+ubuntu-minimal.md5sums	 install
+grub2-common.md5sums	 install
+grub2-common.conffiles	 install
+grub-pc.templates	 install
+grub-pc.prerm	 install
+grub-pc.preinst	 install
+grub-pc.postrm	 install
+grub-pc.postinst	 install
+grub-pc.md5sums	 install
+grub-pc.config	 install
+grub-pc-bin.md5sums	 install
+grub-common.templates	 install
+grub-common.prerm	 install
+grub-common.preinst	 install
+grub-common.postrm	 install
+grub-common.postinst	 install
+grub-common.md5sums	 install
+grub-common.conffiles	 install
+libfribidi0 install
+libfribidi0 install
+libfribidi0 install
+libfribidi0 install
+libnotify4 install
+libnotify4 install
+libnotify4 install
+libnotify4 install
+libnotify-bin.md5sums	 install
+libtsan0 install
+libtsan0 install
+libtsan0 install
+libtsan0 install
+libstdc++-11-dev install
+libgcc-11-dev install
+libasan6 install
+libasan6 install
+libasan6 install
+libasan6 install
+gcc-11.md5sums	 install
+gcc-11-base install
+g++-11.md5sums	 install
+cpp-11.md5sums	 install
+rsyslog.prerm	 install
+rsyslog.preinst	 install
+rsyslog.postrm	 install
+rsyslog.postinst	 install
+rsyslog.md5sums	 install
+rsyslog.conffiles	 install
+networkd-dispatcher.prerm	 install
+networkd-dispatcher.postrm	 install
+networkd-dispatcher.postinst	 install
+networkd-dispatcher.md5sums	 install
+networkd-dispatcher.conffiles	 install
+libgtk-3-common.md5sums	 install
+libgtk-3-common.conffiles	 install
+libgtk-3-bin.md5sums	 install
+libgtk-3-0 install
+libgtk-3-0 install
+libgtk-3-0 install
+libgtk-3-0 install
+libgtk-3-0 install
+libgtk-3-0 install
+libgtk-3-0 install
+gtk-update-icon-cache.md5sums	 install
+ec2-instance-connect.prerm	 install
+ec2-instance-connect.preinst	 install
+ec2-instance-connect.postrm	 install
+ec2-instance-connect.postinst	 install
+ec2-instance-connect.md5sums	 install
+libjson-c5 install
+libjson-c5 install
+libjson-c5 install
+libjson-c5 install
+libubsan1 install
+libubsan1 install
+libubsan1 install
+libubsan1 install
+libstdc++6 install
+libstdc++6 install
+libstdc++6 install
+libstdc++6 install
+libstdc++6 install
+libquadmath0 install
+libquadmath0 install
+libquadmath0 install
+libquadmath0 install
+liblsan0 install
+liblsan0 install
+liblsan0 install
+liblsan0 install
+libitm1 install
+libitm1 install
+libitm1 install
+libitm1 install
+libgomp1 install
+libgomp1 install
+libgomp1 install
+libgomp1 install
+libgfortran5 install
+libgfortran5 install
+libgfortran5 install
+libgfortran5 install
+libgcc-s1 install
+libgcc-s1 install
+libgcc-s1 install
+libgcc-s1 install
+libcc1-0 install
+libcc1-0 install
+libcc1-0 install
+libcc1-0 install
+libatomic1 install
+libatomic1 install
+libatomic1 install
+libatomic1 install
+gcc-12-base install
+libusb-1.0-0 install
+libusb-1.0-0 install
+libusb-1.0-0 install
+libusb-1.0-0 install
+needrestart.preinst	 install
+needrestart.postrm	 install
+needrestart.postinst	 install
+needrestart.md5sums	 install
+needrestart.conffiles	 install
+libpcre3 install
+libpcre3 install
+libpcre3 install
+libpcre3 install
+libswscale5 install
+libswscale5 install
+libswscale5 install
+libswscale5 install
+libswresample3 install
+libswresample3 install
+libswresample3 install
+libswresample3 install
+libpostproc55 install
+libpostproc55 install
+libpostproc55 install
+libpostproc55 install
+libavutil56 install
+libavutil56 install
+libavutil56 install
+libavutil56 install
+libavformat58 install
+libavformat58 install
+libavformat58 install
+libavformat58 install
+libavfilter7 install
+libavfilter7 install
+libavfilter7 install
+libavfilter7 install
+libavdevice58 install
+libavdevice58 install
+libavdevice58 install
+libavdevice58 install
+libavcodec58 install
+libavcodec58 install
+libavcodec58 install
+libavcodec58 install
+ffmpeg.md5sums	 install
+libdpkg-perl.md5sums	 install
+dpkg.prerm	 install
+dpkg.postrm	 install
+dpkg.postinst	 install
+dpkg.md5sums	 install
+dpkg.conffiles	 install
+dpkg-dev.md5sums	 install
+dpkg-dev.conffiles	 install
+logrotate.prerm	 install
+logrotate.postrm	 install
+logrotate.postinst	 install
+logrotate.md5sums	 install
+logrotate.conffiles	 install
+libcups2 install
+libcups2 install
+libcups2 install
+libcups2 install
+libsdl2-2.0-0 install
+libsdl2-2.0-0 install
+libsdl2-2.0-0 install
+libsdl2-2.0-0 install
+libllvm13 install
+libllvm13 install
+libllvm13 install
+logsave.md5sums	 install
+libss2 install
+libss2 install
+libss2 install
+libss2 install
+libext2fs2 install
+libext2fs2 install
+libext2fs2 install
+libext2fs2 install
+libcom-err2 install
+libcom-err2 install
+libcom-err2 install
+libcom-err2 install
+e2fsprogs.prerm	 install
+e2fsprogs.preinst	 install
+e2fsprogs.postrm	 install
+e2fsprogs.postinst	 install
+e2fsprogs.md5sums	 install
+e2fsprogs.conffiles	 install
+grub-efi-amd64-bin.prerm	 install
+grub-efi-amd64-bin.preinst	 install
+grub-efi-amd64-bin.postrm	 install
+grub-efi-amd64-bin.postinst	 install
+grub-efi-amd64-bin.md5sums	 install
+ruby-xmlrpc.md5sums	 install
+intel-media-va-driver install
+libapparmor1 install
+libapparmor1 install
+libapparmor1 install
+libapparmor1 install
+apparmor.templates	 install
+apparmor.prerm	 install
+apparmor.preinst	 install
+apparmor.postrm	 install
+apparmor.postinst	 install
+apparmor.md5sums	 install
+apparmor.config	 install
+apparmor.conffiles	 install
+python3-gi.prerm	 install
+python3-gi.postinst	 install
+python3-gi.md5sums	 install
+libgstreamer1.0-0 install
+libgstreamer1.0-0 install
+libgstreamer1.0-0 install
+libgstreamer1.0-0 install
+libgstreamer1.0-0 install
+gpgv.md5sums	 install
+gpgsm.md5sums	 install
+gpgconf.md5sums	 install
+gpg.md5sums	 install
+gpg-wks-server.md5sums	 install
+gpg-wks-client.md5sums	 install
+gpg-agent.postrm	 install
+gpg-agent.postinst	 install
+gpg-agent.md5sums	 install
+gpg-agent.conffiles	 install
+gnupg.md5sums	 install
+gnupg-utils.md5sums	 install
+gnupg-l10n.md5sums	 install
+dirmngr.prerm	 install
+dirmngr.preinst	 install
+dirmngr.postrm	 install
+dirmngr.postinst	 install
+dirmngr.md5sums	 install
+mesa-vulkan-drivers install
+mesa-vulkan-drivers install
+mesa-vdpau-drivers install
+mesa-vdpau-drivers install
+mesa-vdpau-drivers install
+mesa-va-drivers install
+libglx-mesa0 install
+libglx-mesa0 install
+libglx-mesa0 install
+libglx-mesa0 install
+libglapi-mesa install
+libglapi-mesa install
+libglapi-mesa install
+libgl1-mesa-dri install
+libgl1-mesa-dri install
+libgl1-mesa-dri install
+libgl1-mesa-dri install
+libgl1-mesa-dri install
+libgbm1 install
+libgbm1 install
+libgbm1 install
+libgbm1 install
+libnss3 install
+libnss3 install
+libnss3 install
+locales.templates	 install
+locales.prerm	 install
+locales.postrm	 install
+locales.postinst	 install
+locales.md5sums	 install
+locales.config	 install
+locales.conffiles	 install
+libc6 install
+libc6 install
+libc6 install
+libc6 install
+libc6 install
+libc6 install
+libc6 install
+libc6 install
+libc6 install
+libc6-dev install
+libc-devtools.md5sums	 install
+libc-dev-bin.md5sums	 install
+libc-bin.triggers	 install
+libc-bin.postinst	 install
+libc-bin.md5sums	 install
+libc-bin.conffiles	 install
+grub-efi-amd64-signed.postinst	 install
+grub-efi-amd64-signed.md5sums	 install
+libhttp-daemon-perl.md5sums	 install
+libharfbuzz0b install
+libharfbuzz0b install
+libharfbuzz0b install
+libharfbuzz0b install
+libfreetype6 install
+libfreetype6 install
+libfreetype6 install
+libfreetype6 install
+python3-apt.prerm	 install
+python3-apt.postinst	 install
+python3-apt.md5sums	 install
+python-apt-common.md5sums	 install
+libtirpc3 install
+libtirpc3 install
+libtirpc3 install
+libtirpc3 install
+libtirpc-dev install
+libtirpc-common.md5sums	 install
+libtirpc-common.conffiles	 install
+software-properties-common.prerm	 install
+software-properties-common.postinst	 install
+software-properties-common.md5sums	 install
+software-properties-common.conffiles	 install
+python3-software-properties.prerm	 install
+python3-software-properties.postinst	 install
+python3-software-properties.md5sums	 install
+motd-news-config.postinst	 install
+motd-news-config.md5sums	 install
+motd-news-config.conffiles	 install
+base-files.prerm	 install
+base-files.preinst	 install
+base-files.postrm	 install
+base-files.postinst	 install
+base-files.md5sums	 install
+base-files.conffiles	 install
+libgnutls30 install
+libgnutls30 install
+libgnutls30 install
+libgnutls30 install
+sudo.triggers	 install
+sudo.shlibs	 install
+sudo.prerm	 install
+sudo.preinst	 install
+sudo.postrm	 install
+sudo.postinst	 install
+sudo.md5sums	 install
+sudo.conffiles	 install
+libcryptsetup12 install
+libcryptsetup12 install
+libcryptsetup12 install
+libcryptsetup12 install
+cryptsetup.templates	 install
+cryptsetup.prerm	 install
+cryptsetup.preinst	 install
+cryptsetup.postrm	 install
+cryptsetup.postinst	 install
+cryptsetup.md5sums	 install
+cryptsetup.conffiles	 install
+cryptsetup-initramfs.triggers	 install
+cryptsetup-initramfs.templates	 install
+cryptsetup-initramfs.prerm	 install
+cryptsetup-initramfs.postrm	 install
+cryptsetup-initramfs.postinst	 install
+cryptsetup-initramfs.md5sums	 install
+cryptsetup-initramfs.conffiles	 install
+cryptsetup-bin.postinst	 install
+cryptsetup-bin.md5sums	 install
+libldap-common.md5sums	 install
+libldap-common.conffiles	 install
+libldap-2.5-0 install
+libldap-2.5-0 install
+libldap-2.5-0 install
+libldap-2.5-0 install
+libpq5 install
+libpq5 install
+libpq5 install
+libpq5 install
+libpq-dev.md5sums	 install
+nftables.postrm	 install
+nftables.postinst	 install
+nftables.md5sums	 install
+nftables.conffiles	 install
+libnftables1 install
+libnftables1 install
+libnftables1 install
+libnftables1 install
+python3-lib2to3.prerm	 install
+python3-lib2to3.postinst	 install
+python3-lib2to3.md5sums	 install
+python3-gdbm install
+python3-distutils.prerm	 install
+python3-distutils.postinst	 install
+python3-distutils.md5sums	 install
+intel-microcode.postrm	 install
+intel-microcode.postinst	 install
+intel-microcode.md5sums	 install
+intel-microcode.conffiles	 install
+python3-twisted.prerm	 install
+python3-twisted.postrm	 install
+python3-twisted.postinst	 install
+python3-twisted.md5sums	 install
+open-vm-tools.triggers	 install
+open-vm-tools.shlibs	 install
+open-vm-tools.prerm	 install
+open-vm-tools.preinst	 install
+open-vm-tools.postrm	 install
+open-vm-tools.postinst	 install
+open-vm-tools.md5sums	 install
+open-vm-tools.conffiles	 install
+python3-jwt.prerm	 install
+python3-jwt.postinst	 install
+python3-jwt.md5sums	 install
+sosreport.prerm	 install
+sosreport.postinst	 install
+sosreport.md5sums	 install
+sosreport.conffiles	 install
+bat.md5sums	 install
+fd-find.md5sums	 install
+ripgrep.md5sums	 install
+python3.prerm	 install
+python3.preinst	 install
+python3.postrm	 install
+python3.postinst	 install
+python3.md5sums	 install
+python3-minimal.prerm	 install
+python3-minimal.postinst	 install
+python3-minimal.md5sums	 install
+libpython3-stdlib install
+libxslt1.1 install
+libxslt1.1 install
+libxslt1.1 install
+libxslt1.1 install
+libxslt1-dev install
+xdg-utils.prerm	 install
+xdg-utils.postinst	 install
+xdg-utils.md5sums	 install
+dmidecode.md5sums	 install
+systemd-hwe-hwdb.postrm	 install
+systemd-hwe-hwdb.postinst	 install
+systemd-hwe-hwdb.md5sums	 install
+systemd.triggers	 install
+gzip.md5sums	 install
+libpulse0 install
+libpulse0 install
+libpulse0 install
+libpulse0 install
+libpulse0 install
+libpulse0 install
+libpulse0 install
+libpulse0 install
+libpulse0 install
+udev.triggers	 install
+udev.prerm	 install
+udev.postrm	 install
+udev.postinst	 install
+udev.md5sums	 install
+udev.conffiles	 install
+systemd.prerm	 install
+systemd.preinst	 install
+systemd.postrm	 install
+systemd.postinst	 install
+systemd.md5sums	 install
+systemd.conffiles	 install
+systemd-timesyncd.postrm	 install
+systemd-sysv.postinst	 install
+systemd-sysv.md5sums	 install
+libudev1 install
+libudev1 install
+libudev1 install
+libudev1 install
+libsystemd0 install
+libsystemd0 install
+libsystemd0 install
+libsystemd0 install
+libpam-systemd install
+libpam-systemd install
+libpam-systemd install
+libnss-systemd install
+libnss-systemd install
+libnss-systemd install
+libnss-systemd install
+libnss-systemd install
+xxd.md5sums	 install
+vim.prerm	 install
+vim.preinst	 install
+vim.postrm	 install
+vim.postinst	 install
+vim.md5sums	 install
+vim-tiny.prerm	 install
+vim-tiny.preinst	 install
+vim-tiny.postrm	 install
+vim-tiny.postinst	 install
+vim-tiny.md5sums	 install
+vim-tiny.conffiles	 install
+vim-runtime.preinst	 install
+vim-runtime.postrm	 install
+vim-runtime.postinst	 install
+vim-runtime.md5sums	 install
+vim-common.prerm	 install
+vim-common.preinst	 install
+vim-common.postrm	 install
+vim-common.postinst	 install
+vim-common.md5sums	 install
+vim-common.conffiles	 install
+libwayland-server0 install
+libwayland-server0 install
+libwayland-server0 install
+libwayland-server0 install
+libwayland-egl1 install
+libwayland-egl1 install
+libwayland-egl1 install
+libwayland-egl1 install
+libwayland-cursor0 install
+libwayland-cursor0 install
+libwayland-cursor0 install
+libwayland-cursor0 install
+libwayland-client0 install
+libwayland-client0 install
+libwayland-client0 install
+libwayland-client0 install
+python3-oauthlib.prerm	 install
+python3-oauthlib.postinst	 install
+python3-oauthlib.md5sums	 install
+libfwupdplugin5 install
+libfwupdplugin5 install
+libfwupdplugin5 install
+libfwupdplugin5 install
+libfwupd2 install
+libfwupd2 install
+libfwupd2 install
+libfwupd2 install
+fwupd.prerm	 install
+fwupd.preinst	 install
+fwupd.postrm	 install
+fwupd.postinst	 install
+fwupd.md5sums	 install
+fwupd.conffiles	 install
+libpcre2-8-0 install
+libpcre2-8-0 install
+libpcre2-8-0 install
+libpcre2-8-0 install
+libpcre2-32-0 install
+libpcre2-32-0 install
+libpcre2-32-0 install
+libpcre2-32-0 install
+bind9-libs install
+bind9-libs install
+bind9-libs install
+bind9-host.md5sums	 install
+bind9-dnsutils.md5sums	 install
+libapt-pkg6.0 install
+libapt-pkg6.0 install
+libapt-pkg6.0 install
+libapt-pkg6.0 install
+apt.triggers	 install
+apt.shlibs	 install
+apt.prerm	 install
+apt.preinst	 install
+apt.postrm	 install
+apt.postinst	 install
+apt.md5sums	 install
+apt.conffiles	 install
+apt-utils.md5sums	 install
+apt-transport-https.md5sums	 install
+isc-dhcp-common.md5sums	 install
+isc-dhcp-client.postrm	 install
+isc-dhcp-client.postinst	 install
+isc-dhcp-client.md5sums	 install
+isc-dhcp-client.conffiles	 install
+perl.prerm	 install
+perl.preinst	 install
+perl.postrm	 install
+perl.postinst	 install
+perl.md5sums	 install
+perl.conffiles	 install
+perl-modules-5.34.md5sums	 install
+perl-base.prerm	 install
+perl-base.preinst	 install
+perl-base.postrm	 install
+perl-base.postinst	 install
+perl-base.md5sums	 install
+libperl5.34 install
+libperl5.34 install
+libperl5.34 install
+libperl5.34 install
+unzip.postrm	 install
+unzip.postinst	 install
+unzip.md5sums	 install
+google-chrome-stable.postinst	 install
+google-chrome-stable.prerm	 install
+google-chrome-stable.postrm	 install
+alsa-ucm-conf.md5sums	 install
+netplan.io.md5sums	 install
+libnetplan0 install
+libnetplan0 install
+libnetplan0 install
+libnetplan0 install
+rsync.prerm	 install
+rsync.postrm	 install
+rsync.postinst	 install
+rsync.md5sums	 install
+rsync.conffiles	 install
+libglib2.0-data.md5sums	 install
+libglib2.0-bin.md5sums	 install
+libglib2.0-0 install
+libglib2.0-0 install
+libglib2.0-0 install
+libglib2.0-0 install
+libglib2.0-0 install
+libglib2.0-0 install
+git.prerm	 install
+git.preinst	 install
+git.postrm	 install
+git.postinst	 install
+git.md5sums	 install
+git.conffiles	 install
+git-man.md5sums	 install
+ubuntu-release-upgrader-core.preinst	 install
+ubuntu-release-upgrader-core.postinst	 install
+ubuntu-release-upgrader-core.md5sums	 install
+ubuntu-release-upgrader-core.conffiles	 install
+python3-distupgrade.prerm	 install
+python3-distupgrade.postinst	 install
+python3-distupgrade.md5sums	 install
+zlib1g install
+zlib1g install
+zlib1g install
+zlib1g install
+zlib1g-dev install
+libgdk-pixbuf2.0-common.md5sums	 install
+libgdk-pixbuf2.0-bin.md5sums	 install
+libgdk-pixbuf-2.0-0 install
+libgdk-pixbuf-2.0-0 install
+libgdk-pixbuf-2.0-0 install
+libgdk-pixbuf-2.0-0 install
+libgdk-pixbuf-2.0-0 install
+libgdk-pixbuf-2.0-0 install
+libdbus-1-3 install
+libdbus-1-3 install
+libdbus-1-3 install
+libdbus-1-3 install
+dbus.prerm	 install
+dbus.preinst	 install
+dbus.postrm	 install
+dbus.postinst	 install
+dbus.md5sums	 install
+dbus.conffiles	 install
+dbus-user-session.md5sums	 install
+dbus-user-session.conffiles	 install
+openssl.postinst	 install
+openssl.md5sums	 install
+openssl.conffiles	 install
+libssl3 install
+libssl3 install
+libssl3 install
+libssl3 install
+libssl3 install
+libssl3 install
+libssl3 install
+libssl-dev install
+initramfs-tools.prerm	 install
+initramfs-tools.preinst	 install
+initramfs-tools.postrm	 install
+initramfs-tools.postinst	 install
+initramfs-tools.md5sums	 install
+initramfs-tools.conffiles	 install
+initramfs-tools-core.postrm	 install
+initramfs-tools-core.postinst	 install
+initramfs-tools-core.md5sums	 install
+initramfs-tools-core.conffiles	 install
+initramfs-tools-bin.md5sums	 install
+multipath-tools.triggers	 install
+multipath-tools.shlibs	 install
+multipath-tools.prerm	 install
+multipath-tools.postrm	 install
+multipath-tools.postinst	 install
+multipath-tools.md5sums	 install
+multipath-tools.conffiles	 install
+kpartx.md5sums	 install
+distro-info-data.md5sums	 install
+ntfs-3g.triggers	 install
+ntfs-3g.postrm	 install
+ntfs-3g.postinst	 install
+ntfs-3g.md5sums	 install
+libntfs-3g89.triggers	 install
+libntfs-3g89.shlibs	 install
+libntfs-3g89.md5sums	 install
+libctf0 install
+libctf0 install
+libctf0 install
+libctf-nobfd0 install
+libctf-nobfd0 install
+libctf-nobfd0 install
+libbinutils install
+libbinutils install
+libbinutils install
+binutils.md5sums	 install
+binutils-x86-64-linux-gnu.md5sums	 install
+binutils-common install
+sqlite3.md5sums	 install
+libsqlite3-dev install
+libsqlite3-0 install
+libsqlite3-0 install
+libsqlite3-0 install
+libsqlite3-0 install
+libpixman-1-0 install
+libpixman-1-0 install
+libpixman-1-0 install
+libpixman-1-0 install
+ruby3.0.md5sums	 install
+libruby3.0 install
+libruby3.0 install
+libruby3.0 install
+libruby3.0 install
+python3.10.prerm	 install
+python3.10.postinst	 install
+python3.10.md5sums	 install
+python3.10-minimal.prerm	 install
+python3.10-minimal.preinst	 install
+python3.10-minimal.postrm	 install
+python3.10-minimal.postinst	 install
+python3.10-minimal.md5sums	 install
+libpython3.10 install
+libpython3.10 install
+libpython3.10 install
+libpython3.10 install
+libpython3.10-stdlib install
+libpython3.10-stdlib install
+libpython3.10-minimal install
+libpython3.10-minimal install
+libpython3.10-minimal install
+libpython3.10-minimal install
+libpython3.10-minimal install
+python3-tz.prerm	 install
+python3-tz.postinst	 install
+python3-tz.md5sums	 install
+libflac8 install
+libflac8 install
+libflac8 install
+libflac8 install
+libexpat1 install
+libexpat1 install
+libexpat1 install
+ubuntu-advantage-tools.templates	 install
+ubuntu-advantage-tools.prerm	 install
+ubuntu-advantage-tools.preinst	 install
+ubuntu-advantage-tools.postrm	 install
+ubuntu-advantage-tools.postinst	 install
+ubuntu-advantage-tools.md5sums	 install
+ubuntu-advantage-tools.config	 install
+ubuntu-advantage-tools.conffiles	 install
+libjbig0 install
+libjbig0 install
+libjbig0 install
+tmux.preinst	 install
+tmux.postrm	 install
+tmux.postinst	 install
+tmux.md5sums	 install
+linux-modules-5.15.0-1026-aws.postrm	 install
+linux-modules-5.15.0-1026-aws.postinst	 install
+linux-modules-5.15.0-1026-aws.md5sums	 install
+linux-headers-5.15.0-1026-aws.postinst	 install
+linux-headers-5.15.0-1026-aws.md5sums	 install
+linux-aws-headers-5.15.0-1026.md5sums	 install
+linux-image-5.15.0-1026-aws.triggers	 install
+linux-image-5.15.0-1026-aws.prerm	 install
+linux-image-5.15.0-1026-aws.preinst	 install
+linux-image-5.15.0-1026-aws.postrm	 install
+linux-image-5.15.0-1026-aws.postinst	 install
+linux-image-5.15.0-1026-aws.md5sums	 install
+python3-problem-report.prerm	 install
+python3-problem-report.postinst	 install
+python3-problem-report.md5sums	 install
+python3-apport.prerm	 install
+python3-apport.postinst	 install
+python3-apport.md5sums	 install
+apport.prerm	 install
+apport.preinst	 install
+apport.postrm	 install
+apport.postinst	 install
+apport.md5sums	 install
+apport.conffiles	 install
+passwd.prerm	 install
+passwd.preinst	 install
+passwd.postrm	 install
+passwd.postinst	 install
+passwd.md5sums	 install
+passwd.conffiles	 install
+login.prerm	 install
+login.preinst	 install
+login.postrm	 install
+login.postinst	 install
+login.md5sums	 install
+login.conffiles	 install
+linux-libc-dev install
+snapd.prerm	 install
+snapd.preinst	 install
+snapd.postrm	 install
+snapd.postinst	 install
+snapd.md5sums	 install
+snapd.conffiles	 install
+cloud-init.templates	 install
+cloud-init.prerm	 install
+cloud-init.preinst	 install
+cloud-init.postrm	 install
+cloud-init.postinst	 install
+cloud-init.md5sums	 install
+cloud-init.config	 install
+cloud-init.conffiles	 install
+libxml2 install
+libxml2 install
+libxml2 install
+libxml2 install
+libxml2-dev install
+linux-modules-5.15.0-1027-aws.postrm	 install
+linux-modules-5.15.0-1027-aws.postinst	 install
+linux-modules-5.15.0-1027-aws.md5sums	 install
+linux-headers-5.15.0-1027-aws.postinst	 install
+linux-headers-5.15.0-1027-aws.md5sums	 install
+linux-aws-headers-5.15.0-1027.md5sums	 install
+linux-image-aws.md5sums	 install
+linux-headers-aws.md5sums	 install
+linux-aws.md5sums	 install
+linux-image-5.15.0-1027-aws.triggers	 install
+linux-image-5.15.0-1027-aws.prerm	 install
+linux-image-5.15.0-1027-aws.preinst	 install
+linux-image-5.15.0-1027-aws.postrm	 install
+linux-image-5.15.0-1027-aws.postinst	 install
+linux-image-5.15.0-1027-aws.md5sums	 install
+libtiff5 install
+libtiff5 install
+libtiff5 install
+libtiff5 install
+libbpf0 install
+libbpf0 install
+libbpf0 install
+libbpf0 install
+format	 install
+base-passwd.list	 install
+bash.list	 install
+bsdutils.list	 install
+coreutils.list	 install
+dash.list	 install
+debconf.list	 install
+debianutils.list	 install
+diffutils.list	 install
+findutils.list	 install
+grep.list	 install
+hostname.list	 install
+init-system-helpers.list	 install
+libacl1 install
+libattr1 install
+libaudit-common.list	 install
+libaudit1 install
+libblkid1 install
+libbz2-1.0 install
+libcap-ng0 install
+libcap2 install
+libcrypt1 install
+libdb5.3 install
+libdebconfclient0 install
+libgcrypt20 install
+libgmp10 install
+libgpg-error0 install
+libgssapi-krb5-2 install
+libk5crypto3 install
+libkeyutils1 install
+libkrb5-3 install
+libkrb5support0 install
+liblz4-1 install
+liblzma5 install
+libmount1 install
+libncurses6 install
+libncursesw6 install
+libnsl2 install
+libpam-modules install
+libpam-modules-bin.list	 install
+libpam-runtime.list	 install
+libpam0g install
+libprocps8 install
+libselinux1 install
+libsemanage-common.list	 install
+libsemanage2 install
+libsepol2 install
+libsmartcols1 install
+libtinfo6 install
+libuuid1 install
+libzstd1 install
+lsb-base.list	 install
+mawk.list	 install
+mount.list	 install
+ncurses-base.list	 install
+ncurses-bin.list	 install
+procps.list	 install
+sed.list	 install
+sensible-utils.list	 install
+sysvinit-utils.list	 install
+tar.list	 install
+usrmerge.list	 install
+util-linux.list	 install
+adduser.list	 install
+libargon2-1 install
+libdevmapper1.02.1 install
+libffi8 install
+libhogweed6 install
+libidn2-0 install
+libip4tc2 install
+libkmod2 install
+libnettle8 install
+libp11-kit0 install
+libseccomp2 install
+libtasn1-6 install
+libunistring2 install
+console-setup.list	 install
+console-setup-linux.list	 install
+cron.list	 install
+debconf-i18n.list	 install
+distro-info.list	 install
+dmsetup.list	 install
+eject.list	 install
+gir1.2-glib-2.0 install
+init.list	 install
+iproute2.list	 install
+iputils-ping.list	 install
+iso-codes.list	 install
+kbd.list	 install
+keyboard-configuration.list	 install
+kmod.list	 install
+less.list	 install
+libatm1 install
+libbsd0 install
+libcap2-bin.list	 install
+libdns-export1110.list	 install
+libelf1 install
+libestr0 install
+libfastjson4 install
+libgirepository-1.0-1 install
+libicu70 install
+libisc-export1105 install
+liblocale-gettext-perl.list	 install
+libmd0 install
+libmnl0 install
+libmpdec3 install
+libnewt0.52 install
+libpam-cap install
+libpopt0 install
+libreadline8 install
+libslang2 install
+libtext-charwidth-perl.list	 install
+libtext-iconv-perl.list	 install
+libtext-wrapi18n-perl.list	 install
+libxtables12 install
+libxxhash0 install
+libyaml-0-2 install
+lsb-release.list	 install
+media-types.list	 install
+netbase.list	 install
+netcat-openbsd.list	 install
+python3-dbus.list	 install
+python3-netifaces install
+python3-pkg-resources.list	 install
+python3-yaml.list	 install
+readline-common.list	 install
+shared-mime-info.list	 install
+ubuntu-keyring.list	 install
+ubuntu-minimal.list	 install
+ucf.list	 install
+whiptail.list	 install
+xdg-user-dirs.list	 install
+xkb-data.list	 install
+gcc-12-base install
+libgcc-s1 install
+libstdc++6 install
+libc6 install
+base-files.list	 install
+systemd-sysv.list	 install
+libnss-systemd install
+dbus.list	 install
+libdbus-1-3 install
+libapparmor1 install
+libexpat1 install
+libpam-systemd install
+libjson-c5 install
+libssl3 install
+libcryptsetup12 install
+libgnutls30 install
+systemd.list	 install
+libsystemd0 install
+zlib1g install
+libapt-pkg6.0 install
+dpkg.list	 install
+gzip.list	 install
+login.list	 install
+perl-base.list	 install
+libc-bin.list	 install
+apt.list	 install
+apt-utils.list	 install
+gpgv.list	 install
+logsave.list	 install
+libext2fs2 install
+e2fsprogs.list	 install
+libsqlite3-0 install
+libtirpc-common.list	 install
+libtirpc3 install
+python3-minimal.list	 install
+python3.list	 install
+libpython3-stdlib install
+libcom-err2 install
+libpcre2-8-0 install
+libpcre3 install
+passwd.list	 install
+libss2 install
+distro-info-data.list	 install
+isc-dhcp-client.list	 install
+isc-dhcp-common.list	 install
+libfribidi0 install
+libglib2.0-0 install
+libglib2.0-data.list	 install
+netplan.io.list	 install
+libnetplan0 install
+locales.list	 install
+logrotate.list	 install
+python3-gi.list	 install
+networkd-dispatcher.list	 install
+openssl.list	 install
+python-apt-common.list	 install
+python3-apt.list	 install
+rsyslog.list	 install
+sudo.list	 install
+ubuntu-advantage-tools.list	 install
+xxd.list	 install
+vim-tiny.list	 install
+vim-common.list	 install
+udev.list	 install
+libudev1 install
+systemd-hwe-hwdb.list	 install
+libnuma1 install
+irqbalance.list	 install
+libfuse3-3 install
+fuse3.list	 install
+libntfs-3g89.list	 install
+ntfs-3g.list	 install
+rsync.list	 install
+uuid-runtime.list	 install
+libmpfr6 install
+libsigsegv2 install
+gawk.list	 install
+libaio1 install
+libdevmapper-event1.02.1 install
+libedit2 install
+liblvm2cmd2.03 install
+dmeventd.list	 install
+lvm2.list	 install
+libisns0 install
+libopeniscsiusr.list	 install
+open-iscsi.list	 install
+libcbor0.8 install
+libfido2-1 install
+openssh-client.list	 install
+openssh-sftp-server.list	 install
+libwrap0 install
+openssh-server.list	 install
+perl-modules-5.34.list	 install
+libgdbm6 install
+libgdbm-compat4 install
+libperl5.34 install
+perl.list	 install
+python3-chardet.list	 install
+zstd.list	 install
+python3-debian.list	 install
+python3-debconf.list	 install
+python3-distro-info.list	 install
+patch.list	 install
+python3-update-manager.list	 install
+update-manager-core.list	 install
+update-notifier-common.list	 install
+libdrm-common.list	 install
+libdrm2 install
+libmspack0 install
+libxslt1.1 install
+libxmlsec1 install
+libxmlsec1-openssl install
+pci.ids.list	 install
+libpci3 install
+pciutils.list	 install
+open-vm-tools.list	 install
+apparmor.list	 install
+bash-completion.list	 install
+liblmdb0 install
+libmaxminddb0 install
+libnghttp2-14 install
+libuv1 install
+bind9-libs install
+bind9-host.list	 install
+bind9-dnsutils.list	 install
+bsdextrautils.list	 install
+busybox-static.list	 install
+python3-gdbm install
+python3-commandnotfound.list	 install
+command-not-found.list	 install
+cpio.list	 install
+dmidecode.list	 install
+dosfstools.list	 install
+ed.list	 install
+libmagic-mgc.list	 install
+libmagic1 install
+file.list	 install
+friendly-recovery.list	 install
+tnftp.list	 install
+ftp.list	 install
+gettext-base.list	 install
+libuchardet0 install
+groff-base.list	 install
+hdparm.list	 install
+libip6tc2 install
+libnfnetlink0 install
+libnetfilter-conntrack3 install
+libnftnl11 install
+iptables.list	 install
+iputils-tracepath.list	 install
+libjansson4 install
+libnftables1 install
+libparted2 install
+libpcap0.8 install
+libpipeline1 install
+libpng16-16 install
+libplymouth5 install
+libpsl5 install
+libusb-1.0-0 install
+libxau6 install
+libxdmcp6 install
+libxcb1 install
+libx11-data.list	 install
+libx11-6 install
+libxext6 install
+libxmuu1 install
+lshw.list	 install
+lsof.list	 install
+man-db.list	 install
+manpages.list	 install
+mtr-tiny.list	 install
+nano.list	 install
+nftables.list	 install
+parted.list	 install
+plymouth.list	 install
+plymouth-theme-ubuntu-text.list	 install
+powermgmt-base.list	 install
+psmisc.list	 install
+publicsuffix.list	 install
+libunwind8 install
+strace.list	 install
+tcpdump.list	 install
+telnet.list	 install
+time.list	 install
+usbutils.list	 install
+wget.list	 install
+xz-utils.list	 install
+ubuntu-standard.list	 install
+ufw.list	 install
+usb.ids.list	 install
+xauth.list	 install
+python3-pyparsing.list	 install
+python3-httplib2.list	 install
+python3-more-itertools.list	 install
+python3-zipp.list	 install
+python3-importlib-metadata.list	 install
+python3-jeepney.list	 install
+python3-cffi-backend install
+python3-cryptography.list	 install
+python3-secretstorage.list	 install
+python3-keyring.list	 install
+python3-lazr.uri.list	 install
+python3-wadllib.list	 install
+python3-distro.list	 install
+python3-blinker.list	 install
+python3-jwt.list	 install
+python3-oauthlib.list	 install
+python3-six.list	 install
+python3-lazr.restfulclient.list	 install
+python3-launchpadlib.list	 install
+apport-symptoms.list	 install
+bc.list	 install
+bcache-tools.list	 install
+libpolkit-gobject-1-0 install
+bolt.list	 install
+liblzo2-2 install
+btrfs-progs.list	 install
+busybox-initramfs.list	 install
+python3-newt install
+libevent-core-2.1-7 install
+libutempter0 install
+byobu.list	 install
+libssh-4 install
+cryptsetup-bin.list	 install
+cryptsetup.list	 install
+libklibc install
+klibc-utils.list	 install
+linux-base.list	 install
+cryptsetup-initramfs.list	 install
+libbrotli1 install
+libsasl2-modules-db install
+libsasl2-2 install
+libldap-2.5-0 install
+librtmp1 install
+dbus-user-session.list	 install
+libassuan0 install
+gpgconf.list	 install
+libnpth0 install
+dirmngr.list	 install
+libeatmydata1 install
+eatmydata.list	 install
+ethtool.list	 install
+libfdisk1 install
+fdisk.list	 install
+finalrd.list	 install
+fonts-ubuntu-console.list	 install
+gnupg-l10n.list	 install
+gnupg-utils.list	 install
+gpg.list	 install
+pinentry-curses.list	 install
+gpg-agent.list	 install
+gpg-wks-client.list	 install
+gpg-wks-server.list	 install
+gpgsm.list	 install
+gnupg.list	 install
+libgpgme11 install
+libjson-glib-1.0-common.list	 install
+libjson-glib-1.0-0 install
+libjcat1 install
+libfwupd2 install
+libarchive13 install
+libgcab-1.0-0 install
+libgudev-1.0-0 install
+libgusb2 install
+libxmlb2 install
+libfwupdplugin5 install
+libefivar1 install
+libefiboot1 install
+libmbim-glib4 install
+libmbim-proxy.list	 install
+libmm-glib0 install
+libqmi-glib5 install
+libqmi-proxy.list	 install
+libsmbios-c2.list	 install
+tpm-udev.list	 install
+libtss2-mu0 install
+libtss2-tcti-cmd0 install
+libtss2-tcti-device0 install
+libtss2-tcti-mssim0 install
+libtss2-tcti-swtpm0 install
+libtss2-sys1 install
+libtss2-esys-3.0.2-0 install
+fwupd.list	 install
+fwupd-signed.list	 install
+libpackagekit-glib2-18 install
+gir1.2-packagekitglib-1.0.list	 install
+liberror-perl.list	 install
+git-man.list	 install
+git.list	 install
+libfreetype6 install
+grub-common.list	 install
+grub2-common.list	 install
+grub-pc-bin.list	 install
+grub-pc.list	 install
+grub-gfxpayload-lists.list	 install
+libnl-3-200 install
+libnl-genl-3-200 install
+htop.list	 install
+python3-bcrypt.list	 install
+python3-hamcrest.list	 install
+python3-idna.list	 install
+python3-openssl.list	 install
+python3-attr.list	 install
+python3-pyasn1.list	 install
+python3-pyasn1-modules.list	 install
+python3-service-identity.list	 install
+python3-automat.list	 install
+python3-constantly.list	 install
+python3-hyperlink.list	 install
+python3-incremental.list	 install
+python3-zope.interface.list	 install
+python3-twisted.list	 install
+python3-configobj.list	 install
+landscape-common.list	 install
+libstemmer0d install
+libappstream4 install
+libatasmart4 install
+libblockdev-utils2 install
+libnspr4 install
+libnss3 install
+libvolume-key1.list	 install
+libblockdev-crypto2 install
+libblockdev-part-err2 install
+libparted-fs-resize0 install
+libblockdev-fs2 install
+libblockdev-loop2 install
+gdisk.list	 install
+libblockdev-part2 install
+libblockdev-swap2 install
+libblockdev2 install
+libdw1 install
+libftdi1-2 install
+libflashrom1 install
+libglib2.0-bin.list	 install
+libgpm2 install
+libgstreamer1.0-0 install
+libinih1 install
+libintl-perl.list	 install
+libintl-xs-perl.list	 install
+libldap-common.list	 install
+libmodule-find-perl.list	 install
+libmodule-scandeps-perl.list	 install
+libpolkit-agent-1-0 install
+libproc-processtable-perl install
+libsasl2-modules install
+libsgutils2-2 install
+libsodium23 install
+libsort-naturally-perl.list	 install
+libtcl8.6 install
+libterm-readkey-perl.list	 install
+libudisks2-0 install
+liburcu8 install
+lxd-agent-loader.list	 install
+mdadm.list	 install
+polkitd.list	 install
+pkexec.list	 install
+policykit-1.list	 install
+modemmanager.list	 install
+motd-news-config.list	 install
+ncurses-term.list	 install
+needrestart.list	 install
+os-prober.list	 install
+packagekit.list	 install
+packagekit-tools.list	 install
+pastebinit.list	 install
+pollinate.list	 install
+python-babel-localedata.list	 install
+python3-babel.list	 install
+python3-certifi.list	 install
+python3-colorama.list	 install
+python3-click.list	 install
+python3-lib2to3.list	 install
+python3-distutils.list	 install
+python3-markupsafe.list	 install
+python3-jinja2.list	 install
+python3-json-pointer.list	 install
+python3-jsonpatch.list	 install
+python3-setuptools.list	 install
+python3-pyrsistent install
+python3-jsonschema.list	 install
+python3-ptyprocess.list	 install
+python3-pexpect.list	 install
+python3-urllib3.list	 install
+python3-requests.list	 install
+python3-serial.list	 install
+python3-software-properties.list	 install
+python3-systemd.list	 install
+run-one.list	 install
+sbsigntool.list	 install
+screen.list	 install
+secureboot-db.list	 install
+sg3-utils.list	 install
+sg3-utils-udev.list	 install
+squashfs-tools.list	 install
+snapd.list	 install
+software-properties-common.list	 install
+python3-magic.list	 install
+sosreport.list	 install
+tcl8.6.list	 install
+tcl.list	 install
+thin-provisioning-tools.list	 install
+cloud-guest-utils.list	 install
+cloud-initramfs-copymods.list	 install
+cloud-initramfs-dyn-netconf.list	 install
+kpartx.list	 install
+multipath-tools.list	 install
+overlayroot.list	 install
+vim-runtime.list	 install
+vim.list	 install
+xfsprogs.list	 install
+ubuntu-server.list	 install
+udisks2.list	 install
+unattended-upgrades.list	 install
+ssh-import-id.list	 install
+usb-modeswitch-data.list	 install
+usb-modeswitch.list	 install
+zerofree.list	 install
+efibootmgr.list	 install
+grub-efi-amd64-bin.list	 install
+grub-efi-amd64-signed.list	 install
+mokutil.list	 install
+shim-signed.list	 install
+iucode-tool.list	 install
+linux-modules-5.15.0-1026-aws.list	 install
+linux-image-5.15.0-1026-aws.list	 install
+intel-microcode.list	 install
+amd64-microcode.list	 install
+microcode-initrd.list	 install
+linux-aws-headers-5.15.0-1026.list	 install
+linux-headers-5.15.0-1026-aws.list	 install
+ec2-instance-connect.list	 install
+acpid.list	 install
+ec2-hibinit-agent.list	 install
+systemd-timesyncd.list	 install
+chrony.list	 install
+tzdata.templates	 install
+tzdata.postrm	 install
+tzdata.postinst	 install
+tzdata.md5sums	 install
+tzdata.config	 install
+ca-certificates.templates	 install
+ca-certificates.postrm	 install
+ca-certificates.postinst	 install
+ca-certificates.md5sums	 install
+ca-certificates.config	 install
+fonts-lato.list	 install
+libxml2 install
+libc-dev-bin.list	 install
+libcrypt-dev install
+rpcsvc-proto.list	 install
+libtirpc-dev install
+libnsl-dev install
+libc6-dev install
+gcc-11-base install
+libisl23 install
+libmpc3 install
+cpp-11.list	 install
+cpp.list	 install
+libcc1-0 install
+libgomp1 install
+libitm1 install
+libatomic1 install
+libasan6 install
+liblsan0 install
+libtsan0 install
+libubsan1 install
+libquadmath0 install
+libgcc-11-dev install
+gcc-11.list	 install
+gcc.list	 install
+libstdc++-11-dev install
+g++-11.list	 install
+g++.list	 install
+make.list	 install
+libdpkg-perl.list	 install
+bzip2.list	 install
+lto-disabled-list.list	 install
+dpkg-dev.list	 install
+build-essential.list	 install
+libfakeroot install
+fakeroot.list	 install
+fonts-dejavu-core.list	 install
+fontconfig-config.list	 install
+icu-devtools.list	 install
+javascript-common.list	 install
+libalgorithm-diff-perl.list	 install
+libalgorithm-diff-xs-perl.list	 install
+libalgorithm-merge-perl.list	 install
+libfontconfig1 install
+libjpeg-turbo8 install
+libjpeg8 install
+libdeflate0 install
+libjbig0 install
+libwebp7 install
+libtiff5 install
+libxpm4 install
+libgd3 install
+libc-devtools.list	 install
+libfile-fcntllock-perl.list	 install
+libicu-dev install
+libjs-jquery.list	 install
+libncurses-dev install
+libreadline-dev install
+rubygems-integration.list	 install
+ruby-net-telnet.list	 install
+ruby-webrick.list	 install
+ruby-xmlrpc.list	 install
+libsqlite3-dev install
+libssl-dev install
+libxml2-dev install
+libxslt1-dev install
+manpages-dev.list	 install
+zlib1g-dev install
+ruby-build.list	 install
+unzip.list	 install
+zip.list	 install
+libyaml-dev install
+libctf0 install
+binutils-x86-64-linux-gnu.list	 install
+binutils-common install
+binutils.list	 install
+libbinutils install
+libctf-nobfd0 install
+libpython3.10 install
+python3.10.list	 install
+libpython3.10-stdlib install
+python3.10-minimal.list	 install
+libpython3.10-minimal install
+ca-certificates.list	 install
+tzdata.list	 install
+libbpf0 install
+ubuntu-release-upgrader-core.list	 install
+python3-distupgrade.list	 install
+python3-problem-report.list	 install
+python3-apport.list	 install
+apport.list	 install
+initramfs-tools.list	 install
+initramfs-tools-core.list	 install
+initramfs-tools-bin.list	 install
+python3-tz.list	 install
+tmux.list	 install
+cloud-init.list	 install
+alsa-topology-conf.list	 install
+libasound2-data.list	 install
+libasound2 install
+alsa-ucm-conf.list	 install
+libaom3 install
+libva2 install
+libmfx1 install
+libva-drm2 install
+libxfixes3 install
+libva-x11-2 install
+libvdpau1 install
+ocl-icd-libopencl1 install
+libavutil56 install
+libpixman-1-0 install
+libxcb-render0 install
+libxcb-shm0 install
+libxrender1 install
+libcairo2 install
+libcodec2-1.0 install
+libdav1d5 install
+libgsm1 install
+libmp3lame0 install
+libopenjp2-7 install
+libopus0 install
+libcairo-gobject2 install
+libgdk-pixbuf2.0-common.list	 install
+libgdk-pixbuf-2.0-0 install
+fontconfig.list	 install
+libgraphite2-3 install
+libharfbuzz0b install
+libthai-data.list	 install
+libdatrie1 install
+libthai0 install
+libpango-1.0-0 install
+libpangoft2-1.0-0 install
+libpangocairo-1.0-0 install
+librsvg2-2 install
+libshine3 install
+libsnappy1v5 install
+libspeex1 install
+libsoxr0 install
+libswresample3 install
+libogg0 install
+libtheora0 install
+libtwolame0 install
+libvorbis0a install
+libvorbisenc2 install
+libvpx7 install
+libwebpmux3 install
+libx264-163 install
+libx265-199 install
+libxvidcore4 install
+libzvbi-common.list	 install
+libzvbi0 install
+libavcodec58 install
+libraw1394-11 install
+libavc1394-0 install
+libass9 install
+libudfread0 install
+libbluray2 install
+libchromaprint1 install
+libgme0 install
+libmpg123-0 install
+libvorbisfile3 install
+libopenmpt0 install
+librabbitmq4 install
+libsrt1.4-gnutls install
+libssh-gcrypt-4 install
+libnorm1 install
+libpgm-5.3-0 install
+libzmq5 install
+libavformat58 install
+libbs2b0 install
+libflite1 install
+libserd-0-0 install
+libsord-0-0 install
+libsratom-0-0 install
+liblilv-0-0 install
+libmysofa1 install
+libblas3 install
+libgfortran5 install
+liblapack3 install
+libasyncns0 install
+libflac8 install
+libsndfile1 install
+libx11-xcb1 install
+libpulse0 install
+libsphinxbase3 install
+libpocketsphinx3 install
+libpostproc55 install
+libsamplerate0 install
+librubberband2 install
+libswscale5 install
+libvidstab1.1 install
+libzimg2 install
+libavfilter7 install
+libcaca0 install
+libcdio19 install
+libcdio-cdda2 install
+libcdio-paranoia2 install
+libdc1394-25 install
+libglvnd0 install
+libglapi-mesa install
+libxcb-dri2-0 install
+libxcb-dri3-0 install
+libxcb-glx0 install
+libxcb-present0 install
+libxcb-sync1 install
+libxcb-xfixes0 install
+libxshmfence1 install
+libxxf86vm1 install
+libdrm-amdgpu1 install
+libdrm-nouveau2 install
+libdrm-radeon1 install
+libllvm13 install
+libsensors-config.list	 install
+libsensors5 install
+libvulkan1 install
+libgl1-mesa-dri install
+libglx-mesa0 install
+libglx0 install
+libgl1 install
+libiec61883-0 install
+libjack-jackd2-0 install
+libopenal-data.list	 install
+libsndio7.0 install
+libopenal1 install
+libwayland-client0 install
+libdecor-0-0 install
+libwayland-server0 install
+libgbm1 install
+libwayland-cursor0 install
+libwayland-egl1 install
+libxcursor1 install
+libxi6 install
+libxinerama1 install
+libxkbcommon0 install
+libxrandr2 install
+x11-common.list	 install
+libxss1 install
+libsdl2-2.0-0 install
+libxcb-shape0 install
+libxv1 install
+libavdevice58 install
+ffmpeg.list	 install
+libigdgmm12 install
+intel-media-va-driver install
+libaacs0 install
+libbdplus0 install
+libdecor-0-plugin-1-cairo install
+libpciaccess0 install
+libdrm-intel1 install
+libgdk-pixbuf2.0-bin.list	 install
+libgl1-amber-dri install
+librsvg2-common install
+libxcb-randr0 install
+mesa-va-drivers install
+mesa-vdpau-drivers install
+mesa-vulkan-drivers install
+i965-va-driver install
+va-driver-all install
+vdpau-driver-all install
+pocketsphinx-en-us.list	 install
+rake.list	 install
+libruby3.0 install
+ruby3.0.list	 install
+ruby-rubygems.list	 install
+ruby.list	 install
+ruby-builder.list	 install
+ruby-gherkin.list	 install
+ruby-cucumber-core.list	 install
+ruby-cucumber-wire.list	 install
+ruby-diff-lcs.list	 install
+ruby-multi-json.list	 install
+ruby-multi-test.list	 install
+cucumber.list	 install
+ruby-oj install
+fonts-liberation.list	 install
+libatk1.0-data.list	 install
+libatk1.0-0 install
+libatspi2.0-0 install
+libatk-bridge2.0-0 install
+libavahi-common-data install
+libavahi-common3 install
+libavahi-client3 install
+libcups2 install
+hicolor-icon-theme.list	 install
+gtk-update-icon-cache.list	 install
+humanity-icon-theme.list	 install
+ubuntu-mono.list	 install
+adwaita-icon-theme.list	 install
+liblcms2-2 install
+libcolord2 install
+libepoxy0 install
+libxcomposite1 install
+libxdamage1 install
+libdconf1 install
+dconf-service.list	 install
+dconf-gsettings-backend install
+libgtk-3-common.list	 install
+libgtk-3-0 install
+xdg-utils.list	 install
+libxtst6 install
+session-migration.list	 install
+gsettings-desktop-schemas.list	 install
+at-spi2-core.list	 install
+libclone-perl.list	 install
+libdata-dump-perl.list	 install
+libencode-locale-perl.list	 install
+libipc-system-simple-perl.list	 install
+libfile-basedir-perl.list	 install
+liburi-perl.list	 install
+libfile-desktopentry-perl.list	 install
+libtimedate-perl.list	 install
+libhttp-date-perl.list	 install
+libfile-listing-perl.list	 install
+libfile-mimeinfo-perl.list	 install
+libfont-afm-perl.list	 install
+libfontenc1 install
+libgtk-3-bin.list	 install
+libllvm11 install
+libphobos2-ldc-shared98 install
+libgtkd-3-0 install
+libhtml-tagset-perl.list	 install
+libhtml-parser-perl install
+libio-html-perl.list	 install
+liblwp-mediatypes-perl.list	 install
+libhttp-message-perl.list	 install
+libhtml-form-perl.list	 install
+libhtml-tree-perl.list	 install
+libhtml-format-perl.list	 install
+libhttp-cookies-perl.list	 install
+libhttp-daemon-perl.list	 install
+libhttp-negotiate-perl.list	 install
+libice6 install
+perl-openssl-defaults install
+libnet-ssleay-perl install
+libio-socket-ssl-perl.list	 install
+libio-stringy-perl.list	 install
+libnet-http-perl.list	 install
+libtry-tiny-perl.list	 install
+libwww-robotrules-perl.list	 install
+libwww-perl.list	 install
+liblwp-protocol-https-perl.list	 install
+libnet-smtp-ssl-perl.list	 install
+libmailtools-perl.list	 install
+libxml-parser-perl install
+libxml-twig-perl.list	 install
+libnet-dbus-perl.list	 install
+libsm6 install
+libtie-ixhash-perl.list	 install
+libu2f-udev.list	 install
+libvte-2.91-common.list	 install
+libvte-2.91-0 install
+libvted-3-0 install
+libx11-protocol-perl.list	 install
+libxt6 install
+libxmu6 install
+libxaw7 install
+libxft2 install
+libxkbfile1 install
+libxml-xpathengine-perl.list	 install
+libxxf86dga1 install
+tilix-common.list	 install
+tilix.list	 install
+x11-utils.list	 install
+x11-xserver-utils.list	 install
+libauthen-sasl-perl.list	 install
+libpq5 install
+libpq-dev.list	 install
+pkg-config.list	 install
+gyp.list	 install
+libjs-events.list	 install
+libjs-highlight.js.list	 install
+libjs-is-typedarray.list	 install
+libjs-psl.list	 install
+libjs-sprintf-js.list	 install
+libjs-typedarray-to-buffer.list	 install
+libuv1-dev install
+libc-ares2 install
+libnode72 install
+libnode-dev.list	 install
+libnotify4 install
+libnotify-bin.list	 install
+nodejs.list	 install
+node-abab.list	 install
+node-ms.list	 install
+node-debug.list	 install
+node-yallist.list	 install
+node-lru-cache.list	 install
+node-semver.list	 install
+node-agent-base.list	 install
+node-ansi-regex.list	 install
+node-ansistyles.list	 install
+node-aproba.list	 install
+node-delegates.list	 install
+libjs-inherits.list	 install
+node-inherits.list	 install
+node-core-util-is.list	 install
+node-safe-buffer.list	 install
+node-string-decoder.list	 install
+node-process-nextick-args.list	 install
+node-util-deprecate.list	 install
+node-isarray.list	 install
+node-readable-stream.list	 install
+node-are-we-there-yet.list	 install
+node-arrify.list	 install
+node-asap.list	 install
+node-asynckit.list	 install
+node-builtins.list	 install
+node-chownr.list	 install
+node-fs.realpath.list	 install
+node-wrappy.list	 install
+node-once.list	 install
+node-inflight.list	 install
+node-balanced-match.list	 install
+node-brace-expansion.list	 install
+node-minimatch.list	 install
+node-path-is-absolute.list	 install
+node-glob.list	 install
+node-graceful-fs.list	 install
+node-mkdirp.list	 install
+node-iferr.list	 install
+node-imurmurhash.list	 install
+node-fs-write-stream-atomic.list	 install
+node-rimraf.list	 install
+node-run-queue.list	 install
+node-copy-concurrently.list	 install
+node-move-concurrently.list	 install
+node-escape-string-regexp.list	 install
+node-indent-string.list	 install
+node-p-map.list	 install
+node-promise-inflight.list	 install
+node-ssri.list	 install
+node-unique-filename.list	 install
+node-cacache.list	 install
+node-clean-yaml-object.list	 install
+node-clone.list	 install
+node-color-name.list	 install
+node-color-convert.list	 install
+node-colors.list	 install
+node-strip-ansi.list	 install
+node-defaults.list	 install
+node-wcwidth.js.list	 install
+node-columnify.list	 install
+node-console-control-strings.list	 install
+node-growl.list	 install
+node-sprintf-js.list	 install
+node-argparse.list	 install
+node-esprima.list	 install
+node-js-yaml.list	 install
+node-lcov-parse.list	 install
+node-log-driver.list	 install
+node-is-plain-obj.list	 install
+node-is-buffer.list	 install
+node-kind-of.list	 install
+node-minimist.list	 install
+node-cssom.list	 install
+node-cssstyle.list	 install
+node-delayed-stream.list	 install
+node-combined-stream.list	 install
+node-mime.list	 install
+node-mime-types.list	 install
+node-form-data.list	 install
+node-events.list	 install
+node-https-proxy-agent.list	 install
+node-iconv-lite.list	 install
+node-lodash-packages.list	 install
+node-stealthy-require.list	 install
+node-punycode.list	 install
+node-psl.list	 install
+node-universalify.list	 install
+node-tough-cookie.list	 install
+node-webidl-conversions.list	 install
+node-commander.list	 install
+node-mute-stream.list	 install
+node-read.list	 install
+node-ws.list	 install
+node-jsdom.list	 install
+node-fetch.list	 install
+node-coveralls.list	 install
+node-mimic-response.list	 install
+node-decompress-response.list	 install
+node-diff.list	 install
+node-err-code.list	 install
+node-time-stamp.list	 install
+node-fancy-log.list	 install
+node-signal-exit.list	 install
+node-foreground-child.list	 install
+node-function-bind.list	 install
+node-has-unicode.list	 install
+node-ansi-styles.list	 install
+node-slice-ansi.list	 install
+node-string-width.list	 install
+node-wide-align.list	 install
+node-gauge.list	 install
+node-end-of-stream.list	 install
+node-pump.list	 install
+node-get-stream.list	 install
+node-lowercase-keys.list	 install
+node-json-buffer.list	 install
+node-p-cancelable.list	 install
+node-quick-lru.list	 install
+node-got.list	 install
+node-has-flag.list	 install
+node-hosted-git-info.list	 install
+node-ip.list	 install
+node-ip-regex.list	 install
+node-is-typedarray.list	 install
+node-isexe.list	 install
+node-json-parse-better-errors.list	 install
+node-encoding.list	 install
+node-jsonparse.list	 install
+node-minipass.list	 install
+node-npm-bundled.list	 install
+node-osenv.list	 install
+node-validate-npm-package-name.list	 install
+node-npm-package-arg.list	 install
+node-object-assign.list	 install
+node-opener.list	 install
+node-retry.list	 install
+node-promise-retry.list	 install
+node-promzard.list	 install
+node-set-blocking.list	 install
+node-slash.list	 install
+libjs-source-map.list	 install
+node-source-map.list	 install
+node-source-map-support.list	 install
+node-spdx-license-ids.list	 install
+node-spdx-exceptions.list	 install
+node-spdx-expression-parse.list	 install
+node-spdx-correct.list	 install
+node-stack-utils.list	 install
+node-supports-color.list	 install
+node-tap-parser.list	 install
+node-tap-mocha-reporter.list	 install
+node-text-table.list	 install
+node-tmatch.list	 install
+node-typedarray-to-buffer.list	 install
+node-validate-npm-package-license.list	 install
+node-whatwg-fetch.list	 install
+node-write-file-atomic.list	 install
+nodejs-doc.list	 install
+node-abbrev.list	 install
+node-archy.list	 install
+node-chalk.list	 install
+node-cli-table.list	 install
+node-depd.list	 install
+node-nopt.list	 install
+node-npmlog.list	 install
+node-tar.list	 install
+node-which.list	 install
+node-gyp.list	 install
+node-ini.list	 install
+node-negotiator.list	 install
+node-resolve.list	 install
+node-normalize-package-data.list	 install
+node-read-package-json.list	 install
+node-tap.list	 install
+npm.list	 install
+apt-transport-https.list	 install
+heroku.list	 install
+heroku.md5sums	 install
+libluajit-5.1-common.list	 install
+libluajit-5.1-2 install
+libtree-sitter0 install
+libunibilium4 install
+lua-luv install
+python3-msgpack.list	 install
+python3-greenlet.list	 install
+xclip.list	 install
+libmsgpackc2 install
+libtermkey1 install
+libvterm0 install
+libpcre2-32-0 install
+xsel.list	 install
+fd-find.list	 install
+ripgrep.list	 install
+libksba8 install
+libksba8 install
+libksba8 install
+libksba8 install
+google-chrome-stable.list	 install
+google-chrome-stable.md5sums	 install
+gh.list	 install
+libcurl4 install
+libcurl4 install
+libcurl4 install
+libcurl4 install
+libcurl3-gnutls install
+libcurl3-gnutls install
+libcurl3-gnutls install
+libcurl3-gnutls install
+curl.md5sums	 install
+sqlite3.list	 install
+curl.list	 install
+libcurl4 install
+libcurl3-gnutls install
+libksba8 install
+linux-libc-dev install
+linux-modules-5.15.0-1027-aws.list	 install
+linux-image-5.15.0-1027-aws.list	 install
+linux-aws.list	 install
+linux-image-aws.list	 install
+linux-aws-headers-5.15.0-1027.list	 install
+linux-headers-5.15.0-1027-aws.list	 install
+linux-headers-aws.list	 install
+libhttp-parser2.9 install
+libmbedcrypto7 install
+libmbedx509-1 install
+libmbedtls14 install
+libssh2-1 install
+libgit2-1.1 install
