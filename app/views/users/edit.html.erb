@@ -1,35 +1,59 @@
+<div
+  class="bg-image"
+  style="
+    background-image: url('https://files.12thman.com/wallpapers/2020/football-17.jpg');
+    height: 100vh;
+    background-size: 100% 100%;
+">
 
-<h1>Editing user</h1>
+  <div class="mask" style="background-color: rgba(0, 0, 0, .6); height: 100vh;">
+    <div class="d-flex justify-content-center align-items-center h-100" style="height: 100vh;">
+      <div class="form-box border border-dark rounded border-4 position-relative">
+        <h1 class="text-center">Editing user</h1>
 
-<%= render "form", user: @user %>
+        <%= render "form", user: @user %>
 
-<br>
-<div>
+        <br>
+        <div>
 
-  <div> 
+          <div> 
 
-    <button id="toggle-button" type="button">Delete User</button>
+            <button id="toggle-button" type="button" class="btn btn-danger">Delete User</button>
 
-    <div id="confirm-cancel-buttons" style="display: none;">
-      <%= form_for @user, method: :delete do |f| %>
-        <%= f.submit 'Confirm Delete', id: 'confirm-button' %>
-        <button id="cancel-button" type="button">Cancel</button>
-      <% end %>
-    </div>
+            <div id="confirm-cancel-buttons" style="display: none;">
+              <%= form_for @user, method: :delete do |f| %>
+                <%= f.submit 'Confirm Delete', id: 'confirm-button', class: "btn btn-danger"%>
+                <button id="cancel-button" type="button" class="btn btn-secondary ">Cancel</button>
+              <% end %>
+            </div>
 
 
-  </div>
-  <%= link_to "Cancel", admin_path, id: "Cancel"%>
-</div>
-<script>
-  var toggleButton = document.getElementById("toggle-button");
-  var confirmCancelButtons = document.getElementById("confirm-cancel-buttons");
+          </div>
+          <%= link_to "Cancel", admin_path, id: "Cancel", class:"btn btn-secondary position-absolute bottom-0 end-0"%>
+        </div>
+        <script>
+          var toggleButton = document.getElementById("toggle-button");
+          var cancelButton = document.getElementById("cancel-button");
+          var confirmCancelButtons = document.getElementById("confirm-cancel-buttons");
 
-  toggleButton.addEventListener("click", function() {
-    if (confirmCancelButtons.style.display === "none") {
-      confirmCancelButtons.style.display = "block";
-    } else {
-      confirmCancelButtons.style.display = "none";
-    }
-  });
-</script>
+          toggleButton.addEventListener("click", function() {
+            if (confirmCancelButtons.style.display === "none") {
+              confirmCancelButtons.style.display = "block";
+            } else {
+              confirmCancelButtons.style.display = "none";
+            }
+          });
+
+          cancelButton.addEventListener("click", function() {
+            if (confirmCancelButtons.style.display === "none") {
+              confirmCancelButtons.style.display = "block";
+            } else {
+              confirmCancelButtons.style.display = "none";
+            }
+          });
+        </script>
+
+      </div>    <%#  Gray Box Div  %>
+    </div>      <%#  Alignment Div %>
+  </div>        <%#     Mask Div   %>
+</div>          <%# Background Div %>

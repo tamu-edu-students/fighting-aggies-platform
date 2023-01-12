@@ -1,4 +1,5 @@
 class LoginController < ApplicationController
+  before_action :relog_prevent
     def omniauth
       request_params=request.env['omniauth.auth']
       email=request_params["extra"]["id_info"]["email"].to_s
@@ -33,10 +34,17 @@ class LoginController < ApplicationController
       end            
     end
     
-    def logout
-      session[:authenticated]=false
-      session[:coach]=false
-      session[:admin]=false
-      redirect_to root_path
+    def relog_prevent
+      if session[:coach]
+        redirect_to dashboard_path
+      elsif session[:admin]
+        redirect_to admin_path
+      end
     end
+    # def logout
+    #   session[:authenticated]=false
+    #   session[:coach]=false
+    #   session[:admin]=false
+    #   redirect_to root_path
+    # end
 end

@@ -21,12 +21,14 @@ Rails.application.routes.draw do
     end
   end
   resource :users
+  get '/admin_authenticate', to: 'application#admin_authenticate'
+  get '/coach_authenticate', to: 'application#coach_authenticate'
   get '/authorize' => 'login#authorize'
   get 'dashboard', to: 'pages#home'
   get 'admin', to: 'admin#dashboard'
   get '/auth/:provider/callback' => 'login#omniauth', :as => 'omniauth'
   get 'login/:email' => 'login#login', :as => 'login'
-  get 'logout' => 'login#logout', :as => 'logout'
+  get 'logout' => 'application#logout', :as => 'logout'
   get 'dashboard', to: 'pages#home'
   get 'admin', to: 'admin#dashboard'
   get '/auth/:provider/callback' => 'login#omniauth'

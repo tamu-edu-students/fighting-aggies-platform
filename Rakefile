@@ -4,3 +4,13 @@
 require_relative "config/application"
 
 Rails.application.load_tasks
+
+namespace :setup do
+    task :npm_yarn do
+      system("sudo apt upgrade")
+      system("sudo apt update")
+      system("npm install")
+      system("npm install --global yarn")
+      system("yarn install")
+    end
+end
