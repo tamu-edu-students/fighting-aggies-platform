@@ -4,76 +4,37 @@ Developing an analytical panel to generate insights that help facilitate the pos
 
 ### Deployment - [Heroku](https://fightin-aggies.herokuapp.com/)
 
-### Dependencies
-- Ruby~3.1.2
-  - For Windows
-  ```bash
-  winget install RubyInstallerTeam.Ruby
-  ```
-  - For Ubuntu
-  ```bash
-  sudo apt-get install ruby-full // for Ubuntu
-  ```
-  - For MacOS using [Homebrew](https://brew.sh/)
-  ```bash
-    brew install ruby // for MacOS
-  ```
-- Rails~7.0.4
- ```bash
- gem install rails
- ```
-- yarn~1.22.19
-- ffmpeg
-  - For Windows,
-    - Go to the [link](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z).
-    - Extract the file to where you want it to be and rename it as ffmpeg.
-    - Run the Command Prompt as admin and write 
-    ```bash
-    setx /m PATH "path\to\ffmpeg\bin;%PATH%"
-    ```
-  - For Ubuntu,
-  ```bash
-  sudo apt install ffmpeg
-  ```
-- Cucumber
-  - For Ubuntu,
-  ```bash
-  sudo apt install cucumber
-  ```
-- Minitests
-  - Minitest is a testing tool present in the Ruby environment, and its gem can be included in the Gemfile (already done).
-- ChromeDriver
-  - For Ubuntu,
-  ```bash
-  sudo wget sudo wget https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip
-  sudo unzip chromedriver_linux64.zip
-  sudo mv chromedriver /usr/bin/chromedriver
-  ```
-- Chrome
-  - For Ubuntu,
-  ```bash
-  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-  sudo apt install ./google-chrome-stable_current_amd64.deb
-  ```
-- Selenium WebDriver
-  - For Ubuntu, if the version of your Selenium WebDriver is higher than 3.142.7. Uninstall it, and install the older version with
-  ```bash
-  gem install selenium-webdriver -v 3.142.7
-  ```
-
 ### Installation and Running Instructions
 ```bash
 git clone https://github.com/jessefphipps/fighting-aggies-platform.git
+```
+```bash
 cd fighting-aggies-platform
-bundle install
-yarn install
+```
+```bash
+./install.sh
+```
+```bash
+~/.bashrc
+```
+```bash
 bin/dev
 ```
+
+If you are developing on a server on a remote machine (e.g., AWS/EC2) use *http://0.0.0.0:8080* as your host url
+and on your local machine use the EC2 instance's public IPv4 address in place of *0.0.0.0*.
+
+If you are using vscode's remote editing feature use *localhost* as the broadcast IP and vscode will portforward 
+the instance's public IP and allow you to access the machine using your localhost (you can acccess the remote 
+server's webpages and APIs by going to http://localhost:8080 on your local machine).
+
+The server's broadcast IP (-b) and port (-p) can be set in *Procfile.dev*.
+
 ### Testing Instructions
 Run the server in your local machine and use a new terminal to run the tests using the commands given below,
 ```bash
-cucumber
-rake test
+cucumber -q
+rspec
 ```
 ### Heroku Deployment Instructions
 Migrate and seed the database
