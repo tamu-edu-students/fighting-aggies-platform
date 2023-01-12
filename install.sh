@@ -11,38 +11,38 @@ check_install() {
     bad_msg="$2"
 
     if command -v "$cmd" >/dev/null 2>&1; then
-        echo "${GREEN}$cmd $good_msg${NC}"
+        echo -e "${GREEN}$cmd $good_msg${NC}"
     else
-        echo "${RED}$cmd $bad_msg${NC}"
+        echo -e "${RED}$cmd $bad_msg${NC}"
     fi
     sleep 1
 }
 
-echo "${CYAN}Go make a cup of coffee or somthing, this setup is going to take 5-10 minutes...${NC}"
+echo -e "${CYAN}Go make a cup of coffee or somthing, this setup is going to take 5-10 minutes...${NC}"
 sleep 5
 
-echo "${YELLOW}Checking conflicting for conflicting yarn binary.${NC}"
+echo -e "${YELLOW}Checking conflicting for conflicting yarn binary.${NC}"
 sudo apt remove cmdtest
 
 # install apt dependencies
-echo "${CYAN}Installing apt dependencies${NC}"
+echo -e "${CYAN}Installing apt dependencies${NC}"
 sleep 1
 sudo apt update
 sudo apt install git curl autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev ffmpeg cucumber libpq-dev pkg-config npm
-echo "${GREEN}apt dependencies successfully installed${NC}"
+echo -e "${GREEN}apt dependencies successfully installed${NC}"
 sleep 1
 
 # installs rbevn
-echo "${CYAN}Installing rbenv${NC}"
+echo -e "${CYAN}Installing rbenv${NC}"
 sleep 1
 curl -fsSL 'https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer' | bash
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+echo -e 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo -e 'eval "$(rbenv init -)"' >> ~/.bashrc
 source ~/.bashrc
 check_install 'rbenv' 'rbenv successfully installed' 'rbenv failed to install'
 
 # install chromedriver for cucumber testing
-echo "${CYAN}Installing chromedrivers for testing${NC}"
+echo -e "${CYAN}Installing chromedrivers for testing${NC}"
 sleep 1
 wget 'https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip'
 sudo unzip chromedriver_linux64.zip
@@ -55,7 +55,7 @@ sudo apt install ./google-chrome-stable_current_amd64.deb
 check_install 'google-chrome' 'google-chrome successfully installed' 'google-chrome failed to install'
 
 # install ruby
-echo "${CYAN}Installing Ruby${NC}"
+echo -e "${CYAN}Installing Ruby${NC}"
 sleep 1
 LATEST_RUBY_VERSION=$(rbenv install --list | grep -E '^[0-9]+\.[0-9]+\.[0-9]+' | tail -1)
 rbenv install $LATEST_RUBY_VERSION -v
@@ -65,30 +65,30 @@ ruby -v
 check_install 'ruby' 'ruby successfully installed' 'ruby failed to install'
 
 # add extra gems
-echo "${CYAN}Adding gems${NC}"
+echo -e "${CYAN}Adding gems${NC}"
 sleep 1
 gem install selenium-webdriver -v 3.142.7
 gem install rails 
-echo "${GREEN}gems successfully added to Gemfile${NC}"
+echo -e "${GREEN}gems successfully added to Gemfile${NC}"
 sleep 1
 
 # update and install all gems
-echo "${CYAN}Installing gems${NC}"
+echo -e "${CYAN}Installing gems${NC}"
 sleep 1
 bundle update
 bundle install
-echo "${GREEN}gems successfully updated and installed${NC}"
+echo -e "${GREEN}gems successfully updated and installed${NC}"
 sleep 1
 
 # add npm 
-echo "${CYAN}Installing npm${NC}"
+echo -e "${CYAN}Installing npm${NC}"
 sleep 1
 sudo npm install --global n
 sudo n latest
 check_install 'npm' 'npm successfully installed' 'npm failed to install'
 
 # add yarn
-echo "${CYAN}Installing yarn and updating pacakges${NC}"
+echo -e "${CYAN}Installing yarn and updating pacakges${NC}"
 sleep 1
 sudo npm install --global yarn
 yarn upgrade
@@ -99,19 +99,19 @@ check_install 'yarn' 'yarn successfully installed' 'yarn failed to install'
 source ~/.bashrc
 
 # migrate models and see dbs
-echo "${CYAN}Updating ruby models and databases${NC}"
+echo -e "${CYAN}Updating ruby models and databases${NC}"
 sleep 1
 rake db:migrate
 rake db:seed
 
 # testing 
-echo "${CYAN}Running unit tests${NC}"
+echo -e "${CYAN}Running unit tests${NC}"
 sleep 1
 rake cucumber
 rspec
 
 # clean up
-echo "${CYAN}Cleaning up${NC}"
+echo -e "${CYAN}Cleaning up${NC}"
 sleep 1
 rm chromedriver_linux64.zip*
 rm google-chrome-stable_current_amd64.deb*
@@ -119,6 +119,6 @@ rm google-chrome-stable_current_amd64.deb*
 # refresh
 source ~/.bashrc
 
-echo "${CYAN}All setup processes complete!${NC}"
+echo -e "${CYAN}All setup processes complete!${NC}"
 sleep 1
-echo "${CYAN}If you have an error running bin/dev, source ~/.bashrc to update your paths${NC}"
+echo -e "${CYAN}If you have an error running bin/dev, source ~/.bashrc to update your paths${NC}"
