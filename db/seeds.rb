@@ -15,6 +15,7 @@ initial_users = [
   { name: 'Andrew Imwalle', role: 'Admin', email: 'andrew.imwalle@tamu.edu' },
   { name: 'Nick McDonough', role: 'Admin', email: 'nimcd@tamu.edu' },
   { name: 'Eli Tracy', role: 'Admin', email: 'elitracy@tamu.edu' },
+  { name: 'Philip Ritchey', role: 'Admin', email: 'pcr@tamu.edu' },
   { name: 'Bob Jones', role: 'Coach', email: 'bob.jones@tamu.edu' },
   { name: 'Dylan Nguyen', role: 'Admin', email: 'dylann123@tamu.edu' },
   { name: 'Obama Redacted', role: 'Coach', email: 'potus52@gmail.com' },
