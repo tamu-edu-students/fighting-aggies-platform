@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -90,10 +92,10 @@ group :test do
   gem 'simplecov', require: false
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
-  gem 'selenium-webdriver', '~> 3.142.7'
-  gem 'webdrivers'
   gem 'cucumber-rails', require: false
   gem 'rspec-rails', '~> 6.0.0'
+  gem 'selenium-webdriver', '~> 3.142.7'
+  gem 'webdrivers'
 end
 
 group :production do
