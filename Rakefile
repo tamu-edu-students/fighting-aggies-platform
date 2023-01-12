@@ -16,3 +16,7 @@ task :run_tests do
   sh 'cucumber -q --tags "not @skip"'
   sh 'rspec'
 end
+
+task :cucumber, [:param] do |_t, args|
+  sh "cucumber #{args[:param]}"
+end

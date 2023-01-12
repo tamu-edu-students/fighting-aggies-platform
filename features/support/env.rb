@@ -7,6 +7,9 @@
 # files.
 
 require 'cucumber/rails'
+require 'simplecov'
+require 'fileutils'
+require 'capybara/rails'
 
 # frozen_string_literal: true
 
@@ -66,10 +69,6 @@ Capybara.register_driver :selenium do |app|
   options.add_argument('no-sandbox')
   Capybara::Selenium::Driver.new(app, browser: :chrome, options:)
 end
-
-require 'simplecov'
-require 'fileutils'
-require 'capybara/rails'
 
 SimpleCov.start 'rails'
 
