@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_09_070606) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_11_100356) do
   create_table "analyses", force: :cascade do |t|
     t.json "report"
     t.datetime "created_at", null: false
@@ -31,6 +31,27 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_09_070606) do
     t.datetime "created_at", precision: nil, null: false
     t.datetime "updated_at", precision: nil, null: false
     t.index ["authenticatable_type", "authenticatable_id"], name: "authenticatable"
+  end
+
+  create_table "players", force: :cascade do |t|
+    t.string "name"
+    t.integer "number"
+    t.string "position"
+    t.string "year"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "route_instances", force: :cascade do |t|
+    t.integer "player_id"
+    t.string "route_name"
+    t.string "play_name"
+    t.string "timestamp_start"
+    t.string "timestamp_end"
+    t.integer "success"
+    t.integer "practice_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|

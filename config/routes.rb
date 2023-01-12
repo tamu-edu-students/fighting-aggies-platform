@@ -36,4 +36,10 @@ Rails.application.routes.draw do
   get 'users/show', to: 'users#show'
   get 'users/:id/edit' => 'users#edit', :as => 'users_edit'
   delete 'users/destroy'
+
+  get 'route_instances/index'
+  get 'route_instances/show', to: 'users#show'
+
+  get 'players/index', to: 'players#index'
+  get '/players/:id', to: 'players#show', :as => 'players_show'
 end
