@@ -1,16 +1,29 @@
 # xargs -a package-list.txt apt-get -y install # install apt packages and their dependencies
- sudo dpkg --set-selections < package-list.txt
- sudo apt-get -y update
- sudo apt-get dselect-upgrade
+sudo dpkg --set-selections < package-list.txt
+sudo apt-get -y update
+sudo apt-get dselect-upgrade
 
-# sudo apt install rbenv
-# rbenv init
-# echo "eval '$(~/.rbenv/bin/rbenv init - ba)'" >> ~/.bashrc
+# Install rbenv and ruby-build
+sudo apt-get update
+sudo apt-get install -y git autoconf rbenv ruby-build 
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+source ~/.bashrc
 
-# rbenv install 3.2.0
-# rbenv global 3.2.0
-# rbenv local 3.2.0
-#
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+
+# Install the latest version of Ruby
+LATEST_RUBY_VERSION=$(rbenv install --list | grep -E '^[0-9]+\.[0-9]+\.[0-9]+' | tail -1)
+rbenv install $LATEST_RUBY_VERSION
+
+ruby-build -v $LATEST_RUBY_VERSION
+rbenv global $LATEST_RUBY_VERSION
+rbenv local $LATEST_RUBY_VERSION
+
+# Verify the installation
+ruby -v
+
 # bundle update
 # bundle install
 #
