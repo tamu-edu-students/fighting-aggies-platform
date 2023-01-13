@@ -7,20 +7,22 @@
 ">
   <div class="mask" style="background-color: rgba(0, 0, 0, .6); height: 100vh;">
     <div class="d-flex justify-content-center align-items-center h-100" style="height: 100vh;">
-      <div class="form-box border border-dark rounded border-4 position-relative">
+      <div class="frosted-glass-new">
+        <div class="form-box position-relative">
 
-        <h1 class= "text-center">New user</h1>
+          <h1 class= "text-center">New user</h1>
 
-        <%= render "form", user: @user %>
+          <%= render "form", user: @user %>
 
-        <br>
+          <br>
 
-        <div>
-          <%= link_to "Back to users", admin_path, class:"btn btn-secondary position-absolute bottom-0 end-0" %>
-        </div>
+          <div  class="float-end pe-3">
+            <%= link_to "Back to users", admin_path, class:"btn btn-secondary" %>
+          </div>
 
 
-      </div>    <%#  Gray Box Div  %>
-    </div>      <%#  Alignment Div %>
-  </div>        <%#     Mask Div   %>
-</div>          <%# Background Div %>
+        </div>  <%#  Gray Box Div   %>
+      <div>     <%# Frost Glass Div %>
+    </div>      <%#  Alignment Div  %>
+  </div>        <%#     Mask Div    %>
+</div>          <%# Background Div  %>

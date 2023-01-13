@@ -143,11 +143,26 @@ body{
     background-color: white;
 }
 
-.form-box{
-    background-color: white;
+.frosted-glass-new{
     width: 30vw;
-    height: 55vh;;
+    height: 55vh;
+    background-color: rgba(255, 255, 255, 0.4);  
+    backdrop-filter: blur(5px);
 }
+
+.frosted-glass-edit{
+    width: 30vw;
+    height: 57vh;
+    background-color: rgba(255, 255, 255, 0.4);  
+    backdrop-filter: blur(5px);
+}
+
+
+.form-box{
+    color:white;
+}
+
+
 // #530e0e  #9c4f4f
 .admin-btn{
     background-color: #753535;
