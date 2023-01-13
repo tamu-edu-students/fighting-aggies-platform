@@ -36,17 +36,6 @@ sudo apt -y install git curl autoconf bison build-essential libssl-dev libyaml-d
 echo -e "${GREEN}apt dependencies successfully installed${NC}"
 sleep 3
 
-retries=3
-while [ $retries -gt 0 ]; do
-  sudo apt -y npm
-  if [ $? -eq 0 ]; then
-    retries=$(( retries - 1 ))
-    echo -e "${YELLOW}npm failed to install trying again...${retries}/3${NC}"
-  else
-    break
-  fi
-done
-check_install 'npm' 'successfully installed' 'failed to install'
 
 # installs rbevn
 echo -e "${CYAN}Installing rbenv${NC}"
@@ -121,6 +110,18 @@ bundle update
 bundle install
 echo -e "${GREEN}gems successfully updated and installed${NC}"
 sleep 3
+
+retries=3
+while [ $retries -gt 0 ]; do
+  install_status=$(check_install 'npm' 'successfully installed' 'failed to install')
+  if [ $install_status -eq 0 ]; then
+    retries=$(( retries - 1 ))
+    echo -e "${YELLOW}npm failed to install trying again...${retries}/3${NC}"
+  else
+    break
+  fi
+done
+check_install 'npm' 'successfully installed' 'failed to install'
 
 # add npm 
 echo -e "${CYAN}Installing npm${NC}"
