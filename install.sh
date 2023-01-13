@@ -49,11 +49,11 @@ sleep 3
 wget 'https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip'
 sudo unzip chromedriver_linux64.zip
 sudo mv chromedriver /usr/bin/chromedriver
-check_install 'chromedriver' 'chromedriver successfully installed' 'chromedriver failed to install'
+check_install 'chromedriver' 'successfully installed' 'failed to install'
 
 # install google chrome for cucumber testing
 wget 'https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb'
-sudo apt install ./google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
 check_install 'google-chrome' 'successfully installed' 'failed to install'
 
 # install ruby
@@ -123,5 +123,4 @@ source ~/.bashrc
 sleep 3
 
 echo -e "${CYAN}All setup processes complete!${NC}"
-sleep 3
 echo -e "${CYAN}If you have an error running bin/dev, source ~/.bashrc to update your paths${NC}"
