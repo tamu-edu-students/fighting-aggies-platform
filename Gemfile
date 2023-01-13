@@ -96,6 +96,7 @@ group :test do
   gem 'rspec-rails', '~> 6.0.0'
   gem 'selenium-webdriver', '~> 3.142.7'
   gem 'webdrivers'
+  gem "rubycritic", require: false
 end
 
 group :production do
