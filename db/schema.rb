@@ -43,7 +43,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_11_100356) do
   end
 
   create_table "route_instances", force: :cascade do |t|
-    t.integer "player_id"
+    t.integer "players_id"
     t.string "route_name"
     t.string "play_name"
     t.string "timestamp_start"

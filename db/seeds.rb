@@ -41,12 +41,12 @@ end
 int_to_time_string(3661000000) # "01:01:01
 
 CSV.foreach("db/seeds/players.csv", headers: true) do |row|
-   Players.create!(row.to_hash)
+   Player.create!(row.to_hash)
 end
 CSV.foreach("db/seeds/route_instances.csv", headers: true) do |row|
     hash=row.to_hash
     hash["timestamp_start"]=int_to_time_string(hash["timestamp_start"].to_i)
     hash["timestamp_end"]=int_to_time_string(hash["timestamp_end"].to_i)
-    RouteInstances.create!(hash)
+    RouteInstance.create!(hash)
  end
 

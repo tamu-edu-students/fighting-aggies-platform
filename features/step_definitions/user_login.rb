@@ -29,6 +29,8 @@ Before do
 end
 Given("the database has been reset") do
   User.destroy_all()
+  Players.destroy_all()
+  RouteInstances.destroy_all()
 end
 Given("I am logged in as an administrator") do
   User.create({:name => 'Test Admin', :role => 'Admin', :email => 'user@gmail.com'})
