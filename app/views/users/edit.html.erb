@@ -19,11 +19,11 @@
 
             <div class="ps-3"> 
 
-              <button id="toggle-button" type="button" class="btn btn-danger">Delete User</button>
+              <button id="toggle-button" type="button" class="btn btn-danger px-3">Delete User</button>
 
               <div id="confirm-cancel-buttons" style="display: none;">
                 <%= form_for @user, method: :delete do |f| %>
-                  <button id="cancel-button" type="button" class="btn btn-secondary ">Cancel</button>
+                  <button id="cancel-button" type="button" class="btn btn-secondary">Cancel Delete</button>
                   <%= f.submit 'Confirm Delete', id: 'confirm-button', class: "btn btn-danger"%>
                 <% end %>
               </div>
