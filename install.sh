@@ -111,28 +111,20 @@ bundle install
 echo -e "${GREEN}gems successfully updated and installed${NC}"
 sleep 3
 
-retries=3
-while [ $retries -gt 0 ]; do
-  install_status=$(check_install 'npm' 'successfully installed' 'failed to install')
-  if [ $install_status -eq 0 ]; then
-    retries=$(( retries - 1 ))
-    echo -e "${YELLOW}npm failed to install trying again...${retries}/3${NC}"
-  else
-    break
-  fi
-done
+source ~/.bashrc
+
+echo -e "${CYAN}Installing npm${NC}"
+sleep 3
+sudo apt install -y npm
 check_install 'npm' 'successfully installed' 'failed to install'
 
-# add npm 
-echo -e "${CYAN}Installing npm${NC}"
+# add npm version manager 
+echo -e "${CYAN}Installing yarn${NC}"
 sleep 3
 sudo npm install --global n
 sudo n latest
-check_install 'npm' 'successfully installed' 'failed to install'
 
 # add yarn
-echo -e "${CYAN}Installing yarn and updating pacakges${NC}"
-sleep 3
 sudo npm install --global yarn
 yarn upgrade
 yarn install

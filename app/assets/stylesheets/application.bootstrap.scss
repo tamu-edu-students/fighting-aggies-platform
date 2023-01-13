@@ -111,21 +111,23 @@
 .admin-head{
     background-color: white;
     color: #530e0e;
+    border-bottom: 1px solid 'black';
 }
 
 .admin-table{
     padding:none;
     color: #530e0e;
     background-color: white;
+    border: black solid 1px;
+    border-radius: '5%';
     
 }
 
-// #530e0e  #9c4f4f
 .admin-table tr:nth-child(even){background-color: #d7d7d7;}
 
 .admin-row{
-    border-left: #530e0e double 4px;
-    border-right: #530e0e double 4px;
+    // border-left: #530e0e double 4px;
+    // border-right: #530e0e double 4px;
     
 }
 
@@ -175,4 +177,15 @@ body{
 .admin-btn:hover, .admin-btn:active {
     color:white;
     background-color: #530e0e;
+}
+.login-container{
+  width: "100%";
+  // height: 100vh;
+  background-color: 'red';
+
+}
+
+.admin-nav{
+  width: "100%";
+  border: 5px 'solid' 'black';
 }

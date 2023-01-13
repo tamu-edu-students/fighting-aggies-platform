@@ -1,3 +1,7 @@
-<%= button_to "Log In with Google", '/auth/google_oauth2', method: :post, data: { turbo: false }%>
-<%= link_to "Log In with Email Link", '/sign_in' %>
-<div class="notice"><%= flash[:notice] %></div> 
+<div class="login-container">
+  <div class="login-buttons-container">
+    <%= button_to "Log In with Google", '/auth/google_oauth2', method: :post, data: { turbo: false }, class: 'google-login'%>
+    <%= link_to "Log In with Email Link", '/sign_in', class: 'email-login' %>
+  </div>
+  <div class="notice"><%= flash[:notice] %></div> 
+</div>
