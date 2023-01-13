@@ -12,8 +12,10 @@ check_install() {
 
     if command -v "$cmd" >/dev/null 2>&1; then
         echo -e "${GREEN}$cmd $good_msg${NC}"
+        return 1
     else
         echo -e "${RED}$cmd $bad_msg${NC}"
+        return 0
     fi
     sleep 3
 }
@@ -30,9 +32,21 @@ sudo apt remove cmdtest
 echo -e "${CYAN}Installing apt dependencies${NC}"
 sleep 3
 sudo apt -y update
-sudo apt -y install git curl autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev ffmpeg cucumber libpq-dev pkg-config npm
+sudo apt -y install git curl autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev  ffmpeg cucumber libpq-dev pkg-config
 echo -e "${GREEN}apt dependencies successfully installed${NC}"
 sleep 3
+
+retries=3
+while [ $retries -gt 0 ]; do
+  sudo apt -y npm
+  if [ $? -eq 0 ]; then
+    retries=$(( retries - 1 ))
+    echo -e "${YELLOW}npm failed to install trying again...${retries}/3${NC}"
+  else
+    break
+  fi
+done
+check_install 'npm' 'successfully installed' 'failed to install'
 
 # installs rbevn
 echo -e "${CYAN}Installing rbenv${NC}"
@@ -52,21 +66,44 @@ sudo apt-get install -fy
 check_install 'google-chrome' 'successfully installed' 'failed to install'
 
 # install chromedriver for cucumber testing
-wget 'https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip'
-unzip chromedriver_linux64.zip
-sudo mv chromedriver /usr/bin/chromedriver
-sudo chown root:root /usr/bin/chromedriver
-sudo chmod +x /usr/bin/chromedriver
+check_install 'chromedriver' 'successfully installed' 'failed to install'
+
+retries=3
+while [ $retries -gt 0 ]; do
+  wget 'https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip'
+  unzip chromedriver_linux64.zip
+  sudo mv chromedriver /usr/bin/chromedriver
+  sudo chown root:root /usr/bin/chromedriver
+  sudo chmod +x /usr/bin/chromedriver
+  install_status=$(check_install 'chromedriver' 'successfully installed' 'failed to install')
+  if [ $install_status -eq 0 ]; then
+    retries=$(( retries - 1 ))
+    echo -e "${YELLOW}chromedriver failed to install trying again...${retries}/3${NC}"
+  else
+    break
+  fi
+done
 check_install 'chromedriver' 'successfully installed' 'failed to install'
 
 # install ruby
 echo -e "${CYAN}Installing Ruby${NC}"
 sleep 3
-LATEST_RUBY_VERSION=$(rbenv install --list | grep -E '^[0-9]+\.[0-9]+\.[0-9]+' | tail -1)
-rbenv install $LATEST_RUBY_VERSION -v
-rbenv global $LATEST_RUBY_VERSION
-rbenv local $LATEST_RUBY_VERSION
-ruby -v
+
+retries=3
+while [ $retries -gt 0 ]; do
+  LATEST_RUBY_VERSION=$(rbenv install --list | grep -E '^[0-9]+\.[0-9]+\.[0-9]+' | tail -1)
+  rbenv install $LATEST_RUBY_VERSION -v
+  rbenv global $LATEST_RUBY_VERSION
+  rbenv local $LATEST_RUBY_VERSION
+  ruby -v
+  install_status=$(check_install 'ruby' 'successfully installed' 'failed to install')
+  if [ $install_status -eq 0 ]; then
+    retries=$(( retries - 1 ))
+    echo -e "${YELLOW}ruby failed to install trying again...${retries}/3${NC}"
+  else
+    break
+  fi
+done
 check_install 'ruby' 'successfully installed' 'failed to install'
 
 # add extra gems
