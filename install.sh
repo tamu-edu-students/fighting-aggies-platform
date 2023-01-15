@@ -54,9 +54,6 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt-get install -fy
 check_install 'google-chrome' 'successfully installed' 'failed to install'
 
-# install chromedriver for cucumber testing
-check_install 'chromedriver' 'successfully installed' 'failed to install'
-
 retries=3
 while [ $retries -gt 0 ]; do
   wget 'https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip'
@@ -147,9 +144,11 @@ rspec
 
 # clean up
 echo -e "${CYAN}Cleaning up${NC}"
+
 sleep 3
 rm chromedriver_linux64.zip*
 rm google-chrome-stable_current_amd64.deb*
 
-echo -e "${CYAN}All setup processes complete!${NC}"
+echo -e "${GREEN}All setup processes COMPLETE!${NC}"
+
 echo -e "${CYAN}If you have an error running bin/dev, source ~/.bashrc to update your paths${NC}"
