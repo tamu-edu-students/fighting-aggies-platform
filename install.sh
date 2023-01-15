@@ -54,9 +54,6 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt-get install -fy
 check_install 'google-chrome' 'successfully installed' 'failed to install'
 
-# install chromedriver for cucumber testing
-check_install 'chromedriver' 'successfully installed' 'failed to install'
-
 retries=3
 while [ $retries -gt 0 ]; do
   wget 'https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip'
@@ -111,28 +108,20 @@ bundle install
 echo -e "${GREEN}gems successfully updated and installed${NC}"
 sleep 3
 
-retries=3
-while [ $retries -gt 0 ]; do
-  install_status=$(check_install 'npm' 'successfully installed' 'failed to install')
-  if [ $install_status -eq 0 ]; then
-    retries=$(( retries - 1 ))
-    echo -e "${YELLOW}npm failed to install trying again...${retries}/3${NC}"
-  else
-    break
-  fi
-done
+echo -e "${CYAN}Installing npm${NC}"
+sleep 3
+sudo apt install -y npm
 check_install 'npm' 'successfully installed' 'failed to install'
 
-# add npm 
-echo -e "${CYAN}Installing npm${NC}"
+source ~/.bashrc
+
+# add npm version manager 
+echo -e "${CYAN}Installing yarn${NC}"
 sleep 3
 sudo npm install --global n
 sudo n latest
-check_install 'npm' 'successfully installed' 'failed to install'
 
 # add yarn
-echo -e "${CYAN}Installing yarn and updating pacakges${NC}"
-sleep 3
 sudo npm install --global yarn
 yarn upgrade
 yarn install
@@ -155,9 +144,11 @@ rspec
 
 # clean up
 echo -e "${CYAN}Cleaning up${NC}"
+
 sleep 3
 rm chromedriver_linux64.zip*
 rm google-chrome-stable_current_amd64.deb*
 
-echo -e "${CYAN}All setup processes complete!${NC}"
+echo -e "${GREEN}All setup processes COMPLETE!${NC}"
+
 echo -e "${CYAN}If you have an error running bin/dev, source ~/.bashrc to update your paths${NC}"
