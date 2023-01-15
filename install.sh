@@ -92,6 +92,8 @@ while [ $retries -gt 0 ]; do
 done
 check_install 'ruby' 'successfully installed' 'failed to install'
 
+source ~/.bashrc
+
 # add extra gems
 echo -e "${CYAN}Adding gems${NC}"
 sleep 3
