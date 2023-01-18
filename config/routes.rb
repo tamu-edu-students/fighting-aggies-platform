@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  resources :practice_videos
   passwordless_for :users, at: '/', as: :auth
   resources :users
   root 'login#loginPage'
@@ -41,4 +40,7 @@ Rails.application.routes.draw do
   get 'users/show', to: 'users#show'
   get 'users/:id/edit' => 'users#edit', :as => 'users_edit'
   delete 'users/destroy'
+
+  resources :practice_videos
+  get '/videos' => 'practice_videos#index', :as => 'videos'
 end
