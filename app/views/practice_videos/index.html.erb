@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Practice videos</h1>
+
+<div id="practice_videos">
+  <% @practice_videos.each do |practice_video| %>
+    <%= render practice_video %>
+    <p>
+      <%= link_to "Show this practice video", practice_video %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New practice video", new_practice_video_path %>

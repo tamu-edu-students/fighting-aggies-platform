@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :practice_videos
   passwordless_for :users, at: '/', as: :auth
   resources :users
   root 'login#loginPage'

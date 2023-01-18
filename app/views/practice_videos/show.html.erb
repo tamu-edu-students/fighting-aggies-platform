@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @practice_video %>
+
+<div>
+  <%= link_to "Edit this practice video", edit_practice_video_path(@practice_video) %> |
+  <%= link_to "Back to practice videos", practice_videos_path %>
+
+  <%= button_to "Destroy this practice video", @practice_video, method: :delete %>
+</div>
