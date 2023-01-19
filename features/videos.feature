@@ -47,3 +47,19 @@ Feature: videos
     And I should see a valid time stamp as the 'practice date'
     And I should see a valid time stamp as the 'upload date'
     And I should see 'testVideo' as the 'filename'
+  
+  @videos
+  Scenario:
+    Given I am on the videos dashboard 
+    When I click 'Edit' on Test Video 0
+    Then I should go to the edit video page for 'Test Video 0' 
+
+  @videos
+  Scenario:
+    Given I am editing 'Test Video 0'
+    When I change 'Video name' to 'changed video name'
+    When I change 'Description' to 'changed video description'
+    And I click the 'Update Practice video' button
+    Then I should not see 'Test Video 0'
+    And I should see 'changed video name'
+    And I should see 'change video description'
