@@ -37,14 +37,14 @@ When('I click {string} on Test Video 0') do |button|
 end
 
 Then('I should go to the edit video page for {string}') do |video_name|
-  video = PracticeVideo.find_by(video_name: video_name)
+  video = PracticeVideo.find_by(video_name:)
   expect(page).to have_current_path(edit_practice_video_path(video.id))
 end
 
 Given('I am editing {string}') do |video_name|
-  PracticeVideo.create!({ filename: 'video_file', video_name: video_name,
+  PracticeVideo.create!({ filename: 'video_file', video_name:,
                           video_create_date: '2023-01-01T01:23:45Z', video_upload_date: '2023-01-04T01:23:45Z', description: 'This is a description for a test video' })
-  video = PracticeVideo.find_by(video_name: video_name)
+  video = PracticeVideo.find_by(video_name:)
   visit edit_practice_video_path(video.id)
 end
 
@@ -54,4 +54,12 @@ end
 
 When('I click the {string} button') do |button|
   click_button button
+end
+
+Then('I should be able to edit {string}') do |field|
+  expect(page).to have_field(field, readonly: false)
+end
+
+Then('I should not be able to edit {string}') do |field|
+  expect(page).to have_field(field, disabled: true)
 end
