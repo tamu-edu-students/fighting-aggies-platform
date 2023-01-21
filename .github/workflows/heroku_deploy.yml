@@ -16,10 +16,10 @@ jobs:
       with:
         bundler-cache: true
 
-    - name: Install dependencies
-      run: 
-        bundle install
-        yarn install
+    - name: Install gem dependencies
+      run: bundle install
+    - name: Install yarn dependencies
+      run: yarn install
 
     - name: Run RSpec tests
       run: bundle exec rspec
@@ -43,10 +43,11 @@ jobs:
       with:
         bundler-cache: true
 
-    - name: Install dependencies
-      run: 
-        bundle install
-        yarn install
+    - name: Install gem dependencies
+      run: bundle install
+
+    - name: Install yarn dependencies
+      run: yarn install
 
     - name: Login to Heroku
       run: heroku auth:token $HEROKU_API_KEY
