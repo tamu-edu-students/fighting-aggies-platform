@@ -1,0 +1,58 @@
+name: CI
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Ruby
+      uses: actions/setup-ruby@v2
+      with:
+        ruby-version: 3.2.0
+
+    - name: Install dependencies
+      run: bundle install
+
+    - name: Run RSpec tests
+      run: bundle exec rspec
+
+    - name: Run Cucumber tests
+      run: bundle exec cucumber
+
+    - name: Check exit code
+      run: exit ${{ job.status == 'success' }}
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Ruby
+      uses: actions/setup-ruby@v2
+      with:
+        ruby-version: 3.2.0
+
+    - name: Install dependencies
+      run: bundle install
+
+    - name: Login to Heroku
+      run: heroku auth:token $HEROKU_API_KEY
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+
+    - name: Add heroku remote
+      run: heroku git:remote -a 'fighting-aggies-platform' 
+
+    - name: Deploy to Heroku
+      run: git push heroku main
+
+    - name: Migrate Heroku
+      run: heroku run rails db:migrate -a 'fighting-aggies-platform'
+
+    - name: Seed Heroku
+      run: heroku run rails db:seed -a 'fighting-aggies-platform'
