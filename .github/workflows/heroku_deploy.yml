@@ -5,7 +5,7 @@ on:
     branches: ['*']
 
 env:
-  HEROKU_API_KEY: afb76f8d-cc77-4357-97f3-9075e5d43afd
+  # HEROKU_API_KEY: afb76f8d-cc77-4357-97f3-9075e5d43afd
 
 jobs:
   test:
@@ -56,11 +56,11 @@ jobs:
     - name: Install yarn dependencies
       run: yarn install
 
-    - name: Login to Heroku
-      run: heroku auth:token $HEROKU_API_KEY
-
-    - name: Add heroku remote
-      run: heroku git:remote -a 'fighting-aggies-platform' 
+    # - name: Login to Heroku
+    #   run: heroku auth:token $HEROKU_API_KEY
+    #
+    # - name: Add heroku remote
+    #   run: heroku git:remote -a 'fighting-aggies-platform' 
 
     - name: Deploy to Heroku
       run: git push heroku main
