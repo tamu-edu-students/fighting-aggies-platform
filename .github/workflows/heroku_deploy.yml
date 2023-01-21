@@ -18,7 +18,7 @@ jobs:
         bundler-cache: true
     - uses: actions/setup-node@v3
       with:
-        node-version: 19
+        node-version: '19.3.0'
         cache: 'yarn'
 
     - name: Install gem dependencies
@@ -40,27 +40,27 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
-    - uses: actions/checkout@v3
-    - uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '3.2.0'
-        bundler-cache: true
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 19
-        cache: 'yarn'
-
-    - name: Install gem dependencies
-      run: bundle install
-
-    - name: Install yarn dependencies
-      run: yarn install
+    # - uses: actions/checkout@v3
+    # - uses: ruby/setup-ruby@v1
+    #   with:
+    #     ruby-version: '3.2.0'
+    #     bundler-cache: true
+    # - uses: actions/setup-node@v3
+    #   with:
+    #     node-version: 19
+    #     cache: 'yarn'
+    #
+    # - name: Install gem dependencies
+    #   run: bundle install
+    #
+    # - name: Install yarn dependencies
+    #   run: yarn install
 
     # - name: Login to Heroku
     #   run: heroku auth:token $HEROKU_API_KEY
-    #
-    # - name: Add heroku remote
-    #   run: heroku git:remote -a 'fighting-aggies-platform' 
+    
+    - name: Add heroku remote
+      run: heroku git:remote -a 'fighting-aggies-platform' 
 
     - name: Deploy to Heroku
       run: git push heroku main
