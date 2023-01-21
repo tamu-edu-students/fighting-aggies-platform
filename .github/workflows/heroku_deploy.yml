@@ -4,7 +4,7 @@ on:
   push:
     branches: ['*']
 
-env:
+# env:
   # HEROKU_API_KEY: afb76f8d-cc77-4357-97f3-9075e5d43afd
 
 jobs:
