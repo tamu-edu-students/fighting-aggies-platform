@@ -29,6 +29,7 @@ jobs:
       run: yarn install
 
   Unit_Tests:
+    needs: Setup
     runs-on: ubuntu-latest
     steps:
     - name: Run RSpec tests
@@ -40,7 +41,7 @@ jobs:
       continue-on-error: false
 
   Deploy:
-    needs: test
+    needs: [Setup, Unit_Tests]
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/staging'
     steps:
