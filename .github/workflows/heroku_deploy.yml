@@ -9,7 +9,7 @@ env:
   HEROKU_APP: 'faap-staging'
 
 jobs:
-  test:
+  Setup:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -28,6 +28,9 @@ jobs:
     - name: Install yarn dependencies
       run: yarn install
 
+  Unit Tests:
+    runs-on: ubuntu-latest
+    steps:
     - name: Run RSpec tests
       run: bundle exec rspec
       continue-on-error: false
@@ -36,7 +39,7 @@ jobs:
       run: bundle exec cucumber --format progress --tags 'not @skip' -q
       continue-on-error: false
 
-  deploy:
+  Deploy:
     needs: test
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/staging'
@@ -66,7 +69,7 @@ jobs:
       run: heroku git:remote -a $HEROKU_APP
 
     - name: Deploy to Heroku
-      run: git push heroku staging
+      run: git push heroku staging:main
 
     - name: Migrate & Seed Heroku
       run: |
