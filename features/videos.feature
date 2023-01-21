@@ -48,7 +48,7 @@ Feature: videos
   #   And I should see a valid time stamp as the 'upload date'
   #   And I should see 'testVideo' as the 'filename'
   
-  @videos
+  @videos 
   Scenario:
     Given I am on the videos dashboard 
     When I click 'Edit' on Test Video 0
@@ -64,7 +64,7 @@ Feature: videos
     And I should see 'changed video name'
     And I should see 'change video description'
 
-  @videos
+  @videos 
   Scenario:
     Given I am editing 'Test Video 0'
     Then I should be able to edit 'Video Name'
@@ -72,3 +72,31 @@ Feature: videos
     And I should not be able to edit 'Filename'
     And I should not be able to edit 'Video Create Date'
     And I should not be able to edit 'Video Upload Date'
+
+  @videos
+  Scenario:
+    Given I am on the videos dashboard
+    When I click 'Show video details'
+    Then I should be taken to the view practice video page
+    And I should see 'Filename'
+    And I should see 'Video Name'
+    And I should see 'Video Create Date'
+    And I should see 'Description'
+    And I should see 'Video Upload Date'
+
+  @videos @delete_videos @javascript
+  Scenario:
+    Given I am viewing 'Test Video 0'
+    When I click the 'Delete' button
+    And I click the 'Confirm Delete' button
+    Then I should be on the videos dashboard
+    And I should not see 'Test Video 0'
+
+  @videos @delete_videos @javascript
+  Scenario:
+    Given I am viewing 'Test Video 0'
+    When I click the 'Delete' button
+    And I click the 'Cancel Delete' button
+    Then I should be on the view 'Test Video 0' page
+    
+    

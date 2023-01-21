@@ -53,6 +53,7 @@ When('I change {string} to {string}') do |field, value|
 end
 
 When('I click the {string} button') do |button|
+  sleep(2)
   click_button button
 end
 
@@ -62,4 +63,24 @@ end
 
 Then('I should not be able to edit {string}') do |field|
   expect(page).to have_field(field, disabled: true)
+end
+
+Given('I am viewing {string}') do |video_name|
+  PracticeVideo.create!({ filename: 'video_file', video_name:,
+                          video_create_date: '2023-01-01T01:23:45Z', video_upload_date: '2023-01-04T01:23:45Z', description: 'This is a description for a test video' })
+  video = PracticeVideo.find_by(video_name:)
+  visit practice_video_path(video.id)
+end
+
+Then('I should be on the videos dashboard') do
+  expect(page).to have_current_path(practice_videos_path)
+end
+
+Then('I should be taken to the view practice video page') do
+  expect(page).to have_current_path(practice_video_path(1))
+end
+
+Then('I should be on the view {string} page') do |video_name|
+  video = PracticeVideo.find_by(video_name:)
+  expect(page).to have_current_path(practice_video_path(video.id))
 end
