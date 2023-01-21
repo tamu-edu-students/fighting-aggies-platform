@@ -5,7 +5,7 @@ on:
     branches: ['*']
 
 env:
-  HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+  HEROKU_API_KEY: afb76f8d-cc77-4357-97f3-9075e5d43afd
 
 jobs:
   test:
@@ -45,6 +45,10 @@ jobs:
       with:
         ruby-version: '3.2.0'
         bundler-cache: true
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 19
+        cache: 'yarn'
 
     - name: Install gem dependencies
       run: bundle install
