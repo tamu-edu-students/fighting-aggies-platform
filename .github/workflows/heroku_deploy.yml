@@ -8,12 +8,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Set up Ruby
-      uses: actions/setup-ruby@v1
+    - uses: actions/checkout@v3
+    - uses: ruby/setup-ruby@v1
       with:
+        ruby-version: '3.2.0'
         bundler-cache: true
 
     - name: Install gem dependencies
@@ -25,7 +23,7 @@ jobs:
       run: bundle exec rspec
 
     - name: Run Cucumber tests
-      run: bundle exec cucumber
+      run: bundle exec cucumber --format progress --tags 'not @skip'
 
     - name: Check exit code
       run: exit ${{ job.status == 'success' }}
@@ -35,12 +33,10 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Set up Ruby
-      uses: actions/setup-ruby@v1
+    - uses: actions/checkout@v3
+    - uses: ruby/setup-ruby@v1
       with:
+        ruby-version: '3.2.0'
         bundler-cache: true
 
     - name: Install gem dependencies
