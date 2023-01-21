@@ -1,12 +1,12 @@
-name: CI
+name: Staging CI/CD
 
 on:
   push:
-    branches: ['*']
+    branches: ['staging']
 
 env:
   HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-  HEROKU_APP: 'csce431-fap'
+  HEROKU_APP: 'faap-staging'
 
 jobs:
   test:
@@ -39,7 +39,7 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/staging'
     steps:
     - uses: actions/checkout@v3
     - uses: ruby/setup-ruby@v1
@@ -69,8 +69,8 @@ jobs:
     - name: Deploy to Heroku
       run: git push heroku main
 
-    - name: Migrate Heroku
-      run: heroku run rails db:migrate -a $HEROKU_APP
+    - name: Migrate & Seed Heroku
+      run: |
+        heroku run rails db:migrate -a $HEROKU_APP
+        heroku run rails db:seed -a $HEROKU_APP
 
-    - name: Seed Heroku
-      run: heroku run rails db:seed -a $HEROKU_APP
