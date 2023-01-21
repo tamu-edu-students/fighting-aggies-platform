@@ -13,9 +13,13 @@ jobs:
 
     - name: Set up Ruby
       uses: actions/setup-ruby@v1
+      with:
+        bundler-cache: true
 
     - name: Install dependencies
-      run: bundle install
+      run: 
+        bundle install
+        yarn install
 
     - name: Run RSpec tests
       run: bundle exec rspec
@@ -36,9 +40,13 @@ jobs:
 
     - name: Set up Ruby
       uses: actions/setup-ruby@v1
+      with:
+        bundler-cache: true
 
     - name: Install dependencies
-      run: bundle install
+      run: 
+        bundle install
+        yarn install
 
     - name: Login to Heroku
       run: heroku auth:token $HEROKU_API_KEY
