@@ -23,10 +23,7 @@ jobs:
       run: bundle exec rspec
 
     - name: Run Cucumber tests
-      run: bundle exec cucumber --format progress --tags 'not @skip'
-
-    - name: Check exit code
-      run: exit ${{ job.status == 'success' }}
+      run: bundle exec cucumber --format progress --tags 'not @skip -q'
 
   deploy:
     needs: test
