@@ -28,7 +28,7 @@ jobs:
     - name: Install yarn dependencies
       run: yarn install
 
-  Unit Tests:
+  Unit_Tests:
     runs-on: ubuntu-latest
     steps:
     - name: Run RSpec tests
