@@ -61,13 +61,12 @@ jobs:
       run: |
         echo -e "machine api.heroku.com\n  login elitracy@tamu.edu\n  password $HEROKU_API_KEY" >> ~/.netrc
         echo -e "machine git.heroku.com\n  login elitracy@tamu.edu\n  password $HEROKU_API_KEY" >> ~/.netrc
-        cat ~/.netrc
     
     - name: Add heroku remote
       run: heroku git:remote -a $HEROKU_APP
 
     - name: Deploy to Heroku
-      run: git push heroku main
+      run: git push heroku staging
 
     - name: Migrate & Seed Heroku
       run: |
