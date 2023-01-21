@@ -4,8 +4,9 @@ on:
   push:
     branches: ['*']
 
-# env:
-  # HEROKU_API_KEY: afb76f8d-cc77-4357-97f3-9075e5d43afd
+env:
+  HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+  HEROKU_APP: 'csce431-fap'
 
 jobs:
   test:
@@ -56,17 +57,17 @@ jobs:
     # - name: Install yarn dependencies
     #   run: yarn install
 
-    # - name: Login to Heroku
-    #   run: heroku auth:token $HEROKU_API_KEY
+    - name: Add heroku credentials
+      run: echo -e 'machine api.heroku.com\n  login elitracy@tamu.edu\n  password ${HEROKU_API_KEY}' >> ~/.netrc
     
     - name: Add heroku remote
-      run: heroku git:remote -a 'fighting-aggies-platform' 
+      run: heroku git:remote -a $HEROKU_APP
 
     - name: Deploy to Heroku
       run: git push heroku main
 
     - name: Migrate Heroku
-      run: heroku run rails db:migrate -a 'fighting-aggies-platform'
+      run: heroku run rails db:migrate -a $HEROKU_APP
 
     - name: Seed Heroku
-      run: heroku run rails db:seed -a 'fighting-aggies-platform'
+      run: heroku run rails db:seed -a $HEROKU_APP
