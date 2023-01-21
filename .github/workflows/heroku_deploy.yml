@@ -41,21 +41,21 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
     steps:
-    # - uses: actions/checkout@v3
-    # - uses: ruby/setup-ruby@v1
-    #   with:
-    #     ruby-version: '3.2.0'
-    #     bundler-cache: true
-    # - uses: actions/setup-node@v3
-    #   with:
-    #     node-version: 19
-    #     cache: 'yarn'
-    #
-    # - name: Install gem dependencies
-    #   run: bundle install
-    #
-    # - name: Install yarn dependencies
-    #   run: yarn install
+    - uses: actions/checkout@v3
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.2.0'
+        bundler-cache: true
+    - uses: actions/setup-node@v3
+      with:
+        node-version: '19.3.0'
+        cache: 'yarn'
+    
+    - name: Install gem dependencies
+      run: bundle install
+    
+    - name: Install yarn dependencies
+      run: yarn install
 
     - name: Add heroku credentials
       run: echo -e 'machine api.heroku.com\n  login elitracy@tamu.edu\n  password ${HEROKU_API_KEY}' >> ~/.netrc
