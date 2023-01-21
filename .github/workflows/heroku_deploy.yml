@@ -60,6 +60,7 @@ jobs:
     - name: Add heroku credentials
       run: |
         echo -e "machine api.heroku.com\n  login elitracy@tamu.edu\n  password $HEROKU_API_KEY" >> ~/.netrc
+        echo -e "machine git.heroku.com\n  login elitracy@tamu.edu\n  password $HEROKU_API_KEY" >> ~/.netrc
         cat ~/.netrc
     
     - name: Add heroku remote
