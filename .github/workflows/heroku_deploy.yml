@@ -57,20 +57,13 @@ jobs:
     - name: Install yarn dependencies
       run: yarn install
 
-    # - name: Add heroku credentials
-    #   run: |
-    #     echo -e "machine api.heroku.com\n  login elitracy@tamu.edu\n  password $HEROKU_API_KEY" >> ~/.netrc
-    #     echo -e "machine git.heroku.com\n  login elitracy@tamu.edu\n  password $HEROKU_API_KEY" >> ~/.netrc
-    
     - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
       with:
         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
         heroku_app_name: $HEROKU_APP 
         heroku_email: "elitracy@tamu.edu"
         branch: 'main'
-
-    - name: Install additional gem dependencies
-      run: bundle install
+        buildpack: 'https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git'
 
     - name: Migrate & Seed Heroku
       run: |
