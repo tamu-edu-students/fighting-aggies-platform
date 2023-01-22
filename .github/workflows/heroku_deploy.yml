@@ -57,17 +57,17 @@ jobs:
     - name: Install yarn dependencies
       run: yarn install
 
-    - name: Add heroku credentials
-      run: |
-        echo -e "machine api.heroku.com\n  login elitracy@tamu.edu\n  password $HEROKU_API_KEY" >> ~/.netrc
-        echo -e "machine git.heroku.com\n  login elitracy@tamu.edu\n  password $HEROKU_API_KEY" >> ~/.netrc
+    # - name: Add heroku credentials
+    #   run: |
+    #     echo -e "machine api.heroku.com\n  login elitracy@tamu.edu\n  password $HEROKU_API_KEY" >> ~/.netrc
+    #     echo -e "machine git.heroku.com\n  login elitracy@tamu.edu\n  password $HEROKU_API_KEY" >> ~/.netrc
     
-    - name: Add heroku remote
-      run: heroku git:remote -a $HEROKU_APP
-
-    - name: Deploy to Heroku
-      run: |
-        git push -f heroku main
+    - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+      with:
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+        heroku_app_name: "faap-staging" #Must be unique in Heroku
+        heroku_email: "elitracy@tamu.edu"
+        branch: 'main'
 
     - name: Migrate & Seed Heroku
       run: |
