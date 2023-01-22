@@ -67,7 +67,7 @@ jobs:
 
     - name: Deploy to Heroku
       run: |
-        git push -f heroku main
+        git push heroku main
 
     - name: Migrate & Seed Heroku
       run: |
