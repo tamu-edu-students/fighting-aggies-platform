@@ -69,6 +69,9 @@ jobs:
         heroku_email: "elitracy@tamu.edu"
         branch: 'main'
 
+    - name: Install additional gem dependencies
+      run: bundle install
+
     - name: Migrate & Seed Heroku
       run: |
         heroku run rails db:migrate -a $HEROKU_APP
