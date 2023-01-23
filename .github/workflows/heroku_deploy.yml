@@ -29,6 +29,10 @@ jobs:
     - name: Install yarn dependencies
       run: yarn install
 
+    - name: RuboCop Linter Action
+      uses: andrewmcodes/rubocop-linter-action@v3.3.0
+      continue-on-error: true # linting info shouldn't break production
+
     - name: Run RSpec tests
       run: bundle exec rspec
       continue-on-error: false
