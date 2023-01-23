@@ -11,20 +11,17 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.0].define(version: 2023_01_18_202249) do
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "analyses", force: :cascade do |t|
     t.json "report"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "video_id"
+    t.integer "video_id"
     t.index ["video_id"], name: "index_analyses_on_video_id"
   end
 
   create_table "passwordless_sessions", force: :cascade do |t|
     t.string "authenticatable_type"
-    t.bigint "authenticatable_id"
+    t.integer "authenticatable_id"
     t.datetime "timeout_at", precision: nil, null: false
     t.datetime "expires_at", precision: nil, null: false
     t.datetime "claimed_at", precision: nil
@@ -69,7 +66,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_18_202249) do
     t.json "report"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "video_id"
+    t.integer "video_id"
     t.index ["video_id"], name: "index_visions_on_video_id"
   end
 
