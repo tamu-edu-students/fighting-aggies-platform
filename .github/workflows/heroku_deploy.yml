@@ -1,4 +1,4 @@
-name: Staging CI/CD
+name: Production CI/CD
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
 
 env:
   HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-  HEROKU_APP: 'faap-staging'
+  HEROKU_APP: 'fighting-aggies-platform'
   HEROKU_EMAIL: 'elitracy@tamu.edu'
 
 jobs:
