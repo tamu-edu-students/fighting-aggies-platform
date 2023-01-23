@@ -82,6 +82,9 @@ test:
 #
 production:
   <<: *default
-  database: fighting_aggies_platform_production
-  username: fighting_aggies_platform
-  password: <%= ENV["FIGHTING_AGGIES_PLATFORM_DATABASE_PASSWORD"] %>
+ # database: fighting_aggies_platform_production
+ # username: fighting_aggies_platform
+ # password: <%= ENV["FIGHTING_AGGIES_PLATFORM_DATABASE_PASSWORD"] %>
+database: dbgobo00nqeu57
+username: quynkeijlzwtrt
+password: 2b6d7e54f1f54a51a837c4f89d0953e892d2b03daaa45cd3a7fcc19c3ee49c71
