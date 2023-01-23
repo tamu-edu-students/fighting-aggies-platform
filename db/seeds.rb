@@ -34,11 +34,16 @@ initial_users.each do |user|
 end
 
 initial_videos = [
-  { filename: 'test_Video_0', video_name: 'Test Video 0', video_create_date: '2023-01-01T01:23:45Z', video_upload_date: '2023-04-01T01:23:45Z', description: 'This is a description for test video 0' },
-  { filename: 'test_Video_1', video_name: 'Test Video 1', video_create_date: '2023-02-01T01:23:45Z', video_upload_date: '2023-05-01T01:23:45Z', description: 'This is a description for test video 1' },
-  { filename: 'test_Video_2', video_name: 'Test Video 2', video_create_date: '2023-03-01T01:23:45Z', video_upload_date: '2023-06-01T01:23:45Z', description: 'This is a description for test video 2' },
-  { filename: 'test_Video_3', video_name: 'Test Video 3', video_create_date: '2023-04-01T01:23:45Z', video_upload_date: '2023-07-01T01:23:45Z', description: 'This is a description for test video 3' },
-  { filename: 'test_Video_4', video_name: 'Test Video 4', video_create_date: '2023-05-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'This is a description for test video 4' }
+  { filename: 'test_Video_0', video_name: 'Test Video 0', video_create_date: '2023-01-01T01:23:45Z',
+    video_upload_date: '2023-04-01T01:23:45Z', description: 'This is a description for test video 0' },
+  { filename: 'test_Video_1', video_name: 'Test Video 1', video_create_date: '2023-02-01T01:23:45Z',
+    video_upload_date: '2023-05-01T01:23:45Z', description: 'This is a description for test video 1' },
+  { filename: 'test_Video_2', video_name: 'Test Video 2', video_create_date: '2023-03-01T01:23:45Z',
+    video_upload_date: '2023-06-01T01:23:45Z', description: 'This is a description for test video 2' },
+  { filename: 'test_Video_3', video_name: 'Test Video 3', video_create_date: '2023-04-01T01:23:45Z',
+    video_upload_date: '2023-07-01T01:23:45Z', description: 'This is a description for test video 3' },
+  { filename: 'test_Video_4', video_name: 'Test Video 4', video_create_date: '2023-05-01T01:23:45Z',
+    video_upload_date: '2023-08-01T01:23:45Z', description: 'This is a description for test video 4' }
 ]
 
 initial_videos.each do |video|

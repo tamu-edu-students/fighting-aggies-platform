@@ -13,9 +13,7 @@ module Api
       def create
         p analysis_params
 
-        unless analysis_params[:id]
-          render status: :bad_request, json: { errormessage: 'No ID was provided' }.to_json and return
-        end
+        render status: :bad_request, json: { errormessage: 'No ID was provided' }.to_json and return unless analysis_params[:id]
 
         begin
           analysis = Analysis.create!(analysis_params[:id])
@@ -40,9 +38,7 @@ module Api
       end
 
       def show
-        unless analysis_params[:id]
-          render status: :bad_request, json: { errormessage: 'No ID was provided' }.to_json and return
-        end
+        render status: :bad_request, json: { errormessage: 'No ID was provided' }.to_json and return unless analysis_params[:id]
 
         begin
           analysis ||= Analysis.find(analysis_params[:id])
@@ -68,9 +64,7 @@ module Api
       end
 
       def destroy
-        unless analysis_params[:id]
-          render status: :bad_request, json: { errormessage: 'No ID was provided' }.to_json and return
-        end
+        render status: :bad_request, json: { errormessage: 'No ID was provided' }.to_json and return unless analysis_params[:id]
 
         begin
           analysis ||= Analysis.find(analysis_params[:id])

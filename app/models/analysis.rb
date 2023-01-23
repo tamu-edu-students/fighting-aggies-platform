@@ -19,8 +19,8 @@ class Analysis < ApplicationRecord
 
   private
 
-  def generate_random_report(raw_data)
-    parsed_raw_data = JSON.parse(raw_data)
+  def generate_random_report(_raw_data)
+    # parsed_raw_data = JSON.parse(raw_data)
 
     # play_success = parsed_raw_data['play_success'] == 1 ? 'Pass' : 'Fail'
     # route_wr1_success = parsed_raw_data['WR1_good_route'] == 1 ? 'Pass' : 'Fail'
