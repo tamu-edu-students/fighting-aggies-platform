@@ -31,7 +31,8 @@ jobs:
 
     - name: RuboCop Linter Action
       uses: andrewmcodes/rubocop-linter-action@v3.3.0
-      continue-on-error: true # linting info shouldn't break production
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Run RSpec tests
       run: bundle exec rspec
