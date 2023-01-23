@@ -64,7 +64,7 @@ gem 'omniauth-rails_csrf_protection', '~> 1.0'
 # Passwordless
 gem 'passwordless'
 
-gem "pg", "~> 1.1"
+gem 'pg', '~> 1.1'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -98,6 +98,7 @@ group :test do
   gem 'rspec-rails', '~> 6.0.0'
   gem 'rubycritic', require: false
   gem 'selenium-webdriver', '~> 3.142.7'
+  gem 'sqlite3'
   gem 'webdrivers'
 end
 
