@@ -43,4 +43,6 @@ Rails.application.routes.draw do
 
   resources :practice_videos
   get '/videos' => 'practice_videos#index', :as => 'videos'
+
+  default_url_options host: 'https://fighting-aggies-platform.herokuapp.com'
 end
