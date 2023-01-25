@@ -1,5 +1,6 @@
 class PracticeVideosController < ApplicationController
   before_action :set_practice_video, only: %i[show edit update destroy]
+  before_action :data_manager_authenticate
 
   # GET /practice_videos or /practice_videos.json
   def index

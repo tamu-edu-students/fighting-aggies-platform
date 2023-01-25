@@ -24,9 +24,12 @@ class LoginController < ApplicationController
       if user.role == 'Admin'
         session[:admin] = true
         redirect_to admin_path
-      else
+      elsif user.role == 'Coach'
         session[:coach] = true
         redirect_to dashboard_path
+      elsif user.role == 'Data Manager'
+        session[:data_manager] = true
+        redirect_to practice_videos_path
       end
     else
       flash[:notice] = 'Please login as a valid user.'

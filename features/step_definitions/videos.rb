@@ -1,8 +1,9 @@
 require 'selenium-webdriver'
 
-Given('I am a data manager') do
-  User.create({ name: 'Test DM', role: 'Data Manager', email: 'dataManager@gmail.com' })
-end
+# Given('I am a data manager') do
+#   User.create({ name: 'Test DM', role: 'Data Manager', email: 'dataManager@gmail.com' })
+#   session[:data_manager] = true
+# end
 
 Given('videos have been previously uploaded') do
   PracticeVideo.create!({ filename: 'test_Video_0', video_name: 'Test Video 0',

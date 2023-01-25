@@ -36,11 +36,3 @@ end
 Then('the page should have {string}') do |string|
   expect(page).to have_content(string)
 end
-
-# Then('the user should receive a confirmation email') do
-#     puts "Deliveries Array: #{ActionMailer::Base.deliveries.inspect}"
-#     email = ActionMailer::Base.deliveries.last
-#     email.from.should == "Fighting_Aggies_Application@example.com"
-#     email.to.should == "faaplicationuser@gmail.com"
-#     email.body.should include("You may have tried to login from the following device:")
-# end

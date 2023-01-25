@@ -17,10 +17,6 @@ task :run_tests do
   sh 'rspec'
 end
 
-task :cucumber, [:param] do |_t, args|
-  sh "cucumber #{args[:param]}"
-end
-
 task :spec do
   sh 'rspec'
 end

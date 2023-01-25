@@ -50,12 +50,14 @@ Feature: videos
   
   @videos 
   Scenario:
+    Given I am logged in as a data manager
     Given I am on the videos dashboard 
     When I click 'Edit' on Test Video 0
     Then I should go to the edit video page for 'Test Video 0' 
 
   @videos
   Scenario:
+    Given I am logged in as a data manager
     Given I am editing 'Test Video 0'
     When I change 'Video Name' to 'changed video name'
     When I change 'Description' to 'changed video description'
@@ -66,6 +68,7 @@ Feature: videos
 
   @videos 
   Scenario:
+    Given I am logged in as a data manager
     Given I am editing 'Test Video 0'
     Then I should be able to edit 'Video Name'
     And I should be able to edit 'Description'
@@ -75,6 +78,7 @@ Feature: videos
 
   @videos
   Scenario:
+    Given I am logged in as a data manager
     Given I am on the videos dashboard
     When I click 'Show video details'
     Then I should be taken to the view practice video page
@@ -86,6 +90,7 @@ Feature: videos
 
   @videos @delete_videos @javascript
   Scenario:
+    Given I am logged in as a data manager
     Given I am viewing 'Test Video 0'
     When I click the 'Delete' button
     And I click the 'Confirm Delete' button
@@ -94,6 +99,7 @@ Feature: videos
 
   @videos @delete_videos @javascript
   Scenario:
+    Given I am logged in as a data manager
     Given I am viewing 'Test Video 0'
     When I click the 'Delete' button
     And I click the 'Cancel Delete' button
