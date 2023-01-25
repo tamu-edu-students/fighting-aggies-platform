@@ -1,4 +1,3 @@
-
 require 'rails_helper'
 
 RSpec.describe PracticeVideo, type: :model do
@@ -53,7 +52,7 @@ RSpec.describe PracticeVideo, type: :model do
       video2 = PracticeVideo.create(filename: 'test_video2.mp4', video_name: 'Test Video 2', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video 2 description')
       videos = PracticeVideo.all
 
-      expect(videos.count).to eq(2+prev_count)
+      expect(videos.count).to eq(2 + prev_count)
       expect(videos).to include(video1)
       expect(videos).to include(video2)
     end
