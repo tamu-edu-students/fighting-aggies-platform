@@ -26,7 +26,7 @@ initial_users = [
   { name: 'Bobobo-bo Bo-bobo', role: 'Coach', email: 'howwasthisanactualcharacter@gmail.com' },
   { name: 'Not Available', role: 'Coach', email: 'nslasha@gmail.com' },
   { name: 'Boaty McBoatFace', role: 'Coach', email: 'boat@gmail.com' },
-  { name: 'Data Guy', role: 'Data Manager', email: 'dataguy@gmail.com' }
+  { name: 'Data Guy', role: 'Data Manager', email: 'faapdatamanager@gmail.com' }
 ]
 
 initial_users.each do |user|
