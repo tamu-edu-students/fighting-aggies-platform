@@ -151,6 +151,6 @@ sleep 3
 rm chromedriver_linux64.zip*
 rm google-chrome-stable_current_amd64.deb*
 
-echo -e "${GREEN}All setup processes COMPLETE!${NC}"
+echo -e "${GREEN}All setup processes COMPLETE! ${NC}"
 
 echo -e "${CYAN}If you have an error running bin/dev, source ~/.bashrc to update your paths${NC}"
