@@ -71,11 +71,8 @@ jobs:
         branch: 'main'
         buildpack: 'https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git'
 
-    - name: Migrate Database
-      run: heroku run rails db:migrate -a $HEROKU_APP
-
-    - name: Reset and Seed Database
-      run: heroku run rails db:reset -a $HEROKU_APP
+    - name: Reload Database
+      run: heroku run rails db:{drop,migrate,seed} -a $HEROKU_APP
 
     # - name: Seed Database
     #   run: heroku run rails db:seed -a $HEROKU_APP
