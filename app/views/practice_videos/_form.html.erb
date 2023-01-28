@@ -20,7 +20,10 @@
     <%= form.label :video_name,'Video Name', style: "display: block" %>
     <%= form.text_field :video_name %>
   </div>
-
+  <div>
+    <%= form.label :clip %>
+    <%= form.file_field :clip %>
+  </div>
   <div>
     <%= form.label :video_create_date, 'Video Create Date', style: "display: block" %>
     <%= form.datetime_field :video_create_date, disabled: true %>
