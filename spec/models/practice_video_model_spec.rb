@@ -3,9 +3,8 @@ require 'rails_helper'
 RSpec.describe PracticeVideo, type: :model do
   describe 'creates' do
     it 'creates a new practice video with a filename, video_name, video_create_date, description, and video_upload_date' do
-      video = PracticeVideo.create(filename: 'test_video.mp4', video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description')
+      video = PracticeVideo.create(video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description')
 
-      expect(video.filename).to eq('test_video.mp4')
       expect(video.video_name).to eq('Test Video')
       expect(video.video_create_date).to eq('2023-08-01T01:23:45Z')
       expect(video.video_upload_date).to eq('2023-08-01T01:23:45Z')
@@ -15,7 +14,7 @@ RSpec.describe PracticeVideo, type: :model do
 
   describe 'update' do
     it "updates an existing practice video's video_name and description" do
-      video = PracticeVideo.create(filename: 'test_video.mp4', video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description')
+      video = PracticeVideo.create(video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description')
       video.update(video_name: 'Updated Test Video', description: 'Updated test video description')
 
       expect(video.video_name).to eq('Updated Test Video')
@@ -25,7 +24,7 @@ RSpec.describe PracticeVideo, type: :model do
 
   describe 'destroy' do
     it 'deletes an existing practice video' do
-      video = PracticeVideo.create(filename: 'test_video.mp4', video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description')
+      video = PracticeVideo.create(video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description')
       video.destroy
 
       expect(PracticeVideo.find_by(id: video.id)).to be_nil
@@ -34,10 +33,8 @@ RSpec.describe PracticeVideo, type: :model do
 
   describe 'show' do
     it 'returns the details of an existing practice video' do
-      video = PracticeVideo.create(filename: 'test_video.mp4', video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description')
+      video = PracticeVideo.create(video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description')
       shown_video = PracticeVideo.find(video.id)
-
-      expect(shown_video.filename).to eq('test_video.mp4')
       expect(shown_video.video_name).to eq('Test Video')
       expect(shown_video.video_create_date).to eq('2023-08-01T01:23:45Z')
       expect(shown_video.video_upload_date).to eq('2023-08-01T01:23:45Z')

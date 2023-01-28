@@ -64,11 +64,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_27_232408) do
   create_table "practice_videos", force: :cascade do |t|
     t.string "filename"
     t.string "video_name"
-    t.datetime "video_create_date", precision: nil
+    t.datetime "video_create_date"
     t.string "description"
-    t.datetime "video_upload_date", precision: nil
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "video_upload_date"
   end
 
   create_table "users", force: :cascade do |t|

@@ -1,6 +1,6 @@
 class PracticeVideo < ApplicationRecord
   has_one_attached :clip
-  before_save :store_file_name
+  before_save :store_metadata
   validates :description,
             presence: true
 
@@ -12,7 +12,8 @@ class PracticeVideo < ApplicationRecord
   #           presence: true
 
   private
-  def store_file_name
+  def store_metadata
     self.filename = clip.filename
+    # self.video_create_date = clip.created_at
   end
 end

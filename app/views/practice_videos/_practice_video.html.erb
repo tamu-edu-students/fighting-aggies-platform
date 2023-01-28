@@ -10,18 +10,24 @@
     <%= practice_video.video_name%>
   </span>
   </p>
-  
+
+  <p>
   <% if practice_video.clip.attached? %>
      <div style="width:400px">
        <%= video_tag(url_for(practice_video.clip), style: 'width:100%;height:auto', controls: '') %>
      </div>
   <% else %>
-    <p> No video found. </p>
+    No video found.
   <% end %>
+  </p>
 
   <p>
   <strong>Video create date:</strong>
-  <%= practice_video.video_create_date %>
+  <% if practice_video.video_create_date %>
+    <%= practice_video.video_create_date %>
+  <% else %>
+    No video creation date data found.
+  <% end %>
   </p>
 
   <p>
@@ -31,7 +37,11 @@
 
   <p>
   <strong>Video upload date:</strong>
-  <%= practice_video.video_upload_date %>
+  <% if practice_video.video_upload_date %>
+    <%= practice_video.video_upload_date %>
+  <% else %>
+    No video upload date data found.
+  <% end %>
   </p>
 
 </div>
