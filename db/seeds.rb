@@ -30,9 +30,7 @@ initial_users = [
 ]
 
 initial_users.each do |user|
-  unless User.find_by(email: user[:email])
-    User.create!(user)
-  end
+  User.create!(user) unless User.find_by(email: user[:email])
 end
 
 # initial_videos = [

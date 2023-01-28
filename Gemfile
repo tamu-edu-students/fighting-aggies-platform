@@ -107,5 +107,5 @@ end
 group :production do
   # Use postgresql as the database for Active Record
   # gem 'pg', '~> 1.1'
-  gem "aws-sdk-s3", require: false
+  gem 'aws-sdk-s3', require: false
 end
