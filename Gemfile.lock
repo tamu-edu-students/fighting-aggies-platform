@@ -69,6 +69,22 @@ GEM
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
     ast (2.4.2)
+    aws-eventstream (1.2.0)
+    aws-partitions (1.701.0)
+    aws-sdk-core (3.170.0)
+      aws-eventstream (~> 1, >= 1.0.2)
+      aws-partitions (~> 1, >= 1.651.0)
+      aws-sigv4 (~> 1.5)
+      jmespath (~> 1, >= 1.6.1)
+    aws-sdk-kms (1.62.0)
+      aws-sdk-core (~> 3, >= 3.165.0)
+      aws-sigv4 (~> 1.1)
+    aws-sdk-s3 (1.119.0)
+      aws-sdk-core (~> 3, >= 3.165.0)
+      aws-sdk-kms (~> 1)
+      aws-sigv4 (~> 1.4)
+    aws-sigv4 (1.5.2)
+      aws-eventstream (~> 1, >= 1.0.2)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
@@ -132,6 +148,8 @@ GEM
     database_cleaner-core (2.0.1)
     date (3.3.3)
     debug (1.7.1)
+      irb (>= 1.5.0)
+      reline (>= 0.3.1)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.5.0)
@@ -162,9 +180,13 @@ GEM
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
+    io-console (0.6.0)
+    irb (1.6.2)
+      reline (>= 0.3.0)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    jmespath (1.6.2)
     jsbundling-rails (1.1.1)
       railties (>= 6.0.0)
     jwt (2.6.0)
@@ -281,6 +303,8 @@ GEM
       parser (~> 3.1.0)
       rainbow (>= 2.0, < 4.0)
     regexp_parser (2.6.1)
+    reline (0.3.2)
+      io-console (~> 0.5)
     rexml (3.2.5)
     rspec-core (3.12.0)
       rspec-support (~> 3.12.0)
@@ -393,6 +417,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  aws-sdk-s3
   bootsnap
   capybara
   cucumber-rails
