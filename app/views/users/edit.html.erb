@@ -8,52 +8,60 @@
 
   <div class="mask" style="background-color: rgba(0, 0, 0, .6); height: 100vh;">
     <div class="d-flex justify-content-center align-items-center h-100" style="height: 100vh;">
-      <div class="form-box border border-dark rounded border-4 position-relative">
-        <h1 class="text-center">Editing user</h1>
+      <div class="frosted-glass-edit">
+        <div class="form-box position-relative">
+          <h1 class="text-center">Edit User</h1>
 
-        <%= render "form", user: @user %>
+          <%= render "form", user: @user %>
 
-        <br>
-        <div>
+          <br>
+          <div>
 
-          <div> 
+            <div class="ps-3"> 
 
-            <button id="toggle-button" type="button" class="btn btn-danger">Delete User</button>
+              <button id="toggle-button" type="button" class="btn btn-danger px-3">Delete User</button>
 
-            <div id="confirm-cancel-buttons" style="display: none;">
-              <%= form_for @user, method: :delete do |f| %>
-                <%= f.submit 'Confirm Delete', id: 'confirm-button', class: "btn btn-danger"%>
-                <button id="cancel-button" type="button" class="btn btn-secondary ">Cancel</button>
-              <% end %>
+              <div id="confirm-cancel-buttons" style="display: none;">
+                <%= form_for @user, method: :delete do |f| %>
+                  <button id="cancel-button" type="button" class="btn btn-secondary">Cancel Delete</button>
+                  <%= f.submit 'Confirm Delete', id: 'confirm-button', class: "btn btn-danger"%>
+                <% end %>
+              </div>
+
+
             </div>
-
-
+            <div class="float-end pe-3">
+              <%= link_to "Cancel", admin_path, id: "Cancel", class:"btn btn-secondary"%>
+            </div>
           </div>
-          <%= link_to "Cancel", admin_path, id: "Cancel", class:"btn btn-secondary position-absolute bottom-0 end-0"%>
-        </div>
-        <script>
-          var toggleButton = document.getElementById("toggle-button");
-          var cancelButton = document.getElementById("cancel-button");
-          var confirmCancelButtons = document.getElementById("confirm-cancel-buttons");
+          <script>
+            var toggleButton = document.getElementById("toggle-button");
+            var cancelButton = document.getElementById("cancel-button");
+            var confirmCancelButtons = document.getElementById("confirm-cancel-buttons");
 
-          toggleButton.addEventListener("click", function() {
-            if (confirmCancelButtons.style.display === "none") {
-              confirmCancelButtons.style.display = "block";
-            } else {
-              confirmCancelButtons.style.display = "none";
-            }
-          });
+            toggleButton.addEventListener("click", function() {
+              if (confirmCancelButtons.style.display === "none") {
+                confirmCancelButtons.style.display = "block";
+                toggleButton.style.display = "none";
+              } else {
+                confirmCancelButtons.style.display = "none";
+                toggleButton.style.display = "block";
+              }
+            });
 
-          cancelButton.addEventListener("click", function() {
-            if (confirmCancelButtons.style.display === "none") {
-              confirmCancelButtons.style.display = "block";
-            } else {
-              confirmCancelButtons.style.display = "none";
-            }
-          });
-        </script>
+            cancelButton.addEventListener("click", function() {
+              if (confirmCancelButtons.style.display === "none") {
+                confirmCancelButtons.style.display = "block";
+                toggleButton.style.display = "none";
+              } else {
+                confirmCancelButtons.style.display = "none";
+                toggleButton.style.display = "block";
+              }
+            });
+          </script>
 
-      </div>    <%#  Gray Box Div  %>
-    </div>      <%#  Alignment Div %>
-  </div>        <%#     Mask Div   %>
-</div>          <%# Background Div %>
+        </div>  <%#  Gray Box Div   %>
+      </div>     <%# Frost Glass Div %>
+    </div>      <%#  Alignment Div  %>
+  </div>        <%#     Mask Div    %>
+</div>          <%# Background Div  %>

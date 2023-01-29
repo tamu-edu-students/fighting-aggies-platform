@@ -2,7 +2,7 @@ Feature: passwordless
 
 Scenario: Redirect to sign_in page
     Given I am on the home page
-    And I follow "Log In with Email Link"
+    And I follow "Single Sign-On Email"
     Then I should be on the sign_in page
 
 Scenario: Input on sign_in submission

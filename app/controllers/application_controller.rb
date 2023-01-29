@@ -1,30 +1,35 @@
+# frozen_string_literal: true
+
 class ApplicationController < ActionController::Base
-  include Passwordless::ControllerHelpers 
+  include Passwordless::ControllerHelpers
 
   helper_method :current_user
 
   def admin_authenticate
-    if session[:coach]
-      redirect_to dashboard_path
-    elsif session[:admin].blank? || !session[:admin]
-      redirect_to root_path
-      flash[:notice] = "Please login as an administrator."
-    end
+    return if session[:admin]
+
+    flash[:notice] = 'Please login as an administrator.'
+    redirect_to root_path
   end
 
   def coach_authenticate
-    if session[:admin]
-      redirect_to admin_path
-    elsif session[:coach].blank? || !session[:coach]
-      redirect_to root_path
-      flash[:notice] = "Please login as a coach."
-    end
+    return if session[:coach]
+
+    flash[:notice] = 'Please login as a coach.'
+    redirect_to root_path
+  end
+
+  def data_manager_authenticate
+    return if session[:data_manager]
+
+    flash[:notice] = 'Please login as a data manager.'
+    redirect_to root_path
   end
 
   def logout
-    session[:authenticated]=false
-    session[:coach]=false
-    session[:admin]=false
+    session[:authenticated] = false
+    session[:coach] = false
+    session[:admin] = false
     redirect_to root_path
   end
 

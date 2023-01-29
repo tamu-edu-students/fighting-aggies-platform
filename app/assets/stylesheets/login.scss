@@ -1,0 +1,115 @@
+#page-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+#login-container{
+  height: 25%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: black;
+  font-size: 4rem;
+  margin: 5% 0 40px 0;
+}
+
+#google {
+  background-color: blue;
+  border-radius: 50px;
+  border: 3px solid blue;
+  padding: 10px 40px;
+  color: white;
+  font-weight: 500;
+  transition: all ease-in-out .1s;
+  width: 100%;
+}
+
+#google:hover {
+  scale: 98%;
+  transition: all ease-in-out .1s;
+}
+
+#email {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  opacity: 1;
+  transition: all ease-in-out .2s;
+  border: 3px solid black;
+  border-radius: 50px;
+  padding: 10px 30px;
+}
+
+#email:hover {
+  scale: 98%;
+  transition: all ease-in-out .2s;
+}
+
+hr {
+  color: rgba(0,0,0,.2); 
+  width: 100%;
+  margin: 20px;
+}
+
+#email-page-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+
+#email-form-container{
+  margin-top: 20px;
+  height: 25%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+  flex-direction: row;
+}
+
+#email-input{
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  outline: none;
+  padding: 10px 0 5px 0;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+#email-submit {
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: all ease-in-out .1s;
+}
+
+#email-submit:hover{
+  scale: 98%;
+  transition: all ease-in-out .1s;
+}
+
+p {
+  margin-top: 10%;  
+  font-weight: 500;
+}
+
+#response-page-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}

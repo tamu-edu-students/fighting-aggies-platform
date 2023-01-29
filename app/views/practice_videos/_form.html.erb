@@ -1,0 +1,45 @@
+<%= form_with(model: practice_video) do |form| %>
+  <% if practice_video.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(practice_video.errors.count, "error") %> prohibited this practice_video from being saved:</h2>
+
+      <ul>
+        <% practice_video.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :filename, style: "display: block" %>
+    <%= form.text_field :filename, disabled: true%>
+  </div>
+
+  <div>
+    <%= form.label :video_name,'Video Name', style: "display: block" %>
+    <%= form.text_field :video_name %>
+  </div>
+  <div>
+    <%= form.label :clip %>
+    <%= form.file_field :clip %>
+  </div>
+  <div>
+    <%= form.label :video_create_date, 'Video Create Date', style: "display: block" %>
+    <%= form.datetime_field :video_create_date, disabled: true %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.label :video_upload_date, 'Video Upload Date', style: "display: block" %>
+    <%= form.datetime_field :video_upload_date, disabled: true %>
+  </div>
+
+  <div>
+    <%= form.submit 'Update Practice Video' %>
+  </div>
+<% end %>

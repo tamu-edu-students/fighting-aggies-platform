@@ -1,5 +1,11 @@
-<%= form_with model: @session, url: send(Passwordless.mounted_as).sign_in_path, data: {turbo: 'false' } do |f| %>
-  <% email_field_name = :"passwordless[#{@email_field}]" %>
-  <%= text_field_tag email_field_name, params.fetch(email_field_name, nil), required: true %>
-  <%= f.submit I18n.t('passwordless.sessions.new.submit') %>
-<% end %>
+<div id="email-page-container">
+  <h1>Fighting Aggies Platform</h1>
+  <h3 style="margin-top: 5%;">Single Sign-On Email</h1>
+  <div id="email-form-container">
+    <%= form_with model: @session, url: send(Passwordless.mounted_as).sign_in_path, data: {turbo: 'false' } do |f| %>
+      <% email_field_name = :"passwordless[#{@email_field}]" %>
+      <%= text_field_tag email_field_name, params.fetch(email_field_name, nil), required: true, placeholder: 'email@example.com', id: 'email-input' %>
+      <%= f.submit I18n.t('passwordless.sessions.new.submit'), id: 'email-submit' %>
+    <% end %>
+  </div>
+</div>

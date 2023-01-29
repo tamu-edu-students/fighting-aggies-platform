@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Given('the user has uploaded a good file and uploaded') do
   pending
 end
@@ -13,4 +15,3 @@ end
 Then('the reports pane should be populated') do
   pending
 end
-
