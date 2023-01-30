@@ -32,8 +32,8 @@ initial_users = [
 ]
 
 initial_users.each do |user|
-    User.create!(user)
-  end
+  User.create!(user) unless User.find_by(email: user[:email])
+end
 def int_to_time_string(milliseconds)
   seconds, milliseconds = milliseconds.divmod(1000)
   minutes, seconds = seconds.divmod(60)
@@ -54,8 +54,7 @@ CSV.foreach("db/seeds/route_instances.csv", headers: true) do |row|
     RouteInstance.create!(hash)
  end
 
-  User.create!(user) unless User.find_by(email: user[:email])
-end
+
 
 # initial_videos = [
 #   { filename: 'test_Video_0', video_name: 'Test Video 0', video_create_date: '2023-01-01T01:23:45Z',

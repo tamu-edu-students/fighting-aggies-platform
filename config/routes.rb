@@ -41,16 +41,14 @@ Rails.application.routes.draw do
   get 'users/:id/edit' => 'users#edit', :as => 'users_edit'
   delete 'users/destroy'
 
-<<<<<<< HEAD
-  get 'route_instances/index'
+  get 'route_instances/index(/:player_id)(/:route_name)(/:play_name)(/:practice_id)', to: 'route_instances#index', as: 'route_instances'
   get 'route_instances/show', to: 'users#show'
+  get 'route_instances/byplayer', to: 'route_instances#by_player', as: "route_instances_by_player"
 
   get 'players/index', to: 'players#index'
   get '/players/:id', to: 'players#show', :as => 'players_show'
-=======
   resources :practice_videos
   get '/videos' => 'practice_videos#index', :as => 'videos'
 
   default_url_options host: 'https://fighting-aggies-platform.herokuapp.com'
->>>>>>> ac3850ecef840ba9df54d15166755e635cec1e3f
 end

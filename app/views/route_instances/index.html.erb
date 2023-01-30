@@ -1,3 +1,4 @@
+<%link_to "Reset", route_instances_path(player_id: "*", route_name: "*", play_name:"*", practice_id:"*") %>
 <table>
 <%=link_to "Back to dashboard", dashboard_path %>
   <thead>
@@ -5,25 +6,29 @@
       <th>Player Name</th>
       <th>Route Name</th>
       <th>Play Name</th>
+      <th>Practice ID</th>
       <th>Timestamp Start</th>
       <th>Timestamp End</th>
       <th>Success</th>
-      <th>Practice ID</th>
     </tr>
   </thead>
   <tbody>
     <% @route_instances.each do |route_instance| %>
+
       <tr>
-        <td style="text-align: center;"><%=link_to Players.find_by(id: route_instance.player_id).name, players_show_path(id:route_instance.player_id) %></td>
-        <td style="text-align: center;"><%= route_instance.route_name %></td>
-        <td style="text-align: center;"><%= route_instance.play_name %></td>
+        <td><%= link_to Player.find_by(id: route_instance.player_id).name, route_instances_path(player_id: route_instance.player_id, route_name: params[:route_name], play_name: params[:play_name], practice_id: params[:practice_id]) %></td>
+        <td><%= link_to route_instance.route_name, route_instances_path(route_name: route_instance.route_name, player_id: params[:player_id], play_name: params[:play_name], practice_id: params[:practice_id]) %></td>
+        <td><%= link_to route_instance.play_name, route_instances_path(play_name: route_instance.play_name, route_name: params[:route_name], player_id: params[:player_id], practice_id: params[:practice_id]) %></td>
+        <td><%= link_to route_instance.practice_id, route_instances_path(practice_id: route_instance.practice_id, route_name: params[:route_name], player_id: params[:player_id], play_name: params[:play_name]) %></td>
         <td style="text-align: center;"><%= route_instance.timestamp_start %></td>
         <td style="text-align: center;"><%= route_instance.timestamp_end %></td>
         <td style="text-align: center;"><%= route_instance.success %></td>
-        <td style="text-align: center;"><%= route_instance.practice_id %></td>
 
       </tr>
     <% end %>
   </tbody>
 </table>
-<%= will_paginate @route_instances %>
+<% if @route_instances.is_a?(ActiveRecord::Relation) %>
+  <%= will_paginate @route_instances %>
+<% end %>
+<p style="margin:0">Success Rate: <%=@percent_success%></p>
