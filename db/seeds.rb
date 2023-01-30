@@ -38,23 +38,20 @@ def int_to_time_string(milliseconds)
   seconds, milliseconds = milliseconds.divmod(1000)
   minutes, seconds = seconds.divmod(60)
   hours, minutes = minutes.divmod(60)
-  time_string = format("%02d:%02d:%02d.%03d", hours, minutes, seconds, milliseconds)
-  return time_string
+  format('%02d:%02d:%02d.%03d', hours, minutes, seconds, milliseconds)
 end
 
-int_to_time_string(3661000000) # "01:01:01
+int_to_time_string(3_661_000_000) # "01:01:01
 
-CSV.foreach("db/seeds/players.csv", headers: true) do |row|
-   Player.create!(row.to_hash)
+CSV.foreach('db/seeds/players.csv', headers: true) do |row|
+  Player.create!(row.to_hash)
 end
-CSV.foreach("db/seeds/route_instances.csv", headers: true) do |row|
-    hash=row.to_hash
-    hash["timestamp_start"]=int_to_time_string(hash["timestamp_start"].to_i)
-    hash["timestamp_end"]=int_to_time_string(hash["timestamp_end"].to_i)
-    RouteInstance.create!(hash)
- end
-
-
+CSV.foreach('db/seeds/route_instances.csv', headers: true) do |row|
+  hash = row.to_hash
+  hash['timestamp_start'] = int_to_time_string(hash['timestamp_start'].to_i)
+  hash['timestamp_end'] = int_to_time_string(hash['timestamp_end'].to_i)
+  RouteInstance.create!(hash)
+end
 
 # initial_videos = [
 #   { filename: 'test_Video_0', video_name: 'Test Video 0', video_create_date: '2023-01-01T01:23:45Z',

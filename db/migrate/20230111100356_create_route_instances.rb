@@ -1,5 +1,4 @@
 class CreateRouteInstances < ActiveRecord::Migration[7.0]
-  
   def change
     drop_table :route_instances, if_exists: true
     create_table :route_instances do |t|

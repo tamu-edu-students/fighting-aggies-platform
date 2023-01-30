@@ -29,10 +29,10 @@ Before do
   OmniAuth.config.test_mode = true
   Rails.application.env_config['omniauth.auth'] = admin_mock
 end
-Given("the database has been reset") do
-  User.destroy_all()
-  Players.destroy_all()
-  RouteInstances.destroy_all()
+Given('the database has been reset') do
+  User.destroy_all
+  Player.destroy_all
+  RouteInstance.destroy_all
 end
 Given('I am logged in as an administrator') do
   User.create({ name: 'Test Admin', role: 'Admin', email: 'user@gmail.com' })
