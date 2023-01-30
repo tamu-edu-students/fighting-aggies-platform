@@ -61,12 +61,33 @@ ActiveRecord::Schema[7.0].define(version: 20_230_127_232_408) do
     t.index %w[authenticatable_type authenticatable_id], name: 'authenticatable'
   end
 
+  create_table 'players', force: :cascade do |t|
+    t.string 'name'
+    t.integer 'number'
+    t.string 'position'
+    t.string 'year'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+  end
+
   create_table 'practice_videos', force: :cascade do |t|
     t.string 'filename'
     t.string 'video_name'
     t.datetime 'video_create_date', precision: nil
     t.string 'description'
     t.datetime 'video_upload_date', precision: nil
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+  end
+
+  create_table 'route_instances', force: :cascade do |t|
+    t.integer 'player_id'
+    t.string 'route_name'
+    t.string 'play_name'
+    t.string 'timestamp_start'
+    t.string 'timestamp_end'
+    t.integer 'success'
+    t.integer 'practice_id'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
   end
