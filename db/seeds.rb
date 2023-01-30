@@ -9,6 +9,8 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 # Video.create("/home/ubuntu/environment/fighting-aggies-platform/storage/supplementary_video.mp4")
+require 'csv'
+User.destroy_all
 
 initial_users = [
   { name: 'Tuong Tran', role: 'Admin', email: 't2tran@tamu.edu' },
@@ -31,6 +33,24 @@ initial_users = [
 
 initial_users.each do |user|
   User.create!(user) unless User.find_by(email: user[:email])
+end
+def int_to_time_string(milliseconds)
+  seconds, milliseconds = milliseconds.divmod(1000)
+  minutes, seconds = seconds.divmod(60)
+  hours, minutes = minutes.divmod(60)
+  format('%<hours>02d:%<minutes>02d:%<seconds>02d.%<milliseconds>03d', hours:, minutes:, seconds:, milliseconds:)
+end
+
+int_to_time_string(3_661_000_000) # "01:01:01
+
+CSV.foreach('db/seeds/players.csv', headers: true) do |row|
+  Player.create!(row.to_hash)
+end
+CSV.foreach('db/seeds/route_instances.csv', headers: true) do |row|
+  hash = row.to_hash
+  hash['timestamp_start'] = int_to_time_string(hash['timestamp_start'].to_i)
+  hash['timestamp_end'] = int_to_time_string(hash['timestamp_end'].to_i)
+  RouteInstance.create!(hash)
 end
 
 # initial_videos = [
