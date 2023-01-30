@@ -38,7 +38,7 @@ def int_to_time_string(milliseconds)
   seconds, milliseconds = milliseconds.divmod(1000)
   minutes, seconds = seconds.divmod(60)
   hours, minutes = minutes.divmod(60)
-  format('%02d:%02d:%02d.%03d', hours, minutes, seconds, milliseconds)
+  format('%<hours>02d:%<minutes>02d:%<seconds>02d.%<milliseconds>03d', hours:, minutes:, seconds:, milliseconds:)
 end
 
 int_to_time_string(3_661_000_000) # "01:01:01
