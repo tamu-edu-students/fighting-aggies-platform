@@ -21,12 +21,16 @@ class LoginController < ApplicationController
     email = params[:email].gsub('%1F', '.')
     if User.exists?(email:) && !session[:authenticated].blank? && session[:authenticated]
       user = User.find_by_email email
-      if user.role == 'Admin'
+      case user.role
+      when 'Admin'
         session[:admin] = true
         redirect_to admin_path
-      else
+      when 'Coach'
         session[:coach] = true
         redirect_to dashboard_path
+      when 'Data Manager'
+        session[:data_manager] = true
+        redirect_to practice_videos_path
       end
     else
       flash[:notice] = 'Please login as a valid user.'

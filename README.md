@@ -81,3 +81,42 @@ When using application in development mode, the one time link is in the terminal
 
 ### Enabling Google OAuth for Website
 
+### Video Upload Setup:
+
+Videos are saved in the ActiveStorage. A S3 Bucket is being used. 
+
+Create an AWS S3 Bucket. Additionally, there will be credentials that are needed to access the bucket. The credentials are an access key id and a secret access key. This will be in the security credentials section of the AWS console.
+
+To use the access keys, encrypt the keys and the rails app will decrypt the keys while running. To start, run the following:
+```bash
+rails credentials:edit
+```
+This will open a file. If using vs code, the user will have to run the following.
+```bash
+EDITOR=”code –wait” rails credentials edit. 
+```
+This will open a temporary file with the credentials. Replace the values of both keys with AWS access keys:
+```bash
+aws:
+  access_key_id: your-access-key-id
+  secret_access_key: your-secret-access-key
+```
+Save the file and close which will encrypt the contents to config/credentials.yml.enc. The master key for this file will be in the config/master.key file. Be sure to set this key on heroku using the following command.
+```bash
+Heroku config:set RAILS_MASTER_KEY=12345678
+```
+Replace 12345678 with your application’s master key.
+
+Finally, go to config/storage.yml and set the region and name of the bucket to be correct. This should be in the following format.
+```bash
+amazon:
+  service: S3
+  access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>
+  secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
+  region: us-east-1
+  bucket: your-bucket-name
+```
+This should make the storage function properly when using production. The videos will not work initially unless the table is empty and it is populated using videos to your specific S3 Bucket. To test this on a local end, make an edit to your config/environments/development.rb to switch the ActiveStorage service from local to amazon as shown below.
+```bash
+config.active_storage.service = :amazon 
+```

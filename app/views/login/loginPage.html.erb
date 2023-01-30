@@ -1,3 +1,11 @@
-<%= button_to "Log In with Google", '/auth/google_oauth2', method: :post, data: { turbo: false }%>
-<%= link_to "Log In with Email Link", '/sign_in' %>
-<div class="notice"><%= flash[:notice] %></div> 
+<%= stylesheet_link_tag "login", "data-turbo-track": "reload" %>
+<div id='page-container'>
+  <h1>Fighting Aggies Platform</h1>
+  <div id='login-container'>
+    <%= button_to "Log In with Google", '/auth/google_oauth2', method: :post, data: { turbo: false }, id: 'google'%>
+    <hr>
+    <%= link_to "Single Sign-On Email", '/sign_in', id: 'email' %>
+    <div class="notice"><%= flash[:notice] %></div> 
+  </div>
+</div>
+

@@ -1,10 +1,11 @@
 <div>
   <div style="width: 100vw;" class="admin-background">
     <div class = "container-fluid" style="padding: none;">
-      <div class = "row">
-          <h3 class = "col-8">Admin Dashboard</h3>
-          <%= link_to "Add User", new_user_path(), id: "add_user", class: "col btn btn-warning" %>
-          <%= link_to "Log Out", logout_path,  id: "log_out", class: "col btn btn-danger" %>
+      <div class = "row pe-3">
+          <h3 class = "col-7">Admin Dashboard</h3>
+          <div class="col"></div>
+          <%= link_to "Add User", new_user_path(), id: "add_user", class: "col btn admin-btn" %>
+          <%= link_to "Log Out", logout_path,  id: "log_out", class: "col btn admin-btn" %>
       </div>
     <div>
     <table class="table admin-table">
@@ -21,7 +22,7 @@
           <tr style="transform: rotate(0);" class = "admin-row">
             <td scope = "row"><%= user.name %></td>
             <td><%= user.role %></td>
-            <td><%= link_to "Edit", edit_user_path(user), class: "stretched-link clickable-row" %></td>
+            <td><%= link_to "Edit", edit_user_path(user), class: "stretched-link clickable-row hover-zoom" %></td>
           </tr>
         <% end %>
       </tbody>

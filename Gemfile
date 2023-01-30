@@ -61,15 +61,21 @@ gem 'omniauth-google-oauth2'
 
 gem 'omniauth-rails_csrf_protection', '~> 1.0'
 
+gem 'will_paginate'
+
 # Passwordless
 gem 'passwordless'
+
+gem 'pg', '~> 1.1'
+
+# gem "aws-sdk-s3", require: false
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
 
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3', '~> 1.4'
+  # Use pg as the database for Active Record
+  # gem 'pg', '~> 1.4'
 
   gem 'cucumber-rails', require: false
   # database_cleaner is not required, but highly recommended
@@ -94,11 +100,14 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
   gem 'rspec-rails', '~> 6.0.0'
+  gem 'rubycritic', require: false
   gem 'selenium-webdriver', '~> 3.142.7'
+  gem 'sqlite3'
   gem 'webdrivers'
 end
 
 group :production do
   # Use postgresql as the database for Active Record
-  gem 'pg', '~> 1.1'
+  # gem 'pg', '~> 1.1'
+  gem 'aws-sdk-s3', require: false
 end

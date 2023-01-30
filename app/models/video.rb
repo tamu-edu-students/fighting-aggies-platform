@@ -31,7 +31,7 @@ class Video < ApplicationRecord
     thumbnail_path = File.join(File.dirname(video_path),
                                "#{File.basename(video_path, File.extname(video_path))}.jpg")
     ffmpeg_video.screenshot(thumbnail_path, resolution: '320x240')
-    thumbnail_path = thumbnail_path
+    # thumbnail_path = thumbnail_path
 
     [thumbnail_path, resolution, size, duration, frame_rate]
   end

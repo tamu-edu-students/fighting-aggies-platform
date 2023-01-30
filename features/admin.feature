@@ -82,6 +82,7 @@ Feature: admin
     Then I should see a 'select' field called 'Role'
     And I should be able to select 'Admin' from the 'Role' select
     And I should be able to select 'Coach' from the 'Role' select
+    And I should be able to select 'Data Manager' from the 'Role' select
 
   Scenario: admin edits users role
     Given user 'Boaty McBoatFace' exists
@@ -90,3 +91,4 @@ Feature: admin
     Then I should see a 'select' field called 'Role'
     And I should be able to select 'Admin' from the 'Role' select
     And I should be able to select 'Coach' from the 'Role' select
+    And I should be able to select 'Data Manager' from the 'Role' select

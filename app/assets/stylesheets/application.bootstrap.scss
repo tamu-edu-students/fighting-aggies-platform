@@ -99,38 +99,80 @@
 
 .admin-head{
     border-bottom: white 4px double;
-    color: #FFFFFF;
-    background-color: #520808;
+    color: #530e0e;
+    background-color: #acacac;
 }
 
 .admin-background{
-    background-color: #520808;
-    color: #FFFFFF;
+    background-color: white;
+    color: #530e0e;
+}
+
+.admin-head{
+    background-color: white;
+    color: #530e0e;
 }
 
 .admin-table{
     padding:none;
-    color: #FFFFFF;
-    background-color: #692828;
+    color: #530e0e;
+    background-color: white;
+    
 }
-.admin-table tr:nth-child(even){background-color: #530e0e;}
+
+// #530e0e  #9c4f4f
+.admin-table tr:nth-child(even){background-color: #d7d7d7;}
+
+.admin-row{
+    border-left: #530e0e double 4px;
+    border-right: #530e0e double 4px;
+    
+}
 
 .admin-row:hover{
-    background-color: #FFFFFF;
-    color:#530e0e;
+    background-color: #9c4f4f;
+    color:white;
 }
 
 .admin-table tr:nth-child(even):hover{
-    background-color: #FFFFFF;
-    color:#530e0e;
+    background-color: #9c4f4f;
+    color:white;
 }
 
 body{
-    background-color: #acacac;
+    background-color: white;
 }
 
-.form-box{
-    background-color: #acacac;
+.frosted-glass-new{
     width: 30vw;
-    height: 55vh;;
+    height: 55vh;
+    background-color: rgba(255, 255, 255, 0.4);  
+    backdrop-filter: blur(5px);
+}
+
+.frosted-glass-edit{
+    width: 30vw;
+    height: 57vh;
+    background-color: rgba(255, 255, 255, 0.4);  
+    backdrop-filter: blur(5px);
+}
+
+
+.form-box{
+    color:white;
+}
+
+
+// #530e0e  #9c4f4f
+.admin-btn{
+    background-color: #753535;
+    color: white;
+    padding: 14px 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.admin-btn:hover, .admin-btn:active {
+    color:white;
+    background-color: #530e0e;
 }
