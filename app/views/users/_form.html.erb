@@ -11,21 +11,23 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
-  </div>
+  <div class= "ps-3">
+    <div>
+      <%= form.label :name, style: "display: block", class:"fs-4" %>
+      <%= form.text_field :name, class:"w-50" %>
+    </div>
 
-  <div>
-    <%= form.label :role, style: "display: block" %>
-    <%= form.select :role, ['Admin', 'Coach'], selected: @user.role%>
-  </div>
-  <div>
-    <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
-  </div>
+    <div>
+      <%= form.label :role, style: "display: block", class:"fs-4" %>
+      <%= form.select :role, ['Admin', 'Coach', 'Data Manager'], selected: @user.role%>
+    </div>
+    <div>
+      <%= form.label :email, style: "display: block", class:"fs-4" %>
+      <%= form.text_field :email, class:"w-50" %>
+    </div>
 
-  <div>
-    <%= form.submit %>
+    <div>
+      <%= form.submit class:"btn admin-btn ps-3"%>
+    </div>
   </div>
 <% end %>

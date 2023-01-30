@@ -1,2 +1,178 @@
-// @import 'bootstrap/scss/bootstrap';
-@import "../../../node_modules/bootstrap/scss/bootstrap";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+ @import "../../../node_modules/bootstrap/scss/bootstrap";
+
+ #loginPageBody{
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-size: cover;
+ }
+ 
+ #loginPanel{
+     margin-top: 80px; 
+ }
+ 
+ #platformImage{
+     height: 120px;
+     width: 120px;
+ }
+ 
+ #platformName{
+     text-align: center;
+     color: #FFFFFF;
+     font-size: 2em;
+     font-weight: bold;
+ }
+ 
+ #loginForm{
+     max-width: 75rem;
+     width: 30rem;
+     /*height: 23rem;*/
+     margin-top: 20px;
+     margin-right: auto;
+     margin-left: auto;
+     border-radius: 8px;
+     padding: 1.5rem;
+     background: #e6e0d0;
+     box-shadow: 1px 3px 9px rgba(136, 120, 84, 0.6);
+     position: relative;
+     z-index: 2;
+     font-family: "OpenSans-Medium", "Verdana", sans-serif;
+     font-style: normal;
+ }
+ 
+ .btn-primary{
+     background-color: #500000;
+     border-color: #370000;
+     margin-top: 8px;
+     padding: 0.6em 0.85em;
+     font-weight: bold;
+     padding-left: 1.5rem;
+     padding-right: 1.5rem;
+     font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+     font-size: 16px;
+     font-size: 1rem;
+     border-radius: 1.75rem;
+ }
+ 
+ .btn-primary:hover{
+     background-color: #1d0000;
+     border-color: #000000;
+ }
+ 
+ .btn-primary:disabled{
+     background-color: gray;
+     border-color: gray;
+ }
+ 
+ .form-control{
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+ 
+ .form-label{
+     margin: 2px;
+ }
+ 
+ .export-div{
+     margin-top: 60px;
+ }
+
+.clickable-row{
+ opacity:0%;
+}
+
+.admin-head{
+    border-bottom: white 4px double;
+    color: #530e0e;
+    background-color: #acacac;
+}
+
+.admin-background{
+    background-color: white;
+    color: #530e0e;
+}
+
+.admin-head{
+    background-color: white;
+    color: #530e0e;
+}
+
+.admin-table{
+    padding:none;
+    color: #530e0e;
+    background-color: white;
+    
+}
+
+// #530e0e  #9c4f4f
+.admin-table tr:nth-child(even){background-color: #d7d7d7;}
+
+.admin-row{
+    border-left: #530e0e double 4px;
+    border-right: #530e0e double 4px;
+    
+}
+
+.admin-row:hover{
+    background-color: #9c4f4f;
+    color:white;
+}
+
+.admin-table tr:nth-child(even):hover{
+    background-color: #9c4f4f;
+    color:white;
+}
+
+body{
+    background-color: white;
+}
+
+.frosted-glass-new{
+    width: 30vw;
+    height: 55vh;
+    background-color: rgba(255, 255, 255, 0.4);  
+    backdrop-filter: blur(5px);
+}
+
+.frosted-glass-edit{
+    width: 30vw;
+    height: 57vh;
+    background-color: rgba(255, 255, 255, 0.4);  
+    backdrop-filter: blur(5px);
+}
+
+
+.form-box{
+    color:white;
+}
+
+
+// #530e0e  #9c4f4f
+.admin-btn{
+    background-color: #753535;
+    color: white;
+    padding: 14px 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.admin-btn:hover, .admin-btn:active {
+    color:white;
+    background-color: #530e0e;
+}

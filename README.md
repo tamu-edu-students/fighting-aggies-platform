@@ -1,79 +1,51 @@
-# Fightin Aggies Platform
+# Fightin' Aggie Platform
 
-Developing an analytical panel to generate insights that help facilitate the post-game analysis done by the coaches and players of Fightin Texas Aggies Football team.
+Developing an analytical panel to generate insights that help facilitate the post-game analysis done by the coaches and players of Fightin' Texas Aggie Football team.
 
-### Deployment - [Heroku](https://fightin-aggies.herokuapp.com/)
-
-### Dependencies
-- Ruby~3.1.2
-  - For Windows
-  ```bash
-  winget install RubyInstallerTeam.Ruby
-  ```
-  - For Ubuntu
-  ```bash
-  sudo apt-get install ruby-full // for Ubuntu
-  ```
-  - For MacOS using [Homebrew](https://brew.sh/)
-  ```bash
-    brew install ruby // for MacOS
-  ```
-- Rails~7.0.4
- ```bash
- gem install rails
- ```
-- yarn~1.22.19
-- ffmpeg
-  - For Windows,
-    - Go to the [link](https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z).
-    - Extract the file to where you want it to be and rename it as ffmpeg.
-    - Run the Command Prompt as admin and write 
-    ```bash
-    setx /m PATH "path\to\ffmpeg\bin;%PATH%"
-    ```
-  - For Ubuntu,
-  ```bash
-  sudo apt install ffmpeg
-  ```
-- Cucumber
-  - For Ubuntu,
-  ```bash
-  sudo apt install cucumber
-  ```
-- Minitests
-  - Minitest is a testing tool present in the Ruby environment, and its gem can be included in the Gemfile (already done).
-- ChromeDriver
-  - For Ubuntu,
-  ```bash
-  sudo wget sudo wget https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip
-  sudo unzip chromedriver_linux64.zip
-  sudo mv chromedriver /usr/bin/chromedriver
-  ```
-- Chrome
-  - For Ubuntu,
-  ```bash
-  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-  sudo apt install ./google-chrome-stable_current_amd64.deb
-  ```
-- Selenium WebDriver
-  - For Ubuntu, if the version of your Selenium WebDriver is higher than 3.142.7. Uninstall it, and install the older version with
-  ```bash
-  gem install selenium-webdriver -v 3.142.7
-  ```
+### Deployment - [Heroku](https://fighting-aggies-platform.herokuapp.com/)
 
 ### Installation and Running Instructions
+Clone repo
 ```bash
 git clone https://github.com/jessefphipps/fighting-aggies-platform.git
 cd fighting-aggies-platform
-bundle install
-yarn install
+```
+
+Install dependencies (takes a while)
+```bash
+./install.sh
+~/.bashrc
+```
+
+Run server
+```bash
 bin/dev
 ```
+
+If you are developing on a server on a remote machine (e.g., AWS/EC2) use **http://0.0.0.0:8080** as your host url
+and on your local machine use the EC2 instance's public IPv4 address in place of **0.0.0.0**.
+
+If you are using vscode's remote editing feature use *localhost* as the broadcast IP and vscode will port-forward 
+the instance's public IP and allow you to access the machine using your localhost (you can access the remote 
+server's webpages and APIs by going to http://localhost:8080 on your local machine).
+
+The server's broadcast IP (-b) and port (-p) can be set in **Procfile.dev**.
+
 ### Testing Instructions
 Run the server in your local machine and use a new terminal to run the tests using the commands given below,
 ```bash
-cucumber
-rake test
+# to run cucumber and rspec unit tests
+rake run_tests
+```
+
+```bash
+#to run just cucumber
+rake cucumber
+```
+
+```bash
+# to run just rspec
+rake spec
 ```
 ### Heroku Deployment Instructions
 Migrate and seed the database
@@ -92,12 +64,59 @@ git push heroku main
 ```
 ### One Time Link Email
 Email: fighting.aggies.analytics@gmail.com
+
 App Password: tsaqzyyqbplvzcaa 
+
 This is not the password for the email.
 
+
 If having issues, to create new email:
+
 Enable 2-step verification. Must be turned on to avoid getting the emails blocked by Google.
 
 To create an app password, go to your Google account settings and navigate to the "Security" tab. Under "Signing in to Google", click on the "App passwords" menu item (this will only be available if you have 2-step verification turned on). Next, select Other (Custom name) under the "Select app" dropdown and enter the name of your app or something else useful. Click "Generate" and your new app password will appear on the screen. Make sure you copy it before closing the window, or you won't be able to see the password again.
 
-When using application in development mode, the one time link is in the terminal. When using the application in production mode, the one time email will be sent.
+
+When using application in development mode, the one time link is in the terminal. When using the application in production mode, the one time email will be sent to the email address of the user.
+
+### Enabling Google OAuth for Website
+
+### Video Upload Setup:
+
+Videos are saved in the ActiveStorage. A S3 Bucket is being used. 
+
+Create an AWS S3 Bucket. Additionally, there will be credentials that are needed to access the bucket. The credentials are an access key id and a secret access key. This will be in the security credentials section of the AWS console.
+
+To use the access keys, encrypt the keys and the rails app will decrypt the keys while running. To start, run the following:
+```bash
+rails credentials:edit
+```
+This will open a file. If using vs code, the user will have to run the following.
+```bash
+EDITOR=”code –wait” rails credentials edit. 
+```
+This will open a temporary file with the credentials. Replace the values of both keys with AWS access keys:
+```bash
+aws:
+  access_key_id: your-access-key-id
+  secret_access_key: your-secret-access-key
+```
+Save the file and close which will encrypt the contents to config/credentials.yml.enc. The master key for this file will be in the config/master.key file. Be sure to set this key on heroku using the following command.
+```bash
+Heroku config:set RAILS_MASTER_KEY=12345678
+```
+Replace 12345678 with your application’s master key.
+
+Finally, go to config/storage.yml and set the region and name of the bucket to be correct. This should be in the following format.
+```bash
+amazon:
+  service: S3
+  access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>
+  secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
+  region: us-east-1
+  bucket: your-bucket-name
+```
+This should make the storage function properly when using production. The videos will not work initially unless the table is empty and it is populated using videos to your specific S3 Bucket. To test this on a local end, make an edit to your config/environments/development.rb to switch the ActiveStorage service from local to amazon as shown below.
+```bash
+config.active_storage.service = :amazon 
+```

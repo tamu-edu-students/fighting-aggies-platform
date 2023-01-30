@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Given('the user has uploaded a good file') do
   pending
 end
@@ -19,10 +21,6 @@ Then('user should get negative feedback --incompatible upload type') do
 end
 
 Then('user should get negative feedback --incompatible upload file') do
-  pending
-end
-
-Then('user should get positive feedback --file uploaded successfully') do
   pending
 end
 

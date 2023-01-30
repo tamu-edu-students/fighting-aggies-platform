@@ -1,0 +1,80 @@
+name: Production CI/CD
+
+on:
+  push:
+    branches: ['*']
+
+env:
+  HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+  HEROKU_APP: 'fighting-aggies-platform'
+  HEROKU_EMAIL: 'elitracy@tamu.edu'
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.2.0'
+        bundler-cache: true
+    - uses: actions/setup-node@v3
+      with:
+        node-version: '19.3.0'
+        cache: 'yarn'
+
+    - name: Install gem dependencies
+      run: bundle install
+
+    - name: Install yarn dependencies
+      run: yarn install
+
+    - name: RuboCop Linter Action
+      uses: andrewmcodes/rubocop-linter-action@v3.3.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Run RSpec tests
+      run: bundle exec rspec
+      continue-on-error: false
+
+    - name: Run Cucumber tests
+      run: bundle exec cucumber --format progress --tags 'not @skip' -q
+      continue-on-error: false
+
+  deploy:
+    needs: tests
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - uses: actions/checkout@v3
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.2.0'
+        bundler-cache: true
+    - uses: actions/setup-node@v3
+      with:
+        node-version: '19.3.0'
+        cache: 'yarn'
+    
+    - name: Install gem dependencies
+      run: bundle install
+    
+    - name: Install yarn dependencies
+      run: yarn install
+
+    - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+      with:
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+        heroku_app_name: $HEROKU_APP 
+        heroku_email: $HEROKU_EMAIL
+        branch: 'main'
+        buildpack: 'https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git'
+
+    - name: Reload Database
+      run: heroku run rails db:{drop,migrate,seed} -a $HEROKU_APP
+
+    # - name: Seed Database
+    #   run: heroku run rails db:seed -a $HEROKU_APP
+    #   continue-on-error: false #db previously seeded - potential email duplicates
+

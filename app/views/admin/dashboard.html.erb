@@ -1,27 +1,31 @@
 <div>
-    <h3>
-        Admin Dashboard 
-        <%= link_to "Add User", new_user_path(), id: "add_user" %>
-        <%= link_to "Log Out", logout_path,  id: "log_out"  %>
-    </h3>
-</div>
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Role</th>
-      <th>Email</th>
-    </tr>
-  </thead>
+  <div style="width: 100vw;" class="admin-background">
+    <div class = "container-fluid" style="padding: none;">
+      <div class = "row pe-3">
+          <h3 class = "col-7">Admin Dashboard</h3>
+          <div class="col"></div>
+          <%= link_to "Add User", new_user_path(), id: "add_user", class: "col btn admin-btn" %>
+          <%= link_to "Log Out", logout_path,  id: "log_out", class: "col btn admin-btn" %>
+      </div>
+    <div>
+    <table class="table admin-table">
+      <thead>
+        <tr class = "admin-head">
+          <th scope="col">Name</th>
+          <th scope="col">Role</th>
+          <th> </th>
+        </tr>
+      </thead>
 
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.name %></td>
-        <td><%= user.role %></td>
-        <td><%= user.email %></td>
-        <td><%= link_to "Edit", edit_user_path(user) %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <tbody>
+        <% @users.each do |user| %>
+          <tr style="transform: rotate(0);" class = "admin-row">
+            <td scope = "row"><%= user.name %></td>
+            <td><%= user.role %></td>
+            <td><%= link_to "Edit", edit_user_path(user), class: "stretched-link clickable-row hover-zoom" %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

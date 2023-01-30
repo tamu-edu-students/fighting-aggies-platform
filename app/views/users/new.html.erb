@@ -1,9 +1,28 @@
-<h1>New user</h1>
+<div
+  class="bg-image"
+  style="
+    background-image: url('https://files.12thman.com/wallpapers/2020/football-17.jpg');
+    height: 100vh;
+    background-size: 100% 100%;
+">
+  <div class="mask" style="background-color: rgba(0, 0, 0, .6); height: 100vh;">
+    <div class="d-flex justify-content-center align-items-center h-100" style="height: 100vh;">
+      <div class="frosted-glass-new">
+        <div class="form-box position-relative">
 
-<%= render "form", user: @user %>
+          <h1 class= "text-center">New user</h1>
 
-<br>
+          <%= render "form", user: @user %>
 
-<div>
-  <%= link_to "Back to users", admin_path %>
-</div>
+          <br>
+
+          <div  class="float-end pe-3">
+            <%= link_to "Back to users", admin_path, class:"btn btn-secondary" %>
+          </div>
+
+
+        </div>  <%#  Gray Box Div   %>
+      <div>     <%# Frost Glass Div %>
+    </div>      <%#  Alignment Div  %>
+  </div>        <%#     Mask Div    %>
+</div>          <%# Background Div  %>
