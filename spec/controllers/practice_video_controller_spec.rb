@@ -50,7 +50,7 @@ RSpec.describe PracticeVideosController, type: :controller do
   end
 
   describe 'GET #show' do
-    let(:practice_video) { PracticeVideo.create(filename: 'test_video.mp4', video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description') }
+    let(:practice_video) { PracticeVideo.create(filename: 'test_video.mp4', video_name: 'Test Video', video_create_date: '2023-02-01 03:09:45.000000000 +0000', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description') }
 
     it 'returns the details of an existing practice video' do
       session[:data_manager] = true

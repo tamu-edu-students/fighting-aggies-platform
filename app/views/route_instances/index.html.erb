@@ -28,7 +28,4 @@
     <% end %>
   </tbody>
 </table>
-<% if @route_instances.is_a?(ActiveRecord::Relation) %>
-  <%= will_paginate @route_instances %>
-<% end %>
 <p style="margin:0">Success Rate: <%=@percent_success%></p>

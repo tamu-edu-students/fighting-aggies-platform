@@ -16,11 +16,10 @@ class RouteInstancesController < ApplicationController
     end
     route_instances = RouteInstance.where(conditions.join(' AND '), *values)
     @route_instances = if route_instances.any?
-                         route_instances.paginate(page: params[:page], per_page: 20)
+                         route_instances
                        else
                          []
                        end
-
     total_instances = route_instances.count
     successful_instances = route_instances.where(success: 1).count
     @percent_success = (successful_instances.to_f / total_instances) * 100
