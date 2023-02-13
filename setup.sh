@@ -111,7 +111,7 @@ echo -e "${GREEN}gems successfully added to Gemfile${NC}"
 
 # update and install all gems
 echo -e "${CYAN}Installing gems${NC}"
-bundle update
+bundle config set --local without 'production'
 bundle install
 echo -e "${GREEN}gems successfully updated and installed${NC}"
 
