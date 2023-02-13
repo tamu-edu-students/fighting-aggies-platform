@@ -11,8 +11,6 @@ module Api
       end
 
       def create
-        
-
         render status: :bad_request, json: { errormessage: 'No ID was provided' }.to_json and return unless analysis_params[:id]
 
         begin
