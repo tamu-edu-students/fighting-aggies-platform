@@ -1,8 +1,44 @@
 <%= form_with(model: practice_video) do |form| %>
-  <% if practice_video.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(practice_video.errors.count, "error") %> prohibited this practice_video from being saved:</h2>
 
+  <div style="display: flex; flex-direction: row; width: 100%; justify-content: space-between;">
+    <div style="width: auto; padding: 20px; padding-right: 20px; border-right: 1px solid rgba(0,0,0,.15)">
+      <div style="margin: 0px 0;">
+        <%= form.label :filename, style: "display: block; padding-left: 6px;" %>
+        <%= form.text_field :filename, id: 'filename', disabled: true, style: 'outline: none; padding: 6px; width: 100%; border: none; border-radius: 5px; box-shadow: 0px 2px 3px gray;'%>
+      </div>
+
+      <div style="margin: 15px 0;">
+        <%= form.label :video_name,'Video Name', style: "display: block; padding-left: 6px;" %>
+        <%= form.text_field :video_name, style: 'width: 100%; padding: 6px; outline: none; border: none; border-radius: 5px; box-shadow: 0px 2px 3px gray;'%>
+      </div>
+
+
+      <div style="margin: 15px 0;">
+        <%= form.label :description, style: "display: block; padding-left: 6px;" %>
+        <%= form.text_area :description, rows: 5, cols: 30, style: 'padding: 4px 4px; outline:none; border: none; border-radius: 5px; box-shadow: 0px 2px 3px gray;'%>
+      </div>
+
+      <div style="margin: 15px 0; display:none;">
+        <%= form.label :video_create_date, 'Video Create Date', style: "display: block: padding-left: 6px;" %>
+        <%= form.datetime_field :video_create_date, id:'create-date', disabled: true, style: 'width: 100%; outline: none; border: none; border-radius: 5px; box-shadow: 0px 2px 3px gray; padding: 2px;'%>
+      </div>
+
+      <div style="margin: 15px 0;">
+        <%= form.label :video_upload_date, 'Video Upload Date', style: "display: block; padding-left: 6px;" %>
+        <%= form.datetime_local_field :video_upload_date, id:'upload-date', value: Time.current.strftime("%d/%m/%Y %I:%M%p"), disabled: true, style: 'width: 100%; border: none; border-radius: 5px; box-shadow: 0px 2px 3px gray; padding: 2px;'%>
+      </div>
+
+      <%= form.submit button_message, style: 'width: 100%; margin-top: 15px; border: none; background: blue; border-radius: 20px; color: white; padding: 8px 20px;' %>
+    </div>
+    <div style="width: 100%; padding: 20px 20px;">
+      <div style="width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-radius: 20px; border: 1px solid rgba(0,0,0,.15);">
+        <%= form.label :clip, 'Upload from Computer', id:'computer-upload-label', style:"padding: 8px 40px; border-radius: 20px; color: white; background: blue; cursor: pointer;"%>
+        <%= form.file_field :clip, id: 'computer-upload-button', accept: 'video/*', style: 'display: none' %>
+      </div>
+    </div>
+  </div>
+  <% if practice_video.errors.any? %>
+    <div style="color: red; padding: 5px 20px;">
       <ul>
         <% practice_video.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -10,36 +46,21 @@
       </ul>
     </div>
   <% end %>
-
-  <div>
-    <%= form.label :filename, style: "display: block" %>
-    <%= form.text_field :filename, disabled: true%>
-  </div>
-
-  <div>
-    <%= form.label :video_name,'Video Name', style: "display: block" %>
-    <%= form.text_field :video_name %>
-  </div>
-  <div>
-    <%= form.label :clip %>
-    <%= form.file_field :clip %>
-  </div>
-  <div>
-    <%= form.label :video_create_date, 'Video Create Date', style: "display: block" %>
-    <%= form.datetime_field :video_create_date, disabled: true %>
-  </div>
-
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
-  </div>
-
-  <div>
-    <%= form.label :video_upload_date, 'Video Upload Date', style: "display: block" %>
-    <%= form.datetime_field :video_upload_date, disabled: true %>
-  </div>
-
-  <div>
-    <%= form.submit 'Update Practice Video' %>
-  </div>
 <% end %>
+
+<script>
+  const fileInput = document.getElementById('computer-upload-button');
+  const fileLabel = document.getElementById('computer-upload-label');
+
+  fileLabel.addEventListener('click', event => {
+    fileInput.click();
+    console.log("here")
+  })
+
+  fileInput.addEventListener('change', (event) => {
+    const filenameInput = document.getElementById('filename')
+    const file = event.target.files[0];
+    filenameInput.value = file.name
+    console.log(file)
+  });
+</script>

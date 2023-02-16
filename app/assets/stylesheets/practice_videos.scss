@@ -187,3 +187,17 @@ p {
   scale: .95;
   transition: all .2s ease-in-out;
 }
+
+#back-button {
+  color: white;
+  background: gray;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 8px 20px;
+
+}
+
+#computer-upload-button:hover {
+  transition: all .1s ease-in-out;
+  scale: 1.03;
+}

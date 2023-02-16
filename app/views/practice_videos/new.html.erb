@@ -1,9 +1,9 @@
-<h1>New practice video</h1>
+<h1 style="text-align: center; margin: 0; padding: 0;">Upload Video</h1>
 
-<%= render "form", practice_video: @practice_video %>
+<div style="width: 98%; margin: 0 auto;">
+  <%= render "form", practice_video: @practice_video, button_message: 'Create Video' %>
+</div>
 
-<br>
-
-<div>
-  <%= link_to "Back to practice videos", practice_videos_path %>
+<div style="margin: 10px;">
+  <%= link_to "Back to Videos", practice_videos_path, id: 'back-button' %>
 </div>
