@@ -55,4 +55,11 @@ Feature: videos
     And I click the 'Cancel Delete' button
     Then I should be on the view 'Test Video 0' page
     
+  @videos @javascript
+  Scenario:
+    Given I am logged in as a data manager
+    Given I am on the videos dashboard
+    When I search 'Test Video 0'
+    Then I should see 'Test Video 0'
+    And I should not see 'Test Video 1'
     

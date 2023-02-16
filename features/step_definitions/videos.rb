@@ -89,3 +89,7 @@ Then('I should be on the view {string} page') do |video_name|
   video = PracticeVideo.find_by(video_name:)
   expect(page).to have_current_path(practice_video_path(video.id))
 end
+
+When('I search {string}') do |search|
+  fill_in 'search', with: search
+end
