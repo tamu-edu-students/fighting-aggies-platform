@@ -30,6 +30,7 @@ class ApplicationController < ActionController::Base
     session[:authenticated] = false
     session[:coach] = false
     session[:admin] = false
+    session[:data_manager] = false
     redirect_to root_path
   end
 
