@@ -7,4 +7,38 @@
 <div>
   <%= link_to "Show this practice video", @practice_video %> |
   <%= link_to "Back to practice videos", practice_videos_path %>
+  <button id="toggle-button" type="button" class="btn btn-danger px-3" style="display: block;">Delete</button>
+
+  <div id="confirm-cancel-buttons" style="display: none;">
+    <%= form_for @practice_video, method: :delete do |f| %>
+      <button id="cancel-button" type="button" class="btn btn-secondary">Cancel Delete</button>
+      <%= f.submit 'Confirm Delete', id: 'confirm-button', class: "btn btn-danger"%>
+    <% end %>
+  </div>
 </div>
+
+<script>
+  var toggleButton = document.getElementById("toggle-button");
+  var cancelButton = document.getElementById("cancel-button");
+  var confirmCancelButtons = document.getElementById("confirm-cancel-buttons");
+
+  toggleButton.addEventListener("click", function() {
+    if (confirmCancelButtons.style.display === "none") {
+      confirmCancelButtons.style.display = "block";
+      toggleButton.style.display = "none";
+    } else {
+      confirmCancelButtons.style.display = "none";
+      toggleButton.style.display = "block";
+    }
+  });
+
+  cancelButton.addEventListener("click", function() {
+    if (confirmCancelButtons.style.display === "none") {
+      confirmCancelButtons.style.display = "block";
+      toggleButton.style.display = "none";
+    } else {
+      confirmCancelButtons.style.display = "none";
+      toggleButton.style.display = "block";
+    }
+  });
+</script>
