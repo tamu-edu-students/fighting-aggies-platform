@@ -8,7 +8,7 @@ env:
   HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
   HEROKU_APP: 'fighting-aggies-platform'
   HEROKU_EMAIL: 'elitracy@tamu.edu'
-
+  RAILS_ENV: 'test'
 jobs:
   tests:
     runs-on: ubuntu-latest
