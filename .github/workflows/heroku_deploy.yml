@@ -72,9 +72,4 @@ jobs:
         buildpack: 'https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git'
 
     - name: Reload Database
-      run: heroku run rails db:{drop,migrate,seed} -a $HEROKU_APP
-
-    # - name: Seed Database
-    #   run: heroku run rails db:seed -a $HEROKU_APP
-    #   continue-on-error: false #db previously seeded - potential email duplicates
-
+      run: heroku run rails db:setup -a $HEROKU_APP
