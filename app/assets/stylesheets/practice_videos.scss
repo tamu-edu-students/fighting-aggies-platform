@@ -25,7 +25,7 @@ h1 {
 #class-video-item:hover {
   cursor: pointer;
   border-left: 2px rgba(0,0,0,.5) solid;
-  transition: all .15s ease-in-out;
+  transition: all .1s ease-in-out;
 }
 
 
@@ -159,22 +159,17 @@ p {
   margin-right: 5px;
 }
 
-#video-edit:hover{
-  scale: .95;
-  transition: all .2s ease-in-out;
-}
-
 #video-dates {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
+  margin: 10px auto;
   width: 40%;
   justify-content: space-evenly;
   align-items: center;
 }
 
 #video-add {
-  padding: 5px 20px;
+  padding: 5px 60px;
   background: blue;
   text-decoration: none;
   color: white;

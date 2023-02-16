@@ -3,7 +3,7 @@
   <div style="display: flex; flex-direction: row; width: 100%; justify-content: space-between;">
     <div style="width: auto; padding: 20px; padding-right: 20px; border-right: 1px solid rgba(0,0,0,.15)">
       <div style="margin: 0px 0;">
-        <%= form.label :filename, style: "display: block; padding-left: 6px;" %>
+        <%= form.label :Filename, style: "display: block; padding-left: 6px;" %>
         <%= form.text_field :filename, id: 'filename', disabled: true, style: 'outline: none; padding: 6px; width: 100%; border: none; border-radius: 5px; box-shadow: 0px 2px 3px gray;'%>
       </div>
 
@@ -54,13 +54,11 @@
 
   fileLabel.addEventListener('click', event => {
     fileInput.click();
-    console.log("here")
   })
 
   fileInput.addEventListener('change', (event) => {
     const filenameInput = document.getElementById('filename')
     const file = event.target.files[0];
     filenameInput.value = file.name
-    console.log(file)
   });
 </script>
