@@ -1,15 +1,90 @@
-<%= link_to "Log Out", logout_path,  id: "log_out", class: "col btn admin-btn" %>
-<p style="color: green"><%= notice %></p>
-<h1>Practice videos</h1>
+<%= stylesheet_link_tag "practice_videos", "data-turbo-track": "reload" %>
 
-<div id="practice_videos">
-  <% @practice_videos.each do |practice_video| %>
-    <%= render practice_video %>
-    <p>
-      <%= link_to "Show video details", practice_video %>
-      <%= link_to "Edit", edit_practice_video_path(practice_video.id) %>
-    </p>
-  <% end %>
-</div>
+<div id="page-container">
 
-<%= link_to "Add Video", new_practice_video_path %>
+  <div id="left-panel">
+    <div style="width: 100%; height: 90%; overflow: scroll;">
+      
+      <h3 id="search-title">Search</h3>
+
+      <%= text_field_tag(:search, params[:search], id: 'search-input', placeholder: 'Video Name') %>
+
+      <% @practice_videos.each do |practice_video| %>
+        <div id="class-video-item">
+          <p><%= practice_video.video_name %></p>
+          <div style="display: flex; flex=direction: row; justify-content: space-between; align-items: center;">
+            <%= link_to "Edit", edit_practice_video_path(practice_video.id), id:'video-edit' %>
+            <p><%= practice_video.video_upload_date.strftime('%m/%d/%Y') %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+      <%= link_to "Add Video", new_practice_video_path, id:"video-add" %>
+  </div>
+  <div id="right-panel">
+    <div id='headers'>
+      <h1>Videos Dashboard</h1>
+      <p id='notice'><%= notice %></p>
+    </div>
+    <div id="practice-videos">
+      <% @practice_videos.each do |practice_video| %>
+        <%= render practice_video %>
+      <% end %>
+    </div>
+  </div>
+  <div>
+  </div>
+
+<script>
+  const input = document.getElementById('search-input')
+  const videos = document.querySelectorAll('#class-video-item') 
+  const display_videos = document.querySelectorAll('#practice-video-container')
+  input.addEventListener('input', () => {
+    videos.forEach(video => {
+      const p = video.querySelector("p");
+      if(!fuzzysearch(input.value.toLowerCase() ,p.textContent.toLowerCase())) video.style.display = "none"
+      else video.style.display = "flex"
+    }) 
+  })
+
+  if(display_videos.length !== 0) display_videos[0].style.display = 'block'
+
+  let current_selected_video = "none"
+  videos.forEach(video => {
+    video.addEventListener('click', () => {
+      const p = video.querySelector("p");
+      current_selected_video = p.textContent
+
+      display_videos.forEach(display_video => {
+        const video_name = display_video.querySelector("#video_name").textContent.trim()
+        if(video_name === current_selected_video){
+          display_video.style.display='block'
+        }else{
+          display_video.style.display='none'
+        }
+      })
+    })
+  })
+
+
+  function fuzzysearch(needle, haystack) {
+    let hlen = haystack.length;
+    let nlen = needle.length;
+    if (nlen > hlen) {
+      return false;
+    }
+    if (nlen === hlen) {
+      return needle === haystack;
+    }
+    outer: for (let i = 0, j = 0; i < nlen; i++) {
+      let nch = needle.charCodeAt(i);
+      while (j < hlen) {
+        if (haystack.charCodeAt(j++) === nch) {
+          continue outer;
+        }
+      }
+      return false;
+    }
+    return true;
+  }
+</script>
