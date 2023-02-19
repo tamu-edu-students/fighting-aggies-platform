@@ -37,56 +37,60 @@
   </div>
 
   <script>
-    let current_selected_video = "none"
-    let input = document.getElementById('search-input')
-    let videos = document.querySelectorAll('#class-video-item') 
-    let display_videos = document.querySelectorAll('#practice-video-container')
-    input.addEventListener('input', () => {
+    (function() {
+      let selected_video = "none";
+      let input = document.getElementById('search-input');
+      let videos = document.querySelectorAll('#class-video-item');
+      let display_videos = document.querySelectorAll('#practice-video-container');
+
+      input.addEventListener('input', () => {
+        videos.forEach(video => {
+          const p = video.querySelector("p");
+          if(!fuzzy_search(input.value.toLowerCase() ,p.textContent.toLowerCase())) video.style.display = "none"
+          else video.style.display = "flex"
+        }) 
+      });
+
+      if(display_videos.length !== 0) {
+        display_videos[0].style.display = 'block';
+      }
+
       videos.forEach(video => {
-        const p = video.querySelector("p");
-        if(!fuzzy_search(input.value.toLowerCase() ,p.textContent.toLowerCase())) video.style.display = "none"
-        else video.style.display = "flex"
-      }) 
-    })
+        video.addEventListener('click', () => {
+          const p = video.querySelector("p");
+          selected_video = p.textContent
 
-    if(display_videos.length !== 0) {
-      display_videos[0].style.display = 'block';
-    }
-
-    videos.forEach(video => {
-      video.addEventListener('click', () => {
-        const p = video.querySelector("p");
-        current_selected_video = p.textContent
-
-        display_videos.forEach(display_video => {
-          const video_name = display_video.querySelector("#video_name").textContent.trim()
-          if(video_name === current_selected_video){
-            display_video.style.display='block'
-          }else{
-            display_video.style.display='none'
-          }
+          display_videos.forEach(display_video => {
+            const video_name = display_video.querySelector("#video_name").textContent.trim()
+            if(video_name === selected_video){
+              display_video.style.display='block'
+            }else{
+              display_video.style.display='none'
+            }
+          })
         })
       })
-    })
-  
-  function fuzzy_search(needle, haystack) {
-    let hlen = haystack.length;
-    let nlen = needle.length;
-    if (nlen > hlen) {
-      return false;
-    }
-    if (nlen === hlen) {
-      return needle === haystack;
-    }
-    outer: for (let i = 0, j = 0; i < nlen; i++) {
-      let nch = needle.charCodeAt(i);
-      while (j < hlen) {
-        if (haystack.charCodeAt(j++) === nch) {
-          continue outer;
+
+      function fuzzy_search(needle, haystack) {
+        let hlen = haystack.length;
+        let nlen = needle.length;
+        if (nlen > hlen) {
+          return false;
         }
+        if (nlen === hlen) {
+          return needle === haystack;
+        }
+        outer: for (let i = 0, j = 0; i < nlen; i++) {
+          let nch = needle.charCodeAt(i);
+          while (j < hlen) {
+            if (haystack.charCodeAt(j++) === nch) {
+              continue outer;
+            }
+          }
+          return false;
+        }
+        return true;
       }
-      return false;
-    }
-    return true;
-  }
+    })();
+
 </script>

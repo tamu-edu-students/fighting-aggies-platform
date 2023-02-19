@@ -1,6 +1,7 @@
 class PracticeVideo < ApplicationRecord
   has_one_attached :clip
   before_save :store_metadata
+  after_save :update_metadata
   validates :description,
             presence: true
 
@@ -17,8 +18,15 @@ class PracticeVideo < ApplicationRecord
 
   def store_metadata
     self.filename = clip.filename
-    # self.video_create_date = clip.created_at
     self.video_upload_date = Time.now.utc.iso8601
+  end
+
+  def update_metadata
+    # if clip.attached? && clip.content_type == "video/mp4"
+    #   metadata = ActiveStorage::Analyzer::VideoAnalyzer.new(clip).metadata
+    #   self.video_create_date = metadata[:creation_time]&.utc&.iso8601
+    #   self.length = metadata[:duration]
+    # end
   end
 
   def correct_video_type

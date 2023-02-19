@@ -70,6 +70,6 @@ class PracticeVideosController < ApplicationController
   # Only allow a list of trusted parameters through.
   def practice_video_params
     params.require(:practice_video).permit(:filename, :video_name, :video_create_date, :description, :clip,
-                                           :video_upload_date)
+                                           :video_upload_date, :length)
   end
 end
