@@ -24,7 +24,13 @@ class PracticeVideo < ApplicationRecord
     output_hashes = []
     CSV.foreach('db/seeds/route_instances.csv', headers: true) do |row|
       hash = row.to_hash
-      hash['practice_id'] = filename
+      original_string = filename
+      new_string = if original_string
+                     original_string.slice(0, original_string.length - 4)
+                   else
+                     'invalid_practice_id'
+                   end
+      hash['practice_id'] = new_string
       hash['timestamp_start'] = int_to_time_string(hash['timestamp_start'].to_i)
       hash['timestamp_end'] = int_to_time_string(hash['timestamp_end'].to_i)
       output_hashes << hash
