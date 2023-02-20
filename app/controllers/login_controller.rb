@@ -43,6 +43,8 @@ class LoginController < ApplicationController
       redirect_to dashboard_path
     elsif session[:admin]
       redirect_to admin_path
+    elsif session[:data_manager]
+      redirect_to practice_videos_path
     end
   end
   # def logout
