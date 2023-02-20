@@ -37,8 +37,13 @@
     </div>
     <div style="width: 100%; padding: 20px 20px;">
       <div style="width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-radius: 20px; border: 1px solid rgba(0,0,0,.15);">
-        <%= form.label :clip, 'Upload from Computer', id:'computer-upload-label', style:"padding: 8px 40px; border-radius: 20px; color: white; background: blue; cursor: pointer;"%>
-        <%= form.file_field :clip, id: 'computer-upload-button', accept: 'video/*', style: 'display: none' %>
+        <% if editing %>
+          <%= form.label :clip, 'File Editing is Disabled', id:'computer-upload-label', style:"padding: 8px 40px; border-radius: 20px; color: white; background: blue; cursor: pointer;"%>
+          <%= form.file_field :clip, id: 'computer-upload-button', disabled: true, accept: 'video/*', style: 'display: none' %>
+        <% else %>
+          <%= form.label :clip, 'Upload from Computer', id:'computer-upload-label', style:"padding: 8px 40px; border-radius: 20px; color: white; background: blue; cursor: pointer;"%>
+          <%= form.file_field :clip, id: 'computer-upload-button', accept: 'video/*', style: 'display: none' %>
+        <% end %>
       </div>
     </div>
   </div>
