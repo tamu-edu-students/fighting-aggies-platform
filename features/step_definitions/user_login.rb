@@ -2,6 +2,7 @@
 
 require('capybara/rails')
 require 'omniauth'
+require 'csv'
 # extra.id_info.email
 
 Before do
@@ -45,6 +46,9 @@ Given('I am logged in as a coach') do
   click_button 'Log In with Google'
 end
 Given('I am logged in as a data manager') do
+  CSV.foreach('db/seeds/players.csv', headers: true) do |row|
+    Player.create!(row.to_hash)
+  end
   User.create({ name: 'Test Data Manager', role: 'Data Manager', email: 'user@gmail.com' })
   visit root_path
   click_button 'Log In with Google'

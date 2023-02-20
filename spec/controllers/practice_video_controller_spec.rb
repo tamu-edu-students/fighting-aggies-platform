@@ -3,10 +3,15 @@
 require 'rails_helper'
 
 RSpec.describe PracticeVideosController, type: :controller do
+  before do
+    CSV.foreach('db/seeds/players.csv', headers: true) do |row|
+      Player.create!(row.to_hash)
+    end
+  end
   describe 'POST #create' do
     it 'creates a new practice video with valid params' do
       session[:data_manager] = true
-      video_params = { filename: 'test_video.mp4', video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description' }
+      video_params = { filename: 'test_video.mp4', video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', description: 'Test video description' }
       expect { post :create, params: { practice_video: video_params } }.to change(PracticeVideo, :count).by(1)
     end
 

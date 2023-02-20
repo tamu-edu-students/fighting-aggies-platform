@@ -1,7 +1,9 @@
+# require 'streamio-ffmpeg'
+require 'csv'
 class PracticeVideo < ApplicationRecord
   has_one_attached :clip
   before_save :store_metadata
-  after_save :update_metadata
+  after_save :create_practice_data
   validates :description,
             presence: true
 
@@ -11,9 +13,6 @@ class PracticeVideo < ApplicationRecord
 
   validate :correct_video_type
 
-  # validates :video_create_date, :video_upload_date,
-  #           presence: true
-
   private
 
   def store_metadata
@@ -21,12 +20,26 @@ class PracticeVideo < ApplicationRecord
     self.video_upload_date = Time.now.utc.iso8601
   end
 
-  def update_metadata
-    # if clip.attached? && clip.content_type == "video/mp4"
-    #   metadata = ActiveStorage::Analyzer::VideoAnalyzer.new(clip).metadata
-    #   self.video_create_date = metadata[:creation_time]&.utc&.iso8601
-    #   self.length = metadata[:duration]
-    # end
+  def create_practice_data
+    output_hashes = []
+    CSV.foreach('db/seeds/route_instances.csv', headers: true) do |row|
+      hash = row.to_hash
+      hash['practice_id'] = filename
+      hash['timestamp_start'] = int_to_time_string(hash['timestamp_start'].to_i)
+      hash['timestamp_end'] = int_to_time_string(hash['timestamp_end'].to_i)
+      output_hashes << hash
+    end
+    output_hashes.shuffle
+    output_hashes[0..499].each_with_index do |item, _index|
+      RouteInstance.create!(item)
+    end
+  end
+
+  def int_to_time_string(milliseconds)
+    seconds, milliseconds = milliseconds.divmod(1000)
+    minutes, seconds = seconds.divmod(60)
+    hours, minutes = minutes.divmod(60)
+    format('%<hours>02d:%<minutes>02d:%<seconds>02d.%<milliseconds>03d', hours:, minutes:, seconds:, milliseconds:)
   end
 
   def correct_video_type

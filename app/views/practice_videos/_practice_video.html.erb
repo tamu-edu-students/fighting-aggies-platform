@@ -24,14 +24,14 @@
   </p>
 
   <div id="video-dates">
-    <%# <p style="align-text: left"> %>
-    <%# <strong>Created</strong> %>
-    <%# <% if practice_video.video_create_date %> 
-    <%#   <%= practice_video.video_create_date.strftime('%m/%d/%Y') %>
-    <%# <% else %>
-    <%#   00/00/0000 %>
-    <%# <% end %>
-    <%# </p> %>
+    <p style="align-text: left">
+    <strong>Created</strong>
+    <% if practice_video.video_create_date %> 
+      <%= practice_video.video_create_date.strftime('%m/%d/%Y') %>
+    <% else %>
+      00/00/0000
+    <% end %>
+    </p>
 
     <p style="align-text: right">
     <strong>Uploaded</strong>

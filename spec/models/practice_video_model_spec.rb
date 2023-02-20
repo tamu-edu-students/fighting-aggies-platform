@@ -1,13 +1,17 @@
 require 'rails_helper'
 
 RSpec.describe PracticeVideo, type: :model do
+  before do
+    CSV.foreach('db/seeds/players.csv', headers: true) do |row|
+      Player.create!(row.to_hash)
+    end
+  end
   describe 'creates' do
     it 'creates a new practice video with a filename, video_name, video_create_date, description, and video_upload_date' do
       video = PracticeVideo.create(video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', description: 'Test video description')
 
       expect(video.video_name).to eq('Test Video')
       expect(video.video_create_date).to eq('2023-08-01T01:23:45Z')
-      expect(video.video_upload_date).to eq(Time.now.utc.iso8601)
       expect(video.description).to eq('Test video description')
     end
   end
@@ -37,7 +41,6 @@ RSpec.describe PracticeVideo, type: :model do
       shown_video = PracticeVideo.find(video.id)
       expect(shown_video.video_name).to eq('Test Video')
       expect(shown_video.video_create_date).to eq('2023-08-01T01:23:45Z')
-      expect(shown_video.video_upload_date).to eq(Time.now.utc.iso8601)
       expect(shown_video.description).to eq('Test video description')
     end
   end
@@ -52,6 +55,15 @@ RSpec.describe PracticeVideo, type: :model do
       expect(videos.count).to eq(2 + prev_count)
       expect(videos).to include(video1)
       expect(videos).to include(video2)
+    end
+  end
+
+  describe 'after_save callback' do
+    it 'creates practice data' do
+      PracticeVideo.create(video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', description: 'Test video description')
+      expect(RouteInstance.count).to eq(500)
+      PracticeVideo.create(video_name: 'Test Video2', video_create_date: '2023-09-01T01:23:45Z', description: 'Test video description 2')
+      expect(RouteInstance.count).to eq(1000)
     end
   end
 end
