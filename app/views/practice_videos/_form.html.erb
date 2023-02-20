@@ -4,7 +4,7 @@
     <div style="width: auto; padding: 20px; padding-right: 20px; border-right: 1px solid rgba(0,0,0,.15)">
       <div style="margin: 0px 0;">
         <%= form.label :Filename, style: "display: block; padding-left: 6px;" %>
-        <%= form.text_field :filename, id: 'filename', style: 'outline: none; padding: 6px; width: 100%; border: none; border-radius: 5px; box-shadow: 0px 2px 3px gray;'%>
+        <%= form.text_field :filename, id: 'filename', disabled: true, style: 'outline: none; padding: 6px; width: 100%; border: none; border-radius: 5px; box-shadow: 0px 2px 3px gray;'%>
       </div>
 
       <div style="margin: 15px 0;">
@@ -30,7 +30,7 @@
 
       <div style="margin: 15px 0;">
         <%= form.label :video_upload_date, 'Video Upload Date', style: "display: block; padding-left: 6px;" %>
-        <%= form.datetime_local_field :video_upload_date, id:'upload-date', value: Time.current.strftime("%d/%m/%Y %I:%M%p"), style: 'width: 100%; border: none; border-radius: 5px; box-shadow: 0px 2px 3px gray; padding: 2px;'%>
+        <%= form.datetime_local_field :video_upload_date, id:'upload-date', disabled: true, value: Time.current.strftime("%d/%m/%Y %I:%M%p"), style: 'width: 100%; border: none; border-radius: 5px; box-shadow: 0px 2px 3px gray; padding: 2px;'%>
       </div>
 
       <%= form.submit button_message, style: 'width: 100%; margin-top: 15px; border: none; background: blue; border-radius: 20px; color: white; padding: 8px 20px;' %>
