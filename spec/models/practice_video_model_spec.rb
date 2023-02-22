@@ -1,11 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe PracticeVideo, type: :model do
-  before do
-    CSV.foreach('db/seeds/players.csv', headers: true) do |row|
-      Player.create!(row.to_hash)
-    end
-  end
   describe 'creates' do
     it 'creates a new practice video with a filename, video_name, video_create_date, description, and video_upload_date' do
       video = PracticeVideo.create(video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', description: 'Test video description')
@@ -58,12 +53,16 @@ RSpec.describe PracticeVideo, type: :model do
     end
   end
 
-  describe 'after_save callback' do
+  describe 'if create_practice_data is called' do
+    before do
+      CSV.foreach('db/seeds/players.csv', headers: true) do |row|
+        Player.create!(row.to_hash)
+      end
+    end
     it 'creates practice data' do
-      PracticeVideo.create(video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', description: 'Test video description')
+      video = PracticeVideo.create(video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', description: 'Test video description')
+      video.create_practice_data
       expect(RouteInstance.count).to eq(500)
-      PracticeVideo.create(video_name: 'Test Video2', video_create_date: '2023-09-01T01:23:45Z', description: 'Test video description 2')
-      expect(RouteInstance.count).to eq(1000)
     end
   end
 end

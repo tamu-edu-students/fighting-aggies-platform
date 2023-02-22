@@ -52,3 +52,12 @@ Scenario: Logged in as admin navigate to home
 	Then I should be on the admin dashboard
 	When I visit the analytics page
 	Then I should be on the admin dashboard
+
+Scenario: Logged in as data manager navigate to home
+	Given the database has been reset
+	Given I am logged in as a data manager
+	Then I should be on the data manager dashboard
+	When I visit the home page
+	Then I should be on the data manager dashboard
+	When I visit the analytics page
+	Then I should be on the data manager dashboard

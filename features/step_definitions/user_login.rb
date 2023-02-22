@@ -78,3 +78,6 @@ end
 Then('I should be on the admin dashboard') do
   expect(page).to have_current_path(admin_path)
 end
+Then('I should be on the data manager dashboard') do
+  expect(page).to have_current_path(practice_videos_path)
+end
