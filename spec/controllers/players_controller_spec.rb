@@ -2,52 +2,52 @@ require 'rails_helper'
 
 RSpec.describe PlayersController, type: :controller do
   describe 'GET #index' do
-    before do
-      players = []
-      3.times { players << Player.create(name: "Player #{rand(1..1000)}", number: rand(1..100), position: "Position #{rand(1..5)}", year: rand(1..4)) }
-      5.times { RouteInstance.create(success: [true, false].sample, player: players.sample) }
-      session[:authenticated] = true
+    let!(:player1) { Player.create(name: 'John Doe', number: 1, position: "QB", year: "F") }
+    let!(:player2) { Player.create(name: 'Jane Doe', number: 2, position: "QB", year: "F") }
+    let!(:route_instance_1) {RouteInstance.create(player_id:player1.id, route_name: "route1", success: 1)}
+    let!(:route_instance_2) {RouteInstance.create(player_id:player1.id, route_name: "route1", success: 0)}
+    it 'lists all existing users' do
       session[:coach] = true
-    end
-
-    it 'populates an array of players with player data' do
       get :index
-      expect(assigns(:players)).to be_an(ActiveRecord::Relation)
-    end
-
-    it 'renders the :index template' do
-      get :index
-      expect(response).to render_template :index
+      expect(assigns(:players)).to include(player1)
+      expect(assigns(:players)).to include(player2)
     end
   end
-
-  describe 'GET #show' do
-    before do
-      @player = Player.create(name: "Player #{rand(1..1000)}", number: rand(1..100), position: "Position #{rand(1..5)}", year: rand(1..4))
-      @route_instances = []
-      5.times { @route_instances << RouteInstance.create(success: [true, false].sample, player: @player) }
-      session[:authenticated] = true
+  describe '#show' do
+    let!(:player) { Player.create(name: 'John Doe', number: 1, position: "QB", year: "F") }
+    let!(:route_instance_1) {RouteInstance.create(player_id:player.id, route_name: "route1", success: 1, practice_id: 11)}
+    let!(:route_instance_2) {RouteInstance.create(player_id:player.id, route_name: "route2", success: 0, practice_id: 17)}
+    it 'assigns the correct player' do
       session[:coach] = true
+      get :show, params: { id: player.id }
+      expect(assigns(:player)).to eq(player)
     end
-
-    it 'assigns the requested player to @player' do
-      get :show, params: { id: @player.id }
-      expect(assigns(:player)).to eq @player
+    
+    it 'assigns the correct route instances for the player' do
+      session[:coach] = true
+      get :show, params: { id: player.id }
+      expect(assigns(:route_instances)).to match_array([route_instance_1, route_instance_2])
     end
-
-    it 'assigns route instances of the player to @route_instances' do
-      get :show, params: { id: @player.id }
-      expect(assigns(:route_instances)).to match_array(@route_instances)
+    
+    it 'assigns the correct overall success rate for the player' do
+      session[:coach] = true
+      get :show, params: { id: player.id }
+      expect(assigns(:overall_success_rate)).to eq(0.5)
     end
-
-    it 'assigns practice data of the player to @practice_data' do
-      get :show, params: { id: @player.id }
-      expect(assigns(:practice_data)).to be_a(Hash)
+    
+    it 'assigns the correct success rate by route for the player' do
+      session[:coach] = true
+      get :show, params: { id: player.id }
+      expect(assigns(:success_by_route)).to eq({ route_instance_1.route_name => 1.0, route_instance_2.route_name => 0.0 })
     end
-
-    it 'renders the :show template' do
-      get :show, params: { id: @player.id }
-      expect(response).to render_template :show
+    
+    it 'assigns the correct success rates by practice id for the player' do
+      session[:coach] = true
+      get :show, params: { id: player.id }
+      expect(assigns(:success_rates)).to match_array([
+        { practice_id: route_instance_1.practice_id.to_i, success_rate: 100.0 },
+        { practice_id: route_instance_2.practice_id.to_i, success_rate: 0.0 },
+      ])
     end
   end
 end

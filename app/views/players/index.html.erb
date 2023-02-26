@@ -26,7 +26,7 @@
   <tbody>
     <% @players.each do |p| %>
       <tr>
-        <td style="text-align: center;"><%=link_to p.name, route_instances_path(p.id,"*","*","*") %></td>
+        <td style="text-align: center;"><%=link_to p.name, players_show_path(p.id) %></td>
         <td style="text-align: center;"><%= p.number %></td>
         <td style="text-align: center;"><%= p.position %></td>
         <td style="text-align: center;"><%= p.year %></td>

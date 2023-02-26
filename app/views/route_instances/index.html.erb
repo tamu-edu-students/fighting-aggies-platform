@@ -28,7 +28,7 @@
     <% @route_instances.each do |route_instance| %>
 
       <tr>
-        <td><%= link_to Player.find_by(id: route_instance.player_id).name, route_instances_path(player_id: route_instance.player_id, route_name: params[:route_name], play_name: params[:play_name], practice_id: params[:practice_id]) %></td>
+        <td><%= link_to Player.find_by(id: route_instance.player_id).name, players_show_path(route_instance.player_id)%></td>
         <td><%= link_to route_instance.route_name, route_instances_path(route_name: route_instance.route_name, player_id: params[:player_id], play_name: params[:play_name], practice_id: params[:practice_id]) %></td>
         <td><%= link_to route_instance.play_name, route_instances_path(play_name: route_instance.play_name, route_name: params[:route_name], player_id: params[:player_id], practice_id: params[:practice_id]) %></td>
         <td><%= link_to route_instance.practice_id, route_instances_path(practice_id: route_instance.practice_id, route_name: params[:route_name], player_id: params[:player_id], play_name: params[:play_name]) %></td>
