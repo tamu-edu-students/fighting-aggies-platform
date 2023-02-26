@@ -2,9 +2,8 @@ require 'rails_helper'
 
 RSpec.describe PracticeVideo, type: :model do
   before(:each) do
-    ActiveRecord::Base.connection.execute("DELETE FROM practice_videos")
-    ActiveRecord::Base.connection.execute("DELETE FROM route_instances")
-  
+    ActiveRecord::Base.connection.execute('DELETE FROM practice_videos')
+    ActiveRecord::Base.connection.execute('DELETE FROM route_instances')
   end
   describe 'creates' do
     it 'creates a new practice video with a filename, video_name, video_create_date, description, and video_upload_date' do

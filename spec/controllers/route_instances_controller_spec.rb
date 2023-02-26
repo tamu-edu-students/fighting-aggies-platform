@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe RouteInstancesController, type: :controller do
   before(:each) do
-    ActiveRecord::Base.connection.execute("DELETE FROM route_instances")
+    ActiveRecord::Base.connection.execute('DELETE FROM route_instances')
   end
   describe 'GET #index' do
     let!(:player1) { Player.create(name: 'John Doe') }

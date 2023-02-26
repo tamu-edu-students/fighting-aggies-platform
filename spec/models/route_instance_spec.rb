@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe RouteInstance, type: :model do
   before(:each) do
-    ActiveRecord::Base.connection.execute("DELETE FROM route_instances")
+    ActiveRecord::Base.connection.execute('DELETE FROM route_instances')
   end
   describe 'Creating a route_instance' do
     it 'creates a new route_instance with valid attributes' do

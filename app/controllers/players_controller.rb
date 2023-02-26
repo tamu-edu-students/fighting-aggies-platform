@@ -11,14 +11,14 @@ class PlayersController < ApplicationController
     @overall_success_rate = @player.route_instances.average(:success)
     @success_by_route = @player.route_instances.group(:route_name).average(:success)
 
-    
     # Success Rates by Practice ID
     practice_ids = @route_instances.distinct.pluck(:practice_id).sort.map(&:to_i)
     @success_rates = practice_ids.map do |practice_id|
-      successes = @route_instances.where(practice_id: practice_id, success: true).count
-      attempts = @route_instances.where(practice_id: practice_id).count
-      success_rate = attempts > 0 ? successes.fdiv(attempts) * 100 : 0
-      { practice_id: practice_id, success_rate: success_rate }
-    end.sort_by { |sr| sr[:practice_id] }
+      successes = @route_instances.where(practice_id:, success: true).count
+      attempts = @route_instances.where(practice_id:).count
+      success_rate = attempts.positive? ? successes.fdiv(attempts) * 100 : 0
+      { practice_id:, success_rate: }
+    end
+    @success_rates = @success_rates.sort_by { |sr| sr[:practice_id] }
   end
 end
