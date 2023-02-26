@@ -27,7 +27,7 @@ class LoginController < ApplicationController
         redirect_to admin_path
       when 'Coach'
         session[:coach] = true
-        redirect_to dashboard_path
+        redirect_to route_instances_by_player_path
       when 'Data Manager'
         session[:data_manager] = true
         redirect_to practice_videos_path
@@ -40,7 +40,7 @@ class LoginController < ApplicationController
 
   def relog_prevent
     if session[:coach]
-      redirect_to dashboard_path
+      redirect_to route_instances_by_player_path
     elsif session[:admin]
       redirect_to admin_path
     elsif session[:data_manager]

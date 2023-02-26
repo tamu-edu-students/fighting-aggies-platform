@@ -35,7 +35,7 @@ Scenario: Log out successfully
 	When I visit the analytics page
 	Then I should be on the home screen
 
-Scenario: Logged in as Coach navigate to home
+Scenario: Logged in as Coach navigate to by player page
 	Given the database has been reset
 	Given I am logged in as a coach
 	Then I should be on the analytics dashboard
