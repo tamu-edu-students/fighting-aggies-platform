@@ -25,6 +25,7 @@ class PracticeVideosController < ApplicationController
     respond_to do |format|
       if @practice_video.save
         format.html do
+          @practice_video.create_practice_data
           redirect_to practice_videos_url, notice: 'Practice video was successfully created.'
         end
         format.json { render :show, status: :created, location: @practice_video }

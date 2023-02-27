@@ -51,9 +51,9 @@ RSpec.describe LoginController, type: :controller do
       expect(response).to redirect_to(admin_path)
     end
 
-    it 'redirects to dashboard_path if the user is a coach' do
+    it 'redirects to by player page if the user is a coach' do
       get :login, params: { email: coach.email.gsub('.', '%1F') }
-      expect(response).to redirect_to(dashboard_path)
+      expect(response).to redirect_to(route_instances_by_player_path)
     end
 
     it 'redirects to root_path if the user does not exist' do

@@ -1,4 +1,5 @@
 #!/bin/bash -i
+
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 GREEN='\033[0;32m'
@@ -61,47 +62,22 @@ fi
 
 DRIVER=$(which chromedriver)
 if [ -z "$DRIVER" ]; then
-  retries=3
-  while (( retries -gt 0 )); do
-    wget 'https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip'
-    unzip chromedriver_linux64.zip
-    sudo mv chromedriver /usr/bin/chromedriver
-    sudo chown root:root /usr/bin/chromedriver
-    sudo chmod +x /usr/bin/chromedriver
-    install_status=$(check_install 'chromedriver' 'successfully installed' 'failed to install')
-    if [ "$install_status" -eq "0" ]; then
-      retries=$(( retries - 1 ))
-      echo -e "${YELLOW}chromedriver failed to install trying again...${retries}/3${NC}"
-    else
-      break
-    fi
-  done
+  wget 'https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip'
+  unzip chromedriver_linux64.zip
+  sudo mv chromedriver /usr/bin/chromedriver
+  sudo chown root:root /usr/bin/chromedriver
+  sudo chmod +x /usr/bin/chromedriver
   check_install 'chromedriver' 'successfully installed' 'failed to install'
   rm chromedriver_linux64.zip*
 else
   echo -e "${GREEN}$(chromedriver --version) is installed${NC}"
 fi
 
-RUBY=$(which ruby)
-if [ -z "$RUBY" ]; then
-  # install ruby
-  echo -e "${CYAN}Installing Ruby${NC}"
-  retries=3
-  while (( retries > 0 )); do
-    LATEST_RUBY_VERSION=$(rbenv install --list | grep -E '^[0-9]+\.[0-9]+\.[0-9]+' | tail -1)
-    rbenv install -s $LATEST_RUBY_VERSION -v
-    rbenv local $LATEST_RUBY_VERSION
-    check_install 'ruby' 'successfully installed' 'failed to install'
-    if [ "$?" -eq "0" ]; then
-      retries=$(( retries - 1 ))
-      echo -e "${YELLOW}ruby failed to install trying again...${retries}/3${NC}"
-    else
-      break
-    fi
-  done
-else
-  echo -e "${GREEN}$(ruby --version) is installed${NC}"
-fi
+echo -e "${CYAN}Installing Ruby${NC}"
+LATEST_RUBY_VERSION=$(rbenv install --list | grep -E '^[0-9]+\.[0-9]+\.[0-9]+' | tail -1)
+rbenv install -s $LATEST_RUBY_VERSION -v # only installs ruby if version doesn't match
+rbenv local $LATEST_RUBY_VERSION
+check_install 'ruby' 'successfully installed' 'failed to install'
 
 # add extra gems
 echo -e "${CYAN}Adding gems${NC}"
@@ -138,5 +114,5 @@ rails db:test:load
 
 # clean up
 echo -e "${CYAN}Cleaning up${NC}"
-echo -e "${GREEN}All setup processes COMPLETE! ${NC}"
+echo -e "${GREEN}All setup processes complete.${NC}"
 echo -e "${CYAN}If you have an error running bin/dev, source ~/.bashrc to update your paths${NC}"

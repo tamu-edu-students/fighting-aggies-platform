@@ -28,5 +28,16 @@ Scenario: User navigates to view routes by player
     And I should see "John Smith"
     And I should see "curl"
     And I should see "0.00%"
+Scenario: User navigates to player report card
+    Given I am logged in as a coach
+    And player "John Smith" exists
+    And "John Smith" has run a route
+    When I click "See Routes by player"
+    Then I am on the By Player page
+    When I click "John Smith"
+    Then I am on the Player Show page for "John Smith"
+    And I should see "John Smith"
+    And I should see "curl"
+    And I should see "0.00%"
 
 

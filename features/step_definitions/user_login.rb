@@ -73,8 +73,11 @@ Then('I should be on the home screen') do
   expect(page).to have_current_path(root_path)
 end
 Then('I should be on the analytics dashboard') do
-  expect(page).to have_current_path(dashboard_path)
+  expect(page).to have_current_path(route_instances_by_player_path)
 end
 Then('I should be on the admin dashboard') do
   expect(page).to have_current_path(admin_path)
+end
+Then('I should be on the data manager dashboard') do
+  expect(page).to have_current_path(practice_videos_path)
 end

@@ -68,6 +68,7 @@ gem 'passwordless'
 
 gem 'pg', '~> 1.1'
 
+gem 'chartkick'
 # gem "aws-sdk-s3", require: false
 
 group :development, :test do

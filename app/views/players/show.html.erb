@@ -1,68 +1,114 @@
 <div>
-<%= link_to "See Players", players_index_path,  id: "players"  %>
-<table>
-<h1> <%= @player.name %> </h1>
-<canvas id="success-rate-over-time"></canvas>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
-<script>
-var practices=[]
-var successRates=[]
-<% @practice_data.each do |practice_id, success_rate| %>
-  practices.push(<%=practice_id%>)
-  successRates.push(<%=success_rate%>)
-<%end%>
-var ctx = document.getElementById("success-rate-over-time");
-var chart = new Chart(ctx, {
-  type: "line",
-  data: {
-    labels: practices,
-    datasets: [
-      {
-        label: "Success Rate",
-        fill: false,
-        data: successRates,
-        borderColor: "rgba(75, 192, 192, 1)",
-        borderWidth: 1,
-      },
-    ],
-  },
-  options: {
-    scales: {
-      yAxes: [{
-        scaleLabel: {
-          display: true,
-          labelString: "Success Rate"
-        }
-      }]
-    }
-    },
+    <nav class="navbar navbar-dark bg-primary justify-content-start">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/dashboard">Fighting Aggies Platform</a>
+            </div>
+            <%= link_to "See All", route_instances_path('*','*','*','*'), id: "all_routes", class:"nav-item text-white" %>
+            <%= link_to "See Players", players_index_path,  id: "players", class:"nav-item text-white"  %>
+            <%= link_to "See Routes by player", route_instances_by_player_path, id: "routes by player", class:"nav-item text-white" %>
+            <%= link_to "Log Out", logout_path,  id: "log_out", class:"btn logout-btn" %>
+        </div>
+    </nav>
+</div>
 
-  },
-);
+<div class="container">
+  <h1><%= @player.name.split(", ")[1] %> <%= @player.name.split(", ")[0]  %>'s Report Card</h1>
+  <table class="table" style="width:100%; margin-top:20px; margin-bottom:20px">
+  <tr>
+    <td style="font-size: 18px; margin-right: 50px;"><b>Name:</b> <%= @player.name.split(',').reverse.join(' ') %></td>
+    <td style="font-size: 18px; margin-right: 50px;"><b>Number:</b> <%= @player.number %></td>
+    <td style="font-size: 18px; margin-right: 50px;"><b>Position:</b> <%= @player.position %></td>
+    <td style="font-size: 18px; margin-right: 50px;"><b>Year:</b> <%= @player.year %></td>
+    <% if defined?(@overall_success_rate) %>
+      <td style="font-size: 18px; margin-right: 50px;"><b>Overall Success Rate:</b> <%= (100*@overall_success_rate).round(2) %>%</td>
+    <% else %>
+      <td style="font-size: 18px; margin-right: 50px;"><b>Overall Success Rate: Not Enough Routes Run</b> </td>
+    <% end %>
+  </tr>
+</table>
+
+
+
+  <div class="row">
+    <div class="col-md-6">
+      <canvas id="lineChart" style="height:400px; width:100%"></canvas>
+    </div>
+    <div class="col-md-6">
+      <h3>Success Rates by Route Name</h3>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Route Name</th>
+            <th>Success Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @success_by_route.each do |route_name, success_rate| %>
+            <tr>
+              <td><%= route_name %></td>
+              <td><%= number_to_percentage(success_rate*100, precision: 2) %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<script>
+  //const successRates = <%= @success_rates.to_json.gsub('&', 'and') %>;
+
+  var labels = []
+  var data = []
+  
+  <% for i in 0..(@success_rates.length-1) do %>
+    labels.push('<%= @success_rates[i][:practice_id] %>');
+    data.push('<%= @success_rates[i][:success_rate] %>');
+  <% end %>
+
+  var ctx = document.getElementById('lineChart').getContext('2d');
+  var chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'Success Rates by Practice ID',
+        data: data,
+        fill: false,
+        borderColor: 'rgb(75, 192, 192)',
+        tension: 0.1
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        title: {
+          display: true,
+          text: 'Success Rates by Practice',
+          color: "black",
+          font: {
+            size: 28
+          }
+        },
+        legend: {
+          display: false
+        }
+      },
+      scales: {
+        x: {
+          title: {
+            display: true,
+            text: 'Practice ID'
+          }
+        },
+        y: {
+          title: {
+            display: true,
+            text: 'Success Rate (%)'
+          }
+        }
+      }
+    }
+  });
 
 </script>
-
-  <thead>
-    <tr>
-      <th>Route Name</th>
-      <th>Play Name</th>
-      <th>Start</th>
-      <th>End</th>
-      <th>Success</th>
-      <th>Practice ID</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @route_instances.each do |route_instance| %>
-      <tr>
-        <td><%= route_instance.route_name %></td>
-        <td><%= route_instance.play_name %></td>
-        <td><%= route_instance.timestamp_start %></td>
-        <td><%= route_instance.timestamp_end %></td>
-        <td><%= route_instance.success %></td>
-        <td><%= route_instance.practice_id %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-</div>
