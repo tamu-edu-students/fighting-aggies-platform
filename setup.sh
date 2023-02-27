@@ -73,16 +73,11 @@ else
   echo -e "${GREEN}$(chromedriver --version) is installed${NC}"
 fi
 
-RUBY=$(which ruby)
-if [ -z "$RUBY" ]; then
-  echo -e "${CYAN}Installing Ruby${NC}"
-  LATEST_RUBY_VERSION=$(rbenv install --list | grep -E '^[0-9]+\.[0-9]+\.[0-9]+' | tail -1)
-  rbenv install -s $LATEST_RUBY_VERSION -v
-  rbenv local $LATEST_RUBY_VERSION
-  check_install 'ruby' 'successfully installed' 'failed to install'
-else
-  echo -e "${GREEN}$(ruby --version) is installed${NC}"
-fi
+echo -e "${CYAN}Installing Ruby${NC}"
+LATEST_RUBY_VERSION=$(rbenv install --list | grep -E '^[0-9]+\.[0-9]+\.[0-9]+' | tail -1)
+rbenv install -s $LATEST_RUBY_VERSION -v # only installs ruby if version doesn't match
+rbenv local $LATEST_RUBY_VERSION
+check_install 'ruby' 'successfully installed' 'failed to install'
 
 # add extra gems
 echo -e "${CYAN}Adding gems${NC}"
