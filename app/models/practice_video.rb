@@ -10,6 +10,11 @@ class PracticeVideo < ApplicationRecord
             presence: true,
             uniqueness: { case_sensitive: false }
 
+  validates :clip,
+            presence: true
+
+  validate :unique_video_file
+
   validate :correct_video_type
 
   def create_practice_data
@@ -27,7 +32,7 @@ class PracticeVideo < ApplicationRecord
       hash['timestamp_end'] = int_to_time_string(hash['timestamp_end'].to_i)
       output_hashes << hash
     end
-    output_hashes.shuffle
+    output_hashes.shuffle!
     output_hashes[0..499].each_with_index do |item, _index|
       RouteInstance.create!(item)
     end
@@ -51,5 +56,11 @@ class PracticeVideo < ApplicationRecord
     return unless clip.attached? && !clip.content_type.in?(%w[video/mp4])
 
     errors.add(:clip, 'must be a mp4')
+  end
+  
+  def unique_video_file
+    if clip.attached? && PracticeVideo.where.not(id: id).exists?(filename: clip.filename.to_s)
+      errors.add(:clip, 'has already been uploaded')
+    end
   end
 end
