@@ -2,6 +2,7 @@ Feature: videos
  
   @videos 
   Scenario:
+    Given the database has been reset
     Given I am logged in as a data manager
     Given I am on the videos dashboard 
     When I click 'Edit' on Test Video 0

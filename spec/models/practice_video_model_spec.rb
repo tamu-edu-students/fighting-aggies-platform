@@ -27,7 +27,7 @@ RSpec.describe PracticeVideo, type: :model do
 
   describe 'destroy' do
     it 'deletes an existing practice video' do
-      video = PracticeVideo.create(video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', description: 'Test video description')
+      video = PracticeVideo.create(filename: 'video_file.mp4', video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description', clip: fixture_file_upload('video_file.mp4', 'video/mp4'))
       video.destroy
 
       expect(PracticeVideo.find_by(id: video.id)).to be_nil
@@ -36,7 +36,7 @@ RSpec.describe PracticeVideo, type: :model do
 
   describe 'show' do
     it 'returns the details of an existing practice video' do
-      video = PracticeVideo.create(video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', description: 'Test video description')
+      video = PracticeVideo.create(filename: 'video_file.mp4', video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description', clip: fixture_file_upload('video_file.mp4', 'video/mp4'))
       shown_video = PracticeVideo.find(video.id)
       expect(shown_video.video_name).to eq('Test Video')
       expect(shown_video.video_create_date).to eq('2023-08-01T01:23:45Z')
@@ -47,8 +47,8 @@ RSpec.describe PracticeVideo, type: :model do
   describe 'index' do
     it 'lists all existing practice videos' do
       prev_count = PracticeVideo.all.count
-      video1 = PracticeVideo.create(filename: 'test_video1.mp4', video_name: 'Test Video 1 ', video_create_date: '2023-08-01T01:23:45Z', description: 'Test video 1 description')
-      video2 = PracticeVideo.create(filename: 'test_video2.mp4', video_name: 'Test Video 2', video_create_date: '2023-08-01T01:23:45Z', description: 'Test video 2 description')
+      video1 = PracticeVideo.create(filename: 'test_video0.mp4', video_name: 'Test Video 0', video_create_date: '2023-08-01T01:23:45Z', description: 'Test video 1 description',clip: fixture_file_upload('test_Video_0.mp4', 'video/mp4'))
+      video2 = PracticeVideo.create(filename: 'test_video1.mp4', video_name: 'Test Video 1', video_create_date: '2023-08-01T01:23:45Z', description: 'Test video 2 description',clip: fixture_file_upload('test_Video_1.mp4', 'video/mp4'))
       videos = PracticeVideo.all
 
       expect(videos.count).to eq(2 + prev_count)
