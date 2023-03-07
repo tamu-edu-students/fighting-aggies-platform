@@ -20,7 +20,7 @@
 
       <div style="margin: 15px 0;">
         <%= form.label :video_create_date, 'Video Create Date', style: "display: block: padding-left: 6px;" %>
-        <%= form.datetime_field :video_create_date, id:'create-date', style: 'width: 100%; outline: none; border: none; border-radius: 5px; box-shadow: 0px 2px 3px gray; padding: 2px;'%>
+        <%= form.datetime_field :video_create_date, id:'create-date', style: 'width: 100%; outline: none; border: none; border-radius: 5px; box-shadow: 0px 2px 3px gray; padding: 2px;', value: Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
       </div>
 
       <div style="margin: 15px 0; display:none;">
