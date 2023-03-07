@@ -38,6 +38,15 @@ class PracticeVideo < ApplicationRecord
     end
   end
 
+  def delete_practice_data(filename)
+    new_string = if filename
+                   filename.slice(0, filename.length - 4)
+                 else
+                   'invalid_practice_id'
+                 end
+    RouteInstance.where(practice_id: new_string).delete_all
+  end
+
   private
 
   def store_metadata

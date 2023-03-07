@@ -53,6 +53,7 @@ class PracticeVideosController < ApplicationController
 
   # DELETE /practice_videos/1 or /practice_videos/1.json
   def destroy
+    @practice_video.delete_practice_data(@practice_video.filename)
     @practice_video.destroy
 
     respond_to do |format|
