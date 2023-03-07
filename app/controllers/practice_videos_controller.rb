@@ -36,12 +36,12 @@ class PracticeVideosController < ApplicationController
     end
   end
 
-  # PATCH/PUT /practice_videos/1 or /practice_videos/1.json
+  # PATCH/PUT /practice_videos or /practice_videos.json
   def update
     respond_to do |format|
       if @practice_video.update(practice_video_params)
         format.html do
-          redirect_to practice_video_url(@practice_video), notice: 'Practice video was successfully updated.'
+          redirect_to practice_videos_url, notice: 'Practice video was successfully updated.'
         end
         format.json { render :show, status: :ok, location: @practice_video }
       else
