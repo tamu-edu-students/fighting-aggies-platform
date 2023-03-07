@@ -47,8 +47,8 @@ RSpec.describe PracticeVideo, type: :model do
   describe 'index' do
     it 'lists all existing practice videos' do
       prev_count = PracticeVideo.all.count
-      video1 = PracticeVideo.create(filename: 'test_video0.mp4', video_name: 'Test Video 0', video_create_date: '2023-08-01T01:23:45Z', description: 'Test video 1 description',clip: fixture_file_upload('test_Video_0.mp4', 'video/mp4'))
-      video2 = PracticeVideo.create(filename: 'test_video1.mp4', video_name: 'Test Video 1', video_create_date: '2023-08-01T01:23:45Z', description: 'Test video 2 description',clip: fixture_file_upload('test_Video_1.mp4', 'video/mp4'))
+      video1 = PracticeVideo.create(filename: 'test_video0.mp4', video_name: 'Test Video 0', video_create_date: '2023-08-01T01:23:45Z', description: 'Test video 1 description', clip: fixture_file_upload('test_Video_0.mp4', 'video/mp4'))
+      video2 = PracticeVideo.create(filename: 'test_video1.mp4', video_name: 'Test Video 1', video_create_date: '2023-08-01T01:23:45Z', description: 'Test video 2 description', clip: fixture_file_upload('test_Video_1.mp4', 'video/mp4'))
       videos = PracticeVideo.all
 
       expect(videos.count).to eq(2 + prev_count)

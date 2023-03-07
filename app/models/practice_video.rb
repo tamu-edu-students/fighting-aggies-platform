@@ -57,13 +57,12 @@ class PracticeVideo < ApplicationRecord
 
     errors.add(:clip, 'must be a mp4')
   end
-  
+
   def unique_video_file
-    if self.filename
-      return
-    end
-    if clip.attached? && PracticeVideo.where.not(id: id).exists?(filename: clip.filename.to_s)
-      errors.add(:clip, 'has already been uploaded')
-    end
+    return if filename
+
+    return unless clip.attached? && PracticeVideo.where.not(id:).exists?(filename: clip.filename.to_s)
+
+    errors.add(:clip, 'has already been uploaded')
   end
 end

@@ -11,19 +11,19 @@ RSpec.describe PracticeVideosController, type: :controller do
   describe 'POST #create' do
     it 'creates a new practice video with valid params' do
       session[:data_manager] = true
-      video_params = {filename: 'video_file.mp4', video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description', clip: fixture_file_upload('video_file.mp4', 'video/mp4')}
+      video_params = { filename: 'video_file.mp4', video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description', clip: fixture_file_upload('video_file.mp4', 'video/mp4') }
       expect { post :create, params: { practice_video: video_params } }.to change(PracticeVideo, :count).by(1)
     end
 
     it 'does not create a new practice video with invalid params' do
       session[:data_manager] = true
-      video_params = { filename: '', video_name: '', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description', clip: fixture_file_upload('video_file.mp4', 'video/mp4')}
+      video_params = { filename: '', video_name: '', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description', clip: fixture_file_upload('video_file.mp4', 'video/mp4') }
       expect { post :create, params: { practice_video: video_params } }.to_not change(PracticeVideo, :count)
     end
   end
 
   describe 'PATCH #update' do
-    let(:practice_video) { PracticeVideo.create(filename: 'video_file.mp4', video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description', clip: fixture_file_upload('video_file.mp4', 'video/mp4'))}
+    let(:practice_video) { PracticeVideo.create(filename: 'video_file.mp4', video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description', clip: fixture_file_upload('video_file.mp4', 'video/mp4')) }
 
     it 'updates an existing practice video with valid params' do
       session[:data_manager] = true
@@ -45,7 +45,7 @@ RSpec.describe PracticeVideosController, type: :controller do
   end
 
   describe 'DELETE #destroy' do
-    let(:practice_video) { PracticeVideo.create(filename: 'video_file.mp4', video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description', clip: fixture_file_upload('video_file.mp4', 'video/mp4'))}
+    let(:practice_video) { PracticeVideo.create(filename: 'video_file.mp4', video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description', clip: fixture_file_upload('video_file.mp4', 'video/mp4')) }
 
     it 'deletes an existing practice video' do
       session[:data_manager] = true
@@ -55,7 +55,7 @@ RSpec.describe PracticeVideosController, type: :controller do
   end
 
   describe 'GET #show' do
-    let(:practice_video) { PracticeVideo.create(filename: 'video_file.mp4', video_name: 'Test Video', video_create_date: '2023-02-01 03:09:45.000000000 +0000', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description', clip: fixture_file_upload('video_file.mp4', 'video/mp4'))}
+    let(:practice_video) { PracticeVideo.create(filename: 'video_file.mp4', video_name: 'Test Video', video_create_date: '2023-02-01 03:09:45.000000000 +0000', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video description', clip: fixture_file_upload('video_file.mp4', 'video/mp4')) }
 
     it 'returns the details of an existing practice video' do
       session[:data_manager] = true
@@ -65,8 +65,8 @@ RSpec.describe PracticeVideosController, type: :controller do
   end
 
   describe 'GET #index' do
-    let!(:video1) { PracticeVideo.create(filename: 'test_Video_0.mp4', video_name: 'Test Video 1', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video 1 description', clip: fixture_file_upload('test_Video_0.mp4', 'video/mp4'))}
-    let!(:video2) { PracticeVideo.create(filename: 'test_Video_1.mp4', video_name: 'Test Video 2', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video 2 description', clip: fixture_file_upload('test_Video_1.mp4', 'video/mp4'))}
+    let!(:video1) { PracticeVideo.create(filename: 'test_Video_0.mp4', video_name: 'Test Video 1', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video 1 description', clip: fixture_file_upload('test_Video_0.mp4', 'video/mp4')) }
+    let!(:video2) { PracticeVideo.create(filename: 'test_Video_1.mp4', video_name: 'Test Video 2', video_create_date: '2023-08-01T01:23:45Z', video_upload_date: '2023-08-01T01:23:45Z', description: 'Test video 2 description', clip: fixture_file_upload('test_Video_1.mp4', 'video/mp4')) }
     it 'lists all existing practice videos' do
       session[:data_manager] = true
       get :index
