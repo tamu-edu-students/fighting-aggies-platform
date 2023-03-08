@@ -64,3 +64,8 @@ Feature: videos
     Then I should see 'Test Video 0'
     And I should not see 'Test Video 1'
     
+  @videos
+  Scenario: Auto-populate create date field with current date
+    Given I am logged in as a data manager
+    Given I am on the new video page
+    Then I should see a 'Video Create Date' field with the current date pre-populated

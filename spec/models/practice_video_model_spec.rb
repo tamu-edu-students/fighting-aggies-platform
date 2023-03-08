@@ -69,4 +69,19 @@ RSpec.describe PracticeVideo, type: :model do
       expect(RouteInstance.count).to eq(500)
     end
   end
+
+  describe 'if delete_practice_data is called' do
+    before do
+      CSV.foreach('db/seeds/players.csv', headers: true) do |row|
+        Player.create!(row.to_hash)
+      end
+    end
+    it 'deletes practice data' do
+      video = PracticeVideo.create(video_name: 'Test Video', video_create_date: '2023-08-01T01:23:45Z', description: 'Test video description', filename: 'test_file.mp4')
+      video.create_practice_data
+      expect(RouteInstance.count).to eq(500)
+      video.delete_practice_data(video.filename)
+      expect(RouteInstance.count).to eq(0)
+    end
+  end
 end

@@ -93,3 +93,13 @@ end
 When('I search {string}') do |search|
   fill_in 'search', with: search
 end
+
+Given('I am on the new video page') do
+  visit new_practice_video_path
+end
+
+Then("I should see a 'Video Create Date' field with the current date pre-populated") do
+  expected_value = Time.current.strftime('%Y-%m-%d %H:%M:%S')
+  video_create_date = find_field('practice_video[video_create_date]').value
+  expect(video_create_date).to eq(expected_value)
+end
