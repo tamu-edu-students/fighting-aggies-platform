@@ -1,33 +1,159 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-jU6lYbz6hKU6nJoIbJTYYR++nTnRXrTziTJ+3VX1uQ2cjvoV7JhVVzzytdq3kZ8QJS+0IPLt13cPj9FfR0mYtA==" crossorigin="anonymous" />
+</head>
+<script>
+console.log(<%=@all_routes.to_json%>)
+</script>
 <div>
-    <nav class="navbar navbar-dark bg-primary justify-content-start">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="/dashboard">Fighting Aggies Platform</a>
-            </div>
-            <%= link_to "See All", route_instances_path('*','*','*','*'), id: "all_routes", class:"nav-item text-white" %>
-            <%= link_to "See Players", players_index_path,  id: "players", class:"nav-item text-white"  %>
-            <%= link_to "See Routes by player", route_instances_by_player_path, id: "routes by player", class:"nav-item text-white" %>
-            <%= link_to "Log Out", logout_path,  id: "log_out", class:"btn logout-btn" %>
-        </div>
-    </nav>
+  <nav class="navbar navbar-dark bg-primary justify-content-start">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href=<%=route_instances_by_player_path%>>Fighting Aggies Platform</a>
+      </div>
+      <%= link_to "See All", route_instances_path('*','*','*','*'), id: "all_routes", class:"nav-item text-white" %>
+      <%= link_to "See Players", players_index_path,  id: "players", class:"nav-item text-white"  %>
+      <%= link_to "See Routes by player", route_instances_by_player_path, id: "routes by player", class:"nav-item text-white" %>
+      <%= link_to "Log Out", logout_path,  id: "log_out", class:"btn logout-btn" %>
+    </div>
+  </nav>
 </div>
+<div>
+<%= form_tag route_instances_by_player_path, class: "form-inline", method: :get do %>
+  <%= hidden_field_tag :sort_by, @sort_by %>
+  <%= hidden_field_tag :ascending, @ascending %>
+  <%= hidden_field_tag :routes, @routes.join(",") %>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group row align-items-center">
+        <%= label_tag :start_date, "Start Date:", class: "col-md-4 col-form-label" %>
+        <div class="col-md-8">
+          <%= date_field_tag :start_date, nil, value: @start_date, class: "form-control" %>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group row align-items-center">
+        <%= label_tag :end_date, "End Date:", class: "col-md-4 col-form-label" %>
+        <div class="col-md-8">
+          <%= date_field_tag :end_date, nil, value: @end_date, class: "form-control" %>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <%= submit_tag "Submit", class: "btn btn-primary btn-block" %>
+    </div>
+  </div>
+<% end %>
+
+
+
+
+
+
+
+
+
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+    <% if @routes && @routes.length > 0 && @data.length > 0%>
 <table>
   <thead>
     <tr>
       <th></th>
-      <% @data.values.map {|v| v.keys}.flatten.uniq.sort.each do |route| %>
-        <th><%= link_to route, route_instances_path(route_name: route, player_id: "*", play_name: "*", practice_id: "*") %></th>
-      <% end %>
+<% @data.map { |player_id, routes| routes.keys }.flatten.sort.uniq.each do |route| %>
+  <%if(route!="overall")%>
+  <th style="height: 100%;">
+    <div class="d-flex align-items-center" style="height: 100%;">
+      <div class="mx-auto" style="height: 100%;">
+        <%= link_to route, route_instances_path(route_name: route, player_id: "*", play_name: "*", practice_id: "*") %>
+      </div>
+      <div class="d-flex flex-column align-items-center" style="height: 20px;">
+        <% if @sort_by.present? && route == @sort_by %>
+          <% if @ascending.to_i == 1 %>
+            <%= link_to '<i class="fas fa-sort-up arrow-icon" data-column="route_name" style="color: black;"></i>'.html_safe, route_instances_by_player_path(start_date: @start_date, end_date: @end_date, sort_by: route, ascending: -1, routes: @routes.join(",")), class: 'sort-link', style: "height:50%"%>
+            <% elsif @ascending.to_i == -1 %>
+            <%= link_to '<i class="fas fa-sort-down arrow-icon" data-column="route_name" style="color: black;"></i>'.html_safe, route_instances_by_player_path(start_date: @start_date, end_date: @end_date, sort_by: route, ascending: 1, routes: @routes.join(",")), class: 'sort-link' %>
+          <% else %>
+            <%= link_to '<i class="fas fa-sort-up arrow-icon" data-column="route_name"></i>'.html_safe, route_instances_by_player_path(start_date: @start_date, end_date: @end_date, sort_by: route, ascending: -1, routes: @routes.join(",")), class: 'sort-link', style: "height:50%" %>
+          <% end %>
+        <% else %>
+          <%= link_to '<i class="fas fa-sort-up arrow-icon" data-column="route_name"></i>'.html_safe, route_instances_by_player_path(start_date: @start_date, end_date: @end_date, sort_by: route, ascending: 1, routes: @routes.join(",")), class: 'sort-link', style: "height:50%" %>
+        <% end %>
+      </div>
+      <%= link_to '<i class="fas fa-times"></i>'.html_safe, route_instances_by_player_path(start_date: @start_date, end_date: @end_date, routes: (@routes.reject { |x| x == route }).join(",")), class: 'remove-link' %>
+    </div>
+  </th>
+  <%end%>
+<% end %>
+
+<%if(@routes.include?("overall"))%>
+      <th id="overall"><div class="d-flex align-items-center">
+  <div class="mx-auto">
+    Overall
+  </div>
+  <div class="d-flex flex-column align-items-center">
+        <% if @sort_by.present? && "overall" == @sort_by %>
+          <% if @ascending.to_i == 1 %>
+            <%= link_to '<i class="fas fa-sort-up arrow-icon" data-column="route_name" style="color: black;"></i>'.html_safe, route_instances_by_player_path(start_date: @start_date, end_date: @end_date, sort_by: "overall", ascending: -1, routes: @routes.join(",")), class: 'sort-link', style: "height:50%"%>
+            <% elsif @ascending.to_i == -1 %>
+            <%= link_to '<i class="fas fa-sort-down arrow-icon" data-column="route_name" style="color: black;"></i>'.html_safe, route_instances_by_player_path(start_date: @start_date, end_date: @end_date, sort_by: "overall", ascending: 1, routes: @routes.join(",")), class: 'sort-link', style: "height:50%" %>
+          <% else %>
+            <%= link_to '<i class="fas fa-sort-up arrow-icon" data-column="route_name"></i>'.html_safe, route_instances_by_player_path(start_date: @start_date, end_date: @end_date, sort_by: "overall", ascending: -1, routes: @routes.join(",")), class: 'sort-link', style: "height:50%" %>
+          <% end %>
+        <% else %>
+          <%= link_to '<i class="fas fa-sort-up arrow-icon" data-column="route_name"></i>'.html_safe, route_instances_by_player_path(start_date: @start_date, end_date: @end_date, sort_by: "overall", ascending: 1, routes: @routes.join(",")), class: 'sort-link', style: "height:50%" %>
+        <% end %>
+    </div>
+    <%= link_to '<i class="fas fa-times"></i>'.html_safe, route_instances_by_player_path(start_date: @start_date, end_date: @end_date, routes: (@routes.reject { |x| x == "overall" }).join(",")), class: 'remove-link' %>
+ </div>
+</th>
+<%end%>
     </tr>
   </thead>
+
   <tbody>
-    <% @data.keys.sort.each do |player| %>
+    <% @all_data.each do |player_id, routes| %>
       <tr>
-         <td><%= link_to Player.find_by(id: player).name, players_show_path(id: player) %></td>
-        <% @data.values.map {|v| v.keys}.flatten.uniq.sort.each do |route| %>
-          <td><%= number_to_percentage(100*@data[player][route][0].to_f / @data[player][route][1].to_f,precision:2) if @data[player][route].present? %></td>
+        <td><%= link_to Player.find_by(id: player_id).name, players_show_path(id: player_id) %></td>
+        <% success_count = 0 %>
+        <% total_count = 0 %>
+        <% routes.keys.flatten.sort.uniq.each do |route| %>
+          <% if routes[route].present? %>
+            <% success_count += routes[route][0] %>
+            <% total_count += routes[route][1] %>
+            <% if @routes.include?(route)%>
+              <td><%= number_to_percentage(100 * routes[route][0].to_f / routes[route][1].to_f, precision: 2) %></td>
+              <%end%>
+          <% else %>
+            <td></td>
+          <% end %>
         <% end %>
+        <%if(@routes.include?("overall"))%>
+        <td style="border-left: 1px solid black; font-weight: bold;"><%= number_to_percentage(100 * success_count.to_f / total_count.to_f, precision: 2) if total_count > 0 %></td>
+        <%end%>
       </tr>
     <% end %>
   </tbody>
 </table>
+<%elsif @data.length ==0%>
+<div>No data for date range</div>
+<%else%>
+<div>No columns selected</div>
+<%end%>
+
+</div>
+<div class="col-md-3">
+<%if((@all_routes-@routes).length>0)%>
+<div>
+Add Column:
+  <%(@all_routes-@routes).each do |route|%>
+  <br>
+    <%=link_to route, route_instances_by_player_path(start_date: @start_date, end_date: @end_date, routes:(@routes+[route]).join(","))%>
+    <%end%>
+</div>
+<%end%>
+</div>
+</div>
+</div>

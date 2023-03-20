@@ -9,6 +9,7 @@ class CreateRouteInstances < ActiveRecord::Migration[7.0]
       t.string :timestamp_end
       t.integer :success
       t.string :practice_id
+      t.date :date
       t.timestamps
     end
   end

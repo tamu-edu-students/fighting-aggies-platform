@@ -2,7 +2,7 @@
     <nav class="navbar navbar-dark bg-primary justify-content-start">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/dashboard">Fighting Aggies Platform</a>
+                <a class="navbar-brand" href=<%=route_instances_by_player_path%>>Fighting Aggies Platform</a>
             </div>
             <%= link_to "See All", route_instances_path('*','*','*','*'), id: "all_routes", class:"nav-item text-white" %>
             <%= link_to "See Players", players_index_path,  id: "players", class:"nav-item text-white"  %>
@@ -11,16 +11,51 @@
         </div>
     </nav>
 </div>
+<div>
+<%= form_tag players_show_path, class: "form-inline", method: :get do %>
+  <%= hidden_field_tag :player_id, @player_id %>
+  <%= hidden_field_tag :routes, @routes.join(",") %>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group row align-items-center">
+        <%= label_tag :start_date, "Start Date:", class: "col-md-4 col-form-label" %>
+        <div class="col-md-8">
+          <%= date_field_tag :start_date, nil, value: @start_date, class: "form-control" %>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group row align-items-center">
+        <%= label_tag :end_date, "End Date:", class: "col-md-4 col-form-label" %>
+        <div class="col-md-8">
+          <%= date_field_tag :end_date, nil, value: @end_date, class: "form-control" %>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <%= submit_tag "Submit", class: "btn btn-primary btn-block" %>
+    </div>
+  </div>
+<% end %>
 
+</div>
 <div class="container">
-  <h1><%= @player.name.split(", ")[1] %> <%= @player.name.split(", ")[0]  %>'s Report Card</h1>
+<div class="row">
+  <div class="col-md-8">
+    <h1><%= @player.name.split(", ")[1] %> <%= @player.name.split(", ")[0]  %>'s Report Card</h1>
+  </div>
+  <div class="col-md-4" style="height: 170px; display: flex; align-items: flex-end;">
+    <h3><%=@start_date%>-<%=@end_date%></h3>
+  </div>
+</div>
+
   <table class="table" style="width:100%; margin-top:20px; margin-bottom:20px">
   <tr>
     <td style="font-size: 18px; margin-right: 50px;"><b>Name:</b> <%= @player.name.split(',').reverse.join(' ') %></td>
     <td style="font-size: 18px; margin-right: 50px;"><b>Number:</b> <%= @player.number %></td>
     <td style="font-size: 18px; margin-right: 50px;"><b>Position:</b> <%= @player.position %></td>
     <td style="font-size: 18px; margin-right: 50px;"><b>Year:</b> <%= @player.year %></td>
-    <% if defined?(@overall_success_rate) %>
+    <% if defined?(@overall_success_rate) && @overall_success_rate.is_a?(Numeric)%>
       <td style="font-size: 18px; margin-right: 50px;"><b>Overall Success Rate:</b> <%= (100*@overall_success_rate).round(2) %>%</td>
     <% else %>
       <td style="font-size: 18px; margin-right: 50px;"><b>Overall Success Rate: Not Enough Routes Run</b> </td>
@@ -39,15 +74,21 @@
       <table class="table table-striped">
         <thead>
           <tr>
-            <th>Route Name</th>
+            <th>Route Name (Click to add/remove from graph)</th>
             <th>Success Rate</th>
           </tr>
         </thead>
         <tbody>
           <% @success_by_route.each do |route_name, success_rate| %>
             <tr>
-              <td><%= route_name %></td>
-              <td><%= number_to_percentage(success_rate*100, precision: 2) %></td>
+              <td>
+              <%if success_rate>0%>
+                <%= link_to route_name, players_show_path(player_id: @player_id, routes: @routes.join(","), route: route_name) %>
+              <%else%>
+                <%=route_name%>
+              <%end%>
+              </td>
+              <td><%= number_to_percentage(success_rate*100, precision: 2)%></td>
             </tr>
           <% end %>
         </tbody>
@@ -56,59 +97,46 @@
   </div>
 </div>
 <script>
-  //const successRates = <%= @success_rates.to_json.gsub('&', 'and') %>;
-
-  var labels = []
-  var data = []
-  
-  <% for i in 0..(@success_rates.length-1) do %>
-    labels.push('<%= @success_rates[i][:practice_id] %>');
-    data.push('<%= @success_rates[i][:success_rate] %>');
-  <% end %>
-
+  var colors = Array.from({length: 12}, (_, i) => `hsl(${i * 30}, 100%, 50%)`);
+  // Create chart
   var ctx = document.getElementById('lineChart').getContext('2d');
   var chart = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: labels,
-      datasets: [{
-        label: 'Success Rates by Practice ID',
-        data: data,
-        fill: false,
-        borderColor: 'rgb(75, 192, 192)',
-        tension: 0.1
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        title: {
-          display: true,
-          text: 'Success Rates by Practice',
-          color: "black",
-          font: {
-            size: 28
-          }
+      labels: [<%@routePracticeIds.each do |id|%>
+                <%=id%>,
+                <%end%>
+      ],
+      datasets: [<% @routes.each_with_index do |routeName, index|%>
+        {
+        label: "<%=routeName%>",
+        data: [<%@dataByRoute[routeName].each do |data|%>
+                <%=data%>,
+              <%end%>],
+        borderColor: colors[<%=index%> % colors.length],
+        backgroundColor: colors[<%=index%> % colors.length],
+        fill: false
         },
-        legend: {
-          display: false
-        }
+        <%end%>
+      ]
       },
-      scales: {
-        x: {
-          title: {
-            display: true,
-            text: 'Practice ID'
-          }
-        },
-        y: {
-          title: {
-            display: true,
-            text: 'Success Rate (%)'
-          }
-        }
+    options: {
+  scales: {
+    x: {
+      display: true,
+      title: {
+        display: true,
+        text: 'Practice ID'
+      },
+    },
+    y: {
+      display: true,
+      title: {
+        display: true,
+        text: 'Success Rate'
       }
     }
+  }
+}
   });
-
 </script>

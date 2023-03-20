@@ -835,6 +835,9 @@
       return this.response.headers.get(name);
     }
   };
+  function isAction(action) {
+    return action == "advance" || action == "replace" || action == "restore";
+  }
   function activateScriptElement(element) {
     if (element.getAttribute("data-turbo-eval") == "false") {
       return element;
@@ -864,7 +867,6 @@
     const event = new CustomEvent(eventName, {
       cancelable,
       bubbles: true,
-      composed: true,
       detail
     });
     if (target && target.isConnected) {
@@ -958,9 +960,6 @@
         return history.pushState;
     }
   }
-  function isAction(action) {
-    return action == "advance" || action == "replace" || action == "restore";
-  }
   function getVisitAction(...elements) {
     const action = getAttribute("data-turbo-action", ...elements);
     return isAction(action) ? action : null;
@@ -981,12 +980,6 @@
     }
     element.setAttribute("content", content);
     return element;
-  }
-  function findClosestRecursively(element, selector) {
-    var _a;
-    if (element instanceof Element) {
-      return element.closest(selector) || findClosestRecursively(element.assignedSlot || ((_a = element.getRootNode()) === null || _a === void 0 ? void 0 : _a.host), selector);
-    }
   }
   var FetchMethod;
   (function(FetchMethod2) {
@@ -1035,8 +1028,9 @@
       this.abortController.abort();
     }
     async perform() {
+      var _a, _b;
       const { fetchOptions } = this;
-      this.delegate.prepareRequest(this);
+      (_b = (_a = this.delegate).prepareHeadersForRequest) === null || _b === void 0 ? void 0 : _b.call(_a, this.headers, this);
       await this.allowRequestToBeIntercepted(fetchOptions);
       try {
         this.delegate.requestStarted(this);
@@ -1264,11 +1258,11 @@
         return true;
       }
     }
-    prepareRequest(request) {
+    prepareHeadersForRequest(headers, request) {
       if (!request.isIdempotent) {
         const token = getCookieValue(getMetaContent("csrf-param")) || getMetaContent("csrf-token");
         if (token) {
-          request.headers["X-CSRF-Token"] = token;
+          headers["X-CSRF-Token"] = token;
         }
       }
       if (this.requestAcceptsTurboStreamResponse(request)) {
@@ -1449,16 +1443,12 @@
     return method != "dialog";
   }
   function submissionDoesNotTargetIFrame(form, submitter) {
-    if ((submitter === null || submitter === void 0 ? void 0 : submitter.hasAttribute("formtarget")) || form.hasAttribute("target")) {
-      const target = (submitter === null || submitter === void 0 ? void 0 : submitter.getAttribute("formtarget")) || form.target;
-      for (const element of document.getElementsByName(target)) {
-        if (element instanceof HTMLIFrameElement)
-          return false;
-      }
-      return true;
-    } else {
-      return true;
+    const target = (submitter === null || submitter === void 0 ? void 0 : submitter.getAttribute("formtarget")) || form.target;
+    for (const element of document.getElementsByName(target)) {
+      if (element instanceof HTMLIFrameElement)
+        return false;
     }
+    return true;
   }
   var View = class {
     constructor(delegate, element) {
@@ -1637,22 +1627,20 @@
       return !(event.target && event.target.isContentEditable || event.defaultPrevented || event.which > 1 || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey);
     }
     findLinkFromClickTarget(target) {
-      return findClosestRecursively(target, "a[href]:not([target^=_]):not([download])");
+      if (target instanceof Element) {
+        return target.closest("a[href]:not([target^=_]):not([download])");
+      }
     }
     getLocationForLink(link) {
       return expandURL(link.getAttribute("href") || "");
     }
   };
   function doesNotTargetIFrame(anchor) {
-    if (anchor.hasAttribute("target")) {
-      for (const element of document.getElementsByName(anchor.target)) {
-        if (element instanceof HTMLIFrameElement)
-          return false;
-      }
-      return true;
-    } else {
-      return true;
+    for (const element of document.getElementsByName(anchor.target)) {
+      if (element instanceof HTMLIFrameElement)
+        return false;
     }
+    return true;
   }
   var FormLinkClickObserver = class {
     constructor(delegate, element) {
@@ -1669,14 +1657,10 @@
       return this.delegate.willSubmitFormLinkToLocation(link, location2, originalEvent) && link.hasAttribute("data-turbo-method");
     }
     followedLinkToLocation(link, location2) {
+      const action = location2.href;
       const form = document.createElement("form");
-      const type = "hidden";
-      for (const [name, value] of location2.searchParams) {
-        form.append(Object.assign(document.createElement("input"), { type, name, value }));
-      }
-      const action = Object.assign(location2, { search: "" });
       form.setAttribute("data-turbo", "true");
-      form.setAttribute("action", action.href);
+      form.setAttribute("action", action);
       form.setAttribute("hidden", "");
       const method = link.getAttribute("data-turbo-method");
       if (method)
@@ -1684,7 +1668,7 @@
       const turboFrame = link.getAttribute("data-turbo-frame");
       if (turboFrame)
         form.setAttribute("data-turbo-frame", turboFrame);
-      const turboAction = getVisitAction(link);
+      const turboAction = link.getAttribute("data-turbo-action");
       if (turboAction)
         form.setAttribute("data-turbo-action", turboAction);
       const turboConfirm = link.getAttribute("data-turbo-confirm");
@@ -1704,10 +1688,10 @@
       this.delegate = delegate;
       this.permanentElementMap = permanentElementMap;
     }
-    static async preservingPermanentElements(delegate, permanentElementMap, callback) {
+    static preservingPermanentElements(delegate, permanentElementMap, callback) {
       const bardo = new this(delegate, permanentElementMap);
       bardo.enter();
-      await callback();
+      callback();
       bardo.leave();
     }
     enter() {
@@ -1775,8 +1759,8 @@
         delete this.resolvingFunctions;
       }
     }
-    async preservingPermanentElements(callback) {
-      await Bardo.preservingPermanentElements(this, this.permanentElementMap, callback);
+    preservingPermanentElements(callback) {
+      Bardo.preservingPermanentElements(this, this.permanentElementMap, callback);
     }
     focusFirstAutofocusableElement() {
       const element = this.connectedSnapshot.firstAutofocusableElement;
@@ -2336,9 +2320,7 @@
       if (this.redirectedToLocation && !this.followedRedirect && ((_a = this.response) === null || _a === void 0 ? void 0 : _a.redirected)) {
         this.adapter.visitProposedToLocation(this.redirectedToLocation, {
           action: "replace",
-          response: this.response,
-          shouldCacheSnapshot: false,
-          willRender: false
+          response: this.response
         });
         this.followedRedirect = true;
       }
@@ -2353,7 +2335,7 @@
         });
       }
     }
-    prepareRequest(request) {
+    prepareHeadersForRequest(headers, request) {
       if (this.acceptsStreamResponse) {
         request.acceptResponseType(StreamMessage.contentType);
       }
@@ -2838,8 +2820,10 @@
     get restorationIdentifier() {
       return this.history.restorationIdentifier;
     }
-    getActionForFormSubmission({ submitter, formElement }) {
-      return getVisitAction(submitter, formElement) || "advance";
+    getActionForFormSubmission(formSubmission) {
+      const { formElement, submitter } = formSubmission;
+      const action = getAttribute("data-turbo-action", submitter, formElement);
+      return isAction(action) ? action : "advance";
     }
   };
   var PageStage;
@@ -3074,7 +3058,7 @@
     }
     async render() {
       if (this.willRender) {
-        await this.replaceBody();
+        this.replaceBody();
       }
     }
     finishRendering() {
@@ -3093,16 +3077,16 @@
       return this.newSnapshot.element;
     }
     async mergeHead() {
-      const mergedHeadElements = this.mergeProvisionalElements();
       const newStylesheetElements = this.copyNewHeadStylesheetElements();
       this.copyNewHeadScriptElements();
-      await mergedHeadElements;
+      this.removeCurrentHeadProvisionalElements();
+      this.copyNewHeadProvisionalElements();
       await newStylesheetElements;
     }
-    async replaceBody() {
-      await this.preservingPermanentElements(async () => {
+    replaceBody() {
+      this.preservingPermanentElements(() => {
         this.activateNewBody();
-        await this.assignNewBody();
+        this.assignNewBody();
       });
     }
     get trackedElementsAreIdentical() {
@@ -3120,35 +3104,6 @@
       for (const element of this.newHeadScriptElements) {
         document.head.appendChild(activateScriptElement(element));
       }
-    }
-    async mergeProvisionalElements() {
-      const newHeadElements = [...this.newHeadProvisionalElements];
-      for (const element of this.currentHeadProvisionalElements) {
-        if (!this.isCurrentElementInElementList(element, newHeadElements)) {
-          document.head.removeChild(element);
-        }
-      }
-      for (const element of newHeadElements) {
-        document.head.appendChild(element);
-      }
-    }
-    isCurrentElementInElementList(element, elementList) {
-      for (const [index, newElement] of elementList.entries()) {
-        if (element.tagName == "TITLE") {
-          if (newElement.tagName != "TITLE") {
-            continue;
-          }
-          if (element.innerHTML == newElement.innerHTML) {
-            elementList.splice(index, 1);
-            return true;
-          }
-        }
-        if (newElement.isEqualNode(element)) {
-          elementList.splice(index, 1);
-          return true;
-        }
-      }
-      return false;
     }
     removeCurrentHeadProvisionalElements() {
       for (const element of this.currentHeadProvisionalElements) {
@@ -3170,8 +3125,8 @@
         inertScriptElement.replaceWith(activatedScriptElement);
       }
     }
-    async assignNewBody() {
-      await this.renderElement(this.currentElement, this.newElement);
+    assignNewBody() {
+      this.renderElement(this.currentElement, this.newElement);
     }
     get newHeadStylesheetElements() {
       return this.newHeadSnapshot.getStylesheetElementsNotInSnapshot(this.currentHeadSnapshot);
@@ -3575,8 +3530,8 @@
       }
     }
     elementIsNavigatable(element) {
-      const container = findClosestRecursively(element, "[data-turbo]");
-      const withinFrame = findClosestRecursively(element, "turbo-frame");
+      const container = element.closest("[data-turbo]");
+      const withinFrame = element.closest("turbo-frame");
       if (this.drive || withinFrame) {
         if (container) {
           return container.getAttribute("data-turbo") != "false";
@@ -3592,7 +3547,8 @@
       }
     }
     getActionForLink(link) {
-      return getVisitAction(link) || "advance";
+      const action = link.getAttribute("data-turbo-action");
+      return isAction(action) ? action : "advance";
     }
     get snapshot() {
       return this.view.snapshot;
@@ -3656,10 +3612,7 @@
       this.targetElements.forEach((e) => e.replaceWith(this.templateContent));
     },
     update() {
-      this.targetElements.forEach((targetElement) => {
-        targetElement.innerHTML = "";
-        targetElement.append(this.templateContent);
-      });
+      this.targetElements.forEach((e) => e.replaceChildren(this.templateContent));
     }
   };
   var session = new Session();
@@ -3842,8 +3795,7 @@
         };
       }
     }
-    elementAppearedInViewport(element) {
-      this.proposeVisitIfNavigatedWithAction(element, element);
+    elementAppearedInViewport(_element) {
       this.loadSourceURL();
     }
     willSubmitFormLinkToLocation(link) {
@@ -3869,12 +3821,12 @@
       }
       this.formSubmission = new FormSubmission(this, element, submitter);
       const { fetchRequest } = this.formSubmission;
-      this.prepareRequest(fetchRequest);
+      this.prepareHeadersForRequest(fetchRequest.headers, fetchRequest);
       this.formSubmission.start();
     }
-    prepareRequest(request) {
+    prepareHeadersForRequest(headers, request) {
       var _a;
-      request.headers["Turbo-Frame"] = this.id;
+      headers["Turbo-Frame"] = this.id;
       if ((_a = this.currentNavigationElement) === null || _a === void 0 ? void 0 : _a.hasAttribute("data-turbo-stream")) {
         request.acceptResponseType(StreamMessage.contentType);
       }
@@ -3957,6 +3909,7 @@
     }
     navigateFrame(element, url, submitter) {
       const frame = this.findFrameElement(element, submitter);
+      this.pageSnapshot = PageSnapshot.fromElement(frame).clone();
       frame.delegate.proposeVisitIfNavigatedWithAction(frame, element, submitter);
       this.withCurrentNavigationElement(element, () => {
         frame.src = url;
@@ -3964,8 +3917,7 @@
     }
     proposeVisitIfNavigatedWithAction(frame, element, submitter) {
       this.action = getVisitAction(submitter, element, frame);
-      if (this.action) {
-        const pageSnapshot = PageSnapshot.fromElement(frame).clone();
+      if (isAction(this.action)) {
         const { visitCachedSnapshot } = frame.delegate;
         frame.delegate.fetchResponseLoaded = (fetchResponse) => {
           if (frame.src) {
@@ -3978,7 +3930,7 @@
               willRender: false,
               updateHistory: false,
               restorationIdentifier: this.restorationIdentifier,
-              snapshot: pageSnapshot
+              snapshot: this.pageSnapshot
             };
             if (this.action)
               options.action = this.action;
@@ -4368,53 +4320,24 @@
       return { channel, signed_stream_name, ...walk({ ...this.dataset }) };
     }
   };
-  if (customElements.get("turbo-cable-stream-source") === void 0) {
-    customElements.define("turbo-cable-stream-source", TurboCableStreamSourceElement);
-  }
+  customElements.define("turbo-cable-stream-source", TurboCableStreamSourceElement);
 
   // node_modules/@hotwired/turbo-rails/app/javascript/turbo/fetch_requests.js
   function encodeMethodIntoRequestBody(event) {
     if (event.target instanceof HTMLFormElement) {
       const { target: form, detail: { fetchOptions } } = event;
       form.addEventListener("turbo:submit-start", ({ detail: { formSubmission: { submitter } } }) => {
-        const body = isBodyInit(fetchOptions.body) ? fetchOptions.body : new URLSearchParams();
-        const method = determineFetchMethod(submitter, body, form);
+        const method = submitter && submitter.formMethod || fetchOptions.body && fetchOptions.body.get("_method") || form.getAttribute("method");
         if (!/get/i.test(method)) {
           if (/post/i.test(method)) {
-            body.delete("_method");
+            fetchOptions.body.delete("_method");
           } else {
-            body.set("_method", method);
+            fetchOptions.body.set("_method", method);
           }
           fetchOptions.method = "post";
         }
       }, { once: true });
     }
-  }
-  function determineFetchMethod(submitter, body, form) {
-    const formMethod = determineFormMethod(submitter);
-    const overrideMethod = body.get("_method");
-    const method = form.getAttribute("method") || "get";
-    if (typeof formMethod == "string") {
-      return formMethod;
-    } else if (typeof overrideMethod == "string") {
-      return overrideMethod;
-    } else {
-      return method;
-    }
-  }
-  function determineFormMethod(submitter) {
-    if (submitter instanceof HTMLButtonElement || submitter instanceof HTMLInputElement) {
-      if (submitter.hasAttribute("formmethod")) {
-        return submitter.formMethod;
-      } else {
-        return null;
-      }
-    } else {
-      return null;
-    }
-  }
-  function isBodyInit(body) {
-    return body instanceof FormData || body instanceof URLSearchParams;
   }
 
   // node_modules/@hotwired/turbo-rails/app/javascript/turbo/index.js

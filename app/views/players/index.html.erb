@@ -4,7 +4,7 @@
     <nav class="navbar navbar-dark bg-primary justify-content-start">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/dashboard">Fighting Aggies Platform</a>
+                <a class="navbar-brand" href=<%=route_instances_by_player_path%>>Fighting Aggies Platform</a>
             </div>
             <%= link_to "See All", route_instances_path('*','*','*','*'), id: "all_routes", class:"nav-item text-white" %>
             <%= link_to "See Players", players_index_path,  id: "players", class:"nav-item text-white"  %>

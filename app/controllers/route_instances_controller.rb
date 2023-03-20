@@ -26,18 +26,79 @@ class RouteInstancesController < ApplicationController
   end
 
   def by_player
+    require('uri')
+    if params[:start_date].present? && params[:end_date].present?
+      @start_date = Date.parse(params[:start_date])
+      @end_date = Date.parse(params[:end_date])
+    else
+      @start_date=RouteInstance.distinct.pluck(:date).min()
+      @end_date=RouteInstance.distinct.pluck(:date).max()
+    end
     @data = {}
-    RouteInstance.all.each do |route_instance|
+    @all_data = {}
+    if params[:routes].present?
+      @routes=params[:routes].split(",")
+    else
+      @routes=[]
+    end
+    @all_routes=RouteInstance.distinct.pluck(:route_name)
+    @all_routes.push("overall")
+    RouteInstance.where('date >= ?', @start_date).where('date <= ?', @end_date).each do |route_instance|
       player_id = route_instance.player_id
       route_name = route_instance.route_name
       success = route_instance.success
+      if @routes.include?(route_name) 
+        if @data[player_id].nil?
+          @data[player_id] = {}
+        end
+        if @data[player_id][route_name].nil?
+          @data[player_id][route_name] = [0, 0]
+        end
+  
+        @data[player_id][route_name][0] += success
+        @data[player_id][route_name][1] += 1
+      end
+      if @all_data[player_id].nil?
+        @all_data[player_id] = {}
+      end
+      if @all_data[player_id][route_name].nil?
+        @all_data[player_id][route_name] = [0, 0]
+      end
 
-      @data[player_id] = {} if @data[player_id].nil?
-
-      @data[player_id][route_name] = [0, 0] if @data[player_id][route_name].nil?
-
-      @data[player_id][route_name][0] += success
-      @data[player_id][route_name][1] += 1
+      @all_data[player_id][route_name][0] += success
+      @all_data[player_id][route_name][1] += 1
+    end
+  
+    @sort_by = params[:sort_by]
+    @ascending = params[:ascending]
+    if @sort_by.present?
+      if @sort_by == 'overall'
+        @all_data = @all_data.sort_by do |player_id, routes|
+          total_instances = 0
+          successful_instances = 0
+          routes.each do |route_name, data|
+            total_instances += data[1]
+            successful_instances += data[0]
+          end
+          total_instances > 0 ? params[:ascending].to_i*successful_instances.to_f / total_instances.to_f : 0
+        end
+      else
+        @all_data = @all_data.sort_by do |player_id, routes|
+          if routes[@sort_by].present? && routes[@sort_by][1] > 0
+            params[:ascending].to_i*routes[@sort_by][0].to_f / routes[@sort_by][1].to_f
+          else
+            0
+          end
+        end
+      end
+    else
+      @data = @data.sort_by do |player_id, routes|
+        Player.find_by(id: player_id).name
+      end
     end
   end
+  
+  
+  
+  
 end
