@@ -1,0 +1,198 @@
+#page-container {
+  min-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: auto 2%;
+}
+
+#class-video-item {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 3px 0;
+  display: flex;
+  flex-direction: row;
+  background: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#class-video-item:hover {
+  cursor: pointer;
+  border-left: 2px rgba(0,0,0,.5) solid;
+  transition: all .1s ease-in-out;
+}
+
+
+#left-panel {
+  width: 25%;
+  height: 100%;
+  overflow: scroll;
+  padding: 10px;
+  box-shadow: 2px 2px 20px grey;
+  border-radius: 15px;
+  margin-left: 5px;
+  scale: .98;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#right-panel {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  scale: .98;
+  box-shadow: 2px 2px 20px grey;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+#search-title {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  right: 0;
+  background: white;
+  text-align: center;
+  width: 100%;
+  padding: 3px;
+}
+
+#search-input{
+  width: 100%;
+  margin: 0 auto;
+  padding: 6px 20px;
+  margin-bottom: 5px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  border: 1px grey solid;
+}
+
+#headers {
+  width: 100%;
+  height: 15%;
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#video-display {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#video-show {
+  width: 90%;
+  align-text: center,
+}
+
+#video-container {
+  width: "100%";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#search-video-container{
+  width: 85%;
+  height: auto;
+}
+
+#search-video-thumbnail {
+  width: 100%;
+  height: auto;
+  background: black;
+  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+#practice-video-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+#practice-videos {
+  height: 100%;
+  width: 100%;
+}
+
+#video-info{
+  width: 100%;
+  margin: 0 auto;
+  // box-shadow: 2px 2px 20px grey;
+  border-radius: 10px;
+}
+
+#video-edit {
+  padding: 2px 10px;
+  background: blue;
+  text-decoration: none;
+  color: white;
+  font-size: .7rem;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+#video-dates {
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+  width: 40%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#video-add {
+  padding: 5px 60px;
+  background: blue;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+#video-add:hover{
+  scale: .95;
+  transition: all .2s ease-in-out;
+}
+
+#back-button {
+  color: white;
+  background: gray;
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 8px 20px;
+
+}
+
+#computer-upload-button:hover {
+  transition: all .1s ease-in-out;
+  scale: 1.03;
+}

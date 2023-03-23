@@ -68,6 +68,9 @@ gem 'passwordless'
 
 gem 'pg', '~> 1.1'
 
+gem 'font-awesome-rails'
+
+gem 'chartkick'
 # gem "aws-sdk-s3", require: false
 
 group :development, :test do

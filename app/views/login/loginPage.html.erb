@@ -5,7 +5,7 @@
     <%= button_to "Log In with Google", '/auth/google_oauth2', method: :post, data: { turbo: false }, id: 'google'%>
     <hr>
     <%= link_to "Single Sign-On Email", '/sign_in', id: 'email' %>
-    <div class="notice"><%= flash[:notice] %></div> 
+    <div class="notice" style="margin: 5px; color: red; opacity: .8;"><%= flash[:notice] %></div> 
   </div>
 </div>
 

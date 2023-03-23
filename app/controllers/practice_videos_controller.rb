@@ -25,7 +25,8 @@ class PracticeVideosController < ApplicationController
     respond_to do |format|
       if @practice_video.save
         format.html do
-          redirect_to practice_video_url(@practice_video), notice: 'Practice video was successfully created.'
+          @practice_video.create_practice_data
+          redirect_to practice_videos_url, notice: 'Practice video was successfully created.'
         end
         format.json { render :show, status: :created, location: @practice_video }
       else
@@ -35,12 +36,12 @@ class PracticeVideosController < ApplicationController
     end
   end
 
-  # PATCH/PUT /practice_videos/1 or /practice_videos/1.json
+  # PATCH/PUT /practice_videos or /practice_videos.json
   def update
     respond_to do |format|
       if @practice_video.update(practice_video_params)
         format.html do
-          redirect_to practice_video_url(@practice_video), notice: 'Practice video was successfully updated.'
+          redirect_to practice_videos_url, notice: 'Practice video was successfully updated.'
         end
         format.json { render :show, status: :ok, location: @practice_video }
       else
@@ -52,6 +53,7 @@ class PracticeVideosController < ApplicationController
 
   # DELETE /practice_videos/1 or /practice_videos/1.json
   def destroy
+    @practice_video.delete_practice_data(@practice_video.filename)
     @practice_video.destroy
 
     respond_to do |format|
@@ -70,6 +72,6 @@ class PracticeVideosController < ApplicationController
   # Only allow a list of trusted parameters through.
   def practice_video_params
     params.require(:practice_video).permit(:filename, :video_name, :video_create_date, :description, :clip,
-                                           :video_upload_date)
+                                           :video_upload_date, :length)
   end
 end

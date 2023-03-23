@@ -8,7 +8,7 @@ env:
   HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
   HEROKU_APP: 'fighting-aggies-platform'
   HEROKU_EMAIL: 'elitracy@tamu.edu'
-
+  RAILS_ENV: 'test'
 jobs:
   tests:
     runs-on: ubuntu-latest
@@ -72,9 +72,4 @@ jobs:
         buildpack: 'https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git'
 
     - name: Reload Database
-      run: heroku run rails db:{drop,migrate,seed} -a $HEROKU_APP
-
-    # - name: Seed Database
-    #   run: heroku run rails db:seed -a $HEROKU_APP
-    #   continue-on-error: false #db previously seeded - potential email duplicates
-
+      run: heroku run rails db:setup -a $HEROKU_APP

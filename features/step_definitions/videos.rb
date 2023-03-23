@@ -6,10 +6,10 @@ require 'selenium-webdriver'
 # end
 
 Given('videos have been previously uploaded') do
-  PracticeVideo.create!({ filename: 'test_Video_0', video_name: 'Test Video 0',
+  PracticeVideo.create!({ filename: 'test_Video_0', video_name: 'Test Video 0', clip: fixture_file_upload('test_Video_0.mp4', 'video/mp4'),
                           video_create_date: '2023-01-01T01:23:45Z', video_upload_date: '2023-01-04T01:23:45Z', description: 'This is a description for test video 0' })
-  PracticeVideo.create!({ filename: 'test_Video_1', video_name: 'Test Video 1',
-                          video_create_date: '2023-01-02T01:23:45Z', video_upload_date: '2023-01-05T01:23:45Z', description: 'This is a description for test video 1' })
+  PracticeVideo.create!({ filename: 'test_Video_1', video_name: 'Test Video 1', clip: fixture_file_upload('test_Video_1.mp4', 'video/mp4'),
+                          video_create_date: '2023-01-01T01:23:45Z', video_upload_date: '2023-01-04T01:23:45Z', description: 'This is a description for test video 1' })
 end
 
 When('I go to the videos dashboard') do
@@ -28,7 +28,7 @@ Then('I should be taken to the add video page') do
 end
 
 Given('I am on the videos dashboard') do
-  PracticeVideo.create!({ filename: 'test_Video_0', video_name: 'Test Video 0',
+  PracticeVideo.create!({ filename: 'test_Video_0', video_name: 'Test Video 0', clip: fixture_file_upload('test_Video_0.mp4', 'video/mp4'),
                           video_create_date: '2023-01-01T01:23:45Z', video_upload_date: '2023-01-04T01:23:45Z', description: 'This is a description for test video 0' })
   visit practice_videos_path
 end
@@ -37,13 +37,17 @@ When('I click {string} on Test Video 0') do |button|
   click_link button
 end
 
+When('I click Test Video 0') do
+  find('div#class-video-item', text: 'Test Video 0').click
+end
+
 Then('I should go to the edit video page for {string}') do |video_name|
   video = PracticeVideo.find_by(video_name:)
   expect(page).to have_current_path(edit_practice_video_path(video.id))
 end
 
 Given('I am editing {string}') do |video_name|
-  PracticeVideo.create!({ filename: 'video_file', video_name:,
+  PracticeVideo.create!({ filename: 'video_file', video_name:, clip: fixture_file_upload('video_file.mp4', 'video/mp4'),
                           video_create_date: '2023-01-01T01:23:45Z', video_upload_date: '2023-01-04T01:23:45Z', description: 'This is a description for a test video' })
   video = PracticeVideo.find_by(video_name:)
   visit edit_practice_video_path(video.id)
@@ -67,7 +71,7 @@ Then('I should not be able to edit {string}') do |field|
 end
 
 Given('I am viewing {string}') do |video_name|
-  PracticeVideo.create!({ filename: 'video_file', video_name:,
+  PracticeVideo.create!({ filename: 'video_file', video_name:, clip: fixture_file_upload('video_file.mp4', 'video/mp4'),
                           video_create_date: '2023-01-01T01:23:45Z', video_upload_date: '2023-01-04T01:23:45Z', description: 'This is a description for a test video' })
   video = PracticeVideo.find_by(video_name:)
   visit practice_video_path(video.id)
@@ -84,4 +88,18 @@ end
 Then('I should be on the view {string} page') do |video_name|
   video = PracticeVideo.find_by(video_name:)
   expect(page).to have_current_path(practice_video_path(video.id))
+end
+
+When('I search {string}') do |search|
+  fill_in 'search', with: search
+end
+
+Given('I am on the new video page') do
+  visit new_practice_video_path
+end
+
+Then("I should see a 'Video Create Date' field with the current date pre-populated") do
+  expected_value = Time.current.strftime('%Y-%m-%d %H:%M:%S')
+  video_create_date = find_field('practice_video[video_create_date]').value
+  expect(video_create_date).to eq(expected_value)
 end

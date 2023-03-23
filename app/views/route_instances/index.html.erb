@@ -1,6 +1,18 @@
 <%link_to "Reset", route_instances_path(player_id: "*", route_name: "*", play_name:"*", practice_id:"*") %>
 <table>
-<%=link_to "Back to dashboard", dashboard_path %>
+<div>
+    <nav class="navbar navbar-dark bg-primary justify-content-start">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href=<%=route_instances_by_player_path%>>Fighting Aggies Platform</a>
+            </div>
+            <%= link_to "See All", route_instances_path('*','*','*','*'), id: "all_routes", class:"nav-item text-white" %>
+            <%= link_to "See Players", players_index_path,  id: "players", class:"nav-item text-white"  %>
+            <%= link_to "See Routes by player", route_instances_by_player_path, id: "routes by player", class:"nav-item text-white" %>
+            <%= link_to "Log Out", logout_path,  id: "log_out", class:"btn logout-btn" %>
+        </div>
+    </nav>
+</div>
   <thead>
     <tr>
       <th>Player Name</th>
@@ -16,7 +28,7 @@
     <% @route_instances.each do |route_instance| %>
 
       <tr>
-        <td><%= link_to Player.find_by(id: route_instance.player_id).name, route_instances_path(player_id: route_instance.player_id, route_name: params[:route_name], play_name: params[:play_name], practice_id: params[:practice_id]) %></td>
+        <td><%= link_to Player.find_by(id: route_instance.player_id).name, players_show_path(route_instance.player_id)%></td>
         <td><%= link_to route_instance.route_name, route_instances_path(route_name: route_instance.route_name, player_id: params[:player_id], play_name: params[:play_name], practice_id: params[:practice_id]) %></td>
         <td><%= link_to route_instance.play_name, route_instances_path(play_name: route_instance.play_name, route_name: params[:route_name], player_id: params[:player_id], practice_id: params[:practice_id]) %></td>
         <td><%= link_to route_instance.practice_id, route_instances_path(practice_id: route_instance.practice_id, route_name: params[:route_name], player_id: params[:player_id], play_name: params[:play_name]) %></td>
@@ -28,7 +40,4 @@
     <% end %>
   </tbody>
 </table>
-<% if @route_instances.is_a?(ActiveRecord::Relation) %>
-  <%= will_paginate @route_instances %>
-<% end %>
 <p style="margin:0">Success Rate: <%=@percent_success%></p>

@@ -1,18 +1,21 @@
-<div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+<div class="admin-body">
   <div style="width: 100vw;" class="admin-background">
-    <div class = "container-fluid" style="padding: none;">
-      <div class = "row pe-3">
+    <div class = "container-fluid top-row" style="padding: none;">
+      <div class = "row">
           <h3 class = "col-7">Admin Dashboard</h3>
           <div class="col"></div>
           <%= link_to "Add User", new_user_path(), id: "add_user", class: "col btn admin-btn" %>
           <%= link_to "Log Out", logout_path,  id: "log_out", class: "col btn admin-btn" %>
       </div>
     <div>
-    <table class="table admin-table">
+    <table class="table admin-table" data-toggle="table" data-height="460" data-sort-name="name" data-sort-order="desc">
       <thead>
         <tr class = "admin-head">
-          <th scope="col">Name</th>
-          <th scope="col">Role</th>
+          <th scope = "col"><%= sortable "name"%></th>
+          <th scope = "col"><%= sortable "role"%></th>
           <th> </th>
         </tr>
       </thead>

@@ -1,4 +1,3 @@
 class HomeController < ApplicationController
-    # before_action :require_user
-  end
-  
+  # before_action :require_user
+end

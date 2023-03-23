@@ -1,47 +1,50 @@
-<div id="<%= dom_id practice_video %>">
-  <p>
-  <strong>Filename:</strong>
-  <%= practice_video.filename %>
+<div id="practice-video-container">
+  <div id='video-container'>
+    <% if practice_video.clip.attached? %>
+      <div id="search-video-container">
+        <%= video_tag(url_for(practice_video.clip), id:'search-video-thumbnail', controls: 'true', poster: 'tamu-background.jpg') %>
+      </div>
+    <% else %>
+      <h3 id="video-show">
+        No video found.
+      </h3>
+    <% end %>
+  </div>
+
+  <div id='video-info'>
+    
+
+  <p style="width: 100%; margin: 0 auto; text-align: center; font-size: 2rem; display: flex; flex-direction: row; justify-content: center; align-items: center;">
+    <span id='video_name'>
+      <%= practice_video.video_name %>
+    </span>
+    <span style="font-size: 1rem; opacity:.8; margin: 10px; margin-top: 17px;">
+      <%= practice_video.filename %>
+    </span>
   </p>
 
-  <p>
-  <strong>Video name:</strong>
-  <span id='video_name'>
-    <%= practice_video.video_name%>
-  </span>
-  </p>
+  <div id="video-dates">
+    <p style="align-text: left">
+    <strong>Created</strong>
+    <% if practice_video.video_create_date %> 
+      <%= practice_video.video_create_date.strftime('%m/%d/%Y') %>
+    <% else %>
+      00/00/0000
+    <% end %>
+    </p>
 
-  <p>
-  <% if practice_video.clip.attached? %>
-     <div style="width:400px">
-       <%= video_tag(url_for(practice_video.clip), style: 'width:100%;height:auto', controls: '') %>
-     </div>
-  <% else %>
-    No video found.
-  <% end %>
-  </p>
-
-  <p>
-  <strong>Video create date:</strong>
-  <% if practice_video.video_create_date %>
-    <%= practice_video.video_create_date %>
-  <% else %>
-    No video creation date data found.
-  <% end %>
-  </p>
-
-  <p>
-  <strong>Description:</strong>
+    <p style="align-text: right">
+    <strong>Uploaded</strong>
+    <% if practice_video.video_upload_date %>
+      <%= practice_video.video_upload_date.strftime('%m/%d/%Y') %>
+    <% else %>
+      00/00/0000
+    <% end %>
+    </p>
+  </div>
+  <p style="width: 100%; text-align: center; opacity: .8; width: 40%; margin: 0 auto;">
   <%= practice_video.description %>
   </p>
 
-  <p>
-  <strong>Video upload date:</strong>
-  <% if practice_video.video_upload_date %>
-    <%= practice_video.video_upload_date %>
-  <% else %>
-    No video upload date data found.
-  <% end %>
-  </p>
-
+  </div>
 </div>

@@ -1,10 +1,47 @@
-<h1>Editing practice video</h1>
+<h1 style="text-align: center; margin: 20px; padding: 0;">Update Video</h1>
 
-<%= render "form", practice_video: @practice_video %>
 
-<br>
+<%= render "form", practice_video: @practice_video, button_message: 'Update Video', editing: true %>
 
-<div>
-  <%= link_to "Show this practice video", @practice_video %> |
-  <%= link_to "Back to practice videos", practice_videos_path %>
+<div style="display: flex; flex-direction: row; with: 100%; justify-content: space-between; align-items:center;">
+  <div style="margin: 5px 20px;">
+    <%= link_to "Back to Videos", practice_videos_path, id: 'back-button' %>
+  </div>
+  <div style="margin: 5px 20px;">
+    <button id="toggle-button" type="button" class="btn" style="display: block; padding: 5px 20px; border-radius: 20px; background: red; color: white;">Delete</button>
+    <div id="confirm-cancel-buttons" style="display: none;">
+      <%= form_for @practice_video, method: :delete do |f| %>
+        <%= f.submit 'Confirm Delete', id: 'confirm-button', class: "btn btn-danger", style: "border-radius: 20px;"%>
+        <button id="cancel-button" type="button" class="btn btn-secondary" style="border-radius: 20px;">Cancel Delete</button>
+      <% end %>
+    </div>
+  </div>
 </div>
+
+<script>
+  (function() {
+  var toggleButton = document.getElementById("toggle-button");
+  var cancelButton = document.getElementById("cancel-button");
+  var confirmCancelButtons = document.getElementById("confirm-cancel-buttons");
+
+  toggleButton.addEventListener("click", function() {
+    if (confirmCancelButtons.style.display === "none") {
+      confirmCancelButtons.style.display = "block";
+      toggleButton.style.display = "none";
+    } else {
+      confirmCancelButtons.style.display = "none";
+      toggleButton.style.display = "block";
+    }
+  });
+
+  cancelButton.addEventListener("click", function() {
+    if (confirmCancelButtons.style.display === "none") {
+      confirmCancelButtons.style.display = "block";
+      toggleButton.style.display = "none";
+    } else {
+      confirmCancelButtons.style.display = "none";
+      toggleButton.style.display = "block";
+    }
+  });
+  })();
+</script>
