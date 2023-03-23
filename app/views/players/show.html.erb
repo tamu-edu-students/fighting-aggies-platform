@@ -109,14 +109,14 @@
   var chart = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: [<%@routePracticeIds.each do |id|%>
+      labels: [<%@route_practice_ids.each do |id|%>
                 <%=id%>,
                 <%end%>
       ],
       datasets: [<% @routes.each_with_index do |routeName, index|%>
         {
         label: "<%=routeName%>",
-        data: [<%@dataByRoute[routeName].each do |data|%>
+        data: [<%@data_by_route[routeName].each do |data|%>
                 <%=data%>,
               <%end%>],
         borderColor: colors[<%=index%> % colors.length],
